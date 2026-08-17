@@ -15,15 +15,23 @@
 
 set -u
 
+RESULT="$(systemctl --user show -p Result --value ai-brief.service)"
 STATUS="$(systemctl --user show -p ExecMainStatus --value ai-brief.service)"
 
-case "$STATUS" in
-0|"")
-    # OnFailure= also fires on a timeout or a signal, where ExecMainStatus is
-    # not an exit code at all. Say so rather than guessing at a half.
-    RESULT="$(systemctl --user show -p Result --value ai-brief.service)"
+# Result has to be consulted before ExecMainStatus, not after. OnFailure= also
+# fires on a timeout, where systemd kills the wrapper and ExecMainStatus holds
+# the signal number - 15 for the SIGTERM, which is a perfectly plausible-looking
+# exit code and would otherwise be reported as one. Only Result=exit-code means
+# publish.sh chose the number.
+if [ "$RESULT" != "exit-code" ]; then
     TITLE="ai-brief: the Run did not finish"
-    BODY="systemd ended it: ${RESULT:-unknown}. No Edition was published."
+    BODY="systemd ended it (${RESULT:-unknown}) rather than publish.sh returning. No Edition was published."
+    STATUS=""
+fi
+
+case "$STATUS" in
+"")
+    : # already described above
     ;;
 1)
     TITLE="ai-brief: the Run failed"
