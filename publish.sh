@@ -23,9 +23,16 @@
 set -u -o pipefail
 
 REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PYTHON="$REPO/.venv/bin/python"
+# The venv, unless something is deliberately pointing elsewhere — a git
+# worktree used for development has no .venv of its own.
+PYTHON="${AI_BRIEF_PYTHON:-$REPO/.venv/bin/python}"
 
 cd "$REPO" || exit 2
+
+if [ ! -x "$PYTHON" ]; then
+    echo "publish.sh: no interpreter at $PYTHON; create the venv first" >&2
+    exit 1
+fi
 
 # --- Generate --------------------------------------------------------------
 # Everything the generator writes lands in docs/ and state/. It never runs git.
