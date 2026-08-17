@@ -1,0 +1,28 @@
+/* Placeholder styling, enough to prove Pages serves a real page.
+   The real design of the Edition and the Index is decided in issue #6, and
+   this file is expected to be replaced wholesale there. */
+
+body {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background: #fdfdfb;
+}
+
+h1 { margin-bottom: 0.2rem; }
+
+.tagline, .empty, footer { color: #555; }
+
+.empty { font-style: italic; }
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+}
+
+a { color: #005a9c; }

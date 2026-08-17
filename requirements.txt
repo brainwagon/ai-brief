@@ -1,0 +1,4 @@
+# Direct dependencies only, pinned to what was installed and verified.
+# Everything else is the standard library, on purpose.
+requests==2.34.2
+beautifulsoup4==4.15.0

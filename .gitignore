@@ -1,0 +1,8 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# state/ is deliberately NOT ignored — the Snapshots are committed on purpose,
+# because a Source with no timestamps is only readable as a diff against
+# yesterday. See map note 5.
