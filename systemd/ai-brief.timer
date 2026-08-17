@@ -1,0 +1,35 @@
+[Unit]
+Description=Daily Run of the AI brief
+Documentation=https://github.com/brainwagon/ai-brief/issues/9
+Documentation=file:///home/markv/ai-brief/CONTEXT.md
+
+[Timer]
+# 06:00 local, which is 09:00 Eastern. The Sources are American-timezone-ish
+# and they are all finished by then: arXiv announces at 20:00 Eastern the
+# evening before, so the overnight listing has been settled for ten hours;
+# Hugging Face's Daily Papers for today's date is populated by 13:00 UTC; and
+# the 24-hour windows Hacker News and dev.to are asked for then cover a whole
+# American day and evening rather than half of one. GitHub New Repos wants a
+# 7-day window anyway (#10), so it does not care what hour it is asked.
+#
+# The hour is also chosen to be before the laptop is up. Persistent below turns
+# that into a feature: the Run does not happen at 06:00, it happens the moment
+# WSL first starts, so the Edition is waiting rather than being written while
+# someone is reading yesterday's.
+OnCalendar=*-*-* 06:00:00
+
+# The setting that actually matters. This is a user timer inside WSL, which is
+# only running when the laptop is on and something has started the instance -
+# so a plain calendar timer would skip nearly every day. Persistent makes
+# systemd record the last firing and notice on start that 06:00 went by
+# unattended, and fire then instead of waiting for tomorrow.
+Persistent=true
+
+# Deliberately shorter than the 30m bw-backup uses. A backup nobody reads can
+# drift half an hour; a brief that exists to be read at breakfast should not.
+# The jitter is here only so the Run does not hit seven public APIs at exactly
+# the top of an hour along with everyone else's cron.
+RandomizedDelaySec=10m
+
+[Install]
+WantedBy=timers.target

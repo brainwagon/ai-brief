@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+#
+# Say which half of the Run broke. Run by ai-brief-failed.service, which is
+# ai-brief.service's OnFailure= unit.
+#
+# WHY THIS EXISTS AS A SCRIPT. publish.sh spends two distinct exit codes on
+# telling Generate's failure apart from Publish's (map note 11). OnFailure=
+# hands the failure unit nothing, so the only way to keep that distinction is
+# to ask systemd afterwards what the main process exited with.
+#
+# WHY IT WRITES TO THE JOURNAL AS WELL AS THE DESKTOP. notify-send only lands
+# somewhere if a notification daemon is running, which under WSL is not
+# guaranteed and is nobody's fault when it is not. The journal line is the one
+# that is always there; the toast is the fast path, not the reliable one.
+
+set -u
+
+STATUS="$(systemctl --user show -p ExecMainStatus --value ai-brief.service)"
+
+case "$STATUS" in
+0|"")
+    # OnFailure= also fires on a timeout or a signal, where ExecMainStatus is
+    # not an exit code at all. Say so rather than guessing at a half.
+    RESULT="$(systemctl --user show -p Result --value ai-brief.service)"
+    TITLE="ai-brief: the Run did not finish"
+    BODY="systemd ended it: ${RESULT:-unknown}. No Edition was published."
+    ;;
+1)
+    TITLE="ai-brief: the Run failed"
+    BODY="Generate broke. There is no Edition and nothing was committed."
+    ;;
+2)
+    TITLE="ai-brief: Publish failed"
+    BODY="The Edition was Generated and is on disk uncommitted. Nothing is lost - the next Run picks it up."
+    ;;
+*)
+    # publish.sh only ever means 0, 1 or 2, so anything else is the wrapper
+    # itself being wrong rather than either half of the Run.
+    TITLE="ai-brief: unexpected exit ${STATUS}"
+    BODY="publish.sh returned a status it does not define."
+    ;;
+esac
+
+echo "${TITLE}: ${BODY}" >&2
+echo "See: journalctl --user -u ai-brief -e" >&2
+
+# A missing notification daemon must not turn into a second failed unit on top
+# of the first one. The journal already has the message.
+notify-send --urgency=critical "$TITLE" \
+    "${BODY} journalctl --user -u ai-brief -e" || true

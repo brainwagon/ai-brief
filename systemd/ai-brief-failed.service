@@ -1,0 +1,12 @@
+[Unit]
+Description=Report which half of the AI brief Run failed
+
+[Service]
+Type=oneshot
+# The work is in a script rather than inline here because it has to ask
+# systemd what ai-brief.service exited with. publish.sh spends exit 1 and
+# exit 2 on saying whether Generate or Publish broke, and those two failures
+# want different reactions from a human - one means there is no Edition, the
+# other means there is one sitting uncommitted on disk. A unit that only said
+# "it failed" would throw that distinction away.
+ExecStart=/home/markv/ai-brief/systemd/ai-brief-failed

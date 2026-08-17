@@ -1,0 +1,33 @@
+[Unit]
+Description=Generate and Publish today's Edition of the AI brief
+Documentation=https://github.com/brainwagon/ai-brief/issues/9
+Documentation=file:///home/markv/ai-brief/CONTEXT.md
+# A brief that stops publishing looks exactly like a quiet news day - the
+# absence of an Edition is not something anyone notices from the Index. This
+# makes a failed Run say so at once, and say which half of it broke.
+OnFailure=ai-brief-failed.service
+
+[Service]
+Type=oneshot
+
+# publish.sh is the whole contract: no arguments, no working directory, no
+# environment. It finds the repo from its own path and the interpreter from
+# the venv inside it, precisely so this line can stay one word long and so a
+# systemd environment that has almost nothing in it is enough.
+ExecStart=/home/markv/ai-brief/publish.sh
+
+# Enrichment is one Ollama call per Item and the machine is a laptop somebody
+# is using. Nothing waits on the brief, so it can have what is left over -
+# though most of the Run is spent waiting on the network and on ollama serve,
+# which is a different process and keeps its own priority.
+Nice=10
+
+# Not infinity, unlike the backup. A Run has a known way of hanging rather
+# than failing: under WSL2 a dead Ollama accepts the connection and never
+# answers (#5), and while the generator pre-flights for that, a model evicted
+# mid-Run can still stall a single call for a long time. A wall lets the
+# failure be reported instead of leaving the unit activating forever with no
+# notification. A real Run of ~200 Items takes about ten minutes at the
+# measured 1.8s/Item (#8), so 30 minutes is roughly three times the worst day
+# actually observed.
+TimeoutStartSec=30min
