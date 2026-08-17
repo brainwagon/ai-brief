@@ -40,7 +40,6 @@ def fetch(run_at):
             # duplicates; dedup by Identity before anything else.
             by_identity.setdefault(str(identity), article)
 
-    seen = list(by_identity)
     candidates = []
     for identity, article in by_identity.items():
         published = _parse_time(article.get("published_at"))
@@ -66,7 +65,11 @@ def fetch(run_at):
     # dev.to is the lowest-signal Source in the set and its 24-hour union runs
     # to hundreds. Pre-rank by reactions and put only the top few to the model.
     candidates.sort(key=lambda pair: -pair[0])
-    return [item for _, item in candidates[: config.DEVTO_ENRICH_LIMIT]], seen
+    items = [item for _, item in candidates[: config.DEVTO_ENRICH_LIMIT]]
+    # As with Hacker News: the Snapshot records what was put forward, not all
+    # ~2100 unique articles, because the 24-hour window already supplies the
+    # novelty and committed state should not grow by a megabyte a month.
+    return items, [item.identity for item in items]
 
 
 def _parse_time(value):

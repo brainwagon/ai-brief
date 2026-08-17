@@ -31,12 +31,11 @@ def fetch(run_at):
     if not isinstance(body, dict) or "hits" not in body:
         raise Unavailable("response body carried no `hits` key")
 
-    seen, candidates = [], []
+    candidates = []
     for hit in body["hits"]:
         identity = hit.get("objectID")
         if not identity:
             continue
-        seen.append(identity)
 
         points = hit.get("points") or 0
         if points <= config.HN_POINTS_FLOOR:
@@ -66,4 +65,10 @@ def fetch(run_at):
     # Rank by points before Enrichment so a trimmed Run is trimmed from the
     # bottom, and so 29 candidates do not go to the model to fill 8 slots (#4).
     candidates.sort(key=lambda pair: -pair[0])
-    return [item for _, item in candidates[: config.HN_ENRICH_LIMIT]], seen
+    items = [item for _, item in candidates[: config.HN_ENRICH_LIMIT]]
+    # The Snapshot records only what was put forward, not all ~900 stories in
+    # the window. The query's own 24-hour filter is what supplies novelty here;
+    # the Snapshot only has to stop a second Run republishing the first Run's
+    # Items, and recording the whole day would grow committed state by a
+    # megabyte a month for nothing.
+    return items, [item.identity for item in items]
