@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+#
+# Publish: commit and push what a Run wrote.
+#
+# WHY THIS IS A SEPARATE FILE. The generator writes files and never touches
+# git (map note 11). Keeping the commit and the push out here is what makes a
+# git failure — no network, a rejected push, a dirty tree — distinguishable
+# from a failure to Generate. CONTEXT.md names the two acts separately for the
+# same reason: Generate touches files, Publish makes them public.
+#
+# WHY IT IS THE THING A TIMER POINTS AT. A systemd user service (#9) runs this
+# one command; it needs no working directory, no venv on PATH, and no
+# arguments. Its exit status is the whole contract:
+#
+#     0   an Edition was Generated, and either Published or already current
+#     1   the Run failed; nothing was committed and nothing was pushed
+#     2   the Run succeeded but Publish failed; the Edition is on disk,
+#         uncommitted, and the next Run will pick it up
+#
+# The two failures are deliberately different numbers so an OnFailure= unit can
+# say which half broke.
+
+set -u -o pipefail
+
+REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PYTHON="$REPO/.venv/bin/python"
+
+cd "$REPO" || exit 2
+
+# --- Generate --------------------------------------------------------------
+# Everything the generator writes lands in docs/ and state/. It never runs git.
+if ! "$PYTHON" -m generator.run; then
+    echo "publish.sh: the Run failed; nothing committed" >&2
+    exit 1
+fi
+
+# --- Publish ---------------------------------------------------------------
+if [ -z "$(git status --porcelain -- docs state)" ]; then
+    echo "publish.sh: nothing changed; already current"
+    exit 0
+fi
+
+TODAY="$(date -u +%Y-%m-%d)"
+
+git add -- docs state || exit 2
+git -c user.name="ai-brief" \
+    -c user.email="ai-brief@mvandewettering.com" \
+    commit -q -m "Edition ${TODAY}" || exit 2
+
+# Pull first: the repo is edited by hand as well as by the timer, so a push
+# that has not rebased is the ordinary failure, not an exceptional one.
+git pull --rebase --quiet origin main || exit 2
+git push --quiet origin HEAD:main || exit 2
+
+echo "publish.sh: Edition ${TODAY} published"
+exit 0

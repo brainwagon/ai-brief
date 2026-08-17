@@ -1,0 +1,41 @@
+{
+ "source": "hf-datasets",
+ "snapshots": [
+  {
+   "date": "2026-08-17",
+   "recorded_at": "2026-08-17T18:04:38Z",
+   "identities": [
+    "ACERobotics/ACE-Data-0",
+    "Anthropic/hh-rlhf",
+    "CaptiveDreamer/CaraArchive",
+    "ChartGalaxy/ChartGalaxy",
+    "FINAL-Bench/AX-RAY",
+    "FlyRank/internship-warehouse",
+    "GokuScraper/seedance-2-prompts-datasets",
+    "HuggingFaceCode/stack-v3-train",
+    "HuggingFaceFW/fineweb",
+    "HuggingFaceFW/fineweb-edu",
+    "HuggingFaceH4/ultrachat_200k",
+    "MatrAIx2026/MatrAIx_Persona_1M",
+    "RekaAI/RekaDaily-10k-raw",
+    "SWE-bench/SWE-bench_Verified",
+    "ai4bharat/MSMARCO-XI",
+    "armand0e/claude-fable-5-claude-code",
+    "cais/hle",
+    "fka/prompts.chat",
+    "histde/ddb-newspaper-corpus",
+    "llamaindex/ExtractBench",
+    "lmsys/lmsys-chat-1m",
+    "nvidia/Nemotron-RL-Agentic-Terminal-Pivot-v1",
+    "openai/gsm8k",
+    "ostris/minimax_h3_1k",
+    "r0b0tlab/qwen3.8-max-distillation-50k",
+    "r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation",
+    "saidutta69/fable-5-premium",
+    "sarvamai/indic-diarbench",
+    "scholarweave/arxiv-latex",
+    "ulamai/UnsolvedMath"
+   ]
+  }
+ ]
+}

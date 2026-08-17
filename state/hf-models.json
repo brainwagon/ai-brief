@@ -1,0 +1,41 @@
+{
+ "source": "hf-models",
+ "snapshots": [
+  {
+   "date": "2026-08-17",
+   "recorded_at": "2026-08-17T18:04:38Z",
+   "identities": [
+    "Comfy-Org/MiniMax-H3",
+    "Comfy-Org/MiniMax-Music-3",
+    "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+    "Gazingstars123/Anima-2.9B",
+    "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF",
+    "Lightricks/LTX-2.5",
+    "LiquidAI/LFM2.5-2.6B",
+    "MiniMaxAI/MiniMax-H3",
+    "MiniMaxAI/MiniMax-Music3",
+    "Qwen/Qwen3.8-2.4T-A95B",
+    "Qwen/Qwen3.8-2.4T-A95B-FP8",
+    "Qwen/Qwen3.8-27B",
+    "Qwen/Qwen3.8-27B-FP8",
+    "deepseek-ai/DeepSeek-V4-Flash-0731",
+    "deepseek-ai/DeepSeek-V4-Pro-0813",
+    "dots-studio/dots3-note-prev",
+    "fal/MiniMax-H3-Realism-People-LoRA",
+    "froggeric/Qwen-Fixed-Chat-Templates",
+    "inclusionAI/Ling-3.0-tiny",
+    "larryvrh/MiniMax-H3-Turbo-Lora",
+    "lightx2v/Minimax-h3-Turbo",
+    "meta-models/Muse-Glimmer-30B",
+    "meta-models/Muse-Glimmer-30B-GGUF",
+    "moonshotai/Kimi-K3",
+    "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+    "orcarouter/Qwen3.8-27B-Uncensored-FP8",
+    "unsloth/Muse-Glimmer-30B-GGUF",
+    "unsloth/Qwen3.8-27B-GGUF",
+    "unsloth/Qwen3.8-27B-NVFP4"
+   ]
+  }
+ ]
+}

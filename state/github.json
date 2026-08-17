@@ -1,0 +1,41 @@
+{
+ "source": "github",
+ "snapshots": [
+  {
+   "date": "2026-08-17",
+   "recorded_at": "2026-08-17T18:04:38Z",
+   "identities": [
+    "0xsline/awesome-deepseek-harness",
+    "Anionex/dsh-vision-toolkit",
+    "Hisn00w/ASu-skills",
+    "Leutenegger/book-to-skill",
+    "NousResearch/Hermes-Bot-Mode",
+    "Small-tailqwq/dsh-deep-whale",
+    "ZSvirt/zsvirt",
+    "alchaincyf/deepseek-harness-orange-book",
+    "anywhere-labs/deepseek-harness-desktop",
+    "awesome-dsh-plugin/awesome-dsh-plugin",
+    "ccch1mneyyy/dsh-TUI",
+    "cordiverse/paper",
+    "dataelement/dsh-desktop",
+    "deepseek-ai/deepseek-harness",
+    "dmmulroy/anti-slop",
+    "dsh-market/dsh-market",
+    "elie222/rakazo",
+    "guillaumemeyer/watermarks-remover",
+    "milind-soni/OpenMausBot",
+    "shadcn-labs/pdfcn",
+    "shadcn-ui/chatbot-template",
+    "sohaibdevv/youtube-music",
+    "vercel-labs/eve-software-factory-template",
+    "xiaobright/dsh-anchored-standard",
+    "xoreaxeaxeax/skitter-creek-bath-salts",
+    "yetone/cumora",
+    "yjh051108/dsh-routing-suite",
+    "ysr666/dsh-vision-router",
+    "zhu1090093659/dsh-web-ui",
+    "zouyuxuan122/Deepseek-Harness-EAC"
+   ]
+  }
+ ]
+}

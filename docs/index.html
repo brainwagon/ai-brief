@@ -22,13 +22,10 @@
 </header>
 
 <main class="index">
-
-  <!-- There are genuinely no Editions yet: the generator has not run. This
-       block is what the Index shows in that state, and the generator replaces
-       it with the <ol class="editions"> below as soon as one Edition exists. -->
-  <p class="empty">No Editions yet. The generator has not had its first Run, so
-  there is nothing here to read. This page will list each day's Edition as soon
-  as one is published.</p>
+  <!-- The generator rewrites everything inside <main class="index"> on every
+       Run, preserving these comments and the hand-written page around them.
+       With no Editions it emits the <p class="empty"> block; with one or more
+       it emits the <ol class="editions"> described below instead. -->
 
   <!--
     THE MARKUP THE GENERATOR EMITS, once there is at least one Edition. This
@@ -72,6 +69,15 @@
     class and the <li> markup do not change. That decision is not due yet.
   -->
 
+  <ol class="editions">
+    <li>
+      <h2 class="edition-link">
+        <a href="2026-08-17.html"><time datetime="2026-08-17">Monday, 17 August 2026</time></a>
+      </h2>
+      <p class="teaser">Intern-S2-Mobius: Foundation Model with Decoupled Knowledge and Reasoning</p>
+      <p class="edition-summary">25 Items across 7 Sources · 4 Picks</p>
+    </li>
+  </ol>
 </main>
 
 <footer>
