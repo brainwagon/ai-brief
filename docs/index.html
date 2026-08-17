@@ -4,24 +4,84 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI Brief</title>
+<meta name="description" content="A daily reading queue: what is new in AI, gathered each morning and scored by a local model.">
 <link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://mvandewettering.com/ai-brief/">
 </head>
 <body>
-<header>
-  <h1>AI Brief</h1>
-  <p class="tagline">What is new in AI, gathered each morning and scored by a
-  local model.</p>
+
+<!-- This is the Index: the single undated page listing every Edition, and the
+     front door of the Brief. It is undated where an Edition is dated, so it
+     carries no <time> of its own. -->
+
+<header class="brief-header">
+  <p class="brief-title">AI Brief</p>
+  <h1 class="index-title">Every Edition, newest first</h1>
+  <p class="tagline">What is new in AI, gathered each morning from seven
+  Sources and scored by a model running on the machine under the desk.</p>
 </header>
 
-<main>
-  <h2>Editions</h2>
-  <!-- Each Edition gets one <li> here, newest first, once the generator runs. -->
-  <p class="empty">No Editions yet. The generator has not run.</p>
+<main class="index">
+
+  <!-- There are genuinely no Editions yet: the generator has not run. This
+       block is what the Index shows in that state, and the generator replaces
+       it with the <ol class="editions"> below as soon as one Edition exists. -->
+  <p class="empty">No Editions yet. The generator has not had its first Run, so
+  there is nothing here to read. This page will list each day's Edition as soon
+  as one is published.</p>
+
+  <!--
+    THE MARKUP THE GENERATOR EMITS, once there is at least one Edition. This
+    comment is the contract for the generator ticket (#8): emit exactly this
+    shape, replacing the <p class="empty"> above.
+
+    Editions are listed newest first. Each Edition's date is one string —
+    2026-08-17 — used in the filename, the URL, the <time datetime> and the
+    visible heading, so the three can never disagree.
+
+    <ol class="editions">
+      <li>
+        <h2 class="edition-link">
+          <a href="2026-08-17.html"><time datetime="2026-08-17">Monday, 17 August 2026</time></a>
+        </h2>
+        <p class="teaser">A 3B model trained only on synthetic dialogue matches
+        Llama-3-8B on MT-Bench.</p>
+        <p class="edition-summary">19 Items across 7 Sources · 4 Picks</p>
+      </li>
+      ...
+    </ol>
+
+    The teaser is the day's first Pick, given as that Item's own title — not a
+    fresh sentence, and never a truncation with an ellipsis. If the Edition has
+    no Picks, the teaser is the highest-scoring Item's title instead. If it has
+    neither, the <p class="teaser"> is omitted entirely rather than emitted
+    empty.
+
+    The summary line is the same census the Edition itself carries at the top,
+    shortened. When a Run had a hole, the clause reporting it is wrapped so it
+    is visible from the Index too, without the reader opening the Edition:
+
+        <p class="edition-summary">14 Items across 7 Sources · 4 Picks ·
+        <span class="hole">1 Source Unavailable</span></p>
+
+        <p class="edition-summary">19 Items across 7 Sources ·
+        <span class="hole">no Picks, 19 Items Unenriched</span></p>
+
+    Once the archive is long enough to need it, grouping by month means
+    wrapping runs of <li> in <section> with an <h2> of the month; the <ol>
+    class and the <li> markup do not change. That decision is not due yet.
+  -->
+
 </main>
 
 <footer>
-  <p>Under construction. The route is charted on the
-  <a href="https://github.com/brainwagon/ai-brief/issues?q=label%3Awayfinder%3Amap">wayfinder map</a>.</p>
+  <p>An Edition is published once and never revised. When a Source does not
+  answer, or the model cannot be reached, the Edition says so on its own page
+  rather than quietly getting shorter.</p>
+  <p>Source and route:
+  <a href="https://github.com/brainwagon/ai-brief">github.com/brainwagon/ai-brief</a>
+  · <a href="https://github.com/brainwagon/ai-brief/issues?q=label%3Awayfinder%3Amap">the map</a></p>
 </footer>
+
 </body>
 </html>

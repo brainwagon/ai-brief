@@ -1,28 +1,392 @@
-/* Placeholder styling, enough to prove Pages serves a real page.
-   The real design of the Edition and the Index is decided in issue #6, and
-   this file is expected to be replaced wholesale there. */
+/* AI Brief — the one stylesheet.
+ *
+ * Serves both page kinds: the Index (undated, lists every Edition) and an
+ * Edition (one day's page). Class names use the ubiquitous language from
+ * CONTEXT.md — brief, edition, index, source, item, pick, score, synopsis,
+ * unavailable, unenriched — so the generator's markup and this file can be
+ * read against each other without a translation step.
+ *
+ * Design intent: sober and text-forward. This is a reading queue, not a
+ * dashboard. Nothing here needs JavaScript; nothing here is a chart, a badge
+ * cloud, or a progress bar. One column, one typeface, generous line length.
+ *
+ * The palette and the type stack are deliberately lifted from
+ * brainwagon.org's stylesheet so the Brief reads as part of the same body of
+ * work. The layout is not lifted — the Brief has no nav, no cards, no
+ * containers, because it is one long page you read top to bottom.
+ */
+
+:root {
+  /* Shared with brainwagon.org, so the Brief looks like the same hand. */
+  --bg:            #ffffff;
+  --text:          #111827;
+  --meta:          #6b7280;
+  --rule:          #e5e7eb;
+  --link:          #2563eb;
+  --link-hover:    #1d4ed8;
+
+  /* The two holes. Deliberately NOT red: an Unavailable Source and an
+     Unenriched Item are honest states of a normal Edition, not errors. A
+     warm ochre reads as "noted" rather than "broken". */
+  --hole-text:     #78591c;
+  --hole-rule:     #c8a038;
+  --hole-bg:       #fdfaf1;
+
+  /* A Pick is marked, not decorated. One accent, used nowhere else. */
+  --pick-rule:     #111827;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:         #000000;
+    --text:       #f3f4f6;
+    --meta:       #9ca3af;
+    --rule:       #374151;
+    --link:       #60a5fa;
+    --link-hover: #93c5fd;
+
+    --hole-text:  #d8bd6a;
+    --hole-rule:  #8a6d20;
+    --hole-bg:    #14110a;
+
+    --pick-rule:  #f3f4f6;
+  }
+}
+
+/* ---------------------------------------------------------------- page --- */
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
 
 body {
-  max-width: 40rem;
   margin: 0 auto;
-  padding: 2rem 1rem;
-  font-family: Georgia, "Times New Roman", serif;
-  line-height: 1.5;
-  color: #1a1a1a;
-  background: #fdfdfb;
+  padding: 2rem 1.1rem 4rem;
+  max-width: 42rem;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
 }
 
-h1 { margin-bottom: 0.2rem; }
+a:link,
+a:visited { color: var(--link); text-decoration: none; }
 
-.tagline, .empty, footer { color: #555; }
+a:hover,
+a:active,
+a:focus { color: var(--link-hover); text-decoration: underline; }
 
-.empty { font-style: italic; }
+/* ------------------------------------------------------------ masthead --- */
+
+.brief-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--meta);
+}
+
+.brief-title a:link,
+.brief-title a:visited { color: inherit; }
+
+/* An Edition's date. It is the Edition's identity, so it is the <h1>. */
+.edition-date {
+  margin: 0.3rem 0 0;
+  font-size: 1.9rem;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.index-title {
+  margin: 0.3rem 0 0;
+  font-size: 1.9rem;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.tagline {
+  margin: 0.4rem 0 0;
+  color: var(--meta);
+}
+
+/* --------------------------------------------------- state of an Edition --- */
+
+/* The honest census, always present, even on a perfect day. Map note 10:
+   degradation is visible on the page. Putting the count here — rather than
+   only at the holes themselves — means a reader learns what is missing
+   before they start reading, and it costs one line on a good day. */
+.edition-state {
+  margin: 1.4rem 0 0;
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  font-size: 0.9rem;
+  color: var(--meta);
+}
+
+.edition-state p { margin: 0; }
+
+.edition-state p + p { margin-top: 0.3rem; }
+
+/* The clause of the census that reports a hole. Same sentence, marked. */
+.edition-state .hole { color: var(--hole-text); font-weight: 600; }
+
+/* ----------------------------------------------------------------- nav --- */
+
+.edition-nav,
+.brief-nav {
+  margin: 1.6rem 0 0;
+  font-size: 0.9rem;
+  color: var(--meta);
+}
+
+.edition-nav ul,
+.brief-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.2rem;
+}
+
+/* --------------------------------------------------------------- picks --- */
+
+/* Picks are a marking on Items in place, plus this list of anchors. The list
+   carries titles only — never a second copy of the Synopsis — so every Item
+   is rendered exactly once on the page and there is nothing to keep in sync.
+   If the second pass fails, this whole section is simply absent and the rest
+   of the Edition is unchanged. */
+.picks {
+  margin: 2.2rem 0 0;
+}
+
+.picks h2,
+.source h2 {
+  margin: 0 0 0.6rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--meta);
+}
+
+.picks ol {
+  margin: 0;
+  padding-left: 1.3rem;
+}
+
+.picks li { margin: 0.25rem 0; }
+
+.picks .pick-source {
+  color: var(--meta);
+  font-size: 0.85rem;
+}
+
+/* -------------------------------------------------------------- source --- */
+
+.source {
+  margin: 2.4rem 0 0;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--rule);
+}
+
+.source h2 .source-count {
+  float: right;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+/* --------------------------------------------------------------- items --- */
+
+.items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  margin: 0 0 1.5rem;
+}
+
+.item-title {
+  margin: 0;
+  font-size: 1.06rem;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+
+/* The Source's own title is the link text, always. The Synopsis is the model
+   speaking; the title is what you will see when you land on the other side of
+   the click, so replacing it would make every destination a surprise. */
+.item-title a { overflow-wrap: anywhere; }
+
+.synopsis {
+  margin: 0.3rem 0 0;
+}
+
+.item-meta {
+  margin: 0.3rem 0 0;
+  font-size: 0.85rem;
+  color: var(--meta);
+}
+
+.item-meta > * + *::before {
+  content: " · ";
+}
+
+.score {
+  font-variant-numeric: tabular-nums;
+}
+
+/* --------------------------------------------------- the two holes -------- */
+
+/* An Unenriched Item: present, linked, readable, but carrying its Source's
+   raw title and no Synopsis. The missing paragraph is left visibly missing —
+   there is no filler sentence and no apology, just the shape of the gap and a
+   word for it. The dashed rule is the same rule an Unavailable Source gets,
+   so the two holes look like one family. */
+.item--unenriched {
+  border-left: 3px dashed var(--hole-rule);
+  padding-left: 0.8rem;
+}
+
+.item--unenriched .item-meta .state { color: var(--hole-text); font-weight: 600; }
+
+/* A Pick keeps its Source group. It is marked here, in place, rather than
+   lifted out, so no Source section has an unexplained gap in it. */
+.item--pick {
+  border-left: 3px solid var(--pick-rule);
+  padding-left: 0.8rem;
+}
+
+.item--pick .item-title { font-size: 1.16rem; }
+
+.item-meta .pick-mark {
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+/* An Unavailable Source. The section still appears, in its usual place, in
+   its usual order — the reader is told what did not happen, rather than
+   shown a shorter page and left to wonder. */
+.source--unavailable {
+  color: var(--hole-text);
+}
+
+.source--unavailable h2 { color: var(--hole-text); }
+
+.unavailable-note {
+  margin: 0;
+  padding: 0.7rem 0.9rem;
+  border-left: 3px dashed var(--hole-rule);
+  background: var(--hole-bg);
+  font-size: 0.94rem;
+}
+
+.unavailable-note .reason {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  overflow-wrap: anywhere;
+}
+
+/* A thin Edition — few Items, but a real Edition all the same. It says so
+   rather than looking broken. */
+.thin-note {
+  margin: 2.2rem 0 0;
+  padding: 0.7rem 0.9rem;
+  border-left: 3px solid var(--rule);
+  color: var(--meta);
+  font-size: 0.94rem;
+}
+
+/* --------------------------------------------------------------- index --- */
+
+.editions {
+  margin: 1.6rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.editions > li {
+  margin: 0 0 1.3rem;
+  padding-bottom: 1.3rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.edition-link {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* The Index's teaser is the day's first Pick, quoted as its own title. On an
+   Edition with no Picks it is the highest-scoring Item instead, and on an
+   Edition with neither it is absent — the line just does not appear. */
+.teaser {
+  margin: 0.2rem 0 0;
+  color: var(--text);
+}
+
+.edition-summary {
+  margin: 0.2rem 0 0;
+  font-size: 0.85rem;
+  color: var(--meta);
+}
+
+.edition-summary .hole { color: var(--hole-text); }
+
+.empty {
+  margin: 1.6rem 0 0;
+  padding: 1rem 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  color: var(--meta);
+}
+
+/* -------------------------------------------------------------- footer --- */
 
 footer {
-  margin-top: 3rem;
+  margin: 3.5rem 0 0;
   padding-top: 1rem;
-  border-top: 1px solid #ddd;
-  font-size: 0.9rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.85rem;
+  color: var(--meta);
 }
 
-a { color: #005a9c; }
+footer p { margin: 0.3rem 0; }
+
+/* ------------------------------------------------- prototype label only --- */
+
+/* Used by prototype/example-edition.html, which is not served by Pages. It
+   exists so an unpublished design example can never be mistaken for a real
+   Edition. Nothing under docs/ should ever carry this class. */
+.example-banner {
+  margin: 0 0 2rem;
+  padding: 0.9rem 1rem;
+  border: 2px solid var(--hole-rule);
+  background: var(--hole-bg);
+  color: var(--hole-text);
+  font-size: 0.92rem;
+}
+
+.example-banner p { margin: 0.3rem 0; }
+
+.example-banner strong { text-transform: uppercase; letter-spacing: 0.06em; }
+
+/* --------------------------------------------------------------- phone --- */
+
+@media (max-width: 30rem) {
+  body { font-size: 16px; padding: 1.4rem 0.9rem 3rem; }
+  .edition-date, .index-title { font-size: 1.5rem; }
+  .source h2 .source-count { float: none; display: block; }
+}

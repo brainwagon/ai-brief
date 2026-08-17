@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design example — AI Brief Edition</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="../docs/style.css">
+</head>
+<body>
+
+<!-- ===================================================================
+     THIS FILE IS NOT AN EDITION AND IS NOT PUBLISHED.
+
+     It lives at prototype/ rather than docs/ precisely so GitHub Pages
+     never serves it. Every Item below is invented. It exists to settle
+     the design of an Edition, and to be the markup contract the
+     generator (#8) emits.
+     =================================================================== -->
+
+<div class="example-banner">
+  <p><strong>Design example — not a real Edition</strong></p>
+  <p>Every Item, Score, Synopsis and link on this page is invented. It is a
+  worked example used to settle the design of an Edition and to fix the markup
+  the generator emits. It is deliberately kept outside <code>docs/</code> so
+  that GitHub Pages cannot serve it, and no real Edition ever carries the
+  <code>example-banner</code> block.</p>
+</div>
+
+<!-- ============================== an Edition ============================== -->
+
+<header class="brief-header">
+  <p class="brief-title"><a href="../docs/index.html">AI Brief</a></p>
+  <!-- The date IS the Edition's identity, so it is the h1, and the same
+       string appears in the filename (2026-08-17.html), the URL, and here. -->
+  <h1 class="edition-date"><time datetime="2026-08-17">Monday, 17 August 2026</time></h1>
+
+  <!-- The census. Always present, even on a flawless day, so that a hole is a
+       different value in a familiar line rather than an alarm the reader has
+       never seen before. Map note 10 lives here. -->
+  <div class="edition-state">
+    <p>20 Items across 7 Sources. 4 Picks.</p>
+    <p>6 Sources answered; <span class="hole">1 Unavailable</span>.
+       17 Items carry a Score and a Synopsis;
+       <span class="hole">3 Unenriched</span>.</p>
+  </div>
+
+  <nav class="edition-nav" aria-label="Edition">
+    <ul>
+      <li><a href="../docs/index.html">All Editions</a></li>
+      <li><a href="2026-08-16.html">Previous: <time datetime="2026-08-16">16 August</time></a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="edition">
+
+  <!-- ------------------------------- Picks ------------------------------ -->
+  <!-- Picks are marked on Items in place, in their Source group. This section
+       is an anchor list of their titles only — never a second copy of a
+       Synopsis. See the note at the foot of this page for the reasoning. -->
+  <section class="picks" aria-labelledby="picks-heading">
+    <h2 id="picks-heading">Picks</h2>
+    <ol>
+      <li><a href="#item-arxiv-2508-11417">Synthetic-only instruction tuning closes the gap to Llama-3-8B at 3B parameters</a>
+        <span class="pick-source">arXiv</span></li>
+      <li><a href="#item-hn-45102277">The kernel scheduler change that made our p99 worse for four years</a>
+        <span class="pick-source">Hacker News</span></li>
+      <li><a href="#item-hf-model-qwen-coder">Qwen3-Coder-14B-Instruct</a>
+        <span class="pick-source">Hugging Face models</span></li>
+      <li><a href="#item-arxiv-2508-10933">A closed-form bound on retrieval error under context-window truncation</a>
+        <span class="pick-source">arXiv</span></li>
+    </ol>
+  </section>
+
+  <!-- ------------------------------- arXiv ------------------------------ -->
+  <section class="source" aria-labelledby="src-arxiv">
+    <h2 id="src-arxiv">arXiv <span class="source-count">5 Items</span></h2>
+    <ul class="items">
+
+      <li class="item item--pick" id="item-arxiv-2508-11417">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2508.11417">Synthetic-only instruction tuning closes the gap to Llama-3-8B at 3B parameters</a></h3>
+        <p class="synopsis">Trains a 3B base model on nothing but model-generated
+        dialogue and reports MT-Bench parity with Llama-3-8B-Instruct, with the
+        gain traced to diversity of instruction <em>form</em> rather than volume.
+        The ablation showing collapse past four generations of self-distillation
+        is the part worth reading.</p>
+        <p class="item-meta"><span class="pick-mark">Pick</span><span class="score">Score 5</span><span>cs.CL · submitted 16 Aug</span></p>
+      </li>
+
+      <li class="item item--pick" id="item-arxiv-2508-10933">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2508.10933">A closed-form bound on retrieval error under context-window truncation</a></h3>
+        <p class="synopsis">Gives an actual bound, not a benchmark, on how much
+        recall you lose when a retrieved passage is cut at the window edge, in
+        terms of chunk overlap and passage length. Short, and it makes chunking
+        an engineering decision with a number attached instead of folklore.</p>
+        <p class="item-meta"><span class="pick-mark">Pick</span><span class="score">Score 5</span><span>cs.CL, cs.LG · submitted 15 Aug</span></p>
+      </li>
+
+      <li class="item" id="item-arxiv-2508-11290">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2508.11290">Sparse autoencoders find fewer interpretable features than reported when the dictionary is held fixed</a></h3>
+        <p class="synopsis">A replication that keeps dictionary size constant
+        across model scales and finds most of the claimed feature growth was
+        capacity, not structure. Measured in tone, and does not claim the whole
+        line of work is wrong.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>cs.LG · submitted 16 Aug</span></p>
+      </li>
+
+      <li class="item" id="item-arxiv-2508-11055">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2508.11055">Depth-anything distillation for monocular metric depth on embedded GPUs</a></h3>
+        <p class="synopsis">Gets metric depth at 30 fps on a Jetson Orin Nano by
+        distilling into a 12M-parameter student, losing about 8% on absolute
+        relative error. Relevant if the camera is on a robot rather than a
+        server.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>cs.CV · submitted 15 Aug</span></p>
+      </li>
+
+      <li class="item" id="item-arxiv-2508-11702">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2508.11702">On the identifiability of mixture weights in variational posterior collapse</a></h3>
+        <p class="synopsis">Theory-first, and narrow: conditions under which the
+        mixture weights stay identifiable as the KL term dominates. Included
+        because the proof technique is reusable, not because the result is.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>stat.ML · submitted 16 Aug</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- --------------------------- Hacker News ---------------------------- -->
+  <section class="source" aria-labelledby="src-hn">
+    <h2 id="src-hn">Hacker News <span class="source-count">4 Items</span></h2>
+    <ul class="items">
+
+      <li class="item item--pick" id="item-hn-45102277">
+        <h3 class="item-title"><a href="https://news.ycombinator.com/item?id=45102277">The kernel scheduler change that made our p99 worse for four years</a></h3>
+        <p class="synopsis">A careful, unhurried postmortem of a latency
+        regression that survived three kernel upgrades because every benchmark
+        the team ran measured throughput. The bisect narrative is the good part;
+        the fix is one sysctl.</p>
+        <p class="item-meta"><span class="pick-mark">Pick</span><span class="score">Score 5</span><span>612 points · 208 comments</span></p>
+      </li>
+
+      <li class="item" id="item-hn-45099841">
+        <h3 class="item-title"><a href="https://news.ycombinator.com/item?id=45099841">Show HN: A single-file Python profiler that survives fork</a></h3>
+        <p class="synopsis">One file, stdlib only, and it keeps sampling across
+        <code>fork()</code> without the child losing its stack. Author is honest
+        about the platform limits — Linux only, and it lies under gVisor.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>318 points · 74 comments</span></p>
+      </li>
+
+      <li class="item" id="item-hn-45104510">
+        <h3 class="item-title"><a href="https://news.ycombinator.com/item?id=45104510">Ask HN: What broke when you moved inference off the cloud?</a></h3>
+        <p class="synopsis">Thread rather than article, and unusually free of
+        vendor noise: repeated reports that the hard part was not the GPU but
+        model versioning and the absence of a rollback story.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>241 points · 393 comments</span></p>
+      </li>
+
+      <li class="item" id="item-hn-45097002">
+        <h3 class="item-title"><a href="https://news.ycombinator.com/item?id=45097002">SQLite's new JSONB format, benchmarked against the old one</a></h3>
+        <p class="synopsis">Independent numbers rather than the release notes'.
+        Roughly 2× on reads for documents over a few kilobytes, and no
+        measurable difference below that.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>189 points · 51 comments</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- ---------------- GitHub Trending: an Unavailable Source ------------- -->
+  <!-- The section still appears, in its usual place and its usual order. The
+       reader is told what did not happen; they are not shown a shorter page
+       and left to work out that a Source is missing. -->
+  <section class="source source--unavailable" aria-labelledby="src-github">
+    <h2 id="src-github">GitHub Trending <span class="source-count">Unavailable</span></h2>
+    <p class="unavailable-note">This Source did not answer during today's Run,
+    so it contributed no Items to this Edition. Nothing else about the Edition
+    changed — the other six Sources were gathered normally and this page
+    published on schedule.
+    <span class="reason">3 attempts, 08:04–08:06 · last: HTTP 503 from
+    github.com/trending</span></p>
+  </section>
+
+  <!-- ----------------- dev.to: Items that are Unenriched ----------------- -->
+  <!-- The model was reachable for most of the Run but returned unparseable
+       output for this Source's Items. They still appear: an Item the reader
+       cannot judge is more useful than an Item they never see. Each carries
+       its Source's raw title, and the Synopsis paragraph is simply absent —
+       the shape of the gap is left visible rather than filled with an
+       apology. -->
+  <section class="source" aria-labelledby="src-devto">
+    <h2 id="src-devto">dev.to <span class="source-count">3 Items, all Unenriched</span></h2>
+    <ul class="items">
+
+      <li class="item item--unenriched" id="item-devto-2214870">
+        <h3 class="item-title"><a href="https://dev.to/example/i-replaced-my-ci-with-a-makefile-and-nothing-broke-2214870">I replaced my CI with a Makefile and nothing broke</a></h3>
+        <p class="item-meta"><span class="state">Unenriched</span><span>no Score</span><span>title as dev.to gave it</span></p>
+      </li>
+
+      <li class="item item--unenriched" id="item-devto-2215104">
+        <h3 class="item-title"><a href="https://dev.to/example/embedding-search-without-a-vector-database-2215104">Embedding search without a vector database</a></h3>
+        <p class="item-meta"><span class="state">Unenriched</span><span>no Score</span><span>title as dev.to gave it</span></p>
+      </li>
+
+      <li class="item item--unenriched" id="item-devto-2215390">
+        <h3 class="item-title"><a href="https://dev.to/example/a-year-of-running-llms-on-a-single-3090-2215390">A year of running LLMs on a single 3090</a></h3>
+        <p class="item-meta"><span class="state">Unenriched</span><span>no Score</span><span>title as dev.to gave it</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- ------------------------ Hugging Face models ------------------------ -->
+  <section class="source" aria-labelledby="src-hf-models">
+    <h2 id="src-hf-models">Hugging Face models <span class="source-count">3 Items</span></h2>
+    <ul class="items">
+
+      <li class="item item--pick" id="item-hf-model-qwen-coder">
+        <h3 class="item-title"><a href="https://huggingface.co/Qwen/Qwen3-Coder-14B-Instruct">Qwen3-Coder-14B-Instruct</a></h3>
+        <p class="synopsis">A 14B coding model with a 256k window and, unusually,
+        published fill-in-the-middle behaviour that matches the training format.
+        Sized to fit a 24 GB card at 4-bit, which is the whole reason it is
+        here.</p>
+        <p class="item-meta"><span class="pick-mark">Pick</span><span class="score">Score 5</span><span>new to trending · 41k downloads this week</span></p>
+      </li>
+
+      <li class="item" id="item-hf-model-parakeet">
+        <h3 class="item-title"><a href="https://huggingface.co/nvidia/parakeet-tdt-1.1b-v3">nvidia/parakeet-tdt-1.1b-v3</a></h3>
+        <p class="synopsis">Streaming ASR with word-level timestamps that are
+        actually aligned, and a permissive licence this time. Faster than
+        real time on CPU for a single stream.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>new to trending</span></p>
+      </li>
+
+      <li class="item" id="item-hf-model-smolvlm">
+        <h3 class="item-title"><a href="https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct-v2">SmolVLM-500M-Instruct-v2</a></h3>
+        <p class="synopsis">Half a billion parameters and it reads a screenshot
+        well enough to be useful for automation. Not a general vision model, and
+        the card says so plainly.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>new to trending</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- ----------------------- Hugging Face datasets ----------------------- -->
+  <section class="source" aria-labelledby="src-hf-datasets">
+    <h2 id="src-hf-datasets">Hugging Face datasets <span class="source-count">2 Items</span></h2>
+    <ul class="items">
+
+      <li class="item" id="item-hf-dataset-shellcorpus">
+        <h3 class="item-title"><a href="https://huggingface.co/datasets/example/shell-corpus-verified">example/shell-corpus-verified</a></h3>
+        <p class="synopsis">1.2M shell one-liners, each with the output it
+        actually produced in a container, so the labels are executions rather
+        than opinions. Small enough to fine-tune on locally.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>new to trending</span></p>
+      </li>
+
+      <li class="item" id="item-hf-dataset-arxiv-figs">
+        <h3 class="item-title"><a href="https://huggingface.co/datasets/example/arxiv-figures-2026">example/arxiv-figures-2026</a></h3>
+        <p class="synopsis">Every figure from a year of arXiv, paired with its
+        caption and the paragraph that cites it. Licensing is the usual arXiv
+        patchwork and the card does not pretend otherwise.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>new to trending</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- ------------------------ Hugging Face papers ------------------------ -->
+  <!-- Papers already seen on arXiv today are deduplicated by arXiv id, with
+       the Hugging Face copy winning because it carries upvotes. -->
+  <section class="source" aria-labelledby="src-hf-papers">
+    <h2 id="src-hf-papers">Hugging Face papers <span class="source-count">3 Items</span></h2>
+    <ul class="items">
+
+      <li class="item" id="item-hf-paper-2508-11866">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2508.11866">Attention sinks are a byproduct of softmax, not of training</a></h3>
+        <p class="synopsis">Argues the sink token is forced by softmax needing
+        somewhere to put probability mass, and shows it disappears with a
+        normalisation that permits abstention. Clean result with an obvious
+        implication for quantisation.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>184 upvotes · arXiv 2508.11866</span></p>
+      </li>
+
+      <li class="item" id="item-hf-paper-2508-11512">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2508.11512">Small models can be good judges if the rubric is short</a></h3>
+        <p class="synopsis">Judge agreement with humans holds up at 7B as long
+        as the scoring rubric fits in a few hundred tokens; longer rubrics
+        collapse it. Directly relevant to anything scoring items at home.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>121 upvotes · arXiv 2508.11512</span></p>
+      </li>
+
+      <li class="item" id="item-hf-paper-2508-10788">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2508.10788">A survey of speculative decoding, one year on</a></h3>
+        <p class="synopsis">Survey, so no new result, but it is the first one
+        that puts the tree-based and draft-model families in the same notation.
+        Useful as a map, not as reading.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>76 upvotes · arXiv 2508.10788</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>An Edition is published once and never revised.</p>
+  <p><a href="../docs/index.html">All Editions</a></p>
+</footer>
+
+<!-- =====================================================================
+     A SECOND WORKED EXAMPLE: the bad day.
+
+     Everything below is the same design under total Enrichment failure and
+     a thin gather — Ollama unreachable for the whole Run, two Sources
+     Unavailable, five Items in all. It is here to prove the design does not
+     need a separate error page, and that a thin Edition looks deliberate
+     rather than broken.
+     ===================================================================== -->
+
+<hr style="margin:5rem 0 3rem">
+
+<header class="brief-header">
+  <p class="brief-title">AI Brief</p>
+  <h1 class="edition-date"><time datetime="2026-08-18">Tuesday, 18 August 2026</time></h1>
+
+  <div class="edition-state">
+    <p>5 Items across 7 Sources. <span class="hole">No Picks.</span></p>
+    <p>5 Sources answered; <span class="hole">2 Unavailable</span>.
+       <span class="hole">All 5 Items Unenriched</span> — the model was not
+       reachable during this Run, so nothing today carries a Score or a
+       Synopsis and nothing could be picked.</p>
+  </div>
+
+  <nav class="edition-nav" aria-label="Edition">
+    <ul>
+      <li><a href="../docs/index.html">All Editions</a></li>
+      <li><a href="2026-08-17.html">Previous: <time datetime="2026-08-17">17 August</time></a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="edition">
+
+  <!-- A thin day says it is thin. It does not pad, and it does not apologise
+       twice — the census above already gave the numbers. -->
+  <p class="thin-note">A quiet day. Five Items is a real result, not a
+  truncation: the Sources that answered had little that was new, and the two
+  that did not are named below.</p>
+
+  <section class="source" aria-labelledby="src2-arxiv">
+    <h2 id="src2-arxiv">arXiv <span class="source-count">3 Items, all Unenriched</span></h2>
+    <ul class="items">
+      <li class="item item--unenriched">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2508.12044">Scaling laws for mixture-of-experts routers under expert dropout</a></h3>
+        <p class="item-meta"><span class="state">Unenriched</span><span>no Score</span><span>cs.LG · title as arXiv gave it</span></p>
+      </li>
+      <li class="item item--unenriched">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2508.12190">Provable convergence of decentralised SGD with stale gradients</a></h3>
+        <p class="item-meta"><span class="state">Unenriched</span><span>no Score</span><span>stat.ML · title as arXiv gave it</span></p>
+      </li>
+      <li class="item item--unenriched">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2508.12317">A benchmark for long-horizon tool use in embodied agents</a></h3>
+        <p class="item-meta"><span class="state">Unenriched</span><span>no Score</span><span>cs.AI · title as arXiv gave it</span></p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src2-hn">
+    <h2 id="src2-hn">Hacker News <span class="source-count">2 Items, all Unenriched</span></h2>
+    <ul class="items">
+      <li class="item item--unenriched">
+        <h3 class="item-title"><a href="https://news.ycombinator.com/item?id=45111908">Writing a toy JIT for a stack VM in 400 lines of C</a></h3>
+        <p class="item-meta"><span class="state">Unenriched</span><span>no Score</span><span>287 points · title as Hacker News gave it</span></p>
+      </li>
+      <li class="item item--unenriched">
+        <h3 class="item-title"><a href="https://news.ycombinator.com/item?id=45113440">Postgres 19 drops the vacuum freeze cliff</a></h3>
+        <p class="item-meta"><span class="state">Unenriched</span><span>no Score</span><span>203 points · title as Hacker News gave it</span></p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="source source--unavailable" aria-labelledby="src2-github">
+    <h2 id="src2-github">GitHub Trending <span class="source-count">Unavailable</span></h2>
+    <p class="unavailable-note">This Source did not answer during today's Run,
+    so it contributed no Items to this Edition.
+    <span class="reason">3 attempts, 08:04–08:06 · last: HTTP 503 from
+    github.com/trending</span></p>
+  </section>
+
+  <section class="source" aria-labelledby="src2-devto">
+    <h2 id="src2-devto">dev.to <span class="source-count">no Items</span></h2>
+    <!-- Answered, but had nothing new. That is different from Unavailable and
+         is said differently: no ochre, no dashed rule, no reason line. -->
+    <p class="thin-note">Answered, with nothing new since yesterday's
+    Snapshot.</p>
+  </section>
+
+  <section class="source source--unavailable" aria-labelledby="src2-hfm">
+    <h2 id="src2-hfm">Hugging Face models <span class="source-count">Unavailable</span></h2>
+    <p class="unavailable-note">This Source did not answer during today's Run,
+    so it contributed no Items to this Edition.
+    <span class="reason">3 attempts, 08:07–08:09 · last: connection timed out
+    after 20s</span></p>
+  </section>
+
+  <section class="source" aria-labelledby="src2-hfd">
+    <h2 id="src2-hfd">Hugging Face datasets <span class="source-count">no Items</span></h2>
+    <p class="thin-note">Answered, with nothing new since yesterday's
+    Snapshot.</p>
+  </section>
+
+  <section class="source" aria-labelledby="src2-hfp">
+    <h2 id="src2-hfp">Hugging Face papers <span class="source-count">no Items</span></h2>
+    <p class="thin-note">Answered, with nothing new since yesterday's
+    Snapshot.</p>
+  </section>
+
+</main>
+
+<!-- =====================================================================
+     DESIGN NOTES — the decisions this example was built to settle.
+     Kept in the file so the generator ticket (#8) reads them alongside the
+     markup they explain.
+
+     1. GROUPED BY SOURCE, NOT BY SCORE. The per-Source ceiling of 8 already
+        makes Source the unit the day is shaped by, and a reader skimming a
+        reading queue thinks "what did arXiv have" far more often than "what
+        scored a 4". Within a Source, Items are ordered by Score descending.
+        Sorting the whole day by Score would also make an Unavailable Source
+        invisible, which map note 10 forbids.
+
+     2. PICKS ARE A MARKING IN PLACE, PLUS A LIST OF ANCHORS AT THE TOP.
+        Every Item is rendered exactly once, in its Source group. A Pick gets
+        a rule, a slightly larger title, and the word Pick in its meta line.
+        The Picks section at the top carries titles and anchor links only.
+        Reasoning: lifting Picks into their own full section either duplicates
+        the Synopsis (two copies to keep in sync, and a reader who scrolls
+        reads the same paragraph twice) or leaves unexplained gaps in the
+        Source groups. The anchor list gets the reader who only wants the
+        standouts to them in one tap, costs three lines, and — the deciding
+        point — degrades cleanly: if the second pass fails, the section is
+        simply absent and no Item's rendering changes. The bad-day example
+        above shows exactly that.
+
+     3. THE SOURCE'S TITLE IS THE LINK; THE SYNOPSIS SITS UNDER IT. The title
+        is what the reader will see on the other side of the click, so
+        replacing it with model prose would make every destination a surprise,
+        and would make a Synopsis failure change the link text. Keeping them
+        in separate elements is also what makes an Unenriched Item degrade to
+        exactly the same layout minus one paragraph.
+
+     4. THE WHOLE SYNOPSIS IS ON THE PAGE. One to three sentences, never
+        truncated, never behind a "more" control — there is no JavaScript to
+        expand one, and the Brief's entire job is to let the reader decide
+        whether to click without clicking.
+
+     5. THE CENSUS IS ALWAYS PRESENT. A good day says "7 Sources answered; all
+        20 Items carry a Score and a Synopsis". A bad day changes the numbers
+        in a line the reader already knows how to read, instead of introducing
+        an alarm they have never seen.
+
+     6. THE HOLES ARE OCHRE AND DASHED, NEVER RED. An Unavailable Source and
+        an Unenriched Item are normal states of a working system, not errors.
+        They share one visual family — dashed left rule, warm ochre — so that
+        "something is honestly missing here" is a single learned signal.
+
+     7. NOTHING NEW IS NOT THE SAME AS UNAVAILABLE. A Source that answered and
+        had nothing gets plain grey prose. Only a Source that failed to answer
+        gets the ochre treatment and a machine-readable reason line.
+     ===================================================================== -->
+
+</body>
+</html>
