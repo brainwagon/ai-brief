@@ -6,3 +6,9 @@ __pycache__/
 # state/ is deliberately NOT ignored — the Snapshots are committed on purpose,
 # because a Source with no timestamps is only readable as a diff against
 # yesterday. See map note 5.
+
+# Agent and tool scratch. .claude/ in particular holds nested git worktrees,
+# which must never be committed into the repo they are checked out from.
+.claude/
+.playwright-mcp/
+*.png
