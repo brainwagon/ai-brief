@@ -47,17 +47,22 @@ if [ -z "$(git status --porcelain -- docs state)" ]; then
     exit 0
 fi
 
-TODAY="$(date -u +%Y-%m-%d)"
-
 git add -- docs state || exit 2
+
+# Name the commit after the Edition that was actually written, not after the
+# clock — a Run given an explicit date must not commit under today's.
+EDITION="$(git diff --cached --name-only -- docs \
+           | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}' | sort -u | tail -1)"
+EDITION="${EDITION:-$(date -u +%Y-%m-%d)}"
+
 git -c user.name="ai-brief" \
     -c user.email="ai-brief@mvandewettering.com" \
-    commit -q -m "Edition ${TODAY}" || exit 2
+    commit -q -m "Edition ${EDITION}" || exit 2
 
 # Pull first: the repo is edited by hand as well as by the timer, so a push
 # that has not rebased is the ordinary failure, not an exceptional one.
 git pull --rebase --quiet origin main || exit 2
 git push --quiet origin HEAD:main || exit 2
 
-echo "publish.sh: Edition ${TODAY} published"
+echo "publish.sh: Edition ${EDITION} published"
 exit 0
