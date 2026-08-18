@@ -5,6 +5,15 @@
   "picks": 4,
   "unavailable": 0,
   "unenriched": 0,
+  "date": "2026-08-18",
+  "teaser": "DumpsterCluster: From Dumpster Diving to Serving LLaMA-70B on $60 GPUs"
+ },
+ {
+  "items": 25,
+  "sources": 7,
+  "picks": 4,
+  "unavailable": 0,
+  "unenriched": 0,
   "date": "2026-08-17",
   "teaser": "Intern-S2-Mobius: Foundation Model with Decoupled Knowledge and Reasoning"
  }
