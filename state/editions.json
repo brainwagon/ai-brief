@@ -5,6 +5,15 @@
   "picks": 4,
   "unavailable": 0,
   "unenriched": 0,
+  "date": "2026-08-19",
+  "teaser": "SigmanticAI/apex-inference-chip"
+ },
+ {
+  "items": 25,
+  "sources": 7,
+  "picks": 4,
+  "unavailable": 0,
+  "unenriched": 0,
   "date": "2026-08-18",
   "teaser": "DumpsterCluster: From Dumpster Diving to Serving LLaMA-70B on $60 GPUs"
  },
