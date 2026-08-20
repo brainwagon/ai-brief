@@ -108,6 +108,42 @@
     "unsloth/Qwen3.8-27B-GGUF",
     "unsloth/Qwen3.8-27B-NVFP4"
    ]
+  },
+  {
+   "date": "2026-08-20",
+   "recorded_at": "2026-08-20T13:09:32Z",
+   "identities": [
+    "0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF",
+    "Blackfrost-AI/Qwen3.8-27B-ABLITERATED-GGUF",
+    "Comfy-Org/MiniMax-H3",
+    "Comfy-Org/MiniMax-Music-3",
+    "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+    "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF",
+    "Lightricks/LTX-2.5",
+    "MiniMaxAI/MiniMax-H3",
+    "MiniMaxAI/MiniMax-Music3",
+    "Qwen/Qwen3.8-2.4T-A95B",
+    "Qwen/Qwen3.8-27B",
+    "Qwen/Qwen3.8-27B-FP8",
+    "TenStrip/10Eros-Max",
+    "deepseek-ai/DeepSeek-V4-Flash-0731",
+    "deepseek-ai/DeepSeek-V4-Pro-0813",
+    "dots-studio/dots3-note-prev",
+    "empero-ai/Qwen3.8-27B-Ridge-GGUF",
+    "froggeric/Qwen-Fixed-Chat-Templates",
+    "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF",
+    "lightx2v/Minimax-h3-Turbo",
+    "meta-models/Muse-Glimmer-30B",
+    "moonshotai/Kimi-K3",
+    "orcarouter/Qwen3.8-27B-Uncensored-FP8",
+    "orcarouter/Qwen3.8-27B-Uncensored-GGUF",
+    "orcarouter/Qwen3.8-27B-Uncensored-MLX",
+    "ornith-ai/Ornith-1.5-35B-A3B",
+    "unsloth/Qwen3.8-27B-GGUF",
+    "unsloth/Qwen3.8-27B-NVFP4"
+   ]
   }
  ]
 }

@@ -108,6 +108,42 @@
     "ysr666/dsh-vision-router",
     "zouyuxuan122/Deepseek-Harness-EAC"
    ]
+  },
+  {
+   "date": "2026-08-20",
+   "recorded_at": "2026-08-20T13:09:32Z",
+   "identities": [
+    "Alain00/blobatar",
+    "CopilotKit/openbot",
+    "DenisSergeevitch/desktop-fly",
+    "Leutenegger/watermarks-remover",
+    "Nervercc/gpt_nerver",
+    "SheberDavid/v4-flash-godmode-opencode-go",
+    "SigmanticAI/apex-inference-chip",
+    "Spielewoy/autoprompt-skill",
+    "Tiger3807861189/DeepSeek-V4-J-Space-Capability-Realization-Report",
+    "ZSvirt/zsvirt",
+    "alchaincyf/deepseek-harness-orange-book",
+    "bawadou/ai-data-extractor",
+    "bowenliang123/dsh-context",
+    "browser-use/macos-harness",
+    "cinderline/northcinder",
+    "dsh-market/dsh-market",
+    "flaqai/backlink_skills",
+    "fufankeji/deepseek-harness-studio",
+    "hairyf/deepseek-harness-desktop",
+    "jaredrhod/barehands",
+    "jeremy-prt/bloub",
+    "missuo/herdrm",
+    "pg83/solo",
+    "s1dashu/ip-as-logo-skill",
+    "vvxw/deploy-vercel",
+    "wang2122/sprix-sage-router",
+    "xiaobright/dsh-anchored-standard",
+    "yetone/cumora",
+    "yjh051108/dsh-routing-suite",
+    "zouyuxuan122/Deepseek-Harness-EAC"
+   ]
   }
  ]
 }
