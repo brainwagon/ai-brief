@@ -144,6 +144,42 @@
     "yjh051108/dsh-routing-suite",
     "zouyuxuan122/Deepseek-Harness-EAC"
    ]
+  },
+  {
+   "date": "2026-08-22",
+   "recorded_at": "2026-08-22T13:09:07Z",
+   "identities": [
+    "Ariescar/anyCreature",
+    "CopilotKit/OpenBot",
+    "DenisSergeevitch/desktop-fly",
+    "Leutenegger/claudish-to-english",
+    "Leutenegger/coldcard-airgap",
+    "Leutenegger/vanity-eth",
+    "Leutenegger/watermarks-remover",
+    "MengTo/sylva",
+    "MengTo/threeui",
+    "MeteorNOX/DeepSeek-Balance-Whale-Widget",
+    "PentagonConure42/youtube-downloader-zen",
+    "SigmanticAI/apex-inference-chip",
+    "Spielewoy/autoprompt-skill",
+    "Tiger3807861189/DeepSeek-V4-J-Space-Capability-Realization-Report",
+    "Yuzzyuk/marketing-os",
+    "almendili/skills",
+    "amirh00sain/SpiderPanel",
+    "b-nnett/codex-subscription-router",
+    "bawadou/ai-data-extractor",
+    "browser-use/macos-harness",
+    "cinderline/northcinder",
+    "flaqai/backlink_skills",
+    "iAmCorey/Wake",
+    "lanicer/cve-2026-41940-PoC",
+    "missuo/herdrm",
+    "s1dashu/ip-as-logo-skill",
+    "vvxw/deploy-vercel",
+    "wang2122/sprix-sage-router",
+    "xdreizein666/getcontact-cli",
+    "yetone/cumora"
+   ]
   }
  ]
 }

@@ -144,6 +144,42 @@
     "saidutta69/fable-5-premium",
     "ulamai/UnsolvedMath"
    ]
+  },
+  {
+   "date": "2026-08-22",
+   "recorded_at": "2026-08-22T13:09:07Z",
+   "identities": [
+    "Anthropic/claude-protein-binder-design",
+    "Anthropic/hh-rlhf",
+    "Apexintelligence-AI/ASI-Bench-seed31415",
+    "Apexintelligence-AI/ASI-Bench-seed42",
+    "BytedTsinghua-SIA/CUDA-Agent-Ops-6K",
+    "CaptiveDreamer/CaraArchive",
+    "ChartGalaxy/ChartGalaxy",
+    "FlyRank/internship-warehouse",
+    "HuggingFaceCode/stack-v3-train",
+    "HuggingFaceFW/fineweb",
+    "LightwheelAI/EgoDemo",
+    "LightwheelAI/EgoStandard",
+    "MatrAIx2026/MatrAIx_Persona_1M",
+    "biglam/british-library-book-images",
+    "cais/hle",
+    "datapointai/text-2-image-human-preferences-2m",
+    "fka/prompts.chat",
+    "malcolmrey/various",
+    "markov-ai/cad-1000-hours",
+    "mvaccargiu/gitskills",
+    "noitomrobotics/HiPHI",
+    "nvidia/Cosmos3-DROID",
+    "nvidia/Nemotron-RL-Agentic-Terminal-Pivot-v1",
+    "nvidia/Nemotron-SFT-SWE-v3.5",
+    "openbmb/Ultra-FineWeb-L1",
+    "ostris/minimax_h3_1k",
+    "r0b0tlab/qwen3.8-max-distillation-50k",
+    "r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation",
+    "saidutta69/fable-5-premium",
+    "ulamai/UnsolvedMath"
+   ]
   }
  ]
 }
