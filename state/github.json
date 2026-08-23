@@ -183,11 +183,12 @@
   },
   {
    "date": "2026-08-23",
-   "recorded_at": "2026-08-23T13:04:23Z",
+   "recorded_at": "2026-08-23T17:56:41Z",
    "identities": [
     "Ariescar/anyCreature",
     "CopilotKit/OpenBot",
     "DenisSergeevitch/desktop-fly",
+    "Forsy-AI/biosecurity-agent",
     "LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler",
     "MengTo/sylva",
     "MengTo/threeui",
@@ -209,7 +210,6 @@
     "lanicer/cve-2026-41940-PoC",
     "missuo/herdrm",
     "nateherkai/scroll-craft",
-    "op7418/pilot-harness",
     "s1dashu/ip-as-logo-skill",
     "vvxw/deploy-vercel",
     "wang2122/sprix-sage-router",

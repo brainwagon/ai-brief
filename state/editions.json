@@ -1,11 +1,12 @@
 [
  {
-  "items": 25,
+  "items": 24,
   "sources": 7,
-  "picks": 0,
+  "picks": 4,
   "unavailable": 0,
-  "unenriched": 25,
-  "date": "2026-08-23"
+  "unenriched": 0,
+  "date": "2026-08-23",
+  "teaser": "Brilliant work by Bhagya Prasad on DEV: a 100% offline, headless TFLite crash detection engine for Flutter. Zero latency, purely on-device Edge AI using raw sensor telemetry in RAM!! #Flutter"
  },
  {
   "items": 25,

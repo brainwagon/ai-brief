@@ -183,7 +183,7 @@
   },
   {
    "date": "2026-08-23",
-   "recorded_at": "2026-08-23T13:04:23Z",
+   "recorded_at": "2026-08-23T17:56:41Z",
    "identities": [
     "Anthropic/claude-protein-binder-design",
     "Anthropic/hh-rlhf",
@@ -208,7 +208,7 @@
     "mvaccargiu/gitskills",
     "noitomrobotics/HiPHI",
     "nvidia/Cosmos3-DROID",
-    "nvidia/Nemotron-SFT-SWE-v3.5",
+    "nvidia/Nemotron-RL-Agentic-Terminal-Pivot-v1",
     "openbmb/Ultra-FineWeb-L1",
     "ostris/minimax_h3_1k",
     "r0b0tlab/qwen3.8-max-distillation-50k",
