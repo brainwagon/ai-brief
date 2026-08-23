@@ -20,21 +20,56 @@ PICK_PROMPT_FILE = REPO_ROOT / "pick-prompt.md"
 # One string for the whole generator, so the Brief identifies itself honestly.
 # arXiv rejects a request without one and GitHub's API requires one; sending it
 # everywhere costs nothing. Pinned on #4.
-USER_AGENT = "ai-brief/1.0 (+https://mvandewettering.com/ai-brief/)"
+SITE_URL = "https://mvandewettering.com/ai-brief/"
+USER_AGENT = f"ai-brief/1.0 (+{SITE_URL})"
 
 # Every Source gets the same transport budget. #4's Unavailable rule turns a
 # timeout into a hole on the page rather than a crash.
 HTTP_TIMEOUT = 20.0
 
 # --- Enrichment (#5) -------------------------------------------------------
+#
+# The model is a free one hosted on OpenRouter, reached with an OpenAI-shaped
+# chat/completions call. It replaced a local Ollama, which stopped a Run dead
+# whenever the daemon was not up on this machine.
 
-OLLAMA_HOST = "http://localhost:11434"
-OLLAMA_MODEL = "gemma4:e4b"
-# A dead Ollama HANGS under WSL2 rather than refusing, so the pre-flight is
-# mandatory and its timeout is short. Without it a 300-Item Run blocks for
-# hours. See #5.
-OLLAMA_PREFLIGHT_TIMEOUT = 3.0
-OLLAMA_ITEM_TIMEOUT = 30.0
+OPENROUTER_BASE = "https://openrouter.ai/api/v1"
+OPENROUTER_KEY_ENV = "OPENROUTER_API_KEY"
+
+# Free models only, and all three honour a strict json_schema response format —
+# which is what keeps a Score in range without a validator. The first is the
+# fastest measured on this task; the others exist because a free model is
+# rate-limited upstream without warning, and OpenRouter walks the list itself.
+OPENROUTER_MODEL = "nvidia/nemotron-nano-9b-v2:free"
+OPENROUTER_FALLBACK_MODELS = [
+    "nvidia/nemotron-3-super-120b-a12b:free",
+    "z-ai/glm-5.2:free",
+]
+
+OPENROUTER_PREFLIGHT_TIMEOUT = 10.0
+OPENROUTER_CONNECT_TIMEOUT = 10.0
+# A call that is going to answer answers in 7-13s. What a free model also does,
+# several times in a Run, is accept the request and then sit on it for minutes.
+# So the timeout is a few times a normal call and nowhere near the patience the
+# provider would like: abandoning a stalled draw and taking another is far
+# faster than waiting one out, and this is the single number that decides how
+# long a Run takes.
+OPENROUTER_ITEM_TIMEOUT = 45.0
+# The Pick pass is ONE call carrying a dozen Items, so it is both slower to
+# generate and worth waiting for: an Item that stalls costs one Synopsis out of
+# hundreds, and the Pick pass stalling costs the whole day's Picks. Impatience
+# there is what left an Edition with no Picks during #12's testing.
+OPENROUTER_PICK_TIMEOUT = 180.0
+OPENROUTER_ATTEMPTS = 3     # per call, transient faults only
+OPENROUTER_BACKOFF = 3.0    # seconds, multiplied by the attempt number
+
+# Unlike the old local model, this call is latency-bound rather than
+# compute-bound, so requests in flight together are what turns a 300-Item Run
+# from an hour into minutes. Not as high as it could be, though: a free model
+# queues rather than refusing, and past about four in flight the extra requests
+# only sit in the provider's queue until the deadline above cancels them, which
+# reads as throughput and is really just churn.
+OPENROUTER_CONCURRENCY = 4
 
 # --- Selection (#7) --------------------------------------------------------
 

@@ -14,8 +14,9 @@ The rules, settled on #7:
 One rule this ticket had to settle, because no earlier ticket reached it:
 **an Unenriched Item has no Score, so the cutoff cannot judge it.** It is
 admitted in its Source's pre-Enrichment rank order, subject to the same ceiling
-of 8, and sorts below every scored Item for trimming. Without that, an Ollama
-outage would put several hundred raw titles on the page instead of an Edition.
+of 8, and sorts below every scored Item for trimming. Without that, an outage at
+the model would put several hundred raw titles on the page instead of an
+Edition.
 """
 
 from . import config

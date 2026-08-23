@@ -9,11 +9,8 @@ section and not one Item's rendering changes (#6). That is the property that
 made the anchor-list design worth having, so nothing here may raise.
 """
 
-import json
-
-import requests
-
 from . import config
+from .model import Client
 
 MAX_PICKS = 4
 SHORTLIST_MAX = 12
@@ -49,7 +46,7 @@ def shortlist(items):
     return high[:SHORTLIST_MAX]
 
 
-def choose(items, log, host=None, model=None):
+def choose(items, log, base=None, model=None):
     """Mark the Picks in place. Returns the Picks in order, or an empty list."""
     candidates = shortlist(items)
     if len(candidates) < 2:
@@ -76,38 +73,22 @@ def choose(items, log, host=None, model=None):
         )
     user = "\n".join(lines)
 
-    payload = {
-        "model": model or config.OLLAMA_MODEL,
-        "messages": [
-            {"role": "system", "content": system},
-            {"role": "user", "content": user},
-        ],
-        "format": SCHEMA,
-        "think": False,
-        "stream": False,
-        "keep_alive": "5m",
-    }
-
     try:
-        response = requests.post(
-            (host or config.OLLAMA_HOST) + "/api/chat",
-            json=payload,
-            timeout=config.OLLAMA_ITEM_TIMEOUT,
+        parsed = Client(
+            log, base=base, model=model,
+            timeout=config.OPENROUTER_PICK_TIMEOUT,
+        ).complete(
+            system, user, SCHEMA, "picks", "the Pick pass"
         )
-        if response.status_code != 200:
-            log(f"  Picks: HTTP {response.status_code}; no Picks")
-            return []
-        body = response.json()
-        if body.get("done_reason") != "stop":
-            log(f"  Picks: done_reason={body.get('done_reason')!r}; no Picks")
-            return []
-        parsed = json.loads((body.get("message") or {}).get("content") or "")
-        numbers = parsed.get("picks")
-        if not isinstance(numbers, list):
-            log("  Picks: `picks` was not a list; no Picks")
-            return []
     except Exception as exc:  # noqa: BLE001 - Picks degrade to nothing
         log(f"  Picks: {type(exc).__name__}: {exc}; no Picks")
+        return []
+    if parsed is None:
+        log("  Picks: the model returned nothing usable; no Picks")
+        return []
+    numbers = parsed.get("picks")
+    if not isinstance(numbers, list):
+        log("  Picks: `picks` was not a list; no Picks")
         return []
 
     picks = []

@@ -2,7 +2,8 @@
 
 A daily Brief of what is new in AI, gathered from seven Sources — arXiv, Hacker
 News, GitHub New Repos, dev.to, and Hugging Face's models, datasets and papers —
-scored and summarised by a local model, and published to GitHub Pages at
+scored and summarised by a free model hosted on OpenRouter, and published to
+GitHub Pages at
 <https://mvandewettering.com/ai-brief/>.
 
 The vocabulary is in [`CONTEXT.md`](CONTEXT.md) and the route is charted on the
@@ -26,9 +27,22 @@ To Generate without Publishing — the generator never touches git:
     .venv/bin/python -m generator.run
 
 Useful flags for exercising the degraded paths by hand: `--docs-dir` and
-`--state-dir` write somewhere other than the repo, `--ollama-host` can be
-pointed at a dead port to see an all-Unenriched Edition, `--only` gathers a
-subset of Sources, and `--date` overrides the Edition's date.
+`--state-dir` write somewhere other than the repo, `--openrouter-base` can be
+pointed at a dead endpoint to see an all-Unenriched Edition — as can unsetting
+`OPENROUTER_API_KEY` — `--only` gathers a subset of Sources, and `--date`
+overrides the Edition's date.
+
+## The model
+
+Enrichment and the Pick pass go to OpenRouter, using free models only. The key
+is read from `OPENROUTER_API_KEY`; an unattended Run gets it from
+`~/.config/ai-brief/env`, which both `publish.sh` and the systemd unit read,
+because neither sources a shell profile. With no key the Run still produces an
+Edition and says on the page that every Item is Unenriched.
+
+The model and its fallbacks are pinned in `generator/config.py`. Free models
+are rate-limited upstream without warning, so more than one is listed and
+OpenRouter walks the list itself.
 
 ## Layout
 
@@ -36,6 +50,7 @@ subset of Sources, and `--date` overrides the Edition's date.
 |---|---|
 | `generator/` | the generator; writes files, never runs git |
 | `generator/sources/` | one module per upstream, seven Sources in all |
+| `generator/model.py` | the one call to OpenRouter, shared by Enrichment and Picks |
 | `publish.sh` | the wrapper that commits and pushes |
 | `rubric.md` | the Rubric — what a Score of 1 to 5 means. Edit this. |
 | `prompt.md` | the Prompt wrapped around it, with a `{{RUBRIC}}` placeholder |

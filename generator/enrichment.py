@@ -1,30 +1,30 @@
-"""Enrichment: putting one Item to the local model for a Score and a Synopsis.
+"""Enrichment: putting one Item to the model for a Score and a Synopsis.
 
-Everything here is settled on #5. The parts that are load-bearing and easy to
-get wrong, in order:
+The transport, the retries and the parsing all live in `model.py`, which both
+this and the Pick pass share. What is settled here is the shape of the ask and
+what happens when it comes back empty:
 
-- A dead Ollama HANGS under WSL2 rather than refusing, so the pre-flight GET at
-  a 3s timeout is mandatory. Without it a 300-Item Run blocks for hours before
-  publishing an all-Unenriched Edition.
-- `done_reason` is checked BEFORE the JSON is parsed. A truncated generation
-  comes back HTTP 200 with `done: true` and half an object in `content`.
-- The schema is compiled into the decoding grammar, so a missing field or an
-  out-of-range Score is effectively unreachable. An EMPTY `synopsis` is the
-  real failure mode, and it arrives with `done_reason: "stop"`.
-- One retry, unchanged, then the Item is Unenriched. There is never a
-  fabricated Score: a guessed 3 is indistinguishable from an earned one and
-  would quietly corrupt the Pick pass, which reads Scores.
+- One retry beyond the transport's own, then the Item is Unenriched. There is
+  never a fabricated Score: a guessed 3 is indistinguishable from an earned one
+  and would quietly corrupt the Pick pass, which reads Scores.
+- The schema pins the Score to 1-5, so an out-of-range Score is close to
+  unreachable. An EMPTY Synopsis is the real failure mode and is checked for.
+- Items are Enriched several at a time. This is a network call now rather than
+  a local one — latency-bound, not compute-bound — so requests in flight
+  together are what makes a 300-Item Run take minutes instead of an hour. The
+  Items are mutated in place, so nothing is reordered and `rank` still holds.
 
-Ollama is not a Source, so it is never Unavailable. When it cannot be reached,
-the correct description is that every Item in the Edition is Unenriched.
+OpenRouter is not a Source, so it is never Unavailable. When it cannot be
+reached, the correct description is that every Item in the Edition is
+Unenriched.
 """
 
-import json
+import threading
 import time
-
-import requests
+from concurrent.futures import ThreadPoolExecutor
 
 from . import config
+from .model import Client, reachable  # noqa: F401 - `reachable` is re-exported
 
 SCHEMA = {
     "type": "object",
@@ -50,137 +50,76 @@ def build_system_prompt():
     return prompt.replace("{{RUBRIC}}", rubric)
 
 
-def reachable(log, host=None):
-    """The mandatory pre-flight. Short timeout, because a dead port blackholes."""
-    host = host or config.OLLAMA_HOST
-    try:
-        response = requests.get(host + "/", timeout=config.OLLAMA_PREFLIGHT_TIMEOUT)
-    except requests.exceptions.RequestException as exc:
-        log(f"  Ollama pre-flight failed ({type(exc).__name__}) — "
-            f"every Item in this Edition will be Unenriched")
-        return False
-    if response.status_code != 200:
-        log(f"  Ollama pre-flight returned HTTP {response.status_code} — "
-            f"every Item in this Edition will be Unenriched")
-        return False
-    return True
-
-
 class Enricher:
-    def __init__(self, system_prompt, log, host=None, model=None):
+    def __init__(self, system_prompt, log, base=None, model=None):
         self.system_prompt = system_prompt
         self.log = log
-        self.host = host or config.OLLAMA_HOST
-        self.model = model or config.OLLAMA_MODEL
-        # Set when the fault is in the request builder rather than the data:
-        # a 404 for a missing model, a 400, a 500. Retrying that per Item just
-        # wastes the morning, so the rest of the Run goes Unenriched.
-        self.fatal = False
+        self.client = Client(log, base=base, model=model)
+
+    @property
+    def fatal(self):
+        return self.client.fatal
 
     def enrich(self, item):
         """Set item.score and item.synopsis, or leave the Item Unenriched."""
-        if self.fatal:
-            return
-
         user = f"Title: {item.title}\nText: {item.text}".strip()
-        payload = {
-            "model": self.model,
-            "messages": [
-                {"role": "system", "content": self.system_prompt},
-                {"role": "user", "content": user},
-            ],
-            "format": SCHEMA,
-            # ~5x faster with no quality loss on this task; reasoning would
-            # land in a separate `thinking` field and is not wanted.
-            "think": False,
-            "stream": False,
-            # Holds the model resident for the rest of the Run without
-            # touching any global Ollama config.
-            "keep_alive": "5m",
-        }
-        # options.num_predict is deliberately never set. The default is
-        # unbounded, and a hand-set value is the easiest way to reintroduce
-        # silent truncation.
 
-        for attempt in (1, 2):
-            result = self._attempt(payload, item)
-            if result is not None:
-                item.score, item.synopsis = result
+        for _ in (1, 2):
+            if self.client.fatal:
                 return
-            if self.fatal:
-                return
-        # Two identical draws both failed. Sampling is stochastic, so a third
+            parsed = self.client.complete(
+                self.system_prompt, user, SCHEMA, "enrichment", item.identity
+            )
+            if parsed is None:
+                continue
+            score = parsed.get("score")
+            synopsis = parsed.get("synopsis")
+            if not isinstance(score, int) or isinstance(score, bool) or not 1 <= score <= 5:
+                self.log(f"  Enrichment Score {score!r} out of range on {item.identity}")
+                continue
+            if not isinstance(synopsis, str) or not synopsis.strip():
+                # The one check that genuinely earns its place.
+                self.log(f"  Enrichment returned an empty Synopsis on {item.identity}")
+                continue
+            item.score = score
+            item.synopsis = " ".join(synopsis.split())
+            return
+        # Two draws both came back unusable. Sampling is stochastic, so a third
         # has never bought anything; the Item is Unenriched and the Run goes on.
 
-    def _attempt(self, payload, item):
-        try:
-            response = requests.post(
-                self.host + "/api/chat",
-                json=payload,
-                timeout=config.OLLAMA_ITEM_TIMEOUT,
-            )
-        except requests.exceptions.RequestException as exc:
-            self.log(f"  Enrichment transport fault on {item.identity}: "
-                     f"{type(exc).__name__}")
-            return None
 
-        if response.status_code != 200:
-            # Not per-Item data — a bug in the request builder or a missing
-            # model. Log loudly and stop calling.
-            self.fatal = True
-            self.log(f"  Enrichment HTTP {response.status_code}: "
-                     f"{response.text[:200]} — remaining Items are Unenriched")
-            return None
+def enrich_all(items, log, base=None, model=None):
+    """Enrich every Item, a few requests in flight at a time.
 
-        try:
-            body = response.json()
-        except ValueError:
-            self.log(f"  Enrichment body did not parse as JSON on {item.identity}")
-            return None
-
-        # done_reason BEFORE parsing the content. A truncated generation
-        # reports HTTP 200 and `done: true`.
-        if body.get("done_reason") != "stop":
-            self.log(f"  Enrichment done_reason={body.get('done_reason')!r} "
-                     f"on {item.identity}")
-            return None
-
-        content = (body.get("message") or {}).get("content") or ""
-        try:
-            parsed = json.loads(content)
-        except ValueError:
-            self.log(f"  Enrichment content did not parse as JSON on {item.identity}")
-            return None
-
-        score = parsed.get("score")
-        synopsis = parsed.get("synopsis")
-        if not isinstance(score, int) or isinstance(score, bool) or not 1 <= score <= 5:
-            self.log(f"  Enrichment Score {score!r} out of range on {item.identity}")
-            return None
-        if not isinstance(synopsis, str) or not synopsis.strip():
-            # The one check that genuinely earns its place.
-            self.log(f"  Enrichment returned an empty Synopsis on {item.identity}")
-            return None
-
-        return score, " ".join(synopsis.split())
-
-
-def enrich_all(items, log, host=None, model=None):
-    """Enrich every Item, sequentially, one request in flight at a time.
-
-    Measured at ~1.0-1.3s/Item warm, plus a one-time ~6s cold load. Concurrency
-    was tested on #5 and buys ~2 minutes on the worst realistic day at the cost
-    of a 6x worse tail; a bad trade in a job that runs once a morning.
+    The log is written from several threads, so it is serialised behind a lock;
+    a Run's output is read as a narrative and interleaved half-lines would
+    ruin it.
     """
     if not items:
         return
-    enricher = Enricher(build_system_prompt(), log, host=host, model=model)
+
+    lock = threading.Lock()
+
+    def safe_log(message):
+        with lock:
+            log(message)
+
+    enricher = Enricher(build_system_prompt(), safe_log, base=base, model=model)
     started = time.time()
-    for index, item in enumerate(items, 1):
+    done = 0
+
+    def work(item):
+        nonlocal done
         enricher.enrich(item)
-        if index % 25 == 0:
-            log(f"  Enriched {index}/{len(items)} "
-                f"({time.time() - started:.0f}s elapsed)")
+        with lock:
+            done += 1
+            if done % 25 == 0:
+                log(f"  Enriched {done}/{len(items)} "
+                    f"({time.time() - started:.0f}s elapsed)")
+
+    with ThreadPoolExecutor(max_workers=config.OPENROUTER_CONCURRENCY) as pool:
+        list(pool.map(work, items))
+
     unenriched = sum(1 for item in items if item.unenriched)
     log(f"  Enrichment finished: {len(items)} Items in "
         f"{time.time() - started:.0f}s, {unenriched} Unenriched")

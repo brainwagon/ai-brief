@@ -1,8 +1,8 @@
 # AI Brief
 
 A daily reading queue for one person. A generator gathers what is new across a
-handful of upstreams, a local model scores and summarises it, and the result is
-published as a dated page on GitHub Pages.
+handful of upstreams, a free hosted model scores and summarises it, and the
+result is published as a dated page on GitHub Pages.
 
 ## Language
 

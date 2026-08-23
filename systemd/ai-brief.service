@@ -16,18 +16,23 @@ Type=oneshot
 # systemd environment that has almost nothing in it is enough.
 ExecStart=/home/markv/ai-brief/publish.sh
 
-# Enrichment is one Ollama call per Item and the machine is a laptop somebody
-# is using. Nothing waits on the brief, so it can have what is left over -
-# though most of the Run is spent waiting on the network and on ollama serve,
-# which is a different process and keeps its own priority.
+# The OpenRouter key Enrichment needs. A systemd unit sources no shell profile,
+# so this is where the key comes from; publish.sh reads the same file when it
+# is run by hand from somewhere the key is not exported. The leading - means a
+# missing file is not a failure: the Run then publishes an all-Unenriched
+# Edition, which is a describable day rather than a broken one.
+EnvironmentFile=-/home/markv/.config/ai-brief/env
+
+# The machine is a laptop somebody is using, and nothing waits on the brief, so
+# it can have what is left over. It costs almost nothing either way: the whole
+# Run is spent waiting on the network, Enrichment included, which is a hosted
+# model rather than a local one.
 Nice=10
 
-# Not infinity, unlike the backup. A Run has a known way of hanging rather
-# than failing: under WSL2 a dead Ollama accepts the connection and never
-# answers (#5), and while the generator pre-flights for that, a model evicted
-# mid-Run can still stall a single call for a long time. A wall lets the
-# failure be reported instead of leaving the unit activating forever with no
-# notification. A real Run of ~200 Items takes about ten minutes at the
-# measured 1.8s/Item (#8), so 30 minutes is roughly three times the worst day
-# actually observed.
+# Not infinity, unlike the backup. A Run has a known way of hanging rather than
+# failing: every Source and every Enrichment is a network call, and a free
+# model behind a busy provider can stall well past its own timeout across
+# retries. A wall lets the failure be reported instead of leaving the unit
+# activating forever with no notification. A real Run of ~200 Items takes about
+# five minutes at eight requests in flight, so 30 minutes is a wide margin.
 TimeoutStartSec=30min

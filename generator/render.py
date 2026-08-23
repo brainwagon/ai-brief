@@ -46,7 +46,7 @@ def anchor(item):
 # --------------------------------------------------------------------------
 
 
-def census(results, picks, ollama_down):
+def census(results, picks, model_down):
     """The two lines at the top of every Edition, present on a flawless day too.
 
     Because the census is always there, a bad day is a different number in a
@@ -87,7 +87,7 @@ def census(results, picks, ollama_down):
             f"{scored} Item{_s(scored)} carr{'y' if scored != 1 else 'ies'} "
             f"a Score and a Synopsis."
         )
-    elif unenriched == total and ollama_down:
+    elif unenriched == total and model_down:
         parts.append(
             f'<span class="hole">All {total} Item{_s(total)} Unenriched</span> — '
             "the model was not reachable during this Run, so nothing today "
@@ -118,8 +118,8 @@ def _s(count):
 # --------------------------------------------------------------------------
 
 
-def edition(date_string, results, picks, ollama_down, previous_date):
-    first_line, second_line, counts = census(results, picks, ollama_down)
+def edition(date_string, results, picks, model_down, previous_date):
+    first_line, second_line, counts = census(results, picks, model_down)
 
     out = []
     out.append("<!DOCTYPE html>")

@@ -31,8 +31,8 @@ def main(argv=None):
         help="where the Snapshots live",
     )
     parser.add_argument(
-        "--ollama-host", default=config.OLLAMA_HOST,
-        help="override for exercising the Unenriched path against a dead port",
+        "--openrouter-base", default=config.OPENROUTER_BASE,
+        help="override for exercising the Unenriched path against a dead endpoint",
     )
     parser.add_argument(
         "--only", default=None,
@@ -111,10 +111,10 @@ def main(argv=None):
     # --- Enrichment -------------------------------------------------------
     to_enrich = [item for result in results.values() for item in result.items]
     log(f"Enrichment: {len(to_enrich)} Items")
-    ollama_up = enrichment.reachable(log, host=args.ollama_host)
-    if ollama_up and to_enrich:
-        enrichment.enrich_all(to_enrich, log, host=args.ollama_host)
-    elif not ollama_up:
+    model_up = enrichment.reachable(log, base=args.openrouter_base)
+    if model_up and to_enrich:
+        enrichment.enrich_all(to_enrich, log, base=args.openrouter_base)
+    elif not model_up:
         log("  skipped — the Edition publishes with every Item Unenriched")
 
     # The Score distribution per Source is what rubric drift will be read from
@@ -137,13 +137,13 @@ def main(argv=None):
     log(f"Selected {len(chosen)} Items for the Edition")
 
     # --- Picks ------------------------------------------------------------
-    picks = pick.choose(chosen, log, host=args.ollama_host) if ollama_up else []
+    picks = pick.choose(chosen, log, base=args.openrouter_base) if model_up else []
 
     # --- Generate ---------------------------------------------------------
     args.docs_dir.mkdir(parents=True, exist_ok=True)
     previous = _previous_edition(args.docs_dir, run_date)
-    ollama_down = not ollama_up
-    page, counts = render.edition(run_date, results, picks, ollama_down, previous)
+    model_down = not model_up
+    page, counts = render.edition(run_date, results, picks, model_down, previous)
     edition_path = args.docs_dir / f"{run_date}.html"
     edition_path.write_text(page, encoding="utf-8")
     log(f"Wrote {edition_path}")

@@ -29,6 +29,18 @@ PYTHON="${AI_BRIEF_PYTHON:-$REPO/.venv/bin/python}"
 
 cd "$REPO" || exit 2
 
+# Enrichment needs an OpenRouter key, and neither a systemd unit nor a cron
+# line sources ~/.bashrc. This file is the one place the key is read from for
+# an unattended Run; without it the Run still succeeds and every Item is
+# Unenriched, which is why the source is conditional rather than fatal.
+ENV_FILE="${AI_BRIEF_ENV:-$HOME/.config/ai-brief/env}"
+if [ -z "${OPENROUTER_API_KEY:-}" ] && [ -r "$ENV_FILE" ]; then
+    set -a
+    # shellcheck disable=SC1090
+    . "$ENV_FILE"
+    set +a
+fi
+
 if [ ! -x "$PYTHON" ]; then
     echo "publish.sh: no interpreter at $PYTHON; create the venv first" >&2
     exit 1
