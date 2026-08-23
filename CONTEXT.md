@@ -14,9 +14,25 @@ undated. The thing that has Editions.
 _Avoid_: digest, newsletter, report, the blog
 
 **Edition**:
-One day's page: dated, published once, never revised. Its date is part of its
-identity, appearing in the filename, the URL, and the heading as the same
-string. An Edition is what a Run produces.
+One day's page: dated, published once. Its date is part of its identity,
+appearing in the filename, the URL, and the heading as the same string. An
+Edition is what a Run produces.
+
+An Edition is not revised to change its judgement — a Score that reads wrong
+a week later, a Synopsis that could be better, an Item that turned out to
+matter. Those stand: the Brief is a record of what one reader thought that
+morning, and a page that keeps improving is no longer that.
+
+It IS revised to repair a Run. When the Edition on the page is not what a
+working Run would have produced — every Item Unenriched because the model was
+unreachable, a Source Unavailable that was merely slow — the same date may be
+Generated again over the top. The repair is deliberate and says so: `--force`
+to write over an existing date, today's Snapshots dropped first so the diff is
+taken against the previous Edition again, and a commit subject that names the
+revision rather than reusing the bare `Edition <date>`.
+
+The line between the two is whether the Edition failed to be *made*, not
+whether it turned out to be *good*.
 _Avoid_: issue, brief, digest, daily, report, page
 
 **Index**:

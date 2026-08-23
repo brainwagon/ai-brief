@@ -196,7 +196,8 @@ def edition(date_string, results, picks, model_down, previous_date):
     out.append("</main>")
     out.append("")
     out.append("<footer>")
-    out.append("  <p>An Edition is published once and never revised.</p>")
+    out.append("  <p>An Edition is published once, and revised only to repair "
+               "a Run that failed.</p>")
     out.append('  <p><a href="index.html">All Editions</a></p>')
     out.append("</footer>")
     out.append("")

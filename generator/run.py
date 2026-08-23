@@ -66,14 +66,15 @@ def main(argv=None):
 
     log(f"Run for {run_date} ({run_at.strftime('%H:%M:%S')} UTC)")
 
-    # An Edition is published once and never revised (CONTEXT.md). A second Run
-    # on the same date would find every Item already in the Snapshots and write
-    # an empty page over a good one, so it stops here instead. A deliberate
-    # retry after a failed Run passes --force.
+    # An Edition is published once, and revised only to repair a Run that
+    # failed (CONTEXT.md). A second Run on the same date would find every Item
+    # already in the Snapshots and write an empty page over a good one, so it
+    # stops here instead. A repair passes --force, and drops the date's
+    # Snapshots first so the diff is taken against the previous Edition again.
     existing = args.docs_dir / f"{run_date}.html"
     if existing.exists() and not args.force:
-        log(f"{existing.name} already exists; an Edition is never revised. "
-            f"Pass --force to write it again.")
+        log(f"{existing.name} already exists; an Edition is revised only to "
+            f"repair a failed Run. Pass --force to write it again.")
         return 0
 
     # --- gather -----------------------------------------------------------
