@@ -252,6 +252,42 @@
     "wang2122/sprix-sage-router",
     "xdreizein666/getcontact-cli"
    ]
+  },
+  {
+   "date": "2026-08-25",
+   "recorded_at": "2026-08-25T13:05:19Z",
+   "identities": [
+    "ApodexAI/FrontierAgent",
+    "ChenShuo2004/cs-board",
+    "Forsy-AI/biosecurity-agent",
+    "GamePhanes/GamePhanes",
+    "LB623/no-negative-echo",
+    "MengTo/threeui",
+    "MiaAI-Lab/DeepSeek-v4-Flash-One-DGX-Spark",
+    "RobertGolds1/Gradient",
+    "ShadowAqueduct/watermark-remover",
+    "ZSeven-W/dsh-ios",
+    "Zyrexnn/Cybermes",
+    "alchaincyf/huashu-excel",
+    "amagine-ai/Amagine3D",
+    "b-nnett/grok-bot-0.18-reconstructed",
+    "bam-bam-2/solo-skills",
+    "bryllim/workout-guide",
+    "cclank/lanshu-create-ai-presenter-video",
+    "duty1g/x64dbg-mcp-server",
+    "fzakaria/selfdb",
+    "inkboard/system-atlas",
+    "kgoedecke/doop",
+    "kunchenguid/backpass",
+    "lanicer/cve-2026-41940-PoC",
+    "localai-org/kimodo.cpp",
+    "missuo/herdrm",
+    "mrhlaingbwardev/Telegram-Secure-Storage-Bot",
+    "nateherkai/scroll-craft",
+    "rome-os/rome",
+    "tobi/walgit",
+    "xdreizein666/getcontact-cli"
+   ]
   }
  ]
 }

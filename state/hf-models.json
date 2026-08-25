@@ -252,6 +252,42 @@
     "unsloth/Qwen3.8-27B-GGUF",
     "z-lab/Qwen3.8-27B-DFlash2"
    ]
+  },
+  {
+   "date": "2026-08-25",
+   "recorded_at": "2026-08-25T13:05:19Z",
+   "identities": [
+    "0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF",
+    "Audio8/Audio8-TTS-Preview-0.1b",
+    "DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF",
+    "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF",
+    "Lightricks/LTX-2.5",
+    "MiniMaxAI/MiniMax-H3",
+    "MiniMaxAI/MiniMax-Music3",
+    "OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+    "Qwen/Qwen3.8-27B",
+    "Qwen/Qwen3.8-27B-FP8",
+    "deepseek-ai/DeepSeek-V4-Flash-0731",
+    "deepseek-ai/DeepSeek-V4-Pro-0813",
+    "froggeric/Qwen-Fixed-Chat-Templates",
+    "huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF",
+    "incoai/Qwen3.8-27B-DFlash2",
+    "moonshotai/Kimi-K3",
+    "orcarouter/Qwen3.8-27B-Uncensored",
+    "orcarouter/Qwen3.8-27B-Uncensored-FP8",
+    "orcarouter/Qwen3.8-27B-Uncensored-GGUF",
+    "orcarouter/Qwen3.8-27B-Uncensored-MLX",
+    "ornith-ai/Ornith-1.5-35B-A3B",
+    "ornith-ai/Ornith-1.5-35B-A3B-GGUF",
+    "ornith-ai/Ornith-1.5-9B",
+    "ornith-ai/Ornith-1.5-9B-GGUF",
+    "peculiar-ragdoll/Qwen-Sharp-Chat-Templates",
+    "sensenova/SenseNova-U1.5-8B-MoT",
+    "superwhisper/s1-mini",
+    "unsloth/Qwen3.8-27B-GGUF",
+    "z-lab/Qwen3.8-27B-DFlash2"
+   ]
   }
  ]
 }
