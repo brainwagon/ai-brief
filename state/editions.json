@@ -1,5 +1,14 @@
 [
  {
+  "items": 23,
+  "sources": 7,
+  "picks": 2,
+  "unavailable": 0,
+  "unenriched": 0,
+  "date": "2026-08-26",
+  "teaser": "Strictly Causal Streaming Video Anomaly Detection with a Theoretically-Grounded State-Space Core"
+ },
+ {
   "items": 25,
   "sources": 7,
   "picks": 1,
