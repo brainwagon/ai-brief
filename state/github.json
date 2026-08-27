@@ -324,6 +324,42 @@
     "xdreizein666/getcontact-cli",
     "yding-git/personal-edge-proxy"
    ]
+  },
+  {
+   "date": "2026-08-27",
+   "recorded_at": "2026-08-27T13:09:37Z",
+   "identities": [
+    "ApodexAI/FrontierAgent",
+    "ChenShuo2004/cs-board",
+    "Forsy-AI/biosecurity-agent",
+    "GamePhanes/GamePhanes",
+    "GradientRL/Gradient",
+    "LB623/no-negative-echo",
+    "MengTo/threeui",
+    "N4darae/anti-mage",
+    "ShadowAqueduct/watermark-remover",
+    "Tencent/WeMM-Embedding",
+    "alchaincyf/huashu-excel",
+    "amosblomqvist/learn",
+    "b-nnett/grok-bot-0.18-reconstructed",
+    "bam-bam-2/solo-skills",
+    "bryllim/workout-guide",
+    "duty1g/x64dbg-mcp-server",
+    "fzakaria/selfdb",
+    "halofyai/halofy",
+    "kgoedecke/doop",
+    "kunchenguid/backpass",
+    "localai-org/kimodo.cpp",
+    "lxf746/outlook-auto-register",
+    "nateherkai/scroll-craft",
+    "oboroge0/hayamimi",
+    "rome-os/rome",
+    "sodiumsun/agenttrail",
+    "themartiano/try-omarchy",
+    "tobi/walgit",
+    "wide-trace/open-higgsfield",
+    "yding-git/personal-edge-proxy"
+   ]
   }
  ]
 }

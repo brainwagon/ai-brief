@@ -324,6 +324,42 @@
     "saidutta69/fable-5-premium",
     "ulamai/UnsolvedMath"
    ]
+  },
+  {
+   "date": "2026-08-27",
+   "recorded_at": "2026-08-27T13:09:37Z",
+   "identities": [
+    "Anthropic/claude-protein-binder-design",
+    "Anthropic/enabling-independent-research",
+    "ChartGalaxy/ChartGalaxy",
+    "FlyRank/internship-warehouse",
+    "HuggingFaceFW/fineweb",
+    "Kukedlc/suno-ai-music-dataset",
+    "LightwheelAI/EgoDemo",
+    "LightwheelAI/EgoPro",
+    "LightwheelAI/EgoStandard",
+    "PatronusAI/figmatrace",
+    "SageBio/mva-hackathon-2026-data",
+    "Specific-Labs/Scaffold-CoT",
+    "biglam/britannica-illustrated-pages",
+    "biglam/british-library-book-images",
+    "datapointai/text-2-image-human-preferences-2m",
+    "hamzabagirsakci/turkish-court-decisions",
+    "inclusionAI/ConceptEdit-12M",
+    "laion/BVD-URLs",
+    "malcolmrey/various",
+    "markov-ai/cad-1000-hours",
+    "microsoft/ThinkingBox-Bench",
+    "mvaccargiu/gitskills",
+    "noitomrobotics/HiPHI",
+    "nvidia/Cosmos3-DROID",
+    "openbmb/Ultra-FineWeb-L1",
+    "ostris/minimax_h3_1k",
+    "r0b0tlab/deepseek-v4-pro-0813-agentic",
+    "r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation",
+    "saidutta69/fable-5-premium",
+    "snapwre/amharic-speech"
+   ]
   }
  ]
 }
