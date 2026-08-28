@@ -360,6 +360,42 @@
     "unsloth/Qwen3.8-Flash-Next-GGUF",
     "zai-org/GLM-5.3-Flash"
    ]
+  },
+  {
+   "date": "2026-08-28",
+   "recorded_at": "2026-08-28T13:06:19Z",
+   "identities": [
+    "BreezeBlue/Breeze-TTS-2",
+    "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF",
+    "Lightricks/LTX-2.5",
+    "MiniMaxAI/MiniMax-H3",
+    "MiniMaxAI/MiniMax-Music3",
+    "OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+    "Qwen/Qwen3.8-27B",
+    "Qwen/Qwen3.8-Flash-Next",
+    "Qwen/Qwen3.8-Flash-Next-FP8",
+    "alibaba-pai/MiniMax-H3-Acc-LoRAs",
+    "alibaba-pai/MiniMax-H3-Fun-Controlnet-Union",
+    "deepseek-ai/DeepSeek-V4-Flash-0731",
+    "froggeric/Qwen-Fixed-Chat-Templates",
+    "huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF",
+    "moonshotai/Kimi-K3",
+    "orcarouter/Qwen3.8-27B-Uncensored",
+    "orcarouter/Qwen3.8-27B-Uncensored-FP8",
+    "orcarouter/Qwen3.8-27B-Uncensored-GGUF",
+    "orcarouter/Qwen3.8-27B-Uncensored-MLX",
+    "ornith-ai/Ornith-1.5-35B-A3B",
+    "ornith-ai/Ornith-1.5-35B-A3B-GGUF",
+    "sensenova/SenseNova-U1.5-8B-MoT",
+    "superwhisper/s1-mini",
+    "tencent/Hy4-preview",
+    "thomsonreuters/Thomson-1.0-Small",
+    "unsloth/GLM-5.3-Flash-GGUF",
+    "unsloth/Qwen3.8-27B-GGUF",
+    "unsloth/Qwen3.8-Flash-Next-GGUF",
+    "zai-org/GLM-5.3-Flash"
+   ]
   }
  ]
 }

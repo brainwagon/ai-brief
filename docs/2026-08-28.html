@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Brief — Friday, 28 August 2026</title>
+<meta name="description" content="The AI Brief for Friday, 28 August 2026: 25 Items across 8 Sources.">
+<link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://mvandewettering.com/ai-brief/2026-08-28.html">
+</head>
+<body>
+
+<header class="brief-header">
+  <p class="brief-title"><a href="index.html">AI Brief</a></p>
+  <h1 class="edition-date"><time datetime="2026-08-28">Friday, 28 August 2026</time></h1>
+  <div class="edition-state">
+    <p>25 Items across 8 Sources. 2 Picks.</p>
+    <p>All 8 Sources answered. 25 Items carry a Score and a Synopsis.</p>
+  </div>
+  <nav class="edition-nav" aria-label="Edition">
+    <ul>
+      <li><a href="index.html">All Editions</a></li>
+      <li><a href="2026-08-27.html">Previous: <time datetime="2026-08-27">27 August</time></a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="edition">
+
+  <section class="picks" aria-labelledby="picks-heading">
+    <h2 id="picks-heading">Picks</h2>
+    <ol>
+      <li><a href="#item-reddit-1w0ao39">I implemented a modern LLM in 700 lines of C</a>
+        <span class="pick-source">r/LocalLLaMA</span></li>
+      <li><a href="#item-reddit-1w0hrrn">I reverse-engineered an NPU vendor&#x27;s engine format (int8 weights stored as two nibble planes) to run GGUFs with no model conversion — now 1.5× faster than the vendor&#x27;s own runtime</a>
+        <span class="pick-source">r/LocalLLaMA</span></li>
+    </ol>
+  </section>
+
+  <section class="source" aria-labelledby="src-arxiv">
+    <h2 id="src-arxiv">arXiv <span class="source-count">7 Items</span></h2>
+    <ul class="items">
+
+      <li class="item" id="item-arxiv-2608-27449">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2608.27449v1">SWE-Prime: Fewer Trajectories, Better Performance</a></h3>
+        <p class="synopsis">SWE-Prime improves software engineering performance by selecting only high-quality trajectory segments for supervised fine-tuning, achieving up to 24.2% gains on SWE-Bench using just 10% of the data.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>cs.SE, cs.AI · submitted 27 Aug</span></p>
+      </li>
+
+      <li class="item" id="item-arxiv-2608-27429">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2608.27429v1">Mechanistic Reaction Prediction via Discrete Flow Matching on Graph-Structured Electron Occupation</a></h3>
+        <p class="synopsis">MAELLE models chemical reactions as discrete flow matching on electron occupation vectors using a CTMC over graph-structured electron space, achieving strong in-distribution and out-of-distribution performance on USPTO-480K while providing mechanistically interpretable trajectories and side-product predictions without elementary step annotations.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>cs.AI · submitted 27 Aug</span></p>
+      </li>
+
+      <li class="item" id="item-arxiv-2608-27428">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2608.27428v1">Stochastic Estimation of Transduced Language Models</a></h3>
+        <p class="synopsis">This paper introduces an unbiased stochastic estimator for transduced language models that replaces biased beam pruning with recursive importance sampling, reducing compute and variance while guaranteeing termination, and demonstrates orders-of-magnitude speedup on DNA-to-amino-acid transduction tasks.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>cs.CL · submitted 27 Aug</span></p>
+      </li>
+
+      <li class="item" id="item-arxiv-2608-27424">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2608.27424v1">Beyond F1: Evaluating Coverage and Failure Recovery in AI Model Security Scanners</a></h3>
+        <p class="synopsis">The paper evaluates three AI model security scanners on a synthetic corpus of 170 Pickle and PyTorch artifacts, measuring coverage and failure recovery beyond traditional F1 scores, showing ModelAudit achieves 100% definitive security decisions while ModelScan and Fickling exhibit complementary failure modes.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>cs.CR, cs.AI · submitted 27 Aug</span></p>
+      </li>
+
+      <li class="item" id="item-arxiv-2608-27417">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2608.27417v1">Retrieval Heads Meet Vision: Uncovering How VLMs Locate and Extract Visual Information</a></h3>
+        <p class="synopsis">The paper identifies Visual Retrieval Heads (VRHs)—a small subset of attention heads (1.7–2.6%) in vision-language models that causally ground text to image regions, showing they generalize across tasks, are functionally specific, and transfer across model architectures sharing an LLM backbone.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>cs.CV · submitted 27 Aug</span></p>
+      </li>
+
+      <li class="item" id="item-arxiv-2608-27413">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2608.27413v1">Scaling Graph Neural Networks for Friend Recommendation: Multi-Hash User Embeddings and Temporal Neighbor Sampling</a></h3>
+        <p class="synopsis">A production GNN system for friend recommendation on a 194M-user, 28B-edge social graph that uses multi-hash embeddings to shrink ID tables by 98% and timestamp-sorted CSR with binary search to reduce temporal sampling cost, achieving 16% more friend adds in A/B testing.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>cs.IR, cs.LG · submitted 27 Aug</span></p>
+      </li>
+
+      <li class="item" id="item-arxiv-2608-27406">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2608.27406v1">CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators</a></h3>
+        <p class="synopsis">CLAP is a cross-embodiment video generation framework trained on diverse human and robot videos to learn universal physics, using end-effector poses, language, and latent actions to enable zero-shot simulation and superior performance in real-world robotic tasks like DROID.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>cs.RO, cs.AI · submitted 27 Aug</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src-hackernews">
+    <h2 id="src-hackernews">Hacker News <span class="source-count">3 Items</span></h2>
+    <ul class="items">
+
+      <li class="item" id="item-hackernews-49468083">
+        <h3 class="item-title"><a href="https://blog.cloudflare.com/dns-cache-memory-optimization-1111/">Saving 100 terabytes of memory by optimizing 1.1.1.1&#x27;s DNS cache</a></h3>
+        <p class="synopsis">Cloudflare&#x27;s engineers reduced memory usage of the 1.1.1.1 DNS cache by 100 terabytes through cache optimization techniques, improving efficiency at scale without changing query handling logic.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>817 points · 242 comments</span></p>
+      </li>
+
+      <li class="item" id="item-hackernews-49471965">
+        <h3 class="item-title"><a href="https://github.com/elyosh/OpenTIE/">Show HN: OpenTIE and OpenXWA, Modern Ports of Tie Fighter and X-Wing Alliance</a></h3>
+        <p class="synopsis">OpenTIE and OpenXWA are modern, open-source ports of the classic Star Wars space combat games Tie Fighter and X-Wing Alliance, rebuilt for contemporary platforms with enhanced compatibility and modding support.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>190 points · 47 comments</span></p>
+      </li>
+
+      <li class="item" id="item-hackernews-49468642">
+        <h3 class="item-title"><a href="https://code.ffmpeg.org/FFmpeg/FFmpeg/issues/24290">We found a division by zero bug in FFmpeg with a vibecoded fuzzer</a></h3>
+        <p class="synopsis">A vibecoded fuzzer discovered a division-by-zero bug in FFmpeg, using a lightweight, accessible fuzzing approach to uncover a crash in widely used multimedia software.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>268 points · 230 comments</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src-github">
+    <h2 id="src-github">GitHub New Repos <span class="source-count">no Items</span></h2>
+    <p class="thin-note">Answered, and had 8 Items that were new, none of which cleared the cutoff.</p>
+  </section>
+
+  <section class="source" aria-labelledby="src-devto">
+    <h2 id="src-devto">dev.to <span class="source-count">2 Items</span></h2>
+    <ul class="items">
+
+      <li class="item" id="item-devto-4512698">
+        <h3 class="item-title"><a href="https://dev.to/arshtechpro/ponytail-the-ai-coding-skill-that-makes-your-agent-write-less-code-29l3">Ponytail: the AI coding skill that makes your agent write less code</a></h3>
+        <p class="synopsis">Ponytail is an AI coding skill that helps agents write less code by reusing existing libraries like flatpickr instead of writing custom components.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>11 reactions · published 28 Aug</span></p>
+      </li>
+
+      <li class="item" id="item-devto-4505866">
+        <h3 class="item-title"><a href="https://dev.to/ashwin_ugale_102f2abc9cec/i-fault-injected-two-ai-agent-frameworks-one-recovered-the-other-charged-the-card-and-said-done-2462">I fault-injected two AI agent frameworks. One recovered — the other charged the card and said &#x27;done&#x27;</a></h3>
+        <p class="synopsis">Fault-injection test of two AI agent frameworks shows one recovered from a payment tool error requiring user action, while the other incorrectly marked the task as complete and attempted to charge the card.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>7 reactions · published 27 Aug</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src-reddit">
+    <h2 id="src-reddit">r/LocalLLaMA <span class="source-count">3 Items</span></h2>
+    <ul class="items">
+
+      <li class="item item--pick" id="item-reddit-1w0ao39">
+        <h3 class="item-title"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1w0ao39/i_implemented_a_modern_llm_in_700_lines_of_c/">I implemented a modern LLM in 700 lines of C</a></h3>
+        <p class="synopsis">A single 700-line C file implementing Gemma 4 E2B inference with int8 quantization, OpenMP, AVX2/AVX-512 VNNI kernels, and full tokenizer/transformer/KV cache/sampling logic, achieving 639 tok/s prefill and 25.9 tok/s generation on a Ryzen 7 7700 CPU without external frameworks.</p>
+        <p class="item-meta"><span class="pick-mark">Pick</span><span class="score">Score 5</span><span>/u/Critical_Physics8 · posted 27 Aug</span></p>
+      </li>
+
+      <li class="item item--pick" id="item-reddit-1w0hrrn">
+        <h3 class="item-title"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1w0hrrn/i_reverseengineered_an_npu_vendors_engine_format/">I reverse-engineered an NPU vendor&#x27;s engine format (int8 weights stored as two nibble planes) to run GGUFs with no model conversion — now 1.5× faster than the vendor&#x27;s own runtime</a></h3>
+        <p class="synopsis">Reverse-engineered an NPU vendor&#x27;s engine format (int8 weights stored as two nibble planes) to enable direct GGUF execution with zero conversion, achieving 1.5× speedup over the vendor&#x27;s runtime and byte-identical prefill throughput of 716 t/s on Axera AX8850 hardware.</p>
+        <p class="item-meta"><span class="pick-mark">Pick</span><span class="score">Score 5</span><span>/u/woolcoxm · posted 28 Aug</span></p>
+      </li>
+
+      <li class="item" id="item-reddit-1w0198r">
+        <h3 class="item-title"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1w0198r/no_engrams_wont_let_you_run_1t_models_locally_it/">No, Engrams won&#x27;t let you run 1T models locally. It does something even better.</a></h3>
+        <p class="synopsis">Engram is a technique that replaces early transformer computations with N-gram-based embedding lookups, allowing models like Qwen 3.8 Flash Next to use 51B parameters of embeddings while activating only ~6B per token by offloading static knowledge retrieval to a constant-time database operation.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>/u/chocolateUI · posted 27 Aug</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src-hf-models">
+    <h2 id="src-hf-models">Hugging Face models <span class="source-count">no Items</span></h2>
+    <p class="thin-note">Answered, and had 5 Items that were new, none of which cleared the cutoff.</p>
+  </section>
+
+  <section class="source" aria-labelledby="src-hf-datasets">
+    <h2 id="src-hf-datasets">Hugging Face datasets <span class="source-count">3 Items</span></h2>
+    <ul class="items">
+
+      <li class="item" id="item-hf-datasets-teichai-fable-5-cursor-traces">
+        <h3 class="item-title"><a href="https://huggingface.co/datasets/TeichAI/Fable-5-Cursor-Traces">TeichAI/Fable-5-Cursor-Traces</a></h3>
+        <p class="synopsis">A dataset of 244 Fable 5 Cursor agent training sessions at varying effort levels, intended for distillation and research, with warnings about extremely long rows requiring preprocessing.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>new to trending · 30 downloads · 11 likes</span></p>
+      </li>
+
+      <li class="item" id="item-hf-datasets-faunix-qwen3-8-27b-distillation-40k">
+        <h3 class="item-title"><a href="https://huggingface.co/datasets/faunix/Qwen3.8-27B-Distillation-40K">faunix/Qwen3.8-27B-Distillation-40K</a></h3>
+        <p class="synopsis">A dataset of 40,000 reasoning traces distilled from Qwen3.8-27B across four domains, generated locally and available on Hugging Face for synthetic supervised fine-tuning.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>new to trending · 637 downloads · 10 likes</span></p>
+      </li>
+
+      <li class="item" id="item-hf-datasets-bones-studio-seed">
+        <h3 class="item-title"><a href="https://huggingface.co/datasets/bones-studio/seed">bones-studio/seed</a></h3>
+        <p class="synopsis">BONES-SEED is an open dataset of 142,220 annotated human motion animations for humanoid robotics, providing motion capture data in SOMA and Unitree G1 formats with natural language descriptions and skeletal metadata.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>new to trending · 4,931 downloads · 215 likes</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src-hf-papers">
+    <h2 id="src-hf-papers">Hugging Face papers <span class="source-count">7 Items</span></h2>
+    <ul class="items">
+
+      <li class="item" id="item-hf-papers-2608-27345">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2608.27345">PAWBench: How Far Are We from Probabilistically Aligned World Modeling?</a></h3>
+        <p class="synopsis">PAWBench introduces a benchmark and evaluation protocol (PAWEval) to test whether video generation models can reproduce the correct distribution of possible physical behaviors under identical initial conditions, finding that current models fail to match reference probabilities across 50 scenarios and eleven systems.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>72 upvotes · arXiv 2608.27345</span></p>
+      </li>
+
+      <li class="item" id="item-hf-papers-2608-27448">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2608.27448">TTPO: Test-Time Policy Optimization</a></h3>
+        <p class="synopsis">TTPO introduces a test-time optimization method that uses asymmetric objectives—distilling agreeing rollouts and penalizing disagreeing ones—to improve mathematical reasoning in language models without ground-truth labels, achieving strong gains on competition benchmarks.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>51 upvotes · arXiv 2608.27448</span></p>
+      </li>
+
+      <li class="item" id="item-hf-papers-2608-15763">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2608.15763">Training Agents to Evolve with Their Harness: TaoLive Digital Avatar Agent Technical Report</a></h3>
+        <p class="synopsis">Harness-Aware Training (HAT) trains compact models to adapt to changing digital avatar harnesses via Harness-State Augmentation, achieving 94.8 on Live-Stream QA with 3.4s P50 latency on an H20 GPU, avoiding generalization loss seen in fixed-harness fine-tuning.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>40 upvotes · arXiv 2608.15763</span></p>
+      </li>
+
+      <li class="item" id="item-hf-papers-2608-26872">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2608.26872">Self-OPD: On-Policy Distillation for Flow Matching Models without Teacher</a></h3>
+        <p class="synopsis">Self-OPD introduces a teacher-free on-policy distillation method for flow matching models that uses the student&#x27;s own exploration to generate step-wise supervision via stochastic SDE branches and advantage-based optimization, eliminating the need for task-specific teachers while improving alignment on single and multi-objective benchmarks.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>35 upvotes · arXiv 2608.26872</span></p>
+      </li>
+
+      <li class="item" id="item-hf-papers-2608-26200">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2608.26200">GameWAM: A World Action Model for Video Games</a></h3>
+        <p class="synopsis">GameWAM is a World-Action Model that learns to jointly predict game visuals and executable keyboard-mouse actions for native video game control, using block-causal flow matching and mode-specific action generation to handle heterogeneous controls, demonstrating competitive performance with fewer actions than baseline agents.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>33 upvotes · arXiv 2608.26200</span></p>
+      </li>
+
+      <li class="item" id="item-hf-papers-2608-26103">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2608.26103">Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization</a></h3>
+        <p class="synopsis">Zero-WAM is a causal video-action model that enables zero-shot robotic task generalization by conditioning on human demonstration videos, trained on 74.2K synthetic human-robot pairs and evaluated with 47% success on unseen tasks in simulation and real-world settings.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>16 upvotes · arXiv 2608.26103</span></p>
+      </li>
+
+      <li class="item" id="item-hf-papers-2608-26238">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2608.26238">Procedura: Agentic 3D Modeling with Procedural Control</a></h3>
+        <p class="synopsis">Procedura is a 3D modeling agent framework that uses an LLM to generate editable, parametric procedural assemblies from text prompts, ensuring sharp edges, part decomposition, and machine-checkable mates through compile-time validation and vision-based refinement, evaluated on P3D-Bench and MechBench-36.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>5 upvotes · arXiv 2608.26238</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>An Edition is published once, and revised only to repair a Run that failed.</p>
+  <p><a href="index.html">All Editions</a></p>
+</footer>
+
+</body>
+</html>

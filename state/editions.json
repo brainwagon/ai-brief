@@ -1,5 +1,14 @@
 [
  {
+  "items": 25,
+  "sources": 8,
+  "picks": 2,
+  "unavailable": 0,
+  "unenriched": 0,
+  "date": "2026-08-28",
+  "teaser": "I implemented a modern LLM in 700 lines of C"
+ },
+ {
   "items": 23,
   "sources": 7,
   "picks": 4,
