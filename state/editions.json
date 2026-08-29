@@ -1,5 +1,14 @@
 [
  {
+  "items": 21,
+  "sources": 8,
+  "picks": 3,
+  "unavailable": 0,
+  "unenriched": 0,
+  "date": "2026-08-29",
+  "teaser": "Qwen 3.8 27B at 50 tok/s with 100k Context on a 16GB GPU! (beellama.cpp)"
+ },
+ {
   "items": 25,
   "sources": 8,
   "picks": 2,
