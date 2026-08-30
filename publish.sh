@@ -73,7 +73,13 @@ git -c user.name="ai-brief" \
 
 # Pull first: the repo is edited by hand as well as by the timer, so a push
 # that has not rebased is the ordinary failure, not an exceptional one.
-git pull --rebase --quiet origin main || exit 2
+#
+# --autostash for the same reason. A rebase refuses to start on a dirty tree,
+# and the dirt is normally work in progress somewhere outside docs/ and state/
+# — which has nothing to do with the Edition just committed. Without it, an
+# uncommitted edit anywhere in the repo silently stops Publish every morning
+# while Generate keeps succeeding, and the Editions pile up unpushed.
+git pull --rebase --autostash --quiet origin main || exit 2
 git push --quiet origin HEAD:main || exit 2
 
 echo "publish.sh: Edition ${EDITION} published"
