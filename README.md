@@ -1,9 +1,9 @@
 # ai-brief
 
-A daily Brief of what is new in AI, gathered from seven Sources — arXiv, Hacker
-News, GitHub New Repos, dev.to, and Hugging Face's models, datasets and papers —
-scored and summarised by a free model hosted on OpenRouter, and published to
-GitHub Pages at
+A daily Brief of what is new in AI, gathered from eight Sources — arXiv, Hacker
+News, GitHub New Repos, dev.to, r/LocalLLaMA, and Hugging Face's models,
+datasets and papers — scored and summarised by a free model hosted on
+OpenRouter, and published to GitHub Pages at
 <https://mvandewettering.com/ai-brief/>.
 
 The vocabulary is in [`CONTEXT.md`](CONTEXT.md) and the route is charted on the
@@ -49,7 +49,7 @@ OpenRouter walks the list itself.
 | path | what it is |
 |---|---|
 | `generator/` | the generator; writes files, never runs git |
-| `generator/sources/` | one module per upstream, seven Sources in all |
+| `generator/sources/` | one module per upstream, eight Sources in all |
 | `generator/model.py` | the one call to OpenRouter, shared by Enrichment and Picks |
 | `publish.sh` | the wrapper that commits and pushes |
 | `rubric.md` | the Rubric — what a Score of 1 to 5 means. Edit this. |

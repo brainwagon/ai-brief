@@ -27,7 +27,7 @@ Persistent=true
 
 # Deliberately shorter than the 30m bw-backup uses. A backup nobody reads can
 # drift half an hour; a brief that exists to be read at breakfast should not.
-# The jitter is here only so the Run does not hit seven public APIs at exactly
+# The jitter is here only so the Run does not hit eight public APIs at exactly
 # the top of an hour along with everyone else's cron.
 RandomizedDelaySec=10m
 

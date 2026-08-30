@@ -49,9 +49,9 @@ _Avoid_: entry, link, story, article, result, post
 
 **Source**:
 One upstream stream of Items, and the unit the per-source ceiling counts
-against. There are seven, not five: arXiv, Hacker News, GitHub New Repos,
-dev.to, and Hugging Face's models, datasets, and papers separately — Hugging
-Face is one site but three Sources.
+against. There are eight, not six: arXiv, Hacker News, GitHub New Repos,
+dev.to, r/LocalLLaMA, and Hugging Face's models, datasets, and papers
+separately — Hugging Face is one site but three Sources.
 _Avoid_: feed, provider, upstream, site, GitHub Trending (the name of a page
 this project no longer reads — the repositories now come from the search API)
 
@@ -61,8 +61,9 @@ Source: the arXiv id with the version stripped (`2508.01234`, never
 `2508.01234v2`, so a revision is not new); the Hacker News item id; `owner/repo`
 for GitHub New Repos; the repo id `owner/name` for Hugging Face models and
 datasets; the arXiv id again for Hugging Face papers; the article id for
-dev.to. Hugging Face papers and arXiv share a key form deliberately — that is
-what makes their overlap a collision rather than a guess.
+dev.to; the post id with Reddit's `t3_` kind prefix stripped (`1vzxdui`) for
+r/LocalLLaMA. Hugging Face papers and arXiv share a key form deliberately —
+that is what makes their overlap a collision rather than a guess.
 _Avoid_: id, key, slug, fingerprint
 
 **Snapshot**:
