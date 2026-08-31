@@ -1,5 +1,14 @@
 [
  {
+  "items": 25,
+  "sources": 8,
+  "picks": 1,
+  "unavailable": 0,
+  "unenriched": 0,
+  "date": "2026-08-31",
+  "teaser": "How I got Qwen 3.8 27b running at ~75t/s decode on 16GB RTX 5080"
+ },
+ {
   "items": 11,
   "sources": 8,
   "picks": 4,
