@@ -84,7 +84,7 @@ HN_POINTS_FLOOR = 75    # noise gate; the Score does the choosing
 HN_ENRICH_LIMIT = 20    # what the Rubric was calibrated against
 DEVTO_ENRICH_LIMIT = 15  # ditto
 
-# --- The eight Sources, in the order they appear in an Edition -------------
+# --- The nine Sources, in the order they appear in an Edition --------------
 #
 # key            -> the Snapshot filename and the HTML id stem
 # label          -> the <h2> text, and the name used in "title as X gave it"
@@ -94,6 +94,7 @@ SOURCE_ORDER = [
     "github",
     "devto",
     "reddit",
+    "wired",
     "hf-models",
     "hf-datasets",
     "hf-papers",
@@ -105,6 +106,7 @@ SOURCE_LABELS = {
     "github": "GitHub New Repos",
     "devto": "dev.to",
     "reddit": "r/LocalLLaMA",
+    "wired": "WIRED",
     "hf-models": "Hugging Face models",
     "hf-datasets": "Hugging Face datasets",
     "hf-papers": "Hugging Face papers",

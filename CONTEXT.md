@@ -49,8 +49,8 @@ _Avoid_: entry, link, story, article, result, post
 
 **Source**:
 One upstream stream of Items, and the unit the per-source ceiling counts
-against. There are eight, not six: arXiv, Hacker News, GitHub New Repos,
-dev.to, r/LocalLLaMA, and Hugging Face's models, datasets, and papers
+against. There are nine: arXiv, Hacker News, GitHub New Repos, dev.to,
+r/LocalLLaMA, WIRED, and Hugging Face's models, datasets, and papers
 separately — Hugging Face is one site but three Sources.
 _Avoid_: feed, provider, upstream, site, GitHub Trending (the name of a page
 this project no longer reads — the repositories now come from the search API)
