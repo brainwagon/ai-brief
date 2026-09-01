@@ -504,6 +504,42 @@
     "stanfordnlp/imdb",
     "wikimedia/wikipedia"
    ]
+  },
+  {
+   "date": "2026-09-01",
+   "recorded_at": "2026-09-01T07:18:42Z",
+   "identities": [
+    "Anthropic/claude-protein-binder-design",
+    "Anthropic/enabling-independent-research",
+    "DISLab/Q-CARE",
+    "FlyRank/internship-warehouse",
+    "HuggingFaceFW/fineweb",
+    "LightwheelAI/EgoDemo",
+    "LightwheelAI/EgoStandard",
+    "NousResearch/hermes-function-calling-v1",
+    "SageBio/mva-hackathon-2026-data",
+    "Specific-Labs/Scaffold-CoT",
+    "TeichAI/Fable-5-Cursor-Traces",
+    "TeichAI/Ox-Alpha-10k",
+    "Vyber07/cyber-security",
+    "biglam/britannica-illustrated-pages",
+    "faunix/Qwen3.8-27B-Distillation-40K",
+    "hamzabagirsakci/turkish-court-decisions",
+    "inclusionAI/ConceptEdit-12M",
+    "laion/BVD-V-55M",
+    "llm-jp/AnswerCarefully",
+    "malcolmrey/various",
+    "markov-ai/cad-1000-hours",
+    "nyu-mll/glue",
+    "openai/gsm8k",
+    "openbmb/Ultra-FineWeb-L1",
+    "r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation",
+    "rajpurkar/squad",
+    "saidutta69/fable-5-premium",
+    "snapwre/amharic-speech",
+    "stanfordnlp/imdb",
+    "wikimedia/wikipedia"
+   ]
   }
  ]
 }

@@ -1,6 +1,15 @@
 [
  {
   "items": 25,
+  "sources": 9,
+  "picks": 3,
+  "unavailable": 0,
+  "unenriched": 0,
+  "date": "2026-09-01",
+  "teaser": "GenFirst: Generation Before Reconstruction for Stable End-to-End Latent Generative Modeling"
+ },
+ {
+  "items": 25,
   "sources": 8,
   "picks": 1,
   "unavailable": 0,
