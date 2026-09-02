@@ -540,6 +540,42 @@
     "zai-org/GLM-5.3",
     "zai-org/GLM-5.3-Flash"
    ]
+  },
+  {
+   "date": "2026-09-02",
+   "recorded_at": "2026-09-02T13:06:33Z",
+   "identities": [
+    "BreezeBlue/Breeze-TTS-2",
+    "FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+    "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+    "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF",
+    "Kijai/MiniMax-H3-experimental",
+    "Lightricks/LTX-2.5",
+    "MiniMaxAI/MiniMax-H3",
+    "OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+    "Qwen/Qwen3.8-27B",
+    "Qwen/Qwen3.8-Flash-Next",
+    "Qwen/Qwen3.8-Flash-Next-FP8",
+    "alibaba-pai/MiniMax-H3-Acc-LoRAs",
+    "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "google/timesfm-3.0-pytorch",
+    "huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF",
+    "moonshotai/Kimi-K3",
+    "orcarouter/GLM-5.3-Flash-Uncensored-FP8",
+    "orcarouter/Qwen3.8-27B-Uncensored-FP8",
+    "orcarouter/Qwen3.8-27B-Uncensored-GGUF",
+    "orcarouter/Qwen3.8-27B-Uncensored-MLX",
+    "orcarouter/Qwen3.8-Flash-Next-Uncensored-GGUF",
+    "peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF",
+    "pipecat-ai/phonellm-alpha-1",
+    "tencent/Hy4-preview",
+    "unsloth/GLM-5.3-Flash-GGUF",
+    "unsloth/Qwen3.8-27B-GGUF",
+    "unsloth/Qwen3.8-Flash-Next-GGUF",
+    "zai-org/GLM-5.3",
+    "zai-org/GLM-5.3-Flash"
+   ]
   }
  ]
 }
