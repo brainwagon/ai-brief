@@ -2,6 +2,15 @@
  {
   "items": 25,
   "sources": 9,
+  "picks": 2,
+  "unavailable": 0,
+  "unenriched": 0,
+  "date": "2026-09-03",
+  "teaser": "GRADSOLVE: fast exact gradients for ODE ensembles on GPUs"
+ },
+ {
+  "items": 25,
+  "sources": 9,
   "picks": 3,
   "unavailable": 0,
   "unenriched": 1,

@@ -576,6 +576,42 @@
     "subsy/skill-cabinet",
     "tradecatlabs/shulihuazixuecongshu"
    ]
+  },
+  {
+   "date": "2026-09-03",
+   "recorded_at": "2026-09-03T13:07:18Z",
+   "identities": [
+    "2akouwu/reverify",
+    "GangTailorUpgrade/undress-service",
+    "Human-Agent-Society/reef",
+    "LAMDA-NeSy/Research-Starter-Kit",
+    "MSNightmare/FalconFlank",
+    "MSNightmare/HardBreacher",
+    "Merserk/dlss5-visual-enhancer",
+    "MetaMask-AI/metamask-desktop",
+    "Nanako0129/sepia",
+    "PhiloLabs/fable51-worlds",
+    "Player-YN/PawWork_ZhuaZhua",
+    "Ryze-AI-Adgent/open-seo-mcp-skills",
+    "TetreesEX/TetreesAgent_EX",
+    "XiaoDuoYa/codex-with-chatgpt",
+    "ZJU-REAL/Easel",
+    "aimen08/noty",
+    "anthropics/commerce-agents",
+    "carloslfu/slotstream",
+    "cbrock84/headcount",
+    "chrisgreg/boop",
+    "faisalkindi/DLSS5oneclick",
+    "fanhao375/microduck-replica",
+    "jlrouzies-fr/DLSS5-Feeder",
+    "lightorigins/LightNav-0",
+    "lnkiai/m3e-canvas",
+    "rakanki911/DLSS5-Swapper",
+    "shadcn-ui/cn",
+    "siknet/FreePEP",
+    "subsy/skill-cabinet",
+    "useagenthq/useagent"
+   ]
   }
  ]
 }
