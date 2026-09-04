@@ -612,6 +612,42 @@
     "subsy/skill-cabinet",
     "useagenthq/useagent"
    ]
+  },
+  {
+   "date": "2026-09-04",
+   "recorded_at": "2026-09-04T13:02:28Z",
+   "identities": [
+    "2akouwu/reverify",
+    "Albert-Weasker/niubigeo",
+    "GangTailorUpgrade/undress-service",
+    "Human-Agent-Society/reef",
+    "LAMDA-NeSy/Research-Starter-Kit",
+    "LunarXuan/image-prompt-reverse",
+    "MSNightmare/FalconFlank",
+    "Merserk/dlss5-visual-enhancer",
+    "OpenVDN/vdn-minimax-h3",
+    "PhiloLabs/fable51-worlds",
+    "Ryze-AI-Adgent/open-seo-mcp-skills",
+    "TetreesEX/TetreesAgent_EX",
+    "ahujasid/camera-to-blender",
+    "aimen08/noty",
+    "anthropics/commerce-agents",
+    "codejunkie99/fable-orchestrator",
+    "danielblnc/DLSS-NR-on-AMD",
+    "dreamers-laboratory/image-to-3d-pipeline",
+    "faisalkindi/DLSS5oneclick",
+    "jlrouzies-fr/DLSS5-Feeder",
+    "lnkiai/m3e-canvas",
+    "mizorewww/course2md",
+    "nahrek/polyledger",
+    "op7418/guizang-yingzao-skill",
+    "rakanki911/DLSS5-Swapper",
+    "shadcn-ui/cn",
+    "siknet/FreePEP",
+    "subsy/skill-cabinet",
+    "useagenthq/useagent",
+    "yilujian/easy-writing"
+   ]
   }
  ]
 }

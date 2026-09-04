@@ -612,6 +612,42 @@
     "stanfordnlp/imdb",
     "wikimedia/wikipedia"
    ]
+  },
+  {
+   "date": "2026-09-04",
+   "recorded_at": "2026-09-04T13:02:28Z",
+   "identities": [
+    "ACERobotics/ACE-Data-0",
+    "Anthropic/claude-protein-binder-design",
+    "FlyRank/internship-warehouse",
+    "HuggingFaceFW/fineweb",
+    "IFM/TxT360-v2",
+    "LightwheelAI/EgoStandard",
+    "NousResearch/hermes-function-calling-v1",
+    "Qdrant/FineWeb-10B",
+    "SageBio/mva-hackathon-2026-data",
+    "TeichAI/Ox-Alpha-10k",
+    "TheAgenticDataCompany/open-yap-1k",
+    "Vyber07/cyber-security",
+    "datapointai/text-to-speech-human-preferences-315k",
+    "faunix/Qwen3.8-27B-Distillation-40K",
+    "gaia-benchmark/GAIA",
+    "hamzabagirsakci/turkish-court-decisions",
+    "junchaoh-cs/SolarWM-Data",
+    "kuben-developer/tiktok-videos-4b",
+    "llm-jp/AnswerCarefully",
+    "markov-ai/cad-1000-hours",
+    "nyu-mll/glue",
+    "openai/gsm8k",
+    "r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation",
+    "rajpurkar/squad",
+    "saidutta69/fable-5-premium",
+    "snapwre/amharic-speech",
+    "spatialverse/UniPhys-Bench",
+    "stanfordnlp/imdb",
+    "wikimedia/wikipedia",
+    "zouhar/last-translation-benchmark"
+   ]
   }
  ]
 }

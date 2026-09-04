@@ -2,6 +2,15 @@
  {
   "items": 25,
   "sources": 9,
+  "picks": 1,
+  "unavailable": 0,
+  "unenriched": 0,
+  "date": "2026-09-04",
+  "teaser": "I released sanoTTS: smallest complete TTS stack in 294k params (337 KB) that runs on $3 microcontroller and a 1.46m one that beats models 3x and 10x it's size"
+ },
+ {
+  "items": 25,
+  "sources": 9,
   "picks": 2,
   "unavailable": 0,
   "unenriched": 0,
