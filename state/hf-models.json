@@ -648,6 +648,42 @@
     "zai-org/GLM-5.3",
     "zai-org/GLM-5.3-Flash"
    ]
+  },
+  {
+   "date": "2026-09-05",
+   "recorded_at": "2026-09-05T13:08:06Z",
+   "identities": [
+    "BreezeBlue/Breeze-TTS-2",
+    "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+    "FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+    "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "IFM/K2-Horizon-MoVA-36B-A4B",
+    "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+    "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF",
+    "Lightricks/LTX-2.5",
+    "MiniMaxAI/MiniMax-H3",
+    "OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+    "OpenVDN/vdn-minimax-h3",
+    "Qwen/Qwen3.8-27B",
+    "Qwen/Qwen3.8-Flash-Next",
+    "XHToken/Spark-X2.5-4B",
+    "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "distilbert/distilbert-base-uncased",
+    "facebook/mms-300m",
+    "google-bert/bert-base-uncased",
+    "google/timesfm-3.0-pytorch",
+    "openai-community/gpt2",
+    "openai/clip-vit-base-patch32",
+    "orcarouter/GLM-5.3-Flash-Uncensored-FP8",
+    "orcarouter/Qwen3.8-27B-Uncensored-GGUF",
+    "orcarouter/Qwen3.8-Flash-Next-Uncensored-GGUF",
+    "sentence-transformers/all-MiniLM-L6-v2",
+    "tencent/Hy4-preview",
+    "unsloth/Qwen3.8-27B-GGUF",
+    "unsloth/Qwen3.8-Flash-Next-GGUF",
+    "zai-org/GLM-5.3",
+    "zai-org/GLM-5.3-Flash"
+   ]
   }
  ]
 }
