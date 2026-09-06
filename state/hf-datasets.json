@@ -684,6 +684,42 @@
     "wikimedia/wikipedia",
     "zouhar/last-translation-benchmark"
    ]
+  },
+  {
+   "date": "2026-09-06",
+   "recorded_at": "2026-09-06T13:04:21Z",
+   "identities": [
+    "ACERobotics/ACE-Data-0",
+    "Anthropic/claude-protein-binder-design",
+    "FlyRank/internship-warehouse",
+    "HuggingFaceFW/fineweb",
+    "IFM/TxT360-v2",
+    "NousResearch/hermes-function-calling-v1",
+    "Qdrant/FineWeb-10B",
+    "SageBio/mva-hackathon-2026-data",
+    "TheAgenticDataCompany/open-yap-1k",
+    "Vyber07/cyber-security",
+    "acvlab/ABot-World-Explorer-500h",
+    "datapointai/text-to-speech-human-preferences-315k",
+    "echel0nn1881/kimi-cyber-reasoning",
+    "gaia-benchmark/GAIA",
+    "hamzabagirsakci/turkish-court-decisions",
+    "jacokon/fasth3-live",
+    "junchaoh-cs/SolarWM-Data",
+    "kuben-developer/tiktok-videos-4b",
+    "llm-jp/AnswerCarefully",
+    "malcolmrey/various",
+    "markov-ai/cad-1000-hours",
+    "nyu-mll/glue",
+    "openai/gsm8k",
+    "r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation",
+    "rajpurkar/squad",
+    "saidutta69/fable-5-premium",
+    "spatialverse/UniPhys-Bench",
+    "stanfordnlp/imdb",
+    "wikimedia/wikipedia",
+    "zouhar/last-translation-benchmark"
+   ]
   }
  ]
 }

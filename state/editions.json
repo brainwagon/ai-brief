@@ -1,5 +1,14 @@
 [
  {
+  "items": 14,
+  "sources": 9,
+  "picks": 3,
+  "unavailable": 0,
+  "unenriched": 0,
+  "date": "2026-09-06",
+  "teaser": "48 tg/s 440 prefill on my grandma's cluster (2xP40) (sort of)"
+ },
+ {
   "items": 19,
   "sources": 9,
   "picks": 3,
