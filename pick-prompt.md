@@ -14,6 +14,9 @@ How to choose:
 
 - Prefer the Item that can be acted on tonight over the one that is merely
   impressive.
+- A sub-1B language model — newly released, or somebody's account of running one
+  on real hardware for a real task — goes in the Picks whenever the shortlist
+  offers one, and goes first.
 - Prefer breadth. Two Picks from one Source is the most that is ever worth it,
   and never pick two Items that are the same story arriving twice.
 - Fewer Picks is always better than a padded one. Two good Picks beat four

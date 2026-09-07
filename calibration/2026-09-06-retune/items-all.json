@@ -1,0 +1,1226 @@
+[
+ {
+  "source": "arXiv",
+  "recorded": 4,
+  "title": "Marionette: Predicting World States, Rendering Geometry, Painting Appearance",
+  "synopsis": "Marionette is a world model for interactive games that explicitly predicts a 3D world state (including articulated skeletons and trajectories) and uses a zero-parameter renderer to compute geometry and occlusion before a diffusion model synthesizes the photorealistic appearance from this structured state."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 4,
+  "title": "Split the Labor: Separating Evidence Interpretation from Decision Aggregation",
+  "synopsis": "The paper proposes separating evidence interpretation from decision aggregation by defining a structured evidence tuple (hypothesis, reliability, rationale, provenance) and showing that combining interpretations should use calibrated log-likelihood ratios rather than simple summation, which avoids count-scale drift."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 4,
+  "title": "Rollplex: Cross-Phase GPU Spatial Sharing for Vision Language Model Post-Training",
+  "synopsis": "Rollplex is a runtime that improves the efficiency of Vision-Language Model post-training by overlapping the prefix computation (which is independent of the generated response) with the rollout decoding phase to maximize GPU utilization."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 4,
+  "title": "Twin: Playing an Unknown Game with a Test-Time Digital Twin",
+  "synopsis": "The Twin system is a test-time world-model inference method that automatically constructs an executable world model for unknown, continual learning tasks by simulating interactions and using discrepancies as signals to repair the model."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 4,
+  "title": "You Only Pass Once: Answering and Abstaining Together in a Single Forward Pass of a Frozen Language Model",
+  "synopsis": "YOPO is a method that integrates conditional steering (to guide reasoning) and zero-shot sufficiency detection (to abstain when information is lacking) into a single forward pass of a frozen language model backbone."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 4,
+  "title": "GhostPoint: Self-Supervised Representation Learning by Hallucinating Occluded LiDAR Structure",
+  "synopsis": "GhostPoint is an SSL framework for 3D object detection that generates and trains on 'hallucinated' latent features for occluded regions by introducing a predictor-level supervision scheme using instance voxel dilation."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 3,
+  "title": "Generation-Powered Inference for Distribution-Valued Outcomes",
+  "synopsis": "This framework, Generation-Powered Inference (GPI), proposes using generative models to improve statistical inference on distribution-valued outcomes by transforming the problem into estimating a mean function in a Hilbert space."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 3,
+  "title": "Handover of In-Context Learning State Across Session Boundaries",
+  "synopsis": "This work provides a theory and method for deciding what state needs to be retained when continuing a task with a large language model across separate sessions, formulating it as transferring the in-context learning state."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 3,
+  "title": "Participatory Moral AI Is Not Neutral: The Invisible Hand of Developers",
+  "synopsis": "This paper analyzes the process of 'moral preference elicitation' for training AI policies, showing how developer choices in feature scoping, voter sampling, and question framing fundamentally shape the resulting moral preferences, even when using aggregated voting data."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 3,
+  "title": "RecipeNet: A Hierarchical Transformer for Recipe Data",
+  "synopsis": "RecipeNet is a hierarchical Transformer architecture designed to process structured procedural data like recipes, capturing both field-level interactions within steps and sequential dependencies across steps."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 3,
+  "title": "Universal Thermodynamic Interatomic Potentials for Crystalline Materials",
+  "synopsis": "This work introduces a Thermodynamic Interatomic Potential (TIP) that extends standard interatomic potentials to model Gibbs free energy, allowing for finite-temperature calculations of crystal phase stability and phase transitions using automatic differentiation."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 3,
+  "title": "Generating Benchmark Health Data Using a Tabular Diffusion Transformer",
+  "synopsis": "A two-stage framework uses a diffusion transformer to generate synthetic cross-tabular datasets by first transforming heterogeneous raw tables into standardized statistical representations, which are then used to train the generator."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 3,
+  "title": "Approximate Muon with low-rank adapters",
+  "synopsis": "This paper adapts the Muon optimizer for low-rank parameter-efficient fine-tuning (PEFT) by linearizing and solving a relaxed Muon objective using least-squares, resulting in an efficient method called sMuon."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 3,
+  "title": "Ensuring Safe Physical AI in Urban Mobility via Hazard-Informed Synthesized Envelopes",
+  "synopsis": "The framework combines systematic hazard analysis with runtime enforcement to create cross-layer safety envelopes for robotic systems operating in complex urban environments."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 3,
+  "title": "LP-NAS: Linear Programming-based Neural Architecture Search",
+  "synopsis": "LP-NAS proposes a framework for differentiable Neural Architecture Search by formulating a linear program that uses the validation-loss gradient and training-loss Hessian to derive an architecture update direction, resulting in faster convergence than standard DARTS methods."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 3,
+  "title": "Expected Free Energy-based Informative Path Planning for Robotic Mars Exploration",
+  "synopsis": "This work proposes using Expected Free Energy (EFE), derived from active inference, as a single objective function for robotic path planning to simultaneously manage information gain and travel costs when exploring unknown environments like Mars."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 3,
+  "title": "SheetCompass: Hierarchical Relation Graphs for Agentic Spreadsheet Reasoning",
+  "synopsis": "SheetCompass is an agentic framework that improves spreadsheet reasoning for LLMs by explicitly modeling and utilizing the complex structural relationships and spatial context within and across multiple worksheets."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 3,
+  "title": "Designing Compact Neural Architectures via Neuron Gating and Mixed Activation",
+  "synopsis": "This work proposes a general bilevel optimization framework to find compact neural architectures by using continuous relaxations for traditionally discrete decisions like neuron and activation choices, resulting in methods like NAS-NGMA."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 3,
+  "title": "PACE-Bench: Benchmarking Physics Adaptation via Code Evolution in Dynamic Environments",
+  "synopsis": "PACE-Bench is a new simulator-grounded benchmark that tests self-evolving agents' ability to adapt their source code to a mutated target environment across six physics domains, requiring iterative design based on diagnostic feedback."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 3,
+  "title": "Style or Signature? Artist-Disjoint Evaluation of Style Classification in Frozen Vision Embeddings",
+  "synopsis": "This work proposes an artist-disjoint evaluation protocol for style classification using frozen image embeddings, finding that style discrimination robustness varies significantly across historical movements depending on whether individual artists are held out during testing."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 3,
+  "title": "Designing Reinforcement Learning for Diffusion Models: A Unified Path-Space View",
+  "synopsis": "This work unifies existing reinforcement learning approaches for diffusion models by showing that disparate losses\u2014from reverse-trajectory and forward-matching methods\u2014derive from a single path-space principle, leading to a unified, variance-reduced policy-gradient estimator."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 3,
+  "title": "Knowing When to Stop: Bayesian Optimal Stopping for LLM Evaluations",
+  "synopsis": "optstop is a framework for LLM evaluation that adaptively allocates compute by treating evaluation as a sequential measurement problem, continuing sampling only where estimation uncertainty remains high."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 3,
+  "title": "More Correct Mass, Worse Answers: Why Power Sampling Can Fail and How to Fix It",
+  "synopsis": "This work diagnoses a paradox where Power Sampling, a technique to improve reasoning by sharpening trajectory distributions, can actually degrade performance by causing dose and coverage mismatches, proposing a deformation-controlled target to fix this issue."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 3,
+  "title": "CytoBERT: A Foundation Model for Cytometry Data",
+  "synopsis": "CytoBERT is an open-weight foundation model pretrained on a large, standardized corpus of single-cell cytometry data to learn transferable relationships between markers across heterogeneous datasets."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 3,
+  "title": "CRAFT: Constrained Reward via Attention Fine-Tuning for Subject Personalization without Composed Targets",
+  "synopsis": "CRAFT is a framework that fine-tunes a reference-aware multimodal diffusion transformer using only 10K reference images and subject masks to achieve subject personalization, avoiding the need for costly composed-target supervision used by prior methods."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 3,
+  "title": "Offline Deep Q* Estimation with Diffusion Models",
+  "synopsis": "This work proposes a framework using conditional diffusion models to estimate the reward law and transition kernel for offline RL, which then allows for the data-driven approximation of the optimal Bellman operator to estimate $Q^*$."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 3,
+  "title": "Whose doctor does the AI recommend? An algorithm audit of reputation and demographic signals in large language model-assisted physician choice",
+  "synopsis": "This paper conducts a randomized audit across several LLMs, showing that physician choice recommendations are mainly driven by reputation scores and fees, while subtle, unmentioned demographic signals show measurable, consistent biases."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 2,
+  "title": "CPI-Bench: A Comprehensive,Practical and Intelligent Benchmark for Real-World Image Editing",
+  "synopsis": "CPI-Bench is a new benchmark for image editing that includes subsets for general tasks, practical real-user scenarios, and highly demanding reasoning-based editing to evaluate models beyond simple single-image operations."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 2,
+  "title": "MagnifiQ: Patch-aware Text Guided Progressive Upscaling for High-Resolution Image Restoration",
+  "synopsis": "MagnifiQ is an image restoration framework that progressively upscales and restores images by replacing diffusion model self-attention layers with convolutions and using patch-specific text prompts for localized guidance during upscaling to high resolutions like 4K."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 2,
+  "title": "Decoding the Past: An Uncertainty-Aware Deep Learning Framework for Sex Attribution in Prehistoric Hand Stencils",
+  "synopsis": "This framework uses an uncertainty-aware deep learning pipeline, combining dual image processing, silhouette augmentation, and ensemble methods (EfficientNet-B3 and MobileViT-S), to attempt sex attribution from prehistoric hand stencils by modeling and aggregating prediction uncertainty."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 2,
+  "title": "Learning-to-Transition for Large-scale and High-Order MIMO Detection",
+  "synopsis": "This work proposes a Learning-to-Transition (L2T) framework for high-order MIMO detection that models the process as a stochastic sequence of complete-vector transitions using a Transformer, and details a multi-stage training strategy for transferring hard-output policies to soft-output iterative detection receivers."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 2,
+  "title": "Optimal Scheduling of Road Maintenance Jobs Considering Impact on Traffic Flows",
+  "synopsis": "This paper proposes using data-driven surrogate models to approximate equilibrium arc flows from origin-destination demand, aiming to make network maintenance planning computationally tractable for real-world traffic scheduling."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 2,
+  "title": "Information Satisfaction: A Reader-Centered Axis for Summarization Evaluation",
+  "synopsis": "This work proposes evaluating summarization based on 'information satisfaction' relative to a user's background persona, finding that common metrics, including LLM-as-judge scores, fail to adequately measure this human-centric utility."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 2,
+  "title": "Shift Aware Transfer Learning with Adaptive Dual-Encoder Fusion for PM Forecasting in Data-Limited Environments",
+  "synopsis": "This work proposes a shift-aware dual-encoder transfer framework to forecast PM2.5 when local data is limited and domain shifts occur, achieving state-of-the-art performance by adaptively fusing source-domain knowledge with target-specific representations."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 2,
+  "title": "Wyvern: An Agentic Framework for Generating Grounded Multimodal Reports",
+  "synopsis": "Wyvern is a multi-agent framework designed to automatically generate grounded, multimodal technical reports by integrating text, images, and tables while including a claims auto-revision stage."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 2,
+  "title": "The Dynamics of Intelligence Explosions",
+  "synopsis": "This paper mathematically explores the dynamics of potential intelligence explosions in AI, focusing on growth rates and introducing generation time as a key parameter determining whether singular, rapid capability escalation is possible."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 2,
+  "title": "UMPIRE-Net: Unrolled Magnitude-Phase Regularization Network for Accelerated MRI",
+  "synopsis": "UMPIRE-Net is a physics-driven deep learning method for MRI reconstruction that explicitly separates and regularizes the magnitude and phase components of complex images, improving results over standard complex-valued approaches."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 2,
+  "title": "Online Inference in Distributional Temporal-Difference Learning",
+  "synopsis": "This work develops theoretical results proving the weak convergence of the Polyak--Ruppert averaged estimator and its bootstrap counterpart for various statistical functionals of the return distribution learned from a single Markov trajectory."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 2,
+  "title": "The Past and Future of AI Scientists",
+  "synopsis": "This paper surveys the concept of AI Scientists, describing them as integrated agents that can automate the entire scientific process from hypothesis generation to experimental execution, but its central point is the difficulty of integration across various scientific domains."
+ },
+ {
+  "source": "arXiv",
+  "recorded": 2,
+  "title": "From Style Replication to Style Exploration: Enabling Art Style Exploration with Analyze-Experiment-Resituate Framework",
+  "synopsis": "The Analyze-Experiment-Resituate (AER) framework aims to guide generative AI art creation beyond mere style replication by structuring the process around analysis, controlled experimentation, and simulating social reflection on emerging styles."
+ },
+ {
+  "source": "Hacker News",
+  "recorded": 3,
+  "title": "A third world engineer responds to \u201cRISC-V: They should have known better\u201d",
+  "synopsis": "A piece written by an engineer discussing RISC-V, addressing criticisms about the instruction set architecture."
+ },
+ {
+  "source": "Hacker News",
+  "recorded": 3,
+  "title": "Tell HN: Cloudflare silently injects its analytics when you switch nameservers",
+  "synopsis": "A warning detailing how switching nameservers to Cloudflare silently injected an analytics JavaScript snippet into an otherwise static, JS-free website."
+ },
+ {
+  "source": "Hacker News",
+  "recorded": 2,
+  "title": "Firefox for iOS now has a native adblocker",
+  "synopsis": "The Firefox browser on iOS now includes a native ad blocker feature."
+ },
+ {
+  "source": "Hacker News",
+  "recorded": 2,
+  "title": "Qwen 3.8 27B is excellent, but it defaults to overthinking things",
+  "synopsis": "A model named Qwen 3.8 27B is noted for being excellent but is also described as defaulting to overthinking."
+ },
+ {
+  "source": "Hacker News",
+  "recorded": 2,
+  "title": "Models Are Getting Dumber on Purpose",
+  "synopsis": "The title suggests an investigation into why or how models might be intentionally degraded in performance."
+ },
+ {
+  "source": "Hacker News",
+  "recorded": 2,
+  "title": "Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
+  "synopsis": "A discussion regarding Anthropic's technique for digitally watermarking text generated by their Claude model."
+ },
+ {
+  "source": "Hacker News",
+  "recorded": 2,
+  "title": "The Life and Death of Direct File [pdf]",
+  "synopsis": "This item is a PDF document whose title suggests an overview of the history and status of direct file access in computing."
+ },
+ {
+  "source": "Hacker News",
+  "recorded": 2,
+  "title": "Protobuf has LSP support",
+  "synopsis": "Protobuf has gained Language Server Protocol (LSP) support, which enhances developer tooling for using Protocol Buffers."
+ },
+ {
+  "source": "Hacker News",
+  "recorded": 1,
+  "title": "Claude: System Prompts",
+  "synopsis": "This item lacks any descriptive text or technical content, suggesting a generic discussion about system prompts for the Claude model."
+ },
+ {
+  "source": "Hacker News",
+  "recorded": 1,
+  "title": "Research papers using \"kidney disappointment\" instead of \"kidney failure\"",
+  "synopsis": "This appears to be a suggestion for alternative medical terminology, which is outside the technical interests of the reader."
+ },
+ {
+  "source": "Hacker News",
+  "recorded": 1,
+  "title": "Stripe will reportedly acquire OpenRouter for $7B+",
+  "synopsis": "Stripe is reportedly planning to acquire OpenRouter for over $7 billion."
+ },
+ {
+  "source": "Hacker News",
+  "recorded": 1,
+  "title": "The AI Credit Resale Economy",
+  "synopsis": "This item is titled The AI Credit Resale Economy and provides no further descriptive text or context."
+ },
+ {
+  "source": "Hacker News",
+  "recorded": 1,
+  "title": "The federal keyword lists that canceled billions in research funding",
+  "synopsis": "Discusses federal keyword lists that have reportedly canceled billions in research funding."
+ },
+ {
+  "source": "Hacker News",
+  "recorded": 1,
+  "title": "Nvidia dramatically reduces amount of OpenAI infra financing it may guarantee",
+  "synopsis": "Nvidia's involvement in financing OpenAI's infrastructure is reportedly being reduced."
+ },
+ {
+  "source": "Hacker News",
+  "recorded": 1,
+  "title": "The weekend is 100 years old",
+  "synopsis": "This title alone provides no technical information or computational substance for a programmer interested in hardware or ML."
+ },
+ {
+  "source": "Hacker News",
+  "recorded": 1,
+  "title": "St Lucie Nuclear Reactor Unit 1 manually shutdown, 3 control rods drop into core",
+  "synopsis": "A report regarding the manual shutdown of St Lucie Nuclear Reactor Unit 1, involving the dropping of three control rods into the core."
+ },
+ {
+  "source": "Hacker News",
+  "recorded": 1,
+  "title": "NIH is ending a key grant for budding clinical researchers",
+  "synopsis": "The National Institutes of Health (NIH) is reportedly ending a key grant funding stream for developing clinical researchers."
+ },
+ {
+  "source": "Hacker News",
+  "recorded": 1,
+  "title": "ICE Shot a Journalist and Threw Him in Detention. He's Approaching 300 Days",
+  "synopsis": "This item reports on a journalist's detention in ICE custody."
+ },
+ {
+  "source": "Hacker News",
+  "recorded": 1,
+  "title": "A U.S. Strategy to Prevent the Creation of Mirror Life",
+  "synopsis": "No technical or computational details are provided about the strategy to prevent the creation of mirror life."
+ },
+ {
+  "source": "Hacker News",
+  "recorded": 1,
+  "title": "Banned Words List",
+  "synopsis": "The provided input is only a title, 'Banned Words List', with no descriptive text to evaluate."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 4,
+  "title": "guillaumemeyer/watermarks-remover",
+  "synopsis": "A Python tool that strips multi-vendor AI provenance marks from various file formats, including Unicode text hygiene, statistical rewrite hooks, and C2PA/metadata from images, PDFs, and documents."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 4,
+  "title": "xoreaxeaxeax/skitter-creek-bath-salts",
+  "synopsis": "This project details a method for unlocking performance on the CPU by utilizing DRAM scrambling, presented with C language implementation details."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 4,
+  "title": "sohaibdevv/youtube-music",
+  "synopsis": "This is a lightweight, ad-free, and client-side application written in TypeScript for streaming music from YouTube Music, supporting features like background playback and custom playlists without requiring a paid subscription."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 3,
+  "title": "deepseek-ai/deepseek-harness",
+  "synopsis": "This repository offers a framework, written in TypeScript, that makes integrating various AI components as customizable plugins."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 3,
+  "title": "xiaobright/dsh-anchored-standard",
+  "synopsis": "This is a DeepSeek Harness preset for JavaScript that applies a two-phase process: an initial bootstrap alignment followed by the use of full Standard tools, achieving high scores on Project2 tasks."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 3,
+  "title": "yjh051108/dsh-routing-suite",
+  "synopsis": "This is a PowerShell kit for a 'dsh-routing-suite' that involves installing a runtime injector followed by a task-aware reasoning-mode router preset."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 3,
+  "title": "cordiverse/paper",
+  "synopsis": "This repository introduces a programming paradigm intended to handle spatiotemporal composability, suggesting a method for structuring computations across space and time."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 3,
+  "title": "dmmulroy/anti-slop",
+  "synopsis": "A set of opinionated linters written in Oxlint to reject common TypeScript and JavaScript patterns that the authors consider to provide low evidence of technical merit."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 3,
+  "title": "ccch1mneyyy/dsh-TUI",
+  "synopsis": "A TypeScript plugin for DSH, featuring a TUI interface with elements like a whale bar, live status display, streaming thoughts, double-Esc rollback, and context/TPS tracking, installable via npm."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 3,
+  "title": "milind-soni/OpenMausBot",
+  "synopsis": "OpenMausBot is an open-source, TypeScript-based alternative to Grok Bot that provides a virtual machine environment for bots to operate within."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 3,
+  "title": "alchaincyf/deepseek-harness-orange-book",
+  "synopsis": "This item claims to provide an 'Orange Book' companion to DeepSeek Harness, offering system prompts, a 129-line startup checklist, and raw session logs not available in official documentation."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 3,
+  "title": "vercel-labs/eve-software-factory-template",
+  "synopsis": "This is a template for an 'eve Software Factory' written in TypeScript, which appears to be a structured project setup for creating software using the 'eve' framework."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 3,
+  "title": "NousResearch/Hermes-Bot-Mode",
+  "synopsis": "This is a desktop plugin for the Hermes interface that provides a 'Bot Mode' allowing users to create named agents, define their chat routines and avatars, and enable bot-to-bot messaging without modifying the core application code."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 3,
+  "title": "Anionex/dsh-vision-toolkit",
+  "synopsis": "This is a DeepSeek Harness plugin toolkit written in TypeScript designed to help text-only models perform vision tasks, including image question answering, long-screenshot OCR, and UI restoration."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 3,
+  "title": "MSNightmare/ShieldBreak",
+  "synopsis": "This repository concerns a zero-day vulnerability found in Windows Defender written in C++."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 2,
+  "title": "anywhere-labs/deepseek-harness-desktop",
+  "synopsis": "This is a modern desktop solution built for the DeepSeek Harness (DSH) plugin ecosystem, implying that both functionality and the desktop wrapper itself are designed as plugins using TypeScript."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 2,
+  "title": "awesome-dsh-plugin/awesome-dsh-plugin",
+  "synopsis": "This is a curated list of plugins for the DeepSeek Harness (dsh) framework, written in Python."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 2,
+  "title": "zhu1090093659/dsh-web-ui",
+  "synopsis": "A collection of plugins and skins for the DeepSeek Harness (DSH) Web UI, adding features like a task board, git graph, and remote mobile UI."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 2,
+  "title": "Leutenegger/book-to-skill",
+  "synopsis": "A tool designed to convert any technical book PDF into a Claude Code skill, making the material ready for study and referencing within a workflow."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 2,
+  "title": "dsh-market/dsh-market",
+  "synopsis": "A plugin market interface for DeepSeek Harness that allows users to browse, search, and one-click install visualization plugins written in TypeScript."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 2,
+  "title": "shadcn-ui/chatbot-template",
+  "synopsis": "A minimal, working chatbot template built with Next.js, AI SDK, and shadcn/ui components, designed to run on the Vercel AI Gateway."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 2,
+  "title": "dataelement/dsh-desktop",
+  "synopsis": "This is a TypeScript-based desktop application wrapper for the DeepSeek model, suggesting a local or desktop deployment method for the LLM."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 2,
+  "title": "ZSvirt/zsvirt",
+  "synopsis": "This repository contains the core Infrastructure as a Service (IaaS) engine and cloud infrastructure foundation written in Java for ZSvirt."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 2,
+  "title": "shadcn-labs/pdfcn",
+  "synopsis": "A set of beautiful, zero-config PDF components built using the Takumi and Forme libraries for TypeScript."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 2,
+  "title": "0xsline/awesome-deepseek-harness",
+  "synopsis": "This is a collection of plugins, tools, and infrastructure for the DeepSeek Harness (DSH) ecosystem, organized via a hub and public discussion topics."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 2,
+  "title": "zouyuxuan122/Deepseek-Harness-EAC",
+  "synopsis": "A desktop client for the DeepSeek Harness (dsh) available for Windows and Linux that includes a bundled Node.js runtime, a CLI, and several built-in UI skins."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 2,
+  "title": "elie222/rakazo",
+  "synopsis": "This is an open-source alternative to Grok Bot, written in TypeScript that allows users to select their own model and operate within a sandboxed environment."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 2,
+  "title": "DrHazemAli/enterprise-system-design",
+  "synopsis": "This repository functions as a comprehensive, source-grounded reference guide for engineers designing complex enterprise systems, covering topics from distributed systems and reliability to AI and cybersecurity."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 1,
+  "title": "Small-tailqwq/dsh-deep-whale",
+  "synopsis": "This appears to be a resource related to character skins or assets for a project named 'DSH Web Whale Maiden' using TypeScript."
+ },
+ {
+  "source": "GitHub New Repos",
+  "recorded": 1,
+  "title": "Hisn00w/ASu-skills",
+  "synopsis": "An HTML template titled Hisn00w/ASu-skills, seemingly for resume packaging."
+ },
+ {
+  "source": "dev.to",
+  "recorded": 3,
+  "title": "Introducing dbctx: Compile PostgreSQL Database into LLM-Friendly Context",
+  "synopsis": "dbctx is a tool that compiles a PostgreSQL database schema and content into a format suitable for retrieval-augmented generation (RAG) systems to improve LLM chatbot context."
+ },
+ {
+  "source": "dev.to",
+  "recorded": 3,
+  "title": "Dev log #17 From 16-bit TUIs to p2p Hardening: A 227-Commit Week",
+  "synopsis": "A developer log detailing work over 227 commits, focusing on shipping a new GitBanner version and hardening WebRTC and Distributed Hash Table layers for peer-to-peer networking."
+ },
+ {
+  "source": "dev.to",
+  "recorded": 2,
+  "title": "Your Dog Can't Tell You Where It Hurts. MATCH_RECOGNIZE in Snowflake Can.",
+  "synopsis": "This submission for a weekend challenge claims that the MATCH_RECOGNIZE function in Snowflake can detect pain signals in dogs, implying pattern recognition capability."
+ },
+ {
+  "source": "dev.to",
+  "recorded": 2,
+  "title": "How do you form a group nobody can admit they're in?",
+  "synopsis": "This appears to be an excerpt from a narrative piece detailing a situation involving an overdue invoice and membership in a large design group."
+ },
+ {
+  "source": "dev.to",
+  "recorded": 2,
+  "title": "\ud83e\udd16 I Built 2 Telegram Bots with Qwen3.8-Max \u2014 and the Results Were Seriously Impressive",
+  "synopsis": "The author built and tested two Telegram bots using the Qwen3.8-Max model, sharing the results of the implementation."
+ },
+ {
+  "source": "dev.to",
+  "recorded": 2,
+  "title": "Your AI Doesn\u2019t Have Amnesia \u2013 It Has a Storage Problem",
+  "synopsis": "This article discusses the common frustration that current AI tools struggle with retaining context or memory over long interactions, framing it as a storage limitation rather than a lack of capability."
+ },
+ {
+  "source": "dev.to",
+  "recorded": 2,
+  "title": "When Everyone Has AI Agents, Who Knows What They\u2019re Doing?",
+  "synopsis": "OliverGraph is a tool built to provide teams and their AI agents with shared context across a repository like GitHub."
+ },
+ {
+  "source": "dev.to",
+  "recorded": 2,
+  "title": "Using AI to Code Isn't the Risk. Not Understanding What It Shipped Is",
+  "synopsis": "This piece discusses the gap between the performative demos of AI coding assistance and the actual, practical challenges of integrating AI-generated code into existing systems."
+ },
+ {
+  "source": "dev.to",
+  "recorded": 2,
+  "title": "Python\u2019s := Operator Is Tiny\u2026 But Surprisingly Powerful",
+  "synopsis": "This post discusses the Python walrus operator (:=), showing how it allows assignment within an expression, demonstrated with a simple length check."
+ },
+ {
+  "source": "dev.to",
+  "recorded": 1,
+  "title": "The AI Engineer's Reading List for 2026 (10 Books That Matter)",
+  "synopsis": "This list suggests ten essential books covering topics like RAG, LLM Engineering, and Agentic AI for AI engineers looking to learn concepts in 2026."
+ },
+ {
+  "source": "dev.to",
+  "recorded": 1,
+  "title": "Why the \"AI\" Badge Doesn't Matter and How to Restore Trust in Our Code",
+  "synopsis": "A personal introductory post from a developer discussing the concept of trust in code regarding AI."
+ },
+ {
+  "source": "dev.to",
+  "recorded": 1,
+  "title": "\ud83d\ude38Catbot Integration, AI Office, Cat Mode (AI Avatar v17: VS Code and Chrome Extension)",
+  "synopsis": "This describes an AI Avatar application that uses a VRoid (VRM) avatar to cheer the user, specifically noting integrations for VS Code and Chrome extensions."
+ },
+ {
+  "source": "dev.to",
+  "recorded": 1,
+  "title": "Escape the Algorithm and Save Time: Build Your Own Feed with AI Automation",
+  "synopsis": "A piece discussing the problem of social media feeds and the desire to build a personalized AI automation feed."
+ },
+ {
+  "source": "dev.to",
+  "recorded": 1,
+  "title": "What Went Wrong For Copilot",
+  "synopsis": "This piece lists several recently launched Microsoft tools, including Code Apps, Cowork, and Copilot Studio, without providing technical depth on any of them."
+ },
+ {
+  "source": "dev.to",
+  "recorded": 1,
+  "title": "The 7 AI Repositories I Starred This Month",
+  "synopsis": "A list titled 'The 7 AI Repositories I Starred This Month' suggests curated links to recent software projects in AI."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 4,
+  "title": "LiquidAI/LFM2.5-VL-3B",
+  "synopsis": "This repository provides a 3-billion parameter Vision-Language Model designed for image-text-to-text tasks, tailored for conversational use and optimized for edge devices."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 3,
+  "title": "MiniMaxAI/MiniMax-Music3",
+  "synopsis": "A text-to-audio pipeline, MiniMax-Music3, implemented using diffusers and safetensors, designed for music generation from text prompts."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 3,
+  "title": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "synopsis": "This repository contains the DeepSeek-V4-Flash-0731 model, a transformer model designed for text generation, featuring tags indicating its conversational capability and compatibility for deployment."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 3,
+  "title": "inclusionAI/Ling-3.0-tiny",
+  "synopsis": "A small model, 'Ling-3.0-tiny', available for download with associated safetensors format and custom code tags."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 3,
+  "title": "moonshotai/Kimi-K3",
+  "synopsis": "This repository provides a model for image-text-to-text processing, featuring custom code and specialized support for compressed tensors and 8-bit quantization."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 3,
+  "title": "LiquidAI/LFM2.5-2.6B",
+  "synopsis": "A model titled LFM2.5-2.6B available through the LiquidAI repository, supporting text generation in multiple languages and tagged for edge and conversational use."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 2,
+  "title": "Qwen/Qwen3.8-27B",
+  "synopsis": "This is a large language model checkpoint, Qwen3.8-27B, that supports image-text-to-text pipelines and includes evaluation results, suggesting it is ready for deployment via endpoints."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 2,
+  "title": "meta-models/Muse-Glimmer-30B",
+  "synopsis": "This is a meta-model checkpoint named Muse-Glimmer-30B for image-text-to-text pipelines, containing weights compatible with transformer and safetensors formats."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 2,
+  "title": "unsloth/Qwen3.8-27B-GGUF",
+  "synopsis": "A quantized GGUF version of the Qwen3.8-27B model made available via the unsloth pipeline for local, efficient inference."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 2,
+  "title": "Qwen/Qwen3.8-2.4T-A95B",
+  "synopsis": "This is a checkpoint repository for Qwen3.8-2.4T-A95B, indicating it is available for text generation using the Hugging Face transformers pipeline."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 2,
+  "title": "Lightricks/LTX-2.5",
+  "synopsis": "A repository demonstrating a pipeline for various types of media generation, including image-to-video, text-to-video, and audio-to-video generation using diffusion models."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 2,
+  "title": "MiniMaxAI/MiniMax-H3",
+  "synopsis": "This repository provides a pipeline for various generative video tasks, including image-text-to-video and text-to-audio-video, utilizing diffusers and safetensors formats."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 2,
+  "title": "deepseek-ai/DeepSeek-V4-Pro-0813",
+  "synopsis": "This is a model repository listing for DeepSeek-V4-Pro-0813, which is tagged for text generation and compatible with endpoints, suggesting it is a model checkpoint."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 2,
+  "title": "Qwen/Qwen3.8-27B-FP8",
+  "synopsis": "This is a quantized 27B parameter model from the Qwen series designed for image-text-to-text tasks, optimized for FP8 precision."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 2,
+  "title": "unsloth/Muse-Glimmer-30B-GGUF",
+  "synopsis": "A GGUF quantized version of the Muse-Glimmer-30B model, suitable for image-text-to-text tasks and conversational use, provided by unsloth."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 2,
+  "title": "orcarouter/Qwen3.8-27B-Uncensored-FP8",
+  "synopsis": "This is a repository containing an uncensored, FP8 quantized version of the Qwen 3.8 27B model, structured for image-text-to-text tasks."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 2,
+  "title": "lightx2v/Minimax-h3-Turbo",
+  "synopsis": "This is a diffusion model pipeline designed for image-to-video generation, based on the MiniMax-H3 model, supporting English and Chinese text inputs."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 2,
+  "title": "meta-models/Muse-Glimmer-30B-GGUF",
+  "synopsis": "This is a GGUF quantized version of the meta-models/Muse-Glimmer-30B model, designed for image-text-to-text pipelines and conversational use."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 2,
+  "title": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+  "synopsis": "A transformer model checkpoint, Nemotron-3.5-Lightning-30B-A3B-NVFP4, available for text generation using PyTorch and safetensors formats."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 2,
+  "title": "Comfy-Org/MiniMax-H3",
+  "synopsis": "This repository provides a pipeline for using the MiniMax-H3 base model within the ComfyUI framework, suggesting it is a tool integration for diffusion workflows."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 2,
+  "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+  "synopsis": "This is a GGUF quantized version of the Qwen 3.6-27B model that has undergone a multi-stage tuning process and is advertised as uncensored and unaligned."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 2,
+  "title": "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF",
+  "synopsis": "This is a quantized GGUF version of the Qwen3.8-27B model, formatted for use with llama.cpp and supporting text generation in English and Chinese."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 2,
+  "title": "fal/MiniMax-H3-Realism-People-LoRA",
+  "synopsis": "A LoRA adapter designed for text-to-video generation, specializing in realistic, photorealistic videos featuring people, based on the MiniMax-H3 dataset."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 2,
+  "title": "Gazingstars123/Anima-2.9B",
+  "synopsis": "This is a text-to-image pipeline using the Anima-2.9B model, designed for use with ComfyUI."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 2,
+  "title": "unsloth/Qwen3.8-27B-NVFP4",
+  "synopsis": "This is a quantized version of the Qwen3.8-27B model uploaded to the unsloth repository, utilizing safetensors and containing compressed tensors."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 2,
+  "title": "Qwen/Qwen3.8-2.4T-A95B-FP8",
+  "synopsis": "This is a quantized version of the Qwen3.8-2.4T model using FP8 precision, available for text generation pipelines."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 2,
+  "title": "dots-studio/dots3-note-prev",
+  "synopsis": "This is a pre-trained model from the dots-studio repository designed for image-text-to-text generation, featuring tags related to transformers, multimodal inputs, and long context."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 2,
+  "title": "larryvrh/MiniMax-H3-Turbo-Lora",
+  "synopsis": "A LoRA adapter for a text-to-video model called MiniMax-H3, intended for use within the ComfyUI workflow to manipulate video generation with minimax-h3 control."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 2,
+  "title": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "synopsis": "A publicly available 30-billion parameter text-generation model named Nemotron-3.5, available for download in BF16 format via the Hugging Face transformers pipeline."
+ },
+ {
+  "source": "HF Models",
+  "recorded": 2,
+  "title": "Comfy-Org/MiniMax-Music-3",
+  "synopsis": "This is a ComfyUI workflow designed for music generation using the MiniMax-Music3 base model."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 4,
+  "title": "ostris/minimax_h3_1k",
+  "synopsis": "This is a dataset of video samples generated using the minimax_h3_fl2va_pruned_int8_convrot.safetensors model, covering various aspect sizes and media types to test the knowledge scope of MiniMax H3."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 4,
+  "title": "scholarweave/arxiv-latex",
+  "synopsis": "A dataset containing the entire corpus of arXiv's LaTeX source files, pre-parsed and formatted into queryable Parquet files, making large-scale historical analysis easier than direct S3 access."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 3,
+  "title": "MatrAIx2026/MatrAIx_Persona_1M",
+  "synopsis": "This dataset contains nearly a million synthetic and real personas, each defined by 1,290 attributes stored in a compact 4-bit encoded Parquet format, requiring pyarrow for correct loading."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 3,
+  "title": "nvidia/Nemotron-RL-Agentic-Terminal-Pivot-v1",
+  "synopsis": "This dataset provides training samples for using reinforcement learning to guide LLM agents in performing command-line tasks within the terminus_judge environment in NeMo Gym."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 3,
+  "title": "ulamai/UnsolvedMath",
+  "synopsis": "The UnsolvedMath dataset is a curated collection of 8,785 open mathematical problems across various domains, provided in a machine-readable format for use as an AI reasoning benchmark."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 3,
+  "title": "sarvamai/indic-diarbench",
+  "synopsis": "A multilingual joint diarization and ASR benchmark containing about 108 hours of natural multi-speaker audio spanning 22 scheduled Indian languages."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 3,
+  "title": "llamaindex/ExtractBench",
+  "synopsis": "A benchmark and dataset that tests a system's ability to extract structured JSON data from documents\u2014both born-digital and scanned\u2014based on a user-provided schema, while retaining source page and bounding box evidence."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 3,
+  "title": "armand0e/claude-fable-5-claude-code",
+  "synopsis": "This dataset contains anonymized raw agent traces from combined teams, structured for text generation tasks and available for conversion using the teich package."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 3,
+  "title": "FlyRank/internship-warehouse",
+  "synopsis": "A large, pseudo-anonymized, star-schema dataset spanning 81.8 million rows, structured with hashed keys and containing historical data from multiple sources for advanced analysis."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 3,
+  "title": "histde/ddb-newspaper-corpus",
+  "synopsis": "This is a large corpus of over 11 million pages of historical German newspapers from 1638 to 1964, containing 25.8 billion tokens of OCR fulltext."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 3,
+  "title": "finebooks/bhl-impact-gt",
+  "synopsis": "This dataset contains 2,165 page scans from six historical natural-history books, providing expert transcriptions and full page-layout ground truth for evaluating OCR, text recognition, and document layout analysis on real historical print."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 3,
+  "title": "ropedia-ai/xperience-10m",
+  "synopsis": "Xperience-10M is a large-scale egocentric, multimodal dataset containing human experience for embodied AI, robotics, world models, and spatial tasks, including video, depth, and audio modalities."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 3,
+  "title": "ACERobotics/ACE-Data-0",
+  "synopsis": "This dataset aims to turn real home environments into spatially calibrated, temporally synchronized recording studios for training embodied AI models across video, audio, and 3D modalities."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 3,
+  "title": "openbmb/Ultra-FineWeb",
+  "synopsis": "Ultra-FineWeb is a large-scale, high-quality dataset built using an efficient verification pipeline applied to FineWeb and Chinese FineWeb sources for pretraining LLMs."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 2,
+  "title": "HuggingFaceFW/fineweb",
+  "synopsis": "FineWeb is a large-scale dataset containing over 18.5 trillion tokens of cleaned and deduplicated English web data derived from CommonCrawl, optimized for LLM performance."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 2,
+  "title": "r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation",
+  "synopsis": "A multi-teacher dataset compiled from traces of Qwen3.8-Max, GLM-5.2, and Kimi Code K3 covering diverse domains like code, math, and instruction-following, available in a deduplicated parquet format."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 2,
+  "title": "Anthropic/hh-rlhf",
+  "synopsis": "This dataset contains human preference data regarding helpfulness and harmlessness from an RLHF process, intended for training reward models rather than for direct supervised fine-tuning of dialogue agents."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 2,
+  "title": "HuggingFaceCode/stack-v3-train",
+  "synopsis": "This is the Stack v3, an open dataset of source code crawled from GitHub and designed for pre-training code LLMs with full-repository context."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 2,
+  "title": "r0b0tlab/qwen3.8-max-distillation-50k",
+  "synopsis": "A curated dataset of nearly 50k teacher-generated traces from qwen3.8-max-preview, formatted for supervised fine-tuning and knowledge distillation."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 2,
+  "title": "HuggingFaceH4/ultrachat_200k",
+  "synopsis": "This is a smaller, filtered subset of the UltraChat dataset, initially composed of 1.4 million ChatGPT-generated dialogues, used for faster supervised fine-tuning of the Zephyr-7B-\u03b2 model."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 2,
+  "title": "saidutta69/fable-5-premium",
+  "synopsis": "This is a supervised fine-tuning dataset of 12,730 records built from Claude Fable-5 agent traces, available in parquet format."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 2,
+  "title": "openai/gsm8k",
+  "synopsis": "GSM8K is a benchmark dataset containing 8.5K linguistically diverse grade school math word problems requiring multi-step reasoning involving basic arithmetic operations."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 2,
+  "title": "HuggingFaceFW/fineweb-edu",
+  "synopsis": "A newly released dataset called FineWeb-Edu contains 1.3 trillion tokens of educational web pages, filtered from the FineWeb dataset using a classifier trained with Llama-3-70B-Instruct annotations."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 2,
+  "title": "cais/hle",
+  "synopsis": "Humanity's Last Exam (HLE) is a large, multi-modal benchmark containing 2,500 closed-ended questions across many subjects, intended as a comprehensive academic test."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 2,
+  "title": "fka/prompts.chat",
+  "synopsis": "This is a dataset repository mirroring prompts.chat, a social platform where users share and collect AI prompts for various tasks like question-answering and text generation."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 2,
+  "title": "GokuScraper/seedance-2-prompts-datasets",
+  "synopsis": "This is a large, open-source dataset containing over 50GB and 8100+ video generation prompts used with the Seedance-2 model, structured for AI video creators."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 2,
+  "title": "FINAL-Bench/AX-RAY",
+  "synopsis": "AX-RAY is a catalog of 117 machine-readable AI safety diagnostic criteria that organizes model-intrinsic and deployment assessment items for use in model evaluation."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 2,
+  "title": "SWE-bench/SWE-bench_Verified",
+  "synopsis": "SWE-bench Verified is a curated subset of 500 human-validated test cases from the SWE-bench dataset designed to evaluate systems' ability to automatically solve GitHub issues using unit test verification against a pull request."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 2,
+  "title": "CaptiveDreamer/CaraArchive",
+  "synopsis": "This dataset is an index containing 3.43 million posts with metadata and links to the Cara App's CDN, but it contains no actual image data for training."
+ },
+ {
+  "source": "HF Datasets",
+  "recorded": 2,
+  "title": "ai4bharat/MSMARCO-XI",
+  "synopsis": "A collection of the MS MARCO dataset containing queries, passages, and answers translated into various Indic languages, suitable for machine reading comprehension tasks."
+ },
+ {
+  "source": "HF Papers",
+  "recorded": 4,
+  "title": "Marionette: Predicting World States, Rendering Geometry, Painting Appearance",
+  "synopsis": "Marionette is a world model for interactive games that predicts an explicit, 3D, multi-entity state (skeletons, trajectories, rotations) and uses a zero-parameter renderer to compute geometry before a video-diffusion model synthesizes the final photorealistic appearance from the structured control."
+ },
+ {
+  "source": "HF Papers",
+  "recorded": 4,
+  "title": "Second Thought: Reasoning in Parallel as LLM Agents Act and Observe",
+  "synopsis": "Second Thought is a training-free inference framework for LLM agents that concurrently runs four auxiliary reasoning branches during the action/observation idle window, merging the results back to the main loop to improve agent performance while reducing main thread decoding time."
+ },
+ {
+  "source": "HF Papers",
+  "recorded": 4,
+  "title": "SimpleOPD: Simple Tokenizer-Agnostic On-Policy Distillation for Long-Context Reasoning",
+  "synopsis": "SimpleOPD is a distillation technique that transfers reasoning capabilities from long-context teacher models to short-context student models by operating in a shared text space and aligning tokens based on identical text spans, while also introducing a student reference KL loss to manage excessive output length."
+ },
+ {
+  "source": "HF Papers",
+  "recorded": 4,
+  "title": "Dion3: Full-Stack Orthogonal Updates",
+  "synopsis": "Dion3 is a revised optimizer building on Muon that reduces the computational overhead of orthogonalization via a Gram Newton-Schulz algorithm, accelerated kernels, and a modified update rule, achieving significant speedups while maintaining or improving performance."
+ },
+ {
+  "source": "HF Papers",
+  "recorded": 4,
+  "title": "UNMASK: Discovering and Causally Verifying Spurious Shortcuts in Text Classifiers",
+  "synopsis": "UNMASK is an automated pipeline that discovers and causally verifies spurious surface patterns in text classifiers by generating executable boolean expressions from unlabeled examples and validating them via counterfactual interventions."
+ },
+ {
+  "source": "HF Papers",
+  "recorded": 3,
+  "title": "Intern-S2-Mobius: Foundation Model with Decoupled Knowledge and Reasoning",
+  "synopsis": "Mobius-v0 is a model architecture that decouples knowledge into a shared Memory (FFN) and separates reasoning into multiple Reasoners (Self-Attn) to improve knowledge compression and reasoning efficiency."
+ },
+ {
+  "source": "HF Papers",
+  "recorded": 3,
+  "title": "MobileMem: Learning from a Year of Mobile Experiences",
+  "synopsis": "MobileMem is a benchmark and framework for testing on-device, long-term memory for AI agents, built from a year's worth of diverse, multimodal mobile user experiences to test temporal reasoning and knowledge updating."
+ },
+ {
+  "source": "HF Papers",
+  "recorded": 3,
+  "title": "HumanTracker: Towards Comprehensive and Human-Aligned Motion Tracking Benchmark",
+  "synopsis": "HumanTracker is a comprehensive motion tracking benchmark using 153 hours of humanoid trajectories to evaluate motion by diagnosing physical artifacts like foot skating, alongside a new metric called HumanScore trained on human preference data."
+ },
+ {
+  "source": "HF Papers",
+  "recorded": 3,
+  "title": "Self-Supervised Visual On-Policy Distillation",
+  "synopsis": "Self-Supervised Visual On-Policy Distillation (S^2VOPD) constructs on-policy learning signals by creating an information asymmetry between the teacher's distribution (conditioned on the original image) and the student's distribution (conditioned on a strongly augmented view) to achieve performance gains without ground-truth data or a separate teacher model."
+ },
+ {
+  "source": "HF Papers",
+  "recorded": 3,
+  "title": "Claim-Level Reliability Assessment for Efficient Test-Time Reasoning",
+  "synopsis": "This paper introduces Claim-Level Reliability Assessment (CLR), a training-free framework that analyzes reasoning traces by condensing them into decision-critical claims to test for falsification, showing improvements over standard self-consistency checks with fewer tokens."
+ },
+ {
+  "source": "HF Papers",
+  "recorded": 3,
+  "title": "Forecast Collapse in Time-Series Foundation Models",
+  "synopsis": "The paper introduces forecast collapse, where time-series foundation models predict flat returns for many assets, and proposes a new objective function, CalibRank, to balance prediction calibration with cross-sectional ranking correlation."
+ },
+ {
+  "source": "HF Papers",
+  "recorded": 3,
+  "title": "PRM-as-a-Judge 1.5: A Toolkit for Robot Process Assessment",
+  "synopsis": "PRM-as-a-Judge 1.5 is a toolkit that processes robot rollout videos to derive fine-grained metrics for assessing embodied models, including metrics for failure-side progress and recovery."
+ },
+ {
+  "source": "HF Papers",
+  "recorded": 3,
+  "title": "Latent On-Policy Self-Distillation",
+  "synopsis": "Latent On-Policy Self-Distillation (LOPD) is a method that makes the source of supervision for self-training end-to-end learnable by retrieving and composing relevant experiences into continuous latent tokens to condition a self-teacher."
+ },
+ {
+  "source": "HF Papers",
+  "recorded": 3,
+  "title": "Scaling Domain Data Repetition in LLM Pretraining",
+  "synopsis": "This work investigates how to optimally repeat limited, high-quality domain data to counteract data dilution when training very large language models, suggesting that the optimal repetition count can be estimated using smaller proxy models."
+ },
+ {
+  "source": "HF Papers",
+  "recorded": 3,
+  "title": "Multimodal Model Diffing for Feature Discovery and Control",
+  "synopsis": "MMDiff is a framework that trains multimodal Sparse Autoencoders (SAEs) to create feature-level interfaces for discovering and controlling behaviors within Multimodal LLMs (MLLMs). It allows users to identify features altered by multimodal training, detect causal features per-token, and steer or remove these features for targeted control."
+ },
+ {
+  "source": "HF Papers",
+  "recorded": 3,
+  "title": "Verifier-Induced Support Reshaping in On-Policy Optimization",
+  "synopsis": "This work introduces Verifier-Induced Support Reshaping (RLVR) in on-policy RL, showing that optimizing for a current objective can deplete the sample support for future, related objectives, which is demonstrated across mathematical reasoning and instruction following tasks."
+ },
+ {
+  "source": "HF Papers",
+  "recorded": 3,
+  "title": "LittleLearner: Language Models Under Pedagogically Controlled Knowledge Exposure",
+  "synopsis": "LITTLELEARNER is a 5B-parameter language model trained on LITTLECURRICULUM, a curated 88B-token corpus of U.S. elementary school material that explicitly excludes knowledge above Grade 5, creating a controlled sandbox for studying knowledge acquisition."
+ },
+ {
+  "source": "HF Papers",
+  "recorded": 3,
+  "title": "UniProbe: A Learnable Token-Level Hallucination Detector for Large VLMs using Multi-Structural Internal Representations",
+  "synopsis": "UniProbe is a lightweight, unified detector that builds a directed graph over image patches, query tokens, and generated tokens within a VLM's forward pass, using interleaved GNN, ViT, and GRU modules to detect token-level hallucinations."
+ },
+ {
+  "source": "HF Papers",
+  "recorded": 3,
+  "title": "SPARGen: Unifying Spatial Perception and Reasoning through Native Multimodal Generation",
+  "synopsis": "SPARGen is a unified multimodal framework that treats 3D reconstruction, dense correspondence, and spatial reasoning as instruction-conditioned generation tasks, outputting structured and geometric fields as token sequences."
+ },
+ {
+  "source": "HF Papers",
+  "recorded": 3,
+  "title": "Generation as Auxiliary Supervision: Enhancing Visual Understanding at Zero Inference Overhead via Decoupled Embedding Prediction",
+  "synopsis": "The GAS framework treats visual generation as an auxiliary supervision signal for representation learning by adapting Next Embedding Prediction within a decoupled Mixture-of-Transformers architecture to enhance visual understanding without adding inference overhead."
+ },
+ {
+  "source": "HF Papers",
+  "recorded": 2,
+  "title": "Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination",
+  "synopsis": "The paper introduces RA-Bench, a benchmark dataset of 17,886 videos mixing real and AI-generated clips across ten social-risk categories to systematically evaluate the generalization capabilities of current video detection methods."
+ },
+ {
+  "source": "HF Papers",
+  "recorded": 2,
+  "title": "Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development",
+  "synopsis": "This work systematically evaluates seven frontier AI agents across 36 long-horizon tasks using a new framework to measure in-run behavior, finding that current agents act more like engineering optimizers than truly autonomous researchers."
+ },
+ {
+  "source": "HF Papers",
+  "recorded": 2,
+  "title": "CPI-Bench: A Comprehensive,Practical and Intelligent Benchmark for Real-World Image Editing",
+  "synopsis": "CPI-Bench is a proposed benchmark designed to evaluate real-world image editing by covering three subsets: general tasks, high-frequency practical scenarios, and highly demanding reasoning-based editing."
+ },
+ {
+  "pair": "release",
+  "arm": "sub1b",
+  "title": "SmolTalk-360M",
+  "synopsis": "A 360M-parameter instruction-tuned language model released with open weights and a training recipe, trained on 40B tokens of filtered web and synthetic dialogue.",
+  "source": "control",
+  "recorded": 0
+ },
+ {
+  "pair": "release",
+  "arm": "big",
+  "title": "SmolTalk-7B",
+  "synopsis": "A 7B-parameter instruction-tuned language model released with open weights and a training recipe, trained on 40B tokens of filtered web and synthetic dialogue.",
+  "source": "control",
+  "recorded": 0
+ },
+ {
+  "pair": "handson",
+  "arm": "sub1b",
+  "title": "I ran a 270M model on an ESP32 and it answers questions about my greenhouse",
+  "synopsis": "A write-up of quantising a 270M-parameter model to 4 bits and running it on an ESP32-S3 with 8MB of PSRAM, getting roughly two tokens per second, with the sensor-query prompts that worked and the ones that did not.",
+  "source": "control",
+  "recorded": 0
+ },
+ {
+  "pair": "handson",
+  "arm": "big",
+  "title": "I ran a 13B model on a workstation GPU and it answers questions about my greenhouse",
+  "synopsis": "A write-up of quantising a 13B-parameter model to 4 bits and running it on a workstation GPU, getting roughly twenty tokens per second, with the sensor-query prompts that worked and the ones that did not.",
+  "source": "control",
+  "recorded": 0
+ },
+ {
+  "pair": "paper",
+  "arm": "sub1b",
+  "title": "Pretraining a 500M model to GPT-2-XL quality on a single 4090 in nine days",
+  "synopsis": "The authors pretrain a 500M-parameter transformer on one consumer GPU in nine days, matching GPT-2-XL on standard benchmarks, and release the data pipeline, code, and checkpoints.",
+  "source": "control",
+  "recorded": 0
+ },
+ {
+  "pair": "paper",
+  "arm": "big",
+  "title": "Pretraining a 50B model to GPT-4 quality on a 512-GPU cluster in nine days",
+  "synopsis": "The authors pretrain a 50B-parameter transformer on a 512-GPU cluster in nine days, matching GPT-4 on standard benchmarks, and release the data pipeline, code, and checkpoints.",
+  "source": "control",
+  "recorded": 0
+ },
+ {
+  "pair": "repo",
+  "arm": "sub1b",
+  "title": "tinygrad-lm/rp2040-llm",
+  "synopsis": "Runs a 15M-parameter character-level language model on an RP2040 microcontroller in 264KB of RAM, with the quantisation script and the flashing instructions.",
+  "source": "control",
+  "recorded": 0
+ },
+ {
+  "pair": "derivative",
+  "arm": "sub1b",
+  "title": "bartowski/SmolTalk-360M-GGUF",
+  "synopsis": "GGUF quantisations of SmolTalk-360M in Q4_K_M, Q5_K_M, and Q8_0.",
+  "source": "control",
+  "recorded": 0
+ },
+ {
+  "pair": "nameonly",
+  "arm": "trap",
+  "title": "nanoformer/tiny-mini-micro-lm",
+  "synopsis": "A compact and efficient language model for fast inference.",
+  "source": "control",
+  "recorded": 0
+ },
+ {
+  "pair": "nearmiss",
+  "arm": "trap",
+  "title": "Qwen3-1.7B released with open weights",
+  "synopsis": "A 1.7B-parameter language model released with open weights, benchmarks, and a chat template.",
+  "source": "control",
+  "recorded": 0
+ },
+ {
+  "pair": "money",
+  "arm": "trap",
+  "title": "Edge-AI startup raises $80M to put sub-1B models on every phone",
+  "synopsis": "The company announced a Series B led by a growth fund, and says its sub-billion-parameter models will ship on handsets next year.",
+  "source": "control",
+  "recorded": 0
+ },
+ {
+  "pair": "ceiling",
+  "arm": "sub1b",
+  "title": "A 200M model that plays checkers by self-play, with the engine and the endgame database",
+  "synopsis": "A 200M-parameter network trained by self-play reaches expert strength at checkers on one GPU in a week; the engine, the weights, and the generated endgame database are released.",
+  "source": "control",
+  "recorded": 0
+ }
+]

@@ -1,0 +1,754 @@
+[
+ {
+  "score": 4,
+  "synopsis": "Marionette is a world model that predicts 3D scene state (skeletons, trajectories) and uses a zero-parameter renderer for geometry before a diffusion model generates appearance, enabling structured interactive game simulation."
+ },
+ {
+  "score": 3,
+  "synopsis": "The paper proposes a structured evidence tuple (hypothesis, reliability, rationale, provenance) and argues that evidence should be combined using calibrated log-likelihood ratios instead of summation to avoid count-scale drift in decision aggregation."
+ },
+ {
+  "score": 4,
+  "synopsis": "Rollplex is a runtime system that overlaps prefix computation with rollout decoding to improve GPU utilization during Vision-Language Model post-training, enabling more efficient spatial sharing of GPU resources across phases."
+ },
+ {
+  "score": 3,
+  "synopsis": "The Twin system builds a test-time executable world model for unknown tasks by simulating interactions and repairing discrepancies, enabling continual learning without prior task knowledge."
+ },
+ {
+  "score": 3,
+  "synopsis": "YOPO combines conditional reasoning guidance and zero-shot abstention into one forward pass of a frozen language model, allowing it to answer or decline in a single inference step."
+ },
+ {
+  "score": 2,
+  "synopsis": "GhostPoint is a self-supervised learning framework for 3D object detection that hallucinates features for occluded LiDAR regions using predictor-level supervision and instance voxel dilation."
+ },
+ {
+  "score": 3,
+  "synopsis": "The paper introduces Generation-Powered Inference (GPI), a framework that uses generative models to reframe statistical inference on distribution-valued outcomes as mean function estimation in a Hilbert space."
+ },
+ {
+  "score": 2,
+  "synopsis": "This work proposes a theory and method for transferring in-context learning state between sessions in large language models."
+ },
+ {
+  "score": 2,
+  "synopsis": "The paper examines how developer decisions in moral preference elicitation\u2014such as feature selection, voter sampling, and question framing\u2014influence AI policy outcomes, even when using aggregated voting data."
+ },
+ {
+  "score": 2,
+  "synopsis": "RecipeNet is a hierarchical Transformer model for processing structured procedural data such as recipes, modeling interactions within and across steps."
+ },
+ {
+  "score": 3,
+  "synopsis": "This work introduces a Thermodynamic Interatomic Potential (TIP) that extends standard interatomic potentials to model Gibbs free energy, enabling finite-temperature calculations of crystal phase stability and phase transitions via automatic differentiation."
+ },
+ {
+  "score": 2,
+  "synopsis": "A two-stage framework generates synthetic cross-tabular health data using a diffusion transformer by first converting heterogeneous tables into standardized statistical representations for training."
+ },
+ {
+  "score": 3,
+  "synopsis": "This paper adapts the Muon optimizer for low-rank fine-tuning by linearizing its objective and solving it via least squares, introducing an efficient method called sMuon."
+ },
+ {
+  "score": 2,
+  "synopsis": "A safety framework for robotic systems in urban environments that uses hazard analysis to create cross-layer safety envelopes with runtime enforcement."
+ },
+ {
+  "score": 3,
+  "synopsis": "LP-NAS uses linear programming with validation-loss gradients and training-loss Hessians to guide architecture updates in neural architecture search, achieving faster convergence than DARTS."
+ },
+ {
+  "score": 3,
+  "synopsis": "This work proposes using Expected Free Energy from active inference as a unified objective for robotic path planning to balance information gain and travel cost in unknown environments like Mars."
+ },
+ {
+  "score": 3,
+  "synopsis": "SheetCompass is an agentic framework that enhances LLM reasoning over spreadsheets by modeling hierarchical relationships and spatial context across worksheets."
+ },
+ {
+  "score": 2,
+  "synopsis": "This work introduces a bilevel optimization framework for neural architecture search that uses continuous relaxations to optimize neuron gating and mixed activation choices, proposing a method called NAS-NGMA."
+ },
+ {
+  "score": 2,
+  "synopsis": "PACE-Bench is a benchmark for evaluating self-evolving agents that adapt their source code to changing physics environments across six domains using diagnostic feedback."
+ },
+ {
+  "score": 2,
+  "synopsis": "The work introduces an artist-disjoint evaluation method for style classification with frozen vision embeddings, observing variability in robustness across art movements when artists are excluded from training."
+ },
+ {
+  "score": 3,
+  "synopsis": "The paper unifies reinforcement learning methods for diffusion models under a path-space principle, proposing a variance-reduced policy-gradient estimator that connects reverse-trajectory and forward-matching losses."
+ },
+ {
+  "score": 3,
+  "synopsis": "A framework that adaptively allocates compute during LLM evaluation by treating it as a sequential measurement problem, stopping sampling when estimation uncertainty is low."
+ },
+ {
+  "score": 3,
+  "synopsis": "This work identifies a flaw in Power Sampling where sharpening trajectory distributions leads to dose and coverage mismatches that worsen reasoning, and proposes a deformation-controlled target to correct the issue."
+ },
+ {
+  "score": 3,
+  "synopsis": "CytoBERT is an open-weight foundation model pretrained on a large, standardized corpus of single-cell cytometry data to learn transferable relationships between markers across heterogeneous datasets."
+ },
+ {
+  "score": 4,
+  "synopsis": "CRAFT personalizes diffusion models using only 10K reference images and subject masks, eliminating the need for composed-target supervision through attention-based reward fine-tuning."
+ },
+ {
+  "score": 2,
+  "synopsis": "This work proposes using conditional diffusion models to estimate reward and transition dynamics in offline reinforcement learning for approximating the optimal Bellman operator and Q*."
+ },
+ {
+  "score": 2,
+  "synopsis": "This paper audits large language models for bias in physician recommendations, finding that reputation and fees drive choices while demographic signals introduce consistent but subtle biases."
+ },
+ {
+  "score": 2,
+  "synopsis": "CPI-Bench is a benchmark for evaluating image editing models across general tasks, real-user scenarios, and reasoning-based editing."
+ },
+ {
+  "score": 3,
+  "synopsis": "MagnifiQ is an image restoration framework that upscales images to high resolutions like 4K by replacing diffusion model self-attention with convolutions and using patch-specific text prompts for localized guidance during progressive upscaling."
+ },
+ {
+  "score": 2,
+  "synopsis": "An uncertainty-aware deep learning framework using EfficientNet-B3 and MobileViT-S models to predict sex from prehistoric hand stencils with silhouette augmentation and ensemble methods."
+ },
+ {
+  "score": 2,
+  "synopsis": "This work proposes a Learning-to-Transition framework for high-order MIMO detection using a Transformer and a multi-stage training strategy to transfer hard-output policies to soft-output iterative detection receivers."
+ },
+ {
+  "score": 2,
+  "synopsis": "The paper proposes using data-driven surrogate models to approximate traffic flow equilibrium for optimizing road maintenance scheduling."
+ },
+ {
+  "score": 2,
+  "synopsis": "The paper introduces a reader-centered evaluation metric for summarization called 'information satisfaction' based on user background persona, arguing that existing metrics including LLM-as-judge scores do not adequately capture this aspect of utility."
+ },
+ {
+  "score": 2,
+  "synopsis": "Proposes a dual-encoder transfer learning framework for PM2.5 forecasting that adapts to domain shifts when local data is limited."
+ },
+ {
+  "score": 2,
+  "synopsis": "Wyvern is a multi-agent framework for generating grounded multimodal technical reports with text, images, tables, and a claims auto-revision stage."
+ },
+ {
+  "score": 2,
+  "synopsis": "A theoretical paper analyzing the mathematical dynamics of AI intelligence explosions, focusing on growth rates and generation time as a factor in rapid capability escalation."
+ },
+ {
+  "score": 2,
+  "synopsis": "UMPIRE-Net is a physics-driven deep learning method for MRI reconstruction that separates and regularizes magnitude and phase components of complex images."
+ },
+ {
+  "score": 2,
+  "synopsis": "Theoretical analysis of weak convergence for averaged estimators in distributional temporal-difference learning from a single Markov trajectory."
+ },
+ {
+  "score": 1,
+  "synopsis": "A survey paper discussing AI agents for automating the scientific process, focusing on integration challenges across domains."
+ },
+ {
+  "score": 3,
+  "synopsis": "The Analyze-Experiment-Resituate (AER) framework structures generative AI art creation into analysis, controlled experimentation, and social reflection to move beyond style replication toward style exploration."
+ },
+ {
+  "score": 2,
+  "synopsis": "An engineer's commentary responding to criticisms of the RISC-V instruction set architecture."
+ },
+ {
+  "score": 1,
+  "synopsis": "A warning that switching nameservers to Cloudflare injects analytics JavaScript into a static site."
+ },
+ {
+  "score": 1,
+  "synopsis": "Firefox for iOS adds a built-in ad blocker feature."
+ },
+ {
+  "score": 2,
+  "synopsis": "The Qwen 3.8 27B model is reported to perform well but tends to overthink by default."
+ },
+ {
+  "score": 1,
+  "synopsis": "The title suggests an investigation into why or how models might be intentionally degraded in performance."
+ },
+ {
+  "score": 1,
+  "synopsis": "A critique of Anthropic's text watermarking technique in the Claude model, framed as a perversion of writing."
+ },
+ {
+  "score": 2,
+  "synopsis": "A PDF document discussing the history and status of direct file access in computing."
+ },
+ {
+  "score": 2,
+  "synopsis": "Protobuf now has Language Server Protocol support to improve developer tooling for Protocol Buffers usage."
+ },
+ {
+  "score": 1,
+  "synopsis": "No technical content provided; appears to be a generic reference to system prompts for the Claude model without details."
+ },
+ {
+  "score": 1,
+  "synopsis": "Suggestion to replace 'kidney failure' with 'kidney disappointment' in medical terminology."
+ },
+ {
+  "score": 1,
+  "synopsis": "Stripe is reportedly planning to acquire OpenRouter for over $7 billion."
+ },
+ {
+  "score": 1,
+  "synopsis": "The AI Credit Resale Economy"
+ },
+ {
+  "score": 1,
+  "synopsis": "Discusses federal keyword lists that have reportedly canceled billions in research funding."
+ },
+ {
+  "score": 1,
+  "synopsis": "Nvidia may be reducing its financial guarantees for OpenAI's infrastructure financing."
+ },
+ {
+  "score": 1,
+  "synopsis": "A non-technical article about the history of the weekend with no relevance to programming, hardware, or machine learning."
+ },
+ {
+  "score": 1,
+  "synopsis": "A report on the manual shutdown of a nuclear reactor due to control rod insertion, with no connection to computing, AI, or related technical interests."
+ },
+ {
+  "score": 1,
+  "synopsis": "The NIH is ending a grant funding stream for early-career clinical researchers."
+ },
+ {
+  "score": 1,
+  "synopsis": "This item reports on a journalist's detention in ICE custody."
+ },
+ {
+  "score": 1,
+  "synopsis": "A U.S. strategy document discussing prevention of mirror life creation, with no technical or computational content provided."
+ },
+ {
+  "score": 2,
+  "synopsis": "Banned Words List"
+ },
+ {
+  "score": 2,
+  "synopsis": "A Python tool that removes AI provenance marks from text, images, PDFs, and documents using Unicode hygiene, statistical rewriting, and metadata stripping."
+ },
+ {
+  "score": 3,
+  "synopsis": "A C implementation of a method to improve CPU performance by utilizing DRAM scrambling techniques, with technical details provided."
+ },
+ {
+  "score": 2,
+  "synopsis": "A TypeScript-based client-side YouTube Music player with ad-free streaming, background playback, and custom playlist support."
+ },
+ {
+  "score": 2,
+  "synopsis": "A TypeScript framework for building customizable AI component plugins."
+ },
+ {
+  "score": 2,
+  "synopsis": "This is a DeepSeek Harness preset for JavaScript that uses a two-phase process of bootstrap alignment and full Standard tools to achieve high scores on Project2 tasks."
+ },
+ {
+  "score": 2,
+  "synopsis": "A PowerShell kit that installs a runtime injector and a task-aware reasoning-mode router preset for a 'dsh-routing-suite'."
+ },
+ {
+  "score": 2,
+  "synopsis": "The repository introduces a programming paradigm for handling spatiotemporal composability through structured computations across space and time."
+ },
+ {
+  "score": 2,
+  "synopsis": "A set of opinionated TypeScript and JavaScript linters built with Oxlint to flag patterns deemed low in technical merit."
+ },
+ {
+  "score": 2,
+  "synopsis": "A TypeScript plugin for DSH that adds a terminal user interface with features like a whale bar, live status, streaming thoughts, double-Esc rollback, and context/TPS tracking, installable via npm."
+ },
+ {
+  "score": 2,
+  "synopsis": "OpenMausBot is an open-source TypeScript bot framework providing a virtual machine environment for bots, positioned as an alternative to Grok Bot."
+ },
+ {
+  "score": 2,
+  "synopsis": "A repository offering supplemental materials such as system prompts, a startup checklist, and session logs for DeepSeek Harness, described as an 'Orange Book' companion."
+ },
+ {
+  "score": 2,
+  "synopsis": "A TypeScript template for setting up a software factory using the 'eve' framework."
+ },
+ {
+  "score": 2,
+  "synopsis": "This is a desktop plugin for the Hermes interface that enables named agents with custom chat routines, avatars, and bot-to-bot messaging without modifying core code."
+ },
+ {
+  "score": 2,
+  "synopsis": "A TypeScript toolkit that enables text-only models to perform vision tasks such as image QA, OCR on long screenshots, and UI restoration via the DeepSeek Harness plugin system."
+ },
+ {
+  "score": 1,
+  "synopsis": "This repository concerns a zero-day vulnerability found in Windows Defender written in C++."
+ },
+ {
+  "score": 2,
+  "synopsis": "A desktop wrapper for the DeepSeek Harness plugin ecosystem built with TypeScript."
+ },
+ {
+  "score": 2,
+  "synopsis": "A curated list of plugins for the DeepSeek Harness (dsh) framework, written in Python."
+ },
+ {
+  "score": 2,
+  "synopsis": "A collection of plugins and skins for the DeepSeek Harness Web UI that adds features such as a task board, git graph, and remote mobile UI."
+ },
+ {
+  "score": 2,
+  "synopsis": "A tool that converts technical book PDFs into Claude Code skills for workflow integration."
+ },
+ {
+  "score": 2,
+  "synopsis": "A plugin market interface for the DeepSeek Harness that enables browsing, searching, and one-click installation of TypeScript-based visualization plugins."
+ },
+ {
+  "score": 3,
+  "synopsis": "A minimal chatbot template using Next.js, AI SDK, and shadcn/ui components, designed to run on Vercel AI Gateway."
+ },
+ {
+  "score": 2,
+  "synopsis": "A TypeScript desktop wrapper for the DeepSeek model, enabling local deployment of the LLM."
+ },
+ {
+  "score": 2,
+  "synopsis": "This repository provides the core IaaS engine and cloud infrastructure foundation for ZSvirt, implemented in Java."
+ },
+ {
+  "score": 2,
+  "synopsis": "A collection of PDF components for TypeScript built with Takumi and Forme libraries, offering zero-config usage."
+ },
+ {
+  "score": 2,
+  "synopsis": "A curated list of plugins and organized set of plugins, tools, and infrastructure for the DeepSeek Harness ecosystem, providing a hub for discussion and integration."
+ },
+ {
+  "score": 2,
+  "synopsis": "A desktop client for DeepSeek Harness with Node.js runtime, CLI, and multiple UI skins for Windows and Linux."
+ },
+ {
+  "score": 2,
+  "synopsis": "An open-source TypeScript alternative to Grok Bot that lets users select their own model and run it in a sandboxed environment."
+ },
+ {
+  "score": 2,
+  "synopsis": "A reference guide repository for enterprise system design covering distributed systems, reliability, AI, and cybersecurity topics."
+ },
+ {
+  "score": 1,
+  "synopsis": "A repository for character skins or assets for a TypeScript project named 'DSH Web Whale Maiden'."
+ },
+ {
+  "score": 1,
+  "synopsis": "An HTML template for resume packaging, with no technical or computational content relevant to the reader's interests."
+ },
+ {
+  "score": 2,
+  "synopsis": "dbctx is a tool that converts PostgreSQL database schema and content into a format for retrieval-augmented generation systems to enhance LLM chatbot context."
+ },
+ {
+  "score": 3,
+  "synopsis": "A developer log covering 227 commits that shipped a new GitBanner release and hardened peer-to-peer networking layers in WebRTC and DHT implementations."
+ },
+ {
+  "score": 1,
+  "synopsis": "A weekend challenge submission claims Snowflake's MATCH_RECOGNIZE function can detect pain signals in dogs, suggesting pattern recognition capability without technical details or evidence."
+ },
+ {
+  "score": 1,
+  "synopsis": "An excerpt from a narrative about an overdue invoice and membership in a design group, with no technical or computing relevance."
+ },
+ {
+  "score": 2,
+  "synopsis": "The author describes building two Telegram bots using the Qwen3.8-Max model and sharing the implementation results."
+ },
+ {
+  "score": 2,
+  "synopsis": "An article explaining that AI's apparent memory loss is due to storage limitations rather than inherent inability to retain context."
+ },
+ {
+  "score": 2,
+  "synopsis": "OliverGraph is a tool for sharing context between teams and AI agents within a GitHub repository."
+ },
+ {
+  "score": 2,
+  "synopsis": "An article discussing the challenges of integrating AI-generated code into existing systems, focusing on the gap between demo performance and practical implementation."
+ },
+ {
+  "score": 2,
+  "synopsis": "A blog post explaining Python's walrus operator (:=) and its use for assignment within expressions, demonstrated with a length-check example."
+ },
+ {
+  "score": 2,
+  "synopsis": "A reading list recommending ten books on RAG, LLM engineering, and agentic AI for AI engineers in 2026."
+ },
+ {
+  "score": 2,
+  "synopsis": "A developer's personal post about trust in code and AI, discussing the limitations of AI badges and how to restore trust in software."
+ },
+ {
+  "score": 1,
+  "synopsis": "An AI Avatar application using VRoid avatars for user cheerfulness, with VS Code and Chrome extension integrations."
+ },
+ {
+  "score": 2,
+  "synopsis": "An article about building a personalized AI-powered social media feed to avoid algorithmic content, focusing on automation and customization."
+ },
+ {
+  "score": 1,
+  "synopsis": "An article listing recently launched Microsoft tools like Code Apps, Cowork, and Copilot Studio without technical details or analysis."
+ },
+ {
+  "score": 2,
+  "synopsis": "A personal list of seven AI repositories starred by the author this month, with no further details provided about the projects."
+ },
+ {
+  "score": 3,
+  "synopsis": "A 3-billion parameter vision-language model (LFM2.5-VL-3B) designed for image-text-to-text tasks, optimized for edge devices and conversational use."
+ },
+ {
+  "score": 2,
+  "synopsis": "MiniMax-Music3 is a text-to-audio pipeline for music generation using diffusers and safetensors."
+ },
+ {
+  "score": 1,
+  "synopsis": "A text generation transformer model from DeepSeek with conversational capabilities and deployment compatibility."
+ },
+ {
+  "score": 2,
+  "synopsis": "A small model named Ling-3.0-tiny is available for download with safetensors format and custom code tags."
+ },
+ {
+  "score": 2,
+  "synopsis": "A repository providing the Kimi-K3 model for image-text-to-text processing with custom code and support for compressed tensors and 8-bit quantization."
+ },
+ {
+  "score": 2,
+  "synopsis": "A 2.6B parameter text generation model from LiquidAI supporting multiple languages and tagged for edge and conversational use."
+ },
+ {
+  "score": 2,
+  "synopsis": "A 27B parameter multimodal checkpoint from Qwen supporting image-text-to-text pipelines, with evaluation results suggesting deployment readiness."
+ },
+ {
+  "score": 2,
+  "synopsis": "A meta-model checkpoint for image-text-to-text pipelines named Muse-Glimmer-30B with transformer and safetensors weight compatibility."
+ },
+ {
+  "score": 3,
+  "synopsis": "A GGUF-quantized version of the Qwen3.8-27B model provided through the unsloth pipeline for efficient local inference."
+ },
+ {
+  "score": 2,
+  "synopsis": "A checkpoint repository for the Qwen3.8-2.4T-A95B model, available for text generation via the Hugging Face transformers pipeline."
+ },
+ {
+  "score": 2,
+  "synopsis": "A repository demonstrating a diffusion model pipeline for image-to-video, text-to-video, and audio-to-video generation."
+ },
+ {
+  "score": 2,
+  "synopsis": "A pipeline for generative video tasks using diffusers and safetensors, supporting image-text-to-video and text-to-audio-video generation."
+ },
+ {
+  "score": 2,
+  "synopsis": "DeepSeek-V4-Pro-0813 is a text generation model checkpoint tagged for endpoint compatibility."
+ },
+ {
+  "score": 3,
+  "synopsis": "A 27B parameter multimodal model from the Qwen series quantized to FP8 precision for image-text-to-text tasks."
+ },
+ {
+  "score": 2,
+  "synopsis": "A GGUF-quantized version of the Muse-Glimmer-30B model for image-text-to-text and conversational tasks, provided by unsloth."
+ },
+ {
+  "score": 3,
+  "synopsis": "An FP8-quantized, uncensored version of the Qwen 3.8 27B model adapted for image-text-to-text tasks, hosted in a public repository."
+ },
+ {
+  "score": 2,
+  "synopsis": "A diffusion model pipeline for image-to-video generation based on MiniMax-H3, supporting English and Chinese text inputs."
+ },
+ {
+  "score": 2,
+  "synopsis": "GGUF-quantized version of the Muse-Glimmer-30B model for image-text-to-text and conversational tasks."
+ },
+ {
+  "score": 2,
+  "synopsis": "NVIDIA Nemotron-3.5-Lightning-30B-A3B-NVFP4 is a 30-billion-parameter transformer model checkpoint provided in PyTorch and safetensors formats for text generation."
+ },
+ {
+  "score": 2,
+  "synopsis": "This repository provides a pipeline for using the MiniMax-H3 base model within the ComfyUI framework for diffusion workflows."
+ },
+ {
+  "score": 2,
+  "synopsis": "A GGUF-quantized version of the Qwen 3.6-27B model that has been multi-stage tuned and marketed as uncensored and unaligned."
+ },
+ {
+  "score": 2,
+  "synopsis": "A quantized GGUF version of the Qwen3.8-27B model for use with llama.cpp, supporting English and Chinese text generation."
+ },
+ {
+  "score": 2,
+  "synopsis": "A LoRA adapter for text-to-video generation focused on realistic human subjects, built on the MiniMax-H3 dataset."
+ },
+ {
+  "score": 2,
+  "synopsis": "A text-to-image pipeline using the Anima-2.9B model for ComfyUI integration."
+ },
+ {
+  "score": 2,
+  "synopsis": "A quantized version of the Qwen3.8-27B model using NVFP4 format and safetensors, uploaded to the unsloth repository."
+ },
+ {
+  "score": 2,
+  "synopsis": "A quantized version of the Qwen3.8-2.4T model using FP8 precision for text generation."
+ },
+ {
+  "score": 2,
+  "synopsis": "A pre-trained model for image-text-to-text generation with transformer architecture and long context support."
+ },
+ {
+  "score": 2,
+  "synopsis": "A LoRA adapter for the MiniMax-H3 text-to-video model, designed for use in ComfyUI to influence video generation with minimax-h3 control."
+ },
+ {
+  "score": 2,
+  "synopsis": "A 30-billion parameter text-generation model from NVIDIA, available in BF16 format on Hugging Face."
+ },
+ {
+  "score": 2,
+  "synopsis": "A ComfyUI workflow for generating music using the MiniMax-Music3 base model."
+ },
+ {
+  "score": 2,
+  "synopsis": "A dataset of video samples generated by a specific pruned and quantized MiniMax H3 model variant, intended for testing knowledge scope across different media types and aspect sizes."
+ },
+ {
+  "score": 4,
+  "synopsis": "A dataset providing pre-parsed arXiv LaTeX source files in queryable Parquet format, enabling efficient large-scale historical analysis of academic papers without direct S3 access."
+ },
+ {
+  "score": 2,
+  "synopsis": "A dataset of nearly a million synthetic and real personas with 1,290 attributes each, stored in 4-bit encoded Parquet format."
+ },
+ {
+  "score": 2,
+  "synopsis": "A dataset of training samples for reinforcement learning of LLM agents in command-line tasks within the terminus_judge environment of NeMo Gym."
+ },
+ {
+  "score": 2,
+  "synopsis": "The UnsolvedMath dataset is a curated collection of 8,785 open mathematical problems across various domains, provided in a machine-readable format for use as an AI reasoning benchmark."
+ },
+ {
+  "score": 2,
+  "synopsis": "A multilingual benchmark for joint diarization and ASR covering 108 hours of audio in 22 Indian languages."
+ },
+ {
+  "score": 3,
+  "synopsis": "A benchmark and dataset for evaluating structured JSON extraction from documents, including scanned ones, with source page and bounding box evidence retention."
+ },
+ {
+  "score": 2,
+  "synopsis": "A dataset of anonymized agent traces from combined teams for text generation tasks, with conversion via the teich package."
+ },
+ {
+  "score": 2,
+  "synopsis": "A large pseudo-anonymized star-schema dataset with 81.8 million rows and hashed keys for advanced analysis."
+ },
+ {
+  "score": 3,
+  "synopsis": "A large corpus of over 11 million pages of historical German newspapers from 1638 to 1964, containing 25.8 billion tokens of OCR fulltext."
+ },
+ {
+  "score": 2,
+  "synopsis": "A dataset of 2,165 historical book page scans with transcriptions and layout ground truth for OCR and document analysis evaluation."
+ },
+ {
+  "score": 2,
+  "synopsis": "Xperience-10M is a large-scale egocentric multimodal dataset with video, depth, and audio for embodied AI and robotics."
+ },
+ {
+  "score": 3,
+  "synopsis": "ACE-Data-0 is a dataset that provides spatially calibrated, temporally synchronized video, audio, and 3D recordings from real home environments for training embodied AI models."
+ },
+ {
+  "score": 3,
+  "synopsis": "Ultra-FineWeb is a large-scale, high-quality pretraining dataset derived from FineWeb and Chinese FineWeb sources using an efficient verification pipeline."
+ },
+ {
+  "score": 2,
+  "synopsis": "FineWeb is a large cleaned and deduplicated English web dataset from CommonCrawl with over 18.5 trillion tokens, intended for LLM training."
+ },
+ {
+  "score": 2,
+  "synopsis": "A deduplicated parquet dataset compiled from traces of Qwen3.8-Max, GLM-5.2, and Kimi Code K3 covering code, math, and instruction-following domains."
+ },
+ {
+  "score": 2,
+  "synopsis": "A dataset of human preference data for helpfulness and harmlessness from an RLHF process, used to train reward models."
+ },
+ {
+  "score": 3,
+  "synopsis": "Stack v3 is an open dataset of GitHub source code with full-repository context, intended for pre-training code LLMs."
+ },
+ {
+  "score": 2,
+  "synopsis": "A dataset of 50k teacher-generated traces from Qwen3.8-Max-Preview, formatted for supervised fine-tuning and knowledge distillation."
+ },
+ {
+  "score": 2,
+  "synopsis": "A filtered subset of the UltraChat dataset containing 200k dialogues, used for faster supervised fine-tuning of the Zephyr-7B-\u03b2 model."
+ },
+ {
+  "score": 2,
+  "synopsis": "A supervised fine-tuning dataset of 12,730 records derived from Claude Fable-5 agent traces, provided in parquet format."
+ },
+ {
+  "score": 2,
+  "synopsis": "GSM8K is a benchmark dataset of 8,500 grade school math word problems designed to test multi-step reasoning with basic arithmetic."
+ },
+ {
+  "score": 3,
+  "synopsis": "FineWeb-Edu is a dataset of 1.3 trillion tokens from educational web pages, filtered from FineWeb using a Llama-3-70B-Instruct classifier."
+ },
+ {
+  "score": 2,
+  "synopsis": "Humanity's Last Exam (HLE) is a large multi-modal benchmark with 2,500 closed-ended questions across many subjects, intended as a comprehensive academic test."
+ },
+ {
+  "score": 1,
+  "synopsis": "This is a mirror of a social platform for sharing AI prompts, not a technical artifact or model."
+ },
+ {
+  "score": 3,
+  "synopsis": "An open-source dataset of over 8100 video generation prompts for the Seedance-2 model, totaling 50GB, aimed at AI video creators."
+ },
+ {
+  "score": 2,
+  "synopsis": "AX-RAY is a catalog of 117 machine-readable AI safety diagnostic criteria for model evaluation."
+ },
+ {
+  "score": 2,
+  "synopsis": "SWE-bench Verified is a human-validated subset of 500 test cases from the SWE-bench dataset for evaluating automated GitHub issue resolution via unit test verification."
+ },
+ {
+  "score": 2,
+  "synopsis": "An index of 3.43 million Cara App posts with metadata and CDN links, but no actual image data for training."
+ },
+ {
+  "score": 2,
+  "synopsis": "A translated version of the MS MARCO dataset for machine reading comprehension in multiple Indic languages."
+ },
+ {
+  "score": 4,
+  "synopsis": "Marionette is a game world model that predicts explicit 3D multi-entity states, uses a zero-parameter renderer for geometry, and applies a video diffusion model to generate photorealistic appearance from structured control."
+ },
+ {
+  "score": 4,
+  "synopsis": "Second Thought is a training-free inference framework that runs four parallel reasoning branches during LLM agent idle time to improve performance and reduce main thread decoding latency."
+ },
+ {
+  "score": 2,
+  "synopsis": "SimpleOPD is a tokenizer-agnostic on-policy distillation method for transferring reasoning from long-context teacher models to short-context student models by aligning identical text spans and adding a student reference KL loss to control output length."
+ },
+ {
+  "score": 3,
+  "synopsis": "Dion3 is an optimizer that improves upon Muon by using a Gram Newton-Schulz method and accelerated kernels to reduce the cost of orthogonal updates, achieving faster training with comparable or better model performance."
+ },
+ {
+  "score": 3,
+  "synopsis": "UNMASK is a pipeline that automatically finds and tests spurious shortcuts in text classifiers by generating boolean expressions from unlabeled data and verifying them through counterfactual edits."
+ },
+ {
+  "score": 2,
+  "synopsis": "Mobius-v0 is a model architecture that decouples knowledge into a shared Memory (FFN) and separates reasoning into multiple Reasoners (Self-Attn) to improve knowledge compression and reasoning efficiency."
+ },
+ {
+  "score": 2,
+  "synopsis": "MobileMem is a benchmark and framework for testing long-term memory in on-device AI agents, built from a year of multimodal mobile user experiences to evaluate temporal reasoning and knowledge updating."
+ },
+ {
+  "score": 3,
+  "synopsis": "HumanTracker is a motion tracking benchmark that evaluates humanoid motion using 153 hours of trajectory data and a new HumanScore metric trained on human preferences to detect physical artifacts like foot skating."
+ },
+ {
+  "score": 2,
+  "synopsis": "Self-Supervised Visual On-Policy Distillation (S^2VOPD) creates learning signals by comparing teacher and student distributions under different image augmentations, aiming to improve performance without ground-truth data or a separate teacher model."
+ },
+ {
+  "score": 3,
+  "synopsis": "This paper introduces Claim-Level Reliability Assessment (CLR), a training-free framework that improves test-time reasoning by condensing reasoning traces into decision-critical claims for falsification testing, achieving better results than standard self-consistency with fewer tokens."
+ },
+ {
+  "score": 3,
+  "synopsis": "The paper identifies forecast collapse in time-series foundation models and introduces CalibRank, a new objective function to improve prediction calibration and ranking correlation."
+ },
+ {
+  "score": 2,
+  "synopsis": "PRM-as-a-Judge 1.5 is a toolkit for analyzing robot rollout videos to generate metrics on embodied model performance, such as failure-side progress and recovery."
+ },
+ {
+  "score": 2,
+  "synopsis": "Latent On-Policy Self-Distillation (LOPD) introduces a method to make self-training supervision end-to-end learnable by retrieving and composing experiences into latent tokens for a self-teacher."
+ },
+ {
+  "score": 2,
+  "synopsis": "Investigates optimal repetition of limited high-quality domain data in LLM pretraining using proxy models to estimate repetition counts."
+ },
+ {
+  "score": 3,
+  "synopsis": "MMDiff trains multimodal sparse autoencoders to discover and control features in multimodal LLMs, enabling causal feature detection and targeted steering or removal of learned behaviors."
+ },
+ {
+  "score": 2,
+  "synopsis": "The paper introduces Verifier-Induced Support Reshaping (RLVR) to analyze how on-policy optimization depletes sample support for future related objectives, demonstrated in mathematical reasoning and instruction following tasks."
+ },
+ {
+  "score": 3,
+  "synopsis": "LittleLearner is a 5-billion-parameter language model trained exclusively on an 88-billion-token corpus of U.S. elementary school content up to Grade 5, designed to study knowledge acquisition in a controlled pedagogical environment."
+ },
+ {
+  "score": 3,
+  "synopsis": "UniProbe is a lightweight hallucination detector for vision-language models that uses interleaved GNN, ViT, and GRU modules to analyze internal representations and detect token-level hallucinations during forward passes."
+ },
+ {
+  "score": 2,
+  "synopsis": "SPARGen unifies 3D reconstruction, dense correspondence, and spatial reasoning as instruction-conditioned generation tasks, outputting geometric fields as token sequences."
+ },
+ {
+  "score": 2,
+  "synopsis": "The GAS framework uses visual generation as auxiliary supervision in a decoupled Mixture-of-Transformers architecture to improve visual understanding without inference overhead."
+ },
+ {
+  "score": 2,
+  "synopsis": "The paper introduces RA-Bench, a benchmark dataset of 17,886 videos mixing real and AI-generated clips across ten social-risk categories to evaluate video detection methods."
+ },
+ {
+  "score": 2,
+  "synopsis": "This work evaluates seven AI agents across 36 long-horizon tasks using a new framework to measure in-run behavior, finding current agents act more like engineering optimizers than autonomous researchers."
+ },
+ {
+  "score": 2,
+  "synopsis": "CPI-Bench is a proposed benchmark for evaluating real-world image editing across three subsets: general tasks, high-frequency practical scenarios, and reasoning-based editing."
+ }
+]

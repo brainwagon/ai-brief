@@ -21,9 +21,7 @@ What pulls this reader in:
 
 - **Small and local.** Models that run on one box, on a GPU that is not a
   datacentre, or on the CPU. Quantisation, distillation, pruning, tiny
-  architectures, edge inference, `llama.cpp`-shaped work. A language model under
-  1B parameters counts twice over, whether it is being released or being put to
-  work on somebody's phone, microcontroller, Pi, or laptop CPU.
+  architectures, edge inference, `llama.cpp`-shaped work.
 - **Doing a lot with a little.** Efficiency, clever tricks, a result that used a
   hundredth of the compute anyone expected. The opposite of a scaling
   announcement.
@@ -105,10 +103,7 @@ subject is that the word "AI" appears in it.
   elsewhere.
 - **Scale is not merit.** A bigger model, a bigger cluster, a bigger training run
   is not by itself interesting here, and often the reverse. Cheaper, smaller, and
-  simpler is what earns a point. A stated parameter count under 1B is worth one
-  point on top of what the Item earned on its merits — 1.5B and up is not, a
-  name that says tiny or nano is not, and a quantised re-upload is still a 2.
-  Give the count and the hardware in the Synopsis when this applies.
+  simpler is what earns a point.
 - **Score the Item alone.** Never compare it to other Items; there is no quota
   and no curve. The same Item gets the same Score on a busy day and a quiet one.
 - **Thin input is normal, and length is not quality.** Many Items are a title and
