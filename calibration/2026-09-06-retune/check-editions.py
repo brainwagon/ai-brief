@@ -25,8 +25,15 @@ DOCS = ROOT / "docs"
 DERIVATIVE = re.compile(r"^[\w.-]+/[\w.-]*"
                         r"(GGUF|AWQ|GPTQ|NVFP4|FP8|MLX|EXL2|[QK]\d_[KM]|"
                         r"bnb-4bit|int4|int8|-4bit|-8bit)", re.I)
-# A stated size under 1B, which is what the new rule is meant to reward.
-SUB1B = re.compile(r"\b(\d{1,3})\s?M\b(?!ath)|\b0\.\d+\s?B\b", re.I)
+# A stated PARAMETER count under 1B, which is what the new rule is meant to
+# reward. The number must sit next to a parameter word: a bare "1M" matched
+# "1M-token context windows" and "240M domain names", neither of which is a
+# model size, and both of which were counted as evidence the rule was working.
+SUB1B = re.compile(
+    r"\b(\d{1,3}(?:\.\d+)?\s?[MmKk]|0\.\d+\s?B)[\s-]*"
+    r"(param|parameter|weights?\b)"
+    r"|\b(param|parameter)\w*[\s:-]*(\d{1,3}(?:\.\d+)?\s?[MmKk]|0\.\d+\s?B)\b",
+    re.I)
 
 ITEM = re.compile(
     r'<li class="([^"]*)" id="[^"]*">\s*'
@@ -49,8 +56,11 @@ totals = Counter()
 flagged, small = [], []
 for page in pages:
     html = page.read_text()
-    picks = len(re.findall(r'<li>', html.split('</section>')[0])) \
-        if 'class="picks"' in html else 0
+    # Count the Picks inside the Picks section only. Splitting on the first
+    # </section> swept in the Edition nav and reported six Picks where the page
+    # showed four, and the Pick pass can never return more than four.
+    m_picks = re.search(r'<section class="picks".*?</section>', html, re.S)
+    picks = len(re.findall(r"<li>", m_picks.group(0))) if m_picks else 0
     dist, n_der, n_small = Counter(), 0, 0
     for m_item in ITEM.finditer(html):
         classes, title, rest = m_item.groups()
