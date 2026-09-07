@@ -11,14 +11,16 @@ The parts that are load-bearing and easy to get wrong, in order:
   resets the socket read timeout every few hundred milliseconds — so
   `requests`' `timeout=` alone never fires on the failure that actually
   happens, and one stalled draw can hold a worker for the length of the Run.
-- The models are free ones, which are rate-limited upstream and drop out
-  without warning. `models` carries a fallback list; OpenRouter walks it when
-  the first choice errors, so a provider's 429 costs a few seconds rather than
-  the morning.
+- `models` carries a fallback list; OpenRouter walks it when the first choice
+  errors, so a provider's outage or 429 costs a few seconds rather than the
+  morning. Every model in that list must accept the `reasoning` field below as
+  well as the schema — an endpoint that refuses to have reasoning disabled says
+  so with a 400, which is fatal here by design.
 - A 429 or a 5xx is TRANSIENT and retried with backoff. A 400/401/402/404 is
   the request builder or the account, is the same for every Item, and is fatal:
   the rest of the Run goes Unenriched rather than making 300 identical
-  mistakes.
+  mistakes. 402 is the one to recognise on sight — the model is paid for now,
+  so an empty account reads as an all-Unenriched Edition and nothing worse.
 - `finish_reason` is checked BEFORE the JSON is parsed. A truncated generation
   comes back HTTP 200 with half an object in `content`.
 - The schema is sent as a strict `json_schema` response format, so a missing

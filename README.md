@@ -2,7 +2,7 @@
 
 A daily Brief of what is new in AI, gathered from nine Sources — arXiv, Hacker
 News, GitHub New Repos, dev.to, r/LocalLLaMA, WIRED, and Hugging Face's models,
-datasets and papers — scored and summarised by a free model hosted on
+datasets and papers — scored and summarised by a cheap model hosted on
 OpenRouter, and published to GitHub Pages at
 <https://mvandewettering.com/ai-brief/>.
 
@@ -34,15 +34,24 @@ overrides the Edition's date.
 
 ## The model
 
-Enrichment and the Pick pass go to OpenRouter, using free models only. The key
-is read from `OPENROUTER_API_KEY`; an unattended Run gets it from
-`~/.config/ai-brief/env`, which both `publish.sh` and the systemd unit read,
-because neither sources a shell profile. With no key the Run still produces an
+Enrichment and the Pick pass go to OpenRouter. The key is read from
+`OPENROUTER_API_KEY`; an unattended Run gets it from `~/.config/ai-brief/env`,
+which both `publish.sh` and the systemd unit read, because neither sources a
+shell profile. With no key — or with no credit — the Run still produces an
 Edition and says on the page that every Item is Unenriched.
 
-The model and its fallbacks are pinned in `generator/config.py`. Free models
-are rate-limited upstream without warning, so more than one is listed and
-OpenRouter walks the list itself.
+The model and its fallbacks are pinned in `generator/config.py`, which also
+records what each was measured at. It is a paid model, deliberately: the free
+tiers answer this Prompt in about 23 seconds a call and drop one in five, which
+is the difference between a Run that finishes and a Run that hits the unit's
+30-minute wall. A Run of ~200 Items bills about three cents, so the Brief costs
+under a dollar a month to think.
+
+More than one model is listed because a provider can be down or rate-limited,
+and OpenRouter walks the list itself. Anything added to it must accept a strict
+`json_schema` response format *and* tolerate reasoning being switched off;
+several otherwise-suitable endpoints now refuse the latter with a 400, which
+ends Enrichment for the whole Run.
 
 ## Layout
 

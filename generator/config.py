@@ -29,32 +29,54 @@ HTTP_TIMEOUT = 20.0
 
 # --- Enrichment (#5) -------------------------------------------------------
 #
-# The model is a free one hosted on OpenRouter, reached with an OpenAI-shaped
+# The model is a cheap hosted one on OpenRouter, reached with an OpenAI-shaped
 # chat/completions call. It replaced a local Ollama, which stopped a Run dead
 # whenever the daemon was not up on this machine.
 
 OPENROUTER_BASE = "https://openrouter.ai/api/v1"
 OPENROUTER_KEY_ENV = "OPENROUTER_API_KEY"
 
-# Free models only, and all three honour a strict json_schema response format —
-# which is what keeps a Score in range without a validator. The first is the
-# fastest measured on this task; the others exist because a free model is
-# rate-limited upstream without warning, and OpenRouter walks the list itself.
-OPENROUTER_MODEL = "nvidia/nemotron-nano-9b-v2:free"
+# Paid, and deliberately so. The free tiers were tried and are not worth what
+# they cost in wall clock: measured 2026-09-06 against this Prompt, 24 calls at
+# four in flight, the best free model available anywhere answered 19 of 24 with
+# a median of 23s, where deepseek-v4-flash answered 24 of 24 with a median of
+# 2.3s. A whole Run of ~200 Items bills about three cents, which is under a
+# dollar a month, and buys a Run that finishes in minutes rather than one that
+# runs into the unit's 30-minute wall.
+#
+# All three honour a strict json_schema response format — which is what keeps a
+# Score in range without a validator — AND accept the `reasoning` field below.
+# That second requirement is the one that is easy to miss: a growing number of
+# endpoints answer HTTP 400 "Reasoning is mandatory for this endpoint and
+# cannot be disabled", which model.py correctly treats as fatal — so such a
+# model in this list would not degrade a Run, it would end Enrichment outright.
+# gemini-3.5-flash-lite, glm-5.3-flash and minimax-m2.5 were all rejected on
+# exactly that, having passed every other test.
+#
+# The first is the cheapest and the fastest. The second is the same model under
+# a dated pin, so a floating alias that moves under us is survivable. The third
+# is a different vendor entirely, because two DeepSeek entries share an outage.
+# OpenRouter walks the list itself.
+#
+#   deepseek/deepseek-v4-flash       24/24, p50 2.3s, ~$0.030 a Run
+#   deepseek/deepseek-v4-flash-0731  24/24, p50 3.5s, ~$0.033 a Run
+#   openai/gpt-5.4-nano               4/4, mean 1.3s, ~$0.068 a Run
+OPENROUTER_MODEL = "deepseek/deepseek-v4-flash"
 OPENROUTER_FALLBACK_MODELS = [
-    "nvidia/nemotron-3-super-120b-a12b:free",
-    "z-ai/glm-5.2:free",
+    "deepseek/deepseek-v4-flash-0731",
+    "openai/gpt-5.4-nano",
 ]
 
 OPENROUTER_PREFLIGHT_TIMEOUT = 10.0
 OPENROUTER_CONNECT_TIMEOUT = 10.0
-# A call that is going to answer answers in 7-13s. What a free model also does,
-# several times in a Run, is accept the request and then sit on it for minutes.
-# So the timeout is a few times a normal call and nowhere near the patience the
-# provider would like: abandoning a stalled draw and taking another is far
-# faster than waiting one out, and this is the single number that decides how
-# long a Run takes.
-OPENROUTER_ITEM_TIMEOUT = 45.0
+# A call that is going to answer answers in 2-4s; the slowest of 48 measured
+# took 6.1s. What a hosted model also does, occasionally, is accept the request
+# and then sit on it for minutes. So the timeout is many times a normal call
+# and nowhere near the patience the provider would like: abandoning a stalled
+# draw and taking another is far faster than waiting one out, and this is the
+# single number that decides how long a Run takes. It was 45s when the model
+# was a free one that genuinely needed 13s to think.
+OPENROUTER_ITEM_TIMEOUT = 30.0
 # The Pick pass is ONE call carrying a dozen Items, so it is both slower to
 # generate and worth waiting for: an Item that stalls costs one Synopsis out of
 # hundreds, and the Pick pass stalling costs the whole day's Picks. Impatience
@@ -65,11 +87,13 @@ OPENROUTER_BACKOFF = 3.0    # seconds, multiplied by the attempt number
 
 # Unlike the old local model, this call is latency-bound rather than
 # compute-bound, so requests in flight together are what turns a 300-Item Run
-# from an hour into minutes. Not as high as it could be, though: a free model
-# queues rather than refusing, and past about four in flight the extra requests
-# only sit in the provider's queue until the deadline above cancels them, which
-# reads as throughput and is really just churn.
-OPENROUTER_CONCURRENCY = 4
+# from an hour into minutes. Four was the right number for a free model, which
+# queues rather than refusing: past about four in flight the extra requests
+# only sat in the provider's queue until the deadline above cancelled them,
+# which read as throughput and was really just churn. A paid endpoint does not
+# queue that way — 24 calls took 14.9s at four in flight and 9.7s at eight,
+# with no failures either way — so the ceiling moved with the model.
+OPENROUTER_CONCURRENCY = 8
 
 # --- Selection (#7) --------------------------------------------------------
 
