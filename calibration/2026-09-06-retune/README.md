@@ -55,3 +55,52 @@ Run it until it prints `scores-c.json is complete` — about 35 calls — then d
 the controls against `scores-old2.json`. Under the emphatic draft the sub-1B arms
 moved +1 while their larger twins moved -1 and -2; the shipped version should
 separate the pairs the same way, and must leave the four traps alone.
+
+## The model moved out from under this run
+
+Later on 2026-09-06 the generator was switched from the free
+`nvidia/nemotron-nano-9b-v2` to a paid `deepseek/deepseek-v4-flash`. Every score
+in every `scores-*.json` here was drawn from the free model, so `fill.py` and
+`rescore2.py` now **pin it explicitly** rather than reading
+`config.OPENROUTER_MODEL` — refilling the 35 gaps from DeepSeek would put two
+different scorers in one file and destroy the comparison.
+
+That pin keeps the half-finished run honest. It does not make it current: the
+Rubric that scores real Editions from now on is being read by DeepSeek, and none
+of the numbers above were measured against it. The rate limit that stopped this
+run is also gone with the free tier, and a full three-rubric pass is now ~600
+calls of a few seconds each for well under a dollar. Redoing the whole comparison
+under DeepSeek is the better answer than finishing this one.
+
+## The live Rubric, measured
+
+`rubric.md` was rewritten in parallel on 2026-09-06, well beyond the sub-1B
+clause — the 3 and 5 paragraphs were tightened, popularity was demoted from
+tie-breaker to no evidence at all, and the size rule was given the two limits
+this run had found missing: it does not apply to a derivative artefact, and it
+cannot by itself make a 5. `rubric-f.md` is a copy of that file as measured, and
+`scores-ds-f.json` its scores.
+
+It is the best version of the five on the question this retune was about.
+
+| rubric | >=3 of 188 | 4s | release lift | 1.7B | nano-name | GGUF |
+|---|---|---|---|---|---|---|
+| baseline | 53 | 12 | — | — | — | — |
+| C | 42 | 14 | +0.8 | +0.4 | +0.4 | +1.6 |
+| D | 33 | 7 | +0.8 | -1.2 | -0.6 | +1.2 |
+| E | 42 | 8 | +0.6 | -0.2 | +0.6 | +1.4 |
+| **live** | **37** | **6** | **+1.0** | **+0.2** | **+0.0** | **+0.8** |
+
+Paired gaps, sub-1B minus its larger twin: baseline +0.6/+0.8/+0.2, live
++1.8/+1.0/+1.0 — the widest separation measured, D's precision without D's
+across-the-board suppression.
+
+The GGUF leak is halved but not closed: +0.8 where C leaked +1.6, still enough
+to carry a re-upload over the cutoff on some draws, despite the clause now
+naming derivatives explicitly. Whatever is happening there is not a matter of
+phrasing, and it remains the open defect.
+
+Six 4s against the baseline's twelve is the largest cost. That is mostly the
+rewritten 3 and 5 paragraphs rather than the size rule, and it looks deliberate.
+Worth watching in real Editions: with the cutoff at 3 the page still fills, but a
+Brief whose top Score has nearly vanished is a different reading experience.

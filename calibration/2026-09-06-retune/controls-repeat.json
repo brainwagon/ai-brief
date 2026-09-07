@@ -1,0 +1,422 @@
+{
+ "old|SmolTalk-7B": [
+  2,
+  2,
+  3,
+  3,
+  2
+ ],
+ "old|I ran a 270M model on an ESP32 and it an": [
+  4,
+  5,
+  5,
+  5,
+  5
+ ],
+ "old|SmolTalk-360M": [
+  4,
+  3,
+  3,
+  3,
+  2
+ ],
+ "old|I ran a 13B model on a workstation GPU a": [
+  4,
+  4,
+  4,
+  4,
+  4
+ ],
+ "old|Pretraining a 500M model to GPT-2-XL qua": [
+  5,
+  5,
+  5,
+  5,
+  5
+ ],
+ "old|Pretraining a 50B model to GPT-4 quality": [
+  5,
+  5,
+  4,
+  5,
+  5
+ ],
+ "old|tinygrad-lm/rp2040-llm": [
+  5,
+  5,
+  5,
+  5,
+  4
+ ],
+ "old|bartowski/SmolTalk-360M-GGUF": [
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "old|nanoformer/tiny-mini-micro-lm": [
+  4,
+  3,
+  3,
+  3,
+  2
+ ],
+ "old|Qwen3-1.7B released with open weights": [
+  4,
+  3,
+  4,
+  4,
+  3
+ ],
+ "old|Edge-AI startup raises $80M to put sub-1": [
+  1,
+  1,
+  1,
+  1,
+  1
+ ],
+ "old|A 200M model that plays checkers by self": [
+  5,
+  5,
+  5,
+  5,
+  5
+ ],
+ "c|SmolTalk-360M": [
+  3,
+  4,
+  4,
+  4,
+  4
+ ],
+ "c|SmolTalk-7B": [
+  2,
+  2,
+  2,
+  3,
+  3
+ ],
+ "c|I ran a 270M model on an ESP32 and it an": [
+  4,
+  5,
+  5,
+  5,
+  5
+ ],
+ "c|I ran a 13B model on a workstation GPU a": [
+  3,
+  4,
+  4,
+  4,
+  4
+ ],
+ "c|Pretraining a 500M model to GPT-2-XL qua": [
+  5,
+  5,
+  5,
+  5,
+  5
+ ],
+ "c|Pretraining a 50B model to GPT-4 quality": [
+  5,
+  5,
+  5,
+  4,
+  5
+ ],
+ "c|bartowski/SmolTalk-360M-GGUF": [
+  3,
+  4,
+  4,
+  3,
+  4
+ ],
+ "c|tinygrad-lm/rp2040-llm": [
+  4,
+  5,
+  5,
+  5,
+  5
+ ],
+ "c|nanoformer/tiny-mini-micro-lm": [
+  3,
+  3,
+  4,
+  3,
+  4
+ ],
+ "c|Qwen3-1.7B released with open weights": [
+  4,
+  4,
+  4,
+  4,
+  4
+ ],
+ "c|Edge-AI startup raises $80M to put sub-1": [
+  1,
+  2,
+  1,
+  1,
+  1
+ ],
+ "c|A 200M model that plays checkers by self": [
+  5,
+  5,
+  5,
+  5,
+  5
+ ],
+ "d|SmolTalk-360M": [
+  3,
+  4,
+  4,
+  4,
+  4
+ ],
+ "d|SmolTalk-7B": [
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "d|I ran a 270M model on an ESP32 and it an": [
+  5,
+  5,
+  5,
+  5,
+  5
+ ],
+ "d|I ran a 13B model on a workstation GPU a": [
+  4,
+  4,
+  4,
+  4,
+  4
+ ],
+ "d|Pretraining a 500M model to GPT-2-XL qua": [
+  5,
+  5,
+  5,
+  5,
+  5
+ ],
+ "d|Pretraining a 50B model to GPT-4 quality": [
+  4,
+  4,
+  2,
+  4,
+  5
+ ],
+ "d|tinygrad-lm/rp2040-llm": [
+  5,
+  5,
+  5,
+  4,
+  5
+ ],
+ "d|bartowski/SmolTalk-360M-GGUF": [
+  4,
+  4,
+  2,
+  4,
+  2
+ ],
+ "d|Qwen3-1.7B released with open weights": [
+  3,
+  3,
+  2,
+  2,
+  2
+ ],
+ "d|nanoformer/tiny-mini-micro-lm": [
+  2,
+  3,
+  2,
+  2,
+  3
+ ],
+ "d|Edge-AI startup raises $80M to put sub-1": [
+  1,
+  2,
+  1,
+  1,
+  1
+ ],
+ "d|A 200M model that plays checkers by self": [
+  5,
+  5,
+  5,
+  5,
+  5
+ ],
+ "e|SmolTalk-360M": [
+  4,
+  4,
+  4,
+  3,
+  3
+ ],
+ "e|SmolTalk-7B": [
+  2,
+  2,
+  2,
+  2,
+  3
+ ],
+ "e|I ran a 270M model on an ESP32 and it an": [
+  5,
+  5,
+  5,
+  5,
+  5
+ ],
+ "e|I ran a 13B model on a workstation GPU a": [
+  4,
+  3,
+  4,
+  4,
+  4
+ ],
+ "e|Pretraining a 500M model to GPT-2-XL qua": [
+  5,
+  5,
+  5,
+  5,
+  5
+ ],
+ "e|Pretraining a 50B model to GPT-4 quality": [
+  4,
+  5,
+  4,
+  4,
+  4
+ ],
+ "e|tinygrad-lm/rp2040-llm": [
+  5,
+  5,
+  5,
+  5,
+  5
+ ],
+ "e|bartowski/SmolTalk-360M-GGUF": [
+  3,
+  4,
+  3,
+  3,
+  4
+ ],
+ "e|nanoformer/tiny-mini-micro-lm": [
+  4,
+  4,
+  3,
+  4,
+  3
+ ],
+ "e|Qwen3-1.7B released with open weights": [
+  3,
+  3,
+  4,
+  3,
+  4
+ ],
+ "e|Edge-AI startup raises $80M to put sub-1": [
+  2,
+  2,
+  1,
+  2,
+  2
+ ],
+ "e|A 200M model that plays checkers by self": [
+  5,
+  5,
+  5,
+  5,
+  5
+ ],
+ "f|SmolTalk-360M": [
+  4,
+  4,
+  4,
+  4,
+  4
+ ],
+ "f|SmolTalk-7B": [
+  2,
+  2,
+  2,
+  2,
+  3
+ ],
+ "f|I ran a 270M model on an ESP32 and it an": [
+  5,
+  5,
+  5,
+  5,
+  5
+ ],
+ "f|I ran a 13B model on a workstation GPU a": [
+  4,
+  4,
+  4,
+  4,
+  4
+ ],
+ "f|Pretraining a 500M model to GPT-2-XL qua": [
+  5,
+  4,
+  5,
+  5,
+  5
+ ],
+ "f|Pretraining a 50B model to GPT-4 quality": [
+  4,
+  4,
+  4,
+  3,
+  4
+ ],
+ "f|tinygrad-lm/rp2040-llm": [
+  4,
+  5,
+  5,
+  5,
+  4
+ ],
+ "f|nanoformer/tiny-mini-micro-lm": [
+  4,
+  3,
+  3,
+  3,
+  2
+ ],
+ "f|bartowski/SmolTalk-360M-GGUF": [
+  2,
+  3,
+  4,
+  2,
+  3
+ ],
+ "f|Qwen3-1.7B released with open weights": [
+  4,
+  4,
+  4,
+  3,
+  4
+ ],
+ "f|Edge-AI startup raises $80M to put sub-1": [
+  1,
+  1,
+  1,
+  1,
+  2
+ ],
+ "f|A 200M model that plays checkers by self": [
+  4,
+  5,
+  4,
+  5,
+  5
+ ]
+}

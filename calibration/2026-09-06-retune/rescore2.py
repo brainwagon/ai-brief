@@ -29,7 +29,7 @@ def run(tag, system, items):
     def log(m):
         with lock:
             if "429" not in m and "502" not in m: print(f"[{tag}] {m}", flush=True)
-    client = model.Client(log)
+    client = model.Client(log, model="nvidia/nemotron-nano-9b-v2:free")  # pinned; see fill.py
     def one(i):
         it = items[i]
         results[i] = client.complete(system, f"Title: {it['title']}\nText: {it['synopsis']}",

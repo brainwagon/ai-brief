@@ -14,6 +14,12 @@ ROOT = HERE.parent.parent
 sys.path.insert(0, str(ROOT))
 from generator import model
 
+# PINNED, and not config.OPENROUTER_MODEL. Every score in scores-*.json here was
+# drawn from this model; the live config moved to a paid DeepSeek endpoint on
+# 2026-09-06, and refilling the gaps from that model would mix two scorers into
+# one file and quietly destroy the comparison these numbers exist to support.
+MODEL = "nvidia/nemotron-nano-9b-v2:free"
+
 SCHEMA = {"type": "object",
           "properties": {"score": {"type": "integer", "minimum": 1, "maximum": 5},
                          "synopsis": {"type": "string"}},
@@ -31,7 +37,7 @@ system = (ROOT / "prompt.md").read_text().replace(
 lock = threading.Lock()
 def log(msg):
     with lock: print(f"  {msg}", flush=True)
-client = model.Client(log)
+client = model.Client(log, model=MODEL)
 
 def one(i):
     it = items[i]
