@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Brief — Monday, 7 September 2026</title>
+<meta name="description" content="The AI Brief for Monday, 7 September 2026: 25 Items across 9 Sources.">
+<link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://mvandewettering.com/ai-brief/2026-09-07.html">
+</head>
+<body>
+
+<header class="brief-header">
+  <p class="brief-title"><a href="index.html">AI Brief</a></p>
+  <h1 class="edition-date"><time datetime="2026-09-07">Monday, 7 September 2026</time></h1>
+  <div class="edition-state">
+    <p>25 Items across 9 Sources. 4 Picks.</p>
+    <p>All 9 Sources answered. 25 Items carry a Score and a Synopsis.</p>
+  </div>
+  <nav class="edition-nav" aria-label="Edition">
+    <ul>
+      <li><a href="index.html">All Editions</a></li>
+      <li><a href="2026-09-06.html">Previous: <time datetime="2026-09-06">6 September</time></a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="edition">
+
+  <section class="picks" aria-labelledby="picks-heading">
+    <h2 id="picks-heading">Picks</h2>
+    <ol>
+      <li><a href="#item-reddit-1w9nphc">tencent/EVIE-8B and EVIE-4.5B (High-Capacity Visual Document Retrieval)</a>
+        <span class="pick-source">r/LocalLLaMA</span></li>
+      <li><a href="#item-hackernews-49591876">Making a Python interpreter in 1024 bytes</a>
+        <span class="pick-source">Hacker News</span></li>
+      <li><a href="#item-reddit-1w9ad9q">I built an LLM benchmark harness that lets you browse and compare how models answered each question</a>
+        <span class="pick-source">r/LocalLLaMA</span></li>
+      <li><a href="#item-reddit-1w90zdc">[Model] Support for Spark2_5ForCausalLM implementation by KnightYao · Pull Request #27868 · ggml-org/llama.cpp</a>
+        <span class="pick-source">r/LocalLLaMA</span></li>
+    </ol>
+  </section>
+
+  <section class="source" aria-labelledby="src-arxiv">
+    <h2 id="src-arxiv">arXiv <span class="source-count">5 Items</span></h2>
+    <ul class="items">
+
+      <li class="item" id="item-arxiv-2609-05370">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2609.05370v1">When LLM Decompilers Recompile More and Preserve Less</a></h3>
+        <p class="synopsis">A paper demonstrating that LLM-based decompilers (which produce clean, recompilable C code) can silently diverge from the original program&#x27;s behavior — passing all shipped tests but altering logic, removing crashes, or hiding vulnerabilities. The authors propose a fuzzing-based behavioral comparison oracle (Decompile-Diverge) that catches these failures, and show across corpus tests and real CVEs that recompilability and behavioral agreement are often inversely correlated.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>cs.CR, cs.AI · submitted 4 Sep</span></p>
+      </li>
+
+      <li class="item" id="item-arxiv-2609-05364">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2609.05364v1">Design Docs Are All You Need: An AI-native Machine-Learning Performance Tool</a></h3>
+        <p class="synopsis">A performance modeling library for ML systems whose main branch contains almost no code—only natural-language design docs from which coding agents regenerate the implementation, using step-by-step worked examples and a symbolic operator IR with SymPy cost expressions.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>cs.PL, cs.AI · submitted 4 Sep</span></p>
+      </li>
+
+      <li class="item" id="item-arxiv-2609-05339">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2609.05339v1">Does Your Agent&#x27;s Memory Survive a Model Upgrade? A Controlled Study of Memory Portability</a></h3>
+        <p class="synopsis">A controlled study of how different agent memory formats (raw text, RAG chunks, compressed notes, fixed-schema knowledge graphs) survive model upgrades, finding that fixed-schema structures transfer nearly losslessly while compressed notes and RAG with mixed embeddings suffer large accuracy drops, and that retaining raw source history is needed for reliable memory repair.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>cs.AI, cs.CL · submitted 4 Sep</span></p>
+      </li>
+
+      <li class="item" id="item-arxiv-2609-05327">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2609.05327v1">LLM-Driven Algorithm Design for Quantum Circuit Synthesis based on Binary Decision Diagrams</a></h3>
+        <p class="synopsis">QuantumEvo uses an LLM as a heuristic generator to find BDD variable orderings that directly minimize quantum circuit cost, not BDD size; its discovered heuristic HGA-QE achieves a 70.9% tie-or-win rate against per-function best baselines, with a code repository that makes the result reproducible.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>cs.AI · submitted 4 Sep</span></p>
+      </li>
+
+      <li class="item" id="item-arxiv-2609-05415">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2609.05415v1">UniMate: One Unified Model to Animate Diverse Skeletons</a></h3>
+        <p class="synopsis">UniMate is a diffusion transformer that generates text-guided motion for arbitrary 3D skeletons (bipedal, quadrupedal, insectoid, etc.) without per-skeleton fine-tuning, using graph-aware attention biases and spectral position embeddings to handle varying skeletal topologies. It releases a dataset of 13,006 paired motion sequences and supports zero-shot transfer, in-betweening, and editing.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>cs.CV, cs.LG · submitted 4 Sep</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src-hackernews">
+    <h2 id="src-hackernews">Hacker News <span class="source-count">3 Items</span></h2>
+    <ul class="items">
+
+      <li class="item" id="item-hackernews-49586698">
+        <h3 class="item-title"><a href="https://asahilinux.org/2026/09/m2-episode-1/">Asahi Linux on M3</a></h3>
+        <p class="synopsis">Asahi Linux announces official support for Apple M3 series Macs, enabling Linux to run on the latest Apple Silicon hardware.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>513 points · 313 comments</span></p>
+      </li>
+
+      <li class="item item--pick" id="item-hackernews-49591876">
+        <h3 class="item-title"><a href="https://austinhenley.com/blog/python1024.html">Making a Python interpreter in 1024 bytes</a></h3>
+        <p class="synopsis">A walkthrough of building a minimal Python interpreter that fits in 1024 bytes of source code, showing the constraints and tricks needed to implement a working subset of the language at that size.</p>
+        <p class="item-meta"><span class="pick-mark">Pick</span><span class="score">Score 4</span><span>256 points · 92 comments</span></p>
+      </li>
+
+      <li class="item" id="item-hackernews-49590611">
+        <h3 class="item-title"><a href="https://anubis.techaro.lol/blog/2026/anubis-wasm/">It took a year to ship WebAssembly in Anubis</a></h3>
+        <p class="synopsis">A developer details the engineering effort required to add Wasm plugin support to Anubis, a content-negotiation proxy — covering sandboxing, performance, and integration trade-offs over a year-long implementation.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>301 points · 141 comments</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src-github">
+    <h2 id="src-github">GitHub New Repos <span class="source-count">2 Items</span></h2>
+    <ul class="items">
+
+      <li class="item" id="item-github-jarvis322-macos-sysdata">
+        <h3 class="item-title"><a href="https://github.com/Jarvis322/macos-sysdata">Jarvis322/macos-sysdata</a></h3>
+        <p class="synopsis">A macOS menu-bar utility that shows exactly what files make up the System Data category and allows item-by-item deletion.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>442 stars · Swift · new to the top 30</span></p>
+      </li>
+
+      <li class="item" id="item-github-okf-memory-okf-agent-memory">
+        <h3 class="item-title"><a href="https://github.com/okf-memory/okf-agent-memory">okf-memory/okf-agent-memory</a></h3>
+        <p class="synopsis">A Git-native persistent memory system for AI coding agents built in pure Go, implementing Google&#x27;s OKF v0.2 with sub-300µs BM25 search, embedded MCP server, and progressive disclosure to reduce token overhead by 80% without external databases.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>430 stars · Go · new to the top 30</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src-devto">
+    <h2 id="src-devto">dev.to <span class="source-count">3 Items</span></h2>
+    <ul class="items">
+
+      <li class="item" id="item-devto-4593511">
+        <h3 class="item-title"><a href="https://dev.to/eugeniya_ivanova_4a58eadc/my-mcp-integration-got-rejected-almost-nothing-in-the-server-had-to-change-npb">My MCP integration got rejected. Almost nothing in the server had to change.</a></h3>
+        <p class="synopsis">A developer recounts getting an MCP server rejected from the ChatGPT app directory and explains what practical lessons were learned, with almost no server-side code changes needed to fix the issues.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>13 reactions · published 7 Sep</span></p>
+      </li>
+
+      <li class="item" id="item-devto-4592320">
+        <h3 class="item-title"><a href="https://dev.to/anupam_kumar/i-built-obyflow-try-it-break-it-and-tell-me-what-goes-wrong-3mmf">I built Obyflow. Try it, break it, and tell me what goes wrong</a></h3>
+        <p class="synopsis">A developer tool for debugging LLM chains with a visual trace of calls, outputs, and errors, meant to replace console.log-style instrumentation.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>7 reactions · published 7 Sep</span></p>
+      </li>
+
+      <li class="item" id="item-devto-4592374">
+        <h3 class="item-title"><a href="https://dev.to/ayush_singh_9b0d83152be5b/gpt-6-astra-can-find-zero-days-the-more-interesting-problem-is-whether-we-can-still-see-what-its-4kb8">GPT-6 Astra Can Find Zero-Days. The More Interesting Problem Is Whether We Can Still See What It’s Doing.</a></h3>
+        <p class="synopsis">A reflection piece on how a powerful AI model&#x27;s ability to find zero-day vulnerabilities also means the model&#x27;s own reasoning process becomes harder for humans to audit, focusing on the interpretability challenge rather than the technical details of GPT-6 Astra.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>6 reactions · published 7 Sep</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src-reddit">
+    <h2 id="src-reddit">r/LocalLLaMA <span class="source-count">4 Items</span></h2>
+    <ul class="items">
+
+      <li class="item item--pick" id="item-reddit-1w9nphc">
+        <h3 class="item-title"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1w9nphc/tencentevie8b_and_evie45b_highcapacity_visual/">tencent/EVIE-8B and EVIE-4.5B (High-Capacity Visual Document Retrieval)</a></h3>
+        <p class="synopsis">Tencent released EVIE-8B (3B params) and EVIE-4.5B (4.5B params) for high-capacity visual document retrieval. The 4.5B model uses a Prefix-MRL projection that lets you truncate the embedding dimension at runtime (64 to 2048) without retraining. Both achieve top scores on the ViDoRe V3 benchmark (66.75 and 66.02 nDCG@10). A training-free clustering method (HAC) compresses each page from ~750 tokens to 32 vectors, cutting index storage to 3.81 GiB per million pages.</p>
+        <p class="item-meta"><span class="pick-mark">Pick</span><span class="score">Score 4</span><span>/u/jacek2023 · posted 7 Sep</span></p>
+      </li>
+
+      <li class="item item--pick" id="item-reddit-1w9ad9q">
+        <h3 class="item-title"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1w9ad9q/i_built_an_llm_benchmark_harness_that_lets_you/">I built an LLM benchmark harness that lets you browse and compare how models answered each question</a></h3>
+        <p class="synopsis">A new open-source benchmark harness, lm-eval-ledger, that records per-question model outputs (prompt, generation, extracted answer, ground truth, stop reason, char count) into a SQLite DB and serves a Flask web UI for browsing and comparing answers across models. Demo on a single RTX 5090 compares Qwen3.5-9B, Nemotron-30B-A3B (GGUF), and Gemma-4-12B-it on GPQA Diamond and LiveCodeBench, showing that Qwen takes far longer to reason but does not always win on accuracy.</p>
+        <p class="item-meta"><span class="pick-mark">Pick</span><span class="score">Score 4</span><span>/u/jayminban · posted 6 Sep</span></p>
+      </li>
+
+      <li class="item item--pick" id="item-reddit-1w90zdc">
+        <h3 class="item-title"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1w90zdc/model_support_for_spark2_5forcausallm/">[Model] Support for Spark2_5ForCausalLM implementation by KnightYao · Pull Request #27868 · ggml-org/llama.cpp</a></h3>
+        <p class="synopsis">A pull request adding llama.cpp support for the Spark-X2.5 series of compact language models (4B and 1.7B parameters), which use a hybrid attention architecture (one full-attention layer per three sliding-window layers) to achieve native 1M-token context windows with reduced compute, and are available as GGUF files.</p>
+        <p class="item-meta"><span class="pick-mark">Pick</span><span class="score">Score 4</span><span>/u/jacek2023 · posted 6 Sep</span></p>
+      </li>
+
+      <li class="item" id="item-reddit-1w9nfx8">
+        <h3 class="item-title"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1w9nfx8/qwen_38_next_flash_is_really_really_really_verbose/">Qwen 3.8 Next Flash is really really REALLY verbose..</a></h3>
+        <p class="synopsis">A user reports that the Qwen 3.8 Next Flash model (used via pi.dev and BYOK to VSCode) is extremely verbose, taking 13 minutes of thinking on single coding requests at 150 t/s generation, and producing jargon-filled, poor output for decisions, with no benchmarks yet on how different thinking levels affect quality.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>/u/Infinite-Local5435 · posted 7 Sep</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src-wired">
+    <h2 id="src-wired">WIRED <span class="source-count">no Items</span></h2>
+    <p class="thin-note">Answered, and had 1 Item that was new, none of which cleared the cutoff.</p>
+  </section>
+
+  <section class="source" aria-labelledby="src-hf-models">
+    <h2 id="src-hf-models">Hugging Face models <span class="source-count">1 Item</span></h2>
+    <ul class="items">
+
+      <li class="item" id="item-hf-models-dealignai-glm-5-3-cybersecurity-fp8">
+        <h3 class="item-title"><a href="https://huggingface.co/dealignai/GLM-5.3-CYBERSECURITY-FP8">dealignai/GLM-5.3-CYBERSECURITY-FP8</a></h3>
+        <p class="synopsis">A quantized (FP8), abliterated 5.3B MoE GLM model fine-tuned for cybersecurity tasks, particularly red teaming and pentesting, with refusal removal enabled.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>new to trending · 18,602 downloads · 239 likes</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src-hf-datasets">
+    <h2 id="src-hf-datasets">Hugging Face datasets <span class="source-count">no Items</span></h2>
+    <p class="thin-note">Answered, and had 3 Items that were new, none of which cleared the cutoff.</p>
+  </section>
+
+  <section class="source" aria-labelledby="src-hf-papers">
+    <h2 id="src-hf-papers">Hugging Face papers <span class="source-count">7 Items</span></h2>
+    <ul class="items">
+
+      <li class="item" id="item-hf-papers-2609-04304">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2609.04304">Iris: Climbing to the Search Frontier</a></h3>
+        <p class="synopsis">Two open-source search agents (35B-A3B and 397B-A17B) trained with a novel data pipeline that reverse-engineers multi-hop questions from web hyperlinks, then refined via alternating SFT and RL against live search, achieving state-of-the-art results on BrowseComp, DeepSearchQA, and HLE.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>47 upvotes · arXiv 2609.04304</span></p>
+      </li>
+
+      <li class="item" id="item-hf-papers-2609-04250">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2609.04250">Motion-Omni: End-to-End Joint Speech and Full-Body Motion for Spoken Dialogue</a></h3>
+        <p class="synopsis">An end-to-end spoken dialogue model that simultaneously outputs speech and full-body motion from a single Qwen2.5-7B backbone, avoiding the two-pass cascade of separate audio and motion models; joint training recovers alignment, runs faster than real time (RTF=0.78), and releases a 422k-pair pseudo-labelled dataset and a public evaluation protocol.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>34 upvotes · arXiv 2609.04250</span></p>
+      </li>
+
+      <li class="item" id="item-hf-papers-2609-04523">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2609.04523">MaxKernel: Agentic Kernel Generation for TPUs</a></h3>
+        <p class="synopsis">A multi-agent system that uses LLMs and compiler feedback to automatically generate high-performance TPU kernels, evaluated on 50 diverse tasks and matching expert hand-tuned baselines; open-source repository included.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>6 upvotes · arXiv 2609.04523</span></p>
+      </li>
+
+      <li class="item" id="item-hf-papers-2609-00444">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2609.00444">Group Adaptive Clipping Policy Optimization</a></h3>
+        <p class="synopsis">GAPO improves GRPO-based RL for reasoning by adaptively widening the clipping boundary for rare correct rollouts on hard problems, which a fixed clipping boundary would suppress despite their stronger learning signal. A plug-in modification that raises Pass@1 and Pass@k on math and coding benchmarks across Qwen and Llama models, tested on low-base-pass-rate tasks.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>4 upvotes · arXiv 2609.00444</span></p>
+      </li>
+
+      <li class="item" id="item-hf-papers-2609-02780">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2609.02780">ShallowStream: Index Shallow then Answer Deep for Streaming Video Understanding</a></h3>
+        <p class="synopsis">ShallowStream reduces the cost of streaming video understanding by using only the shallow layers of a multimodal LLM for frame encoding and retrieval indexing, then calling the full-depth model only on selected frames at query time, achieving up to 52x per-frame prefill speedup with no loss in accuracy.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>2 upvotes · arXiv 2609.02780</span></p>
+      </li>
+
+      <li class="item" id="item-hf-papers-2609-05416">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2609.05416">WorldSculpt: Generating Compositional Worlds from Grounded Videos</a></h3>
+        <p class="synopsis">A method that extends a single-object 3D generative prior (Pixal3D) to reconstruct cluttered scenes with hundreds of objects, generating individual meshes per object in a shared world frame from multi-view video.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>16 upvotes · arXiv 2609.05416</span></p>
+      </li>
+
+      <li class="item" id="item-hf-papers-2609-00581">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2609.00581">Enoki: Efficient Multi-Level Hallucination Detection</a></h3>
+        <p class="synopsis">Enoki is a hallucination detection framework that extracts relational facts from text, verifies them against evidence, and projects unsupported claims back to specific spans, unifying claim-level and span-level approaches without extra alignment steps and supporting LLM, encoder, or rule-based backends.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>14 upvotes · arXiv 2609.00581</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>An Edition is published once, and revised only to repair a Run that failed.</p>
+  <p><a href="index.html">All Editions</a></p>
+</footer>
+
+</body>
+</html>

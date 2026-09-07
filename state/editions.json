@@ -1,5 +1,14 @@
 [
  {
+  "items": 25,
+  "sources": 9,
+  "picks": 4,
+  "unavailable": 0,
+  "unenriched": 0,
+  "date": "2026-09-07",
+  "teaser": "tencent/EVIE-8B and EVIE-4.5B (High-Capacity Visual Document Retrieval)"
+ },
+ {
   "items": 14,
   "sources": 9,
   "picks": 3,
