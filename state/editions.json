@@ -1,5 +1,14 @@
 [
  {
+  "items": 23,
+  "sources": 9,
+  "picks": 4,
+  "unavailable": 0,
+  "unenriched": 0,
+  "date": "2026-09-08",
+  "teaser": "For Strix Halo - Official llama.cpp isn't ideal and how to highest possible throughput"
+ },
+ {
   "items": 25,
   "sources": 9,
   "picks": 4,
