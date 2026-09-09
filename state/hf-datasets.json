@@ -792,6 +792,42 @@
     "wikimedia/wikipedia",
     "zouhar/last-translation-benchmark"
    ]
+  },
+  {
+   "date": "2026-09-09",
+   "recorded_at": "2026-09-09T13:03:22Z",
+   "identities": [
+    "Anthropic/hh-rlhf",
+    "FlyRank/internship-warehouse",
+    "Grio43/Tag_cleaning",
+    "HuggingFaceFW/fineweb",
+    "IFM/Code-Reasoning",
+    "IFM/Pretrain-Behaviors",
+    "IFM/TxT360-v2",
+    "MoreThought/Fable-5.1-Max-Reasoning-Filtered-1000x",
+    "SageBio/mva-hackathon-2026-data",
+    "TheAgenticDataCompany/open-yap-1k",
+    "Vyber07/cyber-security",
+    "acvlab/ABot-World-Explorer-500h",
+    "echel0nn1881/kimi-cyber-reasoning",
+    "gaia-benchmark/GAIA",
+    "jacokon/fasth3-live",
+    "junchaoh-cs/SolarWM-Data",
+    "kuben-developer/tiktok-videos-4b",
+    "malcolmrey/various",
+    "markov-ai/cad-1000-hours",
+    "nyu-mll/glue",
+    "openbmb/UltraData-Code",
+    "openbmb/UltraData-RL-2609",
+    "openbmb/UltraData-SFT-Agent-2609",
+    "r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation",
+    "rajpurkar/squad",
+    "saidutta69/fable-5-premium",
+    "spatialverse/UniPhys-Bench",
+    "stanfordnlp/imdb",
+    "wikimedia/wikipedia",
+    "zouhar/last-translation-benchmark"
+   ]
   }
  ]
 }

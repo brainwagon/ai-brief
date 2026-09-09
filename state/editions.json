@@ -1,5 +1,14 @@
 [
  {
+  "items": 25,
+  "sources": 9,
+  "picks": 3,
+  "unavailable": 0,
+  "unenriched": 0,
+  "date": "2026-09-09",
+  "teaser": "Qwen3.8-Flash-Next on MLX-serve, 1m context is released!"
+ },
+ {
   "items": 23,
   "sources": 9,
   "picks": 4,
