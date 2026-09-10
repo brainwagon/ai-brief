@@ -2,6 +2,15 @@
  {
   "items": 25,
   "sources": 9,
+  "picks": 4,
+  "unavailable": 0,
+  "unenriched": 0,
+  "date": "2026-09-10",
+  "teaser": "openbmb/MiniCPM5-2B-GGUF"
+ },
+ {
+  "items": 25,
+  "sources": 9,
   "picks": 3,
   "unavailable": 0,
   "unenriched": 0,
