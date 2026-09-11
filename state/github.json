@@ -864,6 +864,42 @@
     "yang0/handraw-style",
     "yureii1996/cek-probe-model"
    ]
+  },
+  {
+   "date": "2026-09-11",
+   "recorded_at": "2026-09-11T13:10:02Z",
+   "identities": [
+    "BagasRizkyHarySaputra/SIAPIN",
+    "Edge0-AI/Edge0",
+    "EverettFish/holo-card-studio",
+    "Faizpi/bank-sampah",
+    "Jarvis322/macos-sysdata",
+    "LBEILC/RhineLabUI",
+    "OpenWAM-Official/OpenWAM",
+    "Sophomoresty/turnstile-bypass",
+    "SpaceDudem/text-humanizer",
+    "Vincentwei1021/anything2explainer",
+    "achimala/dream-loop",
+    "angusdevgo/IDM_Pro_Tool",
+    "ashemag/human-atlas",
+    "donvito/codex-astra-luna-orchestrator",
+    "gazijarin/itsgiving",
+    "henryzawadzki6542/cloudflare-turnstile-bypass",
+    "iamzulx/crypto-rag",
+    "jnz/INSLIB",
+    "jtydhr88/screenwriting-skills",
+    "lfzk550/fanzha-ai-proxy",
+    "mizzlelover/gongwen-gbt9704-skill",
+    "okf-memory/okf-agent-memory",
+    "openai/NavierStokesAndEuler",
+    "sdli1995/dlssg_for_sm86",
+    "sitimas9/cdcrafthh",
+    "sumimakito/Mac-Duo",
+    "truanayangi-com/truanayangi",
+    "vinzdg/codenotch",
+    "wilsjo2/OptiScaler-DLSSNR-PreSR-Multipass",
+    "yang0/handraw-style"
+   ]
   }
  ]
 }

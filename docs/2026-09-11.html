@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Brief — Friday, 11 September 2026</title>
+<meta name="description" content="The AI Brief for Friday, 11 September 2026: 25 Items across 9 Sources.">
+<link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://mvandewettering.com/ai-brief/2026-09-11.html">
+</head>
+<body>
+
+<header class="brief-header">
+  <p class="brief-title"><a href="index.html">AI Brief</a></p>
+  <h1 class="edition-date"><time datetime="2026-09-11">Friday, 11 September 2026</time></h1>
+  <div class="edition-state">
+    <p>25 Items across 9 Sources. 4 Picks.</p>
+    <p>All 9 Sources answered. 25 Items carry a Score and a Synopsis.</p>
+  </div>
+  <nav class="edition-nav" aria-label="Edition">
+    <ul>
+      <li><a href="index.html">All Editions</a></li>
+      <li><a href="2026-09-10.html">Previous: <time datetime="2026-09-10">10 September</time></a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="edition">
+
+  <section class="picks" aria-labelledby="picks-heading">
+    <h2 id="picks-heading">Picks</h2>
+    <ol>
+      <li><a href="#item-arxiv-2609-11923">GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay</a>
+        <span class="pick-source">arXiv</span></li>
+      <li><a href="#item-reddit-1wdbal8">CUDA/HIP: Flash Attention tuning (gfx1201) by pwilkin · Pull Request #28102 · ggml-org/llama.cpp</a>
+        <span class="pick-source">r/LocalLLaMA</span></li>
+      <li><a href="#item-reddit-1wd4xxv">Someone apparently managed to kind of replicate what V4.1 flash does on KV for fast prefill on Qwen</a>
+        <span class="pick-source">r/LocalLLaMA</span></li>
+      <li><a href="#item-hf-papers-2609-06702">PARSER: Read in Parallel, Reason in Depth for Long-Context LLM Agents</a>
+        <span class="pick-source">Hugging Face papers</span></li>
+    </ol>
+  </section>
+
+  <section class="source" aria-labelledby="src-arxiv">
+    <h2 id="src-arxiv">arXiv <span class="source-count">4 Items</span></h2>
+    <ul class="items">
+
+      <li class="item item--pick" id="item-arxiv-2609-11923">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2609.11923v1">GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay</a></h3>
+        <p class="synopsis">A compiler and runtime that maps counterfactual regret minimization (CFR) for a fixed game to static dataflow on the GPU, then bakes the iteration into a single CUDA Graph replay, achieving 30–80× speedup over prior GPU CFR and up to 258× over an optimized CPU solver on the same game suite.</p>
+        <p class="item-meta"><span class="pick-mark">Pick</span><span class="score">Score 5</span><span>cs.DC, cs.AI · submitted 10 Sep</span></p>
+      </li>
+
+      <li class="item" id="item-arxiv-2609-11917">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2609.11917v1">Data Scarcity and Model Sparsity: Mixtures-of-Experts Overfit More to Repeated Data</a></h3>
+        <p class="synopsis">A systematic study showing that Mixture-of-Experts (MoE) language models overfit to repeated data significantly faster than dense Transformers of the same active parameter count, with the effect worsening at higher sparsity; dropout and masking regularization can partly mitigate the degradation but cannot match training on unique data.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>cs.LG, cs.CL · submitted 10 Sep</span></p>
+      </li>
+
+      <li class="item" id="item-arxiv-2609-11899">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2609.11899v1">Caption-once, Frames-on-Demand: Visual-Need Routing for Budget-Aware Agentic Long Video Understanding</a></h3>
+        <p class="synopsis">A budget-aware edge-cloud framework for long-video understanding that runs a single offline captioning pass to build a dual-track narrative index, then uses a per-query Visual-Need Router to trigger bounded keyframe retrieval only for perceptual questions, capping frame consumption per query regardless of video length and demonstrating strong accuracy-efficiency trade-offs on long-video benchmarks.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>cs.CV · submitted 10 Sep</span></p>
+      </li>
+
+      <li class="item" id="item-arxiv-2609-11870">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2609.11870v1">Augustinian BabyLM: What Ostensive Definition Can and Cannot Teach a Small Language Model</a></h3>
+        <p class="synopsis">A small DeBERTa model (trained on 10M words) is initialized with visually grounded embeddings from image regions rather than random ones. The visual seeding leaves a lasting imprint on concrete word representations and confers an advantage on object-property benchmarks like COMPS, but has no effect on standard BabyLM grammar benchmarks. A causal test confirms the effect transfers to newly seeded words, and even function words retain the seeds, yet no existing benchmark detects it.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>cs.CL · submitted 10 Sep</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src-hackernews">
+    <h2 id="src-hackernews">Hacker News <span class="source-count">1 Item</span></h2>
+    <ul class="items">
+
+      <li class="item" id="item-hackernews-49650326">
+        <h3 class="item-title"><a href="https://www.johndcook.com/blog/2026/09/09/formal-method-revolution/">OpenAI’s Navier-Stokes release included a Lean 4 formal proof</a></h3>
+        <p class="synopsis">OpenAI released a Lean 4 formal proof of a Navier-Stokes result, linking neural PDE solvers with machine-checked mathematics.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>169 points · 170 comments</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src-github">
+    <h2 id="src-github">GitHub New Repos <span class="source-count">2 Items</span></h2>
+    <ul class="items">
+
+      <li class="item" id="item-github-mizzlelover-gongwen-gbt9704-skill">
+        <h3 class="item-title"><a href="https://github.com/mizzlelover/gongwen-gbt9704-skill">mizzlelover/gongwen-gbt9704-skill</a></h3>
+        <p class="synopsis">A skill or tool for generating editable DOCX files that conform to the Chinese official document formatting standard GB/T 9704-2012, running across multiple AI coding platforms and working with Word/WPS.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>429 stars · JavaScript · new to the top 30</span></p>
+      </li>
+
+      <li class="item" id="item-github-jnz-inslib">
+        <h3 class="item-title"><a href="https://github.com/jnz/INSLIB">jnz/INSLIB</a></h3>
+        <p class="synopsis">An open-source library for inertial navigation (INS), providing algorithms and tools for sensor fusion, attitude estimation, and navigation using IMU data.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>357 stars · C · new to the top 30</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src-devto">
+    <h2 id="src-devto">dev.to <span class="source-count">3 Items</span></h2>
+    <ul class="items">
+
+      <li class="item" id="item-devto-4632045">
+        <h3 class="item-title"><a href="https://dev.to/p0rt/ai-generated-tests-can-make-coding-agents-worse-heres-how-to-check-yours-3jc9">AI-Generated Tests Can Make Coding Agents Worse. Here&#x27;s How to Check Yours</a></h3>
+        <p class="synopsis">ExecCritic is a tool backed by a paper and a Python implementation that detects when AI-generated unit tests for agent code repair are themselves wrong, preventing the agent from approving bad fixes. Includes a runnable example and GitHub repository.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>6 reactions · published 11 Sep</span></p>
+      </li>
+
+      <li class="item" id="item-devto-4626561">
+        <h3 class="item-title"><a href="https://dev.to/shrsv/llm-sampling-demystified-temperature-top-k-top-p-min-p-and-repetition-penalty-4pkh">LLM Sampling, Demystified: Temperature, Top-k, Top-p, Min-p and Repetition Penalty</a></h3>
+        <p class="synopsis">A blog post and interactive notebook explaining the mechanics and effects of common LLM sampling parameters—temperature, top-k, top-p, min-p, and repetition penalty—with visual demonstrations and practical guidance.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>10 reactions · published 10 Sep</span></p>
+      </li>
+
+      <li class="item" id="item-devto-4628160">
+        <h3 class="item-title"><a href="https://dev.to/jaideepparashar/i-think-developers-are-building-too-much-software-1l1i">I Think Developers Are Building Too Much Software</a></h3>
+        <p class="synopsis">A reflective essay arguing that developers overshoot user needs by building bloated software, advocating for smaller, simpler, product-focused engineering that prioritizes what actually solves problems.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>7 reactions · published 11 Sep</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src-reddit">
+    <h2 id="src-reddit">r/LocalLLaMA <span class="source-count">6 Items</span></h2>
+    <ul class="items">
+
+      <li class="item item--pick" id="item-reddit-1wd4xxv">
+        <h3 class="item-title"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1wd4xxv/someone_apparently_managed_to_kind_of_replicate/">Someone apparently managed to kind of replicate what V4.1 flash does on KV for fast prefill on Qwen</a></h3>
+        <p class="synopsis">An open, hands-on replication of a V4.1-style attention KV approximation for fast prefill on Qwen 3, with an 8B model, a blog post detailing the method, and an interactive web demo; linked to a 27B variant as a next step.</p>
+        <p class="item-meta"><span class="pick-mark">Pick</span><span class="score">Score 4</span><span>/u/T_rex2700 · posted 11 Sep</span></p>
+      </li>
+
+      <li class="item item--pick" id="item-reddit-1wdbal8">
+        <h3 class="item-title"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1wdbal8/cudahip_flash_attention_tuning_gfx1201_by_pwilkin/">CUDA/HIP: Flash Attention tuning (gfx1201) by pwilkin · Pull Request #28102 · ggml-org/llama.cpp</a></h3>
+        <p class="synopsis">A pull request for llama.cpp that tunes Flash Attention for AMD RDNA4 (RX 9700) and RDNA 3.5 (RX 9060 XT, 8060S) GPUs via CUDA/HIP backends, showing significant prefill performance improvements on large contexts with detailed benchmarks.</p>
+        <p class="item-meta"><span class="pick-mark">Pick</span><span class="score">Score 4</span><span>/u/pmttyji · posted 11 Sep</span></p>
+      </li>
+
+      <li class="item" id="item-reddit-1wddg8g">
+        <h3 class="item-title"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1wddg8g/gpt_live_clone_on_an_rtx_3060/">GPT Live clone on an RTX 3060</a></h3>
+        <p class="synopsis">A blog post and video showing a fully local voice assistant running Qwen3 1.7B ASR, Qwen3.5-9B GGUF, and Pocket TTS on a single RTX 3060 (12 GB VRAM), tested against the GPT Live demo conversation for flight routing and dining recommendations.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>/u/liampetti · posted 11 Sep</span></p>
+      </li>
+
+      <li class="item" id="item-reddit-1wcwa7i">
+        <h3 class="item-title"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1wcwa7i/museglimmer30b_really_punches_above_its_weights/">Muse-glimmer-30b really punches above its weight(s) for creative writing</a></h3>
+        <p class="synopsis">A firsthand account of running the 30B-parameter Muse-glimmer model on a single GPU, reporting creative writing quality that competes with much larger models on EQ-Bench Creative Writing and Hemingway-bench, with a concrete example of its David Sedaris-style output outperforming a 27B Qwen model.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>/u/spanielrassler · posted 10 Sep</span></p>
+      </li>
+
+      <li class="item" id="item-reddit-1wdaq1v">
+        <h3 class="item-title"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1wdaq1v/spomin_live_kv_cache_compaction_experimental_for/">Spomin - Live KV cache compaction (Experimental for Qwen)</a></h3>
+        <p class="synopsis">Spomin is a KV-cache compaction router that replaces older context with summaries directly in the cache, enabling long-running sessions without full reprocessing; it uses a llama.cpp fork for live cache edits, compresses at roughly 10:1, and keeps original text accessible by context ID.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>/u/wgaca2 · posted 11 Sep</span></p>
+      </li>
+
+      <li class="item" id="item-reddit-1wcpppm">
+        <h3 class="item-title"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1wcpppm/cybertiel_35ba3bs_uncensored_4bit_quant_beats/">CyberTiel 35B-A3B’s uncensored 4-bit quant beats Opus 4.6 medium cleanly on real codebase issues, in 27% of the time Qwen3.8-27b medium takes.</a></h3>
+        <p class="synopsis">A post on CyberTiel 35B-A3B, an uncensored 35B parameter (3B active) language model fine-tuned from TielCoder, that reports it outperforms Opus 4.6 medium on real codebase issues (SWE-bench-Live) while running 27% faster than Qwen3.8-27b, with no damage from abliteration after Q4 quantization.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>/u/peculiar-ragdoll · posted 10 Sep</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src-wired">
+    <h2 id="src-wired">WIRED <span class="source-count">no Items</span></h2>
+    <p class="thin-note">Answered, and had 3 Items that were new, none of which cleared the cutoff.</p>
+  </section>
+
+  <section class="source" aria-labelledby="src-hf-models">
+    <h2 id="src-hf-models">Hugging Face models <span class="source-count">1 Item</span></h2>
+    <ul class="items">
+
+      <li class="item" id="item-hf-models-m-a-p-yue2-3b">
+        <h3 class="item-title"><a href="https://huggingface.co/m-a-p/YuE2-3B">m-a-p/YuE2-3B</a></h3>
+        <p class="synopsis">A 3B-parameter text-to-music generation model with symbolic planning and agentic editing, small enough to run on a single consumer GPU.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>new to trending · 971 downloads · 174 likes</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src-hf-datasets">
+    <h2 id="src-hf-datasets">Hugging Face datasets <span class="source-count">no Items</span></h2>
+    <p class="thin-note">Answered, and had 1 Item that was new, none of which cleared the cutoff.</p>
+  </section>
+
+  <section class="source" aria-labelledby="src-hf-papers">
+    <h2 id="src-hf-papers">Hugging Face papers <span class="source-count">8 Items</span></h2>
+    <ul class="items">
+
+      <li class="item" id="item-hf-papers-2608-12564">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2608.12564">Scaling Automatic Research Agents via World Models</a></h3>
+        <p class="synopsis">A method called WMRL that trains a world model to replace expensive real-environment execution in reinforcement learning for research automation agents, cutting training cost 3-4x and letting 4B/9B agents outperform 48B/120B baselines; the paper includes theoretical guarantees for its debiasing and denoising corrections.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>434 upvotes · arXiv 2608.12564</span></p>
+      </li>
+
+      <li class="item" id="item-hf-papers-2609-10715">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2609.10715">NCP-ArchPreview Technical Report: Moving towards Latent Space Language Models through Next Concept Prediction</a></h3>
+        <p class="synopsis">A latent-space language model (8.9B parameters, trained on 5.73T tokens) that augments next-token prediction with a Next Concept Prediction (NCP) objective, learning to predict discrete concepts spanning multiple tokens from its hidden states. It reaches the final loss of OLMo-3-7B after 51.3% of training, outperforms it by 2.45 points on downstream tasks, and uses 85% of standard computation to match a parameter-aligned baseline. The 17M-parameter VQ module also enables lightweight domain adaptation and improves speculative decoding acceptance length by 4.17%.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>112 upvotes · arXiv 2609.10715</span></p>
+      </li>
+
+      <li class="item" id="item-hf-papers-2609-11929">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2609.11929">SenseNova-U1.5: Towards Native Unified Visual Intelligence</a></h3>
+        <p class="synopsis">An 8-billion-parameter mixture-of-transformers model that handles both understanding and generation of images (up to 4K resolution) in a single architecture without a separate encoder or VAE, with planned open-source release of the training code.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>92 upvotes · arXiv 2609.11929</span></p>
+      </li>
+
+      <li class="item" id="item-hf-papers-2609-11042">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2609.11042">T1: Terminal Agent Reinforcement Learning for Long-Horizon Tasks</a></h3>
+        <p class="synopsis">T1 is a 122B-parameter Mixture-of-Experts model trained with reinforcement learning to operate a real shell in a cloud sandbox for long-horizon tasks (up to 300+ tool calls). It introduces TITO (drift repair at turn boundaries) and rollout routing replay (rerunning the sampler&#x27;s MoE routing during training) to stabilize training, and a dense process reward that scores trajectories by the count of passing verifiers. On Terminal-Bench 2.1 it reaches 64.0% resolved, and on Long-Horizon Terminal Bench it reaches 27.9%, surpassing GPT-5.4 and GLM-5.1. The result is strong but the model is large (122B) and runs in a cloud sandbox, not on local hardware, so it is not directly actionable for the reader&#x27;s interests.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>42 upvotes · arXiv 2609.11042</span></p>
+      </li>
+
+      <li class="item" id="item-hf-papers-2609-05903">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2609.05903">EvoSafeHarness: Evolving Model- and Domain-Specific Harnesses for Securing Agents</a></h3>
+        <p class="synopsis">EvoSafeHarness is a framework that automatically synthesizes a safety harness—a natural-language policy plus executable code—for a frozen LLM agent in a specific domain, jointly optimizing safety and utility without expert hand-tuning. It reduces attack success rates far below fixed defenses while keeping utility costs low, and the paper includes analysis of how domain semantics vs. model behavior shape the resulting harness.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>34 upvotes · arXiv 2609.05903</span></p>
+      </li>
+
+      <li class="item item--pick" id="item-hf-papers-2609-06702">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2609.06702">PARSER: Read in Parallel, Reason in Depth for Long-Context LLM Agents</a></h3>
+        <p class="synopsis">PARSER decouples document reading from reasoning by using many lightweight frozen subagents to read chunks in parallel, while a lead agent performs iterative scatter--gather rounds to answer queries. On multi-hop QA up to 896K tokens, a 4B backbone beats sequential baselines by 5.7 points and cuts inference latency by up to 11x, with code and data released.</p>
+        <p class="item-meta"><span class="pick-mark">Pick</span><span class="score">Score 4</span><span>17 upvotes · arXiv 2609.06702</span></p>
+      </li>
+
+      <li class="item" id="item-hf-papers-2609-05463">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2609.05463">A Three-Layer Caching Architecture for Low-Latency LLM Web Search on Commodity CPU Hardware</a></h3>
+        <p class="synopsis">A three-layer caching architecture (session context window, semantic query cache, URL embedding cache) for an LLM-powered web search engine, achieving an 89.3% Redis cache hit rate with 0.1 ms latency on a single 8-vCPU server, with open-source code available.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>5 upvotes · arXiv 2609.05463</span></p>
+      </li>
+
+      <li class="item" id="item-hf-papers-2608-27875">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2608.27875">HyQuant: Hybrid-Precision Quantization for LLM Attention</a></h3>
+        <p class="synopsis">HyQuant quantises most attention states in LLMs to low-bit widths while keeping a small set of vertical-line tokens and local-window states in full precision, using lightweight attention-pattern signals to identify those critical regions; it covers both prefill (hybrid-precision attention) and decode (KV-cache compression with fused dequantisation) stages, and the code is on GitHub.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>3 upvotes · arXiv 2608.27875</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>An Edition is published once, and revised only to repair a Run that failed.</p>
+  <p><a href="index.html">All Editions</a></p>
+</footer>
+
+</body>
+</html>
