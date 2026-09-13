@@ -1,5 +1,14 @@
 [
  {
+  "items": 22,
+  "sources": 9,
+  "picks": 3,
+  "unavailable": 1,
+  "unenriched": 0,
+  "date": "2026-09-13",
+  "teaser": "Qwen3.8 Flash Next now at 1.2k t/s prefill on Strix Halo"
+ },
+ {
   "items": 17,
   "sources": 9,
   "picks": 4,
