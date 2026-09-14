@@ -1,5 +1,14 @@
 [
  {
+  "items": 25,
+  "sources": 9,
+  "picks": 4,
+  "unavailable": 1,
+  "unenriched": 0,
+  "date": "2026-09-14",
+  "teaser": "llama: add Maple 20B-A1B ternary MoE architecture (CPU) by AlexGabbia \u00b7 Pull Request #27000 \u00b7 ggml-org/llama.cpp"
+ },
+ {
   "items": 22,
   "sources": 9,
   "picks": 3,
