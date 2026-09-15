@@ -1008,6 +1008,42 @@
     "unsloth/Qwen3.8-27B-GGUF",
     "zai-org/GLM-5.3-Flash"
    ]
+  },
+  {
+   "date": "2026-09-15",
+   "recorded_at": "2026-09-15T13:05:12Z",
+   "identities": [
+    "Agnes-AI/Agnes-3.0-Flash",
+    "Alissonerdx/Minimax-H3-ComfyUI",
+    "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+    "Edge0/Edge0-35B-A3B-preview",
+    "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+    "Lightricks/LTX-2.5",
+    "MiniMaxAI/MiniMax-H3",
+    "Qwen/Qwen3.8-27B",
+    "Qwen/Qwen3.8-Flash-Next",
+    "TokenRhythm/NeoHorse-1-4B",
+    "WarmBloodAban/Minimax-h3_Singularity",
+    "XHToken/Spark-X2.5-4B",
+    "dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "distilbert/distilbert-base-uncased",
+    "facebook/mms-300m",
+    "google-bert/bert-base-uncased",
+    "google/timesfm-3.0-pytorch",
+    "m-a-p/YuE2-3B",
+    "meta-llama/Llama-3.1-8B-Instruct",
+    "nex-agi/Nex-N2.5-Pro",
+    "nex-agi/Nex-N2.5-mini",
+    "openai-community/gpt2",
+    "openai/clip-vit-base-patch32",
+    "openbmb/MiniCPM5-2B",
+    "sentence-transformers/all-MiniLM-L6-v2",
+    "tencent/AuK",
+    "ukisai/Swift-Qwen3.8-27b",
+    "unsloth/Qwen3.8-27B-GGUF",
+    "zai-org/GLM-5.3-Flash"
+   ]
   }
  ]
 }

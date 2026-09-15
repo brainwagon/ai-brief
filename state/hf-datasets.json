@@ -1008,6 +1008,42 @@
     "wikimedia/wikipedia",
     "zouhar/last-translation-benchmark"
    ]
+  },
+  {
+   "date": "2026-09-15",
+   "recorded_at": "2026-09-15T13:05:12Z",
+   "identities": [
+    "Anthropic/hh-rlhf",
+    "FlyRank/internship-warehouse",
+    "Grio43/Tag_cleaning",
+    "HuggingFaceFW/fineweb",
+    "IFM/Code-Reasoning",
+    "IFM/TxT360-v2",
+    "ILSVRC/imagenet-1k",
+    "MoreThought/Fable-5.1-Max-Reasoning-Filtered-5000x",
+    "OpenDataArena/Spark-234K",
+    "TheAgenticDataCompany/open-yap-1k",
+    "Yootta/World-SimReady-Home",
+    "echel0nn1881/kimi-cyber-reasoning",
+    "gaia-benchmark/GAIA",
+    "ikala/tmmluplus",
+    "jacokon/fasth3-live",
+    "malcolmrey/various",
+    "markov-ai/cad-1000-hours",
+    "nvidia/PhysicalAI-Autonomous-Vehicles",
+    "nyu-mll/glue",
+    "openai/gsm8k",
+    "openbmb/UltraData-Code",
+    "openbmb/UltraData-RL-2609",
+    "openbmb/UltraData-SFT-Agent-2609",
+    "rajpurkar/squad",
+    "saidutta69/fable-5-premium",
+    "stablediffusiontutorials/Minimax-H3",
+    "stanfordnlp/imdb",
+    "venvoo/china-a-share-l2-level2-limit-order-book-tick-data",
+    "wikimedia/wikipedia",
+    "zouhar/last-translation-benchmark"
+   ]
   }
  ]
 }

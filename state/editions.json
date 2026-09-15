@@ -1,5 +1,14 @@
 [
  {
+  "items": 23,
+  "sources": 9,
+  "picks": 4,
+  "unavailable": 1,
+  "unenriched": 0,
+  "date": "2026-09-15",
+  "teaser": "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search"
+ },
+ {
   "items": 25,
   "sources": 9,
   "picks": 4,
