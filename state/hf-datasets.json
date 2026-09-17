@@ -2,42 +2,6 @@
  "source": "hf-datasets",
  "snapshots": [
   {
-   "date": "2026-08-18",
-   "recorded_at": "2026-08-18T15:50:44Z",
-   "identities": [
-    "Anthropic/hh-rlhf",
-    "BytedTsinghua-SIA/CUDA-Agent-Ops-6K",
-    "CaptiveDreamer/CaraArchive",
-    "ChartGalaxy/ChartGalaxy",
-    "FINAL-Bench/AX-RAY",
-    "FlyRank/internship-warehouse",
-    "GokuScraper/seedance-2-prompts-datasets",
-    "HuggingFaceCode/stack-v3-train",
-    "HuggingFaceFW/fineweb",
-    "HuggingFaceFW/fineweb-edu",
-    "MatrAIx2026/MatrAIx_Persona_1M",
-    "SWE-bench/SWE-bench_Verified",
-    "ai4bharat/MSMARCO-XI",
-    "armand0e/claude-fable-5-claude-code",
-    "beyoru/kimi-k3-distillation",
-    "cais/hle",
-    "datacurve/deep-swe",
-    "fka/prompts.chat",
-    "llamaindex/ExtractBench",
-    "mvaccargiu/gitskills",
-    "nvidia/Nemotron-RL-Agentic-Terminal-Pivot-v1",
-    "nvidia/Nemotron-SFT-Math-v4",
-    "nvidia/Nemotron-SFT-SWE-v3.5",
-    "openai/gsm8k",
-    "ostris/minimax_h3_1k",
-    "r0b0tlab/qwen3.8-max-distillation-50k",
-    "r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation",
-    "saidutta69/fable-5-premium",
-    "scholarweave/arxiv-latex",
-    "ulamai/UnsolvedMath"
-   ]
-  },
-  {
    "date": "2026-08-19",
    "recorded_at": "2026-08-19T13:08:47Z",
    "identities": [
@@ -1043,6 +1007,42 @@
     "venvoo/china-a-share-l2-level2-limit-order-book-tick-data",
     "wikimedia/wikipedia",
     "zouhar/last-translation-benchmark"
+   ]
+  },
+  {
+   "date": "2026-09-17",
+   "recorded_at": "2026-09-17T13:07:46Z",
+   "identities": [
+    "Anthropic/hh-rlhf",
+    "FlyRank/internship-warehouse",
+    "HuggingFaceFW/fineweb",
+    "IFM/Code-Reasoning",
+    "IFM/TxT360-v2",
+    "ILSVRC/imagenet-1k",
+    "MoreThought/Fable-5.1-Max-Reasoning-Filtered-5000x",
+    "OpenDataArena/Spark-234K",
+    "TheAgenticDataCompany/open-yap-1k",
+    "Yootta/World-SimReady-Home",
+    "echel0nn1881/kimi-cyber-reasoning",
+    "gaia-benchmark/GAIA",
+    "ikala/tmmluplus",
+    "jacokon/fasth3-live",
+    "malcolmrey/various",
+    "markov-ai/cad-1000-hours",
+    "nvidia/OpenH-RF",
+    "nvidia/PhysicalAI-Autonomous-Vehicles",
+    "nyu-mll/glue",
+    "openai/gsm8k",
+    "openbmb/UltraData-Code",
+    "openbmb/UltraData-RL-2609",
+    "openbmb/UltraData-SFT-Agent-2609",
+    "rajpurkar/squad",
+    "saidutta69/fable-5-premium",
+    "stablediffusiontutorials/Minimax-H3",
+    "stanfordnlp/imdb",
+    "venvoo/china-a-share-l2-level2-limit-order-book-tick-data",
+    "wikimedia/wikipedia",
+    "zgcagi/ZGCM-1-Data"
    ]
   }
  ]

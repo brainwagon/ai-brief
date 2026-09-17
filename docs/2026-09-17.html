@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Brief — Thursday, 17 September 2026</title>
+<meta name="description" content="The AI Brief for Thursday, 17 September 2026: 25 Items across 9 Sources.">
+<link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://mvandewettering.com/ai-brief/2026-09-17.html">
+</head>
+<body>
+
+<header class="brief-header">
+  <p class="brief-title"><a href="index.html">AI Brief</a></p>
+  <h1 class="edition-date"><time datetime="2026-09-17">Thursday, 17 September 2026</time></h1>
+  <div class="edition-state">
+    <p>25 Items across 9 Sources. 4 Picks.</p>
+    <p>All 9 Sources answered. 25 Items carry a Score and a Synopsis.</p>
+  </div>
+  <nav class="edition-nav" aria-label="Edition">
+    <ul>
+      <li><a href="index.html">All Editions</a></li>
+      <li><a href="2026-09-16.html">Previous: <time datetime="2026-09-16">16 September</time></a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="edition">
+
+  <section class="picks" aria-labelledby="picks-heading">
+    <h2 id="picks-heading">Picks</h2>
+    <ol>
+      <li><a href="#item-github-theoleecj-openjev">TheoLeeCJ/openjev</a>
+        <span class="pick-source">GitHub New Repos</span></li>
+      <li><a href="#item-reddit-1widomo">I built a native Vulkan training backend for 143 modern Transformer architectures — no CUDA or PyTorch required</a>
+        <span class="pick-source">r/LocalLLaMA</span></li>
+      <li><a href="#item-hf-models-harshatheg-qwen-2-5-1b-rlcd">harshatheg/Qwen-2.5-1B-RLCD</a>
+        <span class="pick-source">Hugging Face models</span></li>
+      <li><a href="#item-hf-models-taichuai-zdtaichu5-0-9b">TaichuAI/ZDTaichu5.0-9B</a>
+        <span class="pick-source">Hugging Face models</span></li>
+    </ol>
+  </section>
+
+  <section class="source" aria-labelledby="src-arxiv">
+    <h2 id="src-arxiv">arXiv <span class="source-count">3 Items</span></h2>
+    <ul class="items">
+
+      <li class="item" id="item-arxiv-2609-19145">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2609.19145v1">Objective vs. Search: Decomposing What Makes a Good Tokeniser</a></h3>
+        <p class="synopsis">A paper that disentangles the two axes of tokeniser design — optimisation objective (compression vs. log-likelihood) and search procedure (bottom-up vs. top-down) — by completing the 2x2 design space with two new algorithms, BottomUpLL and TopDownComp. Training language models across sizes, vocabularies, and domains, it finds the search procedure, not the objective, dominates bits-per-byte in most settings, though this is inconsistent on BLiMP.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>cs.CL, cs.AI · submitted 16 Sep</span></p>
+      </li>
+
+      <li class="item" id="item-arxiv-2609-19142">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2609.19142v1">PointZero: 3D Point Track Completion for Learning Transferable 3D Dynamics</a></h3>
+        <p class="synopsis">PointZero pre-trains a 3D point-dynamics model by predicting future point tracks from a single RGB-D frame and sparse partial trajectories, learning a general 3D dynamics prior without robot action labels. Trained on a new 2.9-million-frame synthetic dataset spanning deformable, rigid, and articulated objects, it beats prior methods on the same data and, when fine-tuned, leads on a 3D dynamics benchmark and matches or beats baselines on 6/7 robot-manipulation tasks, with code, data, and weights released.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>cs.CV · submitted 16 Sep</span></p>
+      </li>
+
+      <li class="item" id="item-arxiv-2609-19107">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2609.19107v1">How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents</a></h3>
+        <p class="synopsis">Shows that architectural choices like increasing recursive depth (looping) or adding boundary operators can improve scaling exponents in transformer pre-training, with a 7.4B model matching GPT-3 13B at 20× less compute, and demonstrates increasing compute efficiency gains with scale.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>cs.LG · submitted 16 Sep</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src-hackernews">
+    <h2 id="src-hackernews">Hacker News <span class="source-count">3 Items</span></h2>
+    <ul class="items">
+
+      <li class="item" id="item-hackernews-49731285">
+        <h3 class="item-title"><a href="https://rohanbansal.com/qorl">Training a 4B model to produce 81% faster query plans than Postgres</a></h3>
+        <p class="synopsis">Describes training a 4B-parameter model to generate query plans 81% faster than PostgreSQL, likely a small, runnable model with performance evidence.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>593 points · 122 comments</span></p>
+      </li>
+
+      <li class="item" id="item-hackernews-49732931">
+        <h3 class="item-title"><a href="https://arxiv.org/abs/2609.16338">Breaking the 1.58-bit Barrier for Ternary LLMs</a></h3>
+        <p class="synopsis">Introduces a method to train ternary (ternary weight) language models below the 1.58-bit-per-weight barrier, achieving competitive perplexity with significantly reduced model size; includes training recipes and results on standard benchmarks.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>218 points · 34 comments</span></p>
+      </li>
+
+      <li class="item" id="item-hackernews-49735930">
+        <h3 class="item-title"><a href="https://ryan.science/blog/keys-not-included">Keys Not Included: recovering the signing keys for US driver&#x27;s license barcodes</a></h3>
+        <p class="synopsis">A cryptographic analysis showing how to recover the private signing keys for the barcodes on US driver&#x27;s licenses, which would allow forging a valid-looking license scanning as genuine.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>213 points · 81 comments</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src-github">
+    <h2 id="src-github">GitHub New Repos <span class="source-count">3 Items</span></h2>
+    <ul class="items">
+
+      <li class="item item--pick" id="item-github-theoleecj-openjev">
+        <h3 class="item-title"><a href="https://github.com/TheoLeeCJ/openjev">TheoLeeCJ/openjev</a></h3>
+        <p class="synopsis">A repository exploring whether a system in the style of Jev—likely a chess engine or search program—can be run on a single RTX 3090 at home, targeting hobbyist hardware.</p>
+        <p class="item-meta"><span class="pick-mark">Pick</span><span class="score">Score 5</span><span>308 stars · Python · new to the top 30</span></p>
+      </li>
+
+      <li class="item" id="item-github-shinthink-blitzstrike">
+        <h3 class="item-title"><a href="https://github.com/shinthink/blitzstrike">shinthink/blitzstrike</a></h3>
+        <p class="synopsis">Blitz Strike is an MCP server that packages penetration-testing methodology — reconnaissance, source-to-sink analysis, and live validation — into a single toolbelt for AI agents, advertising 57 escalation chains and a 130-tool catalog.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>634 stars · TypeScript · new to the top 30</span></p>
+      </li>
+
+      <li class="item" id="item-github-aetherlabsai-rsiagent">
+        <h3 class="item-title"><a href="https://github.com/AetherLabsAI/RSIAgent">AetherLabsAI/RSIAgent</a></h3>
+        <p class="synopsis">A training-free multi-agent framework that improves itself in new environments by combining broad exploration with deep exploitation and reusable memory, letting agents recursively refine their own strategies without fine-tuning.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>296 stars · Python · new to the top 30</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src-devto">
+    <h2 id="src-devto">dev.to <span class="source-count">3 Items</span></h2>
+    <ul class="items">
+
+      <li class="item" id="item-devto-4673106">
+        <h3 class="item-title"><a href="https://dev.to/remdore/show-a-model-your-old-code-and-it-writes-your-old-bugs-32-runs-0-reuse-2epm">Show a model your old code and it writes your old bugs: 32 runs, 0% reuse</a></h3>
+        <p class="synopsis">A hands-on experiment where 32 LLM runs were given an old and a new version of the same real codebase; only the version with the shared component produced correct, concise code, while the old version repeatedly regenerated the same bugs that had been refactored away, demonstrating that models faithfully reproduce the patterns—and defects—in their context window regardless of the task&#x27;s intent.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>12 reactions · published 17 Sep</span></p>
+      </li>
+
+      <li class="item" id="item-devto-4674910">
+        <h3 class="item-title"><a href="https://dev.to/prince_panchani_f971a20ec/ai-can-write-the-code-can-it-prove-the-fix-3glg">AI Can Write the Code. Can It Prove the Fix?</a></h3>
+        <p class="synopsis">A piece on using formal verification (lean4) to prove that AI-generated code patches are correct, treating the proof as a second agentic loop that checks the fix before it runs.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>11 reactions · published 17 Sep</span></p>
+      </li>
+
+      <li class="item" id="item-devto-4669975">
+        <h3 class="item-title"><a href="https://dev.to/reporails/progressive-disclosure-what-where-when-and-why-36m3">Progressive Disclosure: What, Where, When, and Why</a></h3>
+        <p class="synopsis">Explains the pattern of progressive disclosure in developer documentation and code comments, using the AGENTS.md file convention as a case study.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>9 reactions · published 16 Sep</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src-reddit">
+    <h2 id="src-reddit">r/LocalLLaMA <span class="source-count">5 Items</span></h2>
+    <ul class="items">
+
+      <li class="item item--pick" id="item-reddit-1widomo">
+        <h3 class="item-title"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1widomo/i_built_a_native_vulkan_training_backend_for_143/">I built a native Vulkan training backend for 143 modern Transformer architectures — no CUDA or PyTorch required</a></h3>
+        <p class="synopsis">A Rust + Vulkan native training and inference backend implements forward/backward passes, AdamW, LoRA, and mixed-precision for 143 Transformer architectures (Llama, Qwen, Gemma, Mistral, BERT, T5, etc.) without any CUDA or PyTorch dependency.</p>
+        <p class="item-meta"><span class="pick-mark">Pick</span><span class="score">Score 5</span><span>/u/PhysicsDisastrous462 · posted 16 Sep</span></p>
+      </li>
+
+      <li class="item" id="item-reddit-1wihgum">
+        <h3 class="item-title"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1wihgum/i_literally_built_the_jev_architecture_one_year/">I literally built the Jev architecture one year back and completely open-sourced it with model, dataset and paper</a></h3>
+        <p class="synopsis">A developer describes their open-source Jev architecture from March 2025: a non-autoregressive model using PPO over sequence embeddings to output structured probability predictions (0.0–1.0) for turn-by-turn conversion trajectories, with published paper, pretrained model, and training dataset available. The post laments that a frontier lab later proposed the same idea without releasing weights, dataset, or technical paper, and provides links to the original work.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>/u/Nandakishor_ml · posted 17 Sep</span></p>
+      </li>
+
+      <li class="item" id="item-reddit-1wis23s">
+        <h3 class="item-title"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1wis23s/update_small_model_engram/">Update : Small model + Engram</a></h3>
+        <p class="synopsis">A developer describes building a 2B-parameter model augmented with a 1B-entry Engram (probability table generated by a 7B OLMo model). By shrinking the d_model to 2048 and using 40 SWA/global blocks, the model achieves surprising coherence after only 15 million tokens of training, whereas pure cross-entropy learning would produce gibberish at that point. The approach is reproducible using standard wiki data and the OLMo tokenizer (Apache 2.0 licensed), and the author plans to release code soon.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>/u/NineThreeTilNow · posted 17 Sep</span></p>
+      </li>
+
+      <li class="item" id="item-reddit-1wisr6h">
+        <h3 class="item-title"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1wisr6h/first_m5_ultra_benchmarks/">First M5 Ultra benchmarks</a></h3>
+        <p class="synopsis">First benchmarks for the Apple M5 Ultra chip show it running a 27B Qwen model at 50 tok/s generation and 1800 tok/s prompt processing at 8K context without multi-token prediction, suggesting it could be a capable local inference GPU for hobbyist hardware.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>/u/Ashefromapex · posted 17 Sep</span></p>
+      </li>
+
+      <li class="item" id="item-reddit-1wi9ebm">
+        <h3 class="item-title"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1wi9ebm/xiaomi_mimo_26_live_training_dashboard/">Xiaomi MiMo 2.6 Live Training Dashboard</a></h3>
+        <p class="synopsis">A live public dashboard showing the actual training run of Xiaomi&#x27;s MiMo 2.6 model as it happens, offering a rare real-time look at the process.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>/u/skeole · posted 16 Sep</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src-wired">
+    <h2 id="src-wired">WIRED <span class="source-count">no Items</span></h2>
+    <p class="thin-note">Answered, and had 3 Items that were new, none of which cleared the cutoff.</p>
+  </section>
+
+  <section class="source" aria-labelledby="src-hf-models">
+    <h2 id="src-hf-models">Hugging Face models <span class="source-count">2 Items</span></h2>
+    <ul class="items">
+
+      <li class="item item--pick" id="item-hf-models-harshatheg-qwen-2-5-1b-rlcd">
+        <h3 class="item-title"><a href="https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD">harshatheg/Qwen-2.5-1B-RLCD</a></h3>
+        <p class="synopsis">A 1.2B-parameter Qwen 2.5 model quantised for MLX on Apple Silicon, specialised for structured JSON generation with constrained and parallel decoding — a small, locally runnable model aimed at cheap classification and text tasks.</p>
+        <p class="item-meta"><span class="pick-mark">Pick</span><span class="score">Score 4</span><span>new to trending · 207 likes</span></p>
+      </li>
+
+      <li class="item item--pick" id="item-hf-models-taichuai-zdtaichu5-0-9b">
+        <h3 class="item-title"><a href="https://huggingface.co/TaichuAI/ZDTaichu5.0-9B">TaichuAI/ZDTaichu5.0-9B</a></h3>
+        <p class="synopsis">A 9B-parameter multimodal model (ZDTaichu5.0-9B) that processes image, text, and video inputs. It uses a Mixture-of-Experts (MoE) architecture with a 7.7B active parameter count, supports spatial reasoning and agent tasks, and outperforms Qwen2-VL-7B and InternVL2-8B on benchmarks like MMMU and MathVista. Runs on a single 24GB GPU (RTX 3090) via vLLM or Transformers.</p>
+        <p class="item-meta"><span class="pick-mark">Pick</span><span class="score">Score 4</span><span>new to trending · 476 downloads · 165 likes</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src-hf-datasets">
+    <h2 id="src-hf-datasets">Hugging Face datasets <span class="source-count">2 Items</span></h2>
+    <ul class="items">
+
+      <li class="item" id="item-hf-datasets-zgcagi-zgcm-1-data">
+        <h3 class="item-title"><a href="https://huggingface.co/datasets/zgcagi/ZGCM-1-Data">zgcagi/ZGCM-1-Data</a></h3>
+        <p class="synopsis">A 7.39B-parameter dense language model trained from scratch for math and agentic search, with the pretraining dataset (ZGCM-1-Data) released openly alongside the model, training code, and results.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>new to trending · 8,082 downloads · 22 likes</span></p>
+      </li>
+
+      <li class="item" id="item-hf-datasets-nvidia-openh-rf">
+        <h3 class="item-title"><a href="https://huggingface.co/datasets/nvidia/OpenH-RF">nvidia/OpenH-RF</a></h3>
+        <p class="synopsis">OpenH-RF is a community dataset from NVIDIA providing raw pre-beamformed RF ultrasound channel captures in the ZEA file format, spanning tasks like localization microscopy, computed tomography, and flow imaging, intended to support training AI models on ultrasound data.</p>
+        <p class="item-meta"><span class="score">Score 3</span><span>new to trending · 1,613 downloads · 16 likes</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="source" aria-labelledby="src-hf-papers">
+    <h2 id="src-hf-papers">Hugging Face papers <span class="source-count">4 Items</span></h2>
+    <ul class="items">
+
+      <li class="item" id="item-hf-papers-2609-18094">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2609.18094">Agora: Git as Shared Memory for Collective AutoResearch</a></h3>
+        <p class="synopsis">Agora uses Git as a shared append-only DAG to let multiple LLM agents collaborate on research without duplication. In a 12-day run, 13 workers (no central planner) closed 62% of the gap to a trained GPT-2 124M on a weight-transfer problem, publishing 1,703 contributions with 165 reproductions and zero failures.</p>
+        <p class="item-meta"><span class="score">Score 5</span><span>33 upvotes · arXiv 2609.18094</span></p>
+      </li>
+
+      <li class="item" id="item-hf-papers-2609-13406">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2609.13406">Generalized Agent Iteration: One Formal Framework for Iterative Policy Improvement and Recursive Self-Improvement</a></h3>
+        <p class="synopsis">Proposes Generalized Agent Iteration (GAI), a formal framework that unifies classical iterative policy improvement (GPI) and recursive self-improvement (RSI) by defining agents as modifiable components in a learning cycle, with two dials (whether the improvement mechanism is part of the agent, and whether the evaluation standard is external) that distinguish GPI from RSI and system types (anchored, goal-drift, self-referential). Places existing systems on these axes and formalizes RSI&#x27;s defects.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>58 upvotes · arXiv 2609.13406</span></p>
+      </li>
+
+      <li class="item" id="item-hf-papers-2609-17708">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2609.17708">Confidence Comes from Experience: Experiential Confidence Estimation from Reasoning to Agents</a></h3>
+        <p class="synopsis">Proposes XConf, a method that estimates a language model&#x27;s confidence by retrieving its own past graded episodes on similar tasks and reflecting on its track record, requiring no logits or weight updates and only one generation. Beats ten-sample self-consistency on most benchmarks at a tenth the cost, and improves success rate by up to 8.7 points when abstaining on low-confidence outputs.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>45 upvotes · arXiv 2609.17708</span></p>
+      </li>
+
+      <li class="item" id="item-hf-papers-2609-15810">
+        <h3 class="item-title"><a href="https://huggingface.co/papers/2609.15810">VC-Attention: Value Smoothing and Softmax Casting for Low-bit Attention</a></h3>
+        <p class="synopsis">VC-Attention is a training-free method that accelerates low-bit attention in diffusion transformers by clustering value tokens for better quantization and replacing the softmax exponent with a fused FP8 probability cast, achieving 1.5–1.6× speedups on datacenter GPUs and 2.3–3.6× on workstation cards over BF16 FlashAttention-4, with open-source implementations for multiple NVIDIA architectures.</p>
+        <p class="item-meta"><span class="score">Score 4</span><span>34 upvotes · arXiv 2609.15810</span></p>
+      </li>
+
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>An Edition is published once, and revised only to repair a Run that failed.</p>
+  <p><a href="index.html">All Editions</a></p>
+</footer>
+
+</body>
+</html>
