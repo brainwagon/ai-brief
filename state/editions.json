@@ -5,6 +5,15 @@
   "picks": 4,
   "unavailable": 0,
   "unenriched": 0,
+  "date": "2026-09-18",
+  "teaser": "dual 7900 xtx - some guy made a pretty optimized fork of lamacpp optimized for this setup Qwen 3.8 Q8 at 82 tokens / seconds decode"
+ },
+ {
+  "items": 25,
+  "sources": 9,
+  "picks": 4,
+  "unavailable": 0,
+  "unenriched": 0,
   "date": "2026-09-17",
   "teaser": "TheoLeeCJ/openjev"
  },
