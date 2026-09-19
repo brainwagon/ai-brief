@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-08-20",
-   "recorded_at": "2026-08-20T13:09:32Z",
-   "identities": [
-    "Alain00/blobatar",
-    "CopilotKit/openbot",
-    "DenisSergeevitch/desktop-fly",
-    "Leutenegger/watermarks-remover",
-    "Nervercc/gpt_nerver",
-    "SheberDavid/v4-flash-godmode-opencode-go",
-    "SigmanticAI/apex-inference-chip",
-    "Spielewoy/autoprompt-skill",
-    "Tiger3807861189/DeepSeek-V4-J-Space-Capability-Realization-Report",
-    "ZSvirt/zsvirt",
-    "alchaincyf/deepseek-harness-orange-book",
-    "bawadou/ai-data-extractor",
-    "bowenliang123/dsh-context",
-    "browser-use/macos-harness",
-    "cinderline/northcinder",
-    "dsh-market/dsh-market",
-    "flaqai/backlink_skills",
-    "fufankeji/deepseek-harness-studio",
-    "hairyf/deepseek-harness-desktop",
-    "jaredrhod/barehands",
-    "jeremy-prt/bloub",
-    "missuo/herdrm",
-    "pg83/solo",
-    "s1dashu/ip-as-logo-skill",
-    "vvxw/deploy-vercel",
-    "wang2122/sprix-sage-router",
-    "xiaobright/dsh-anchored-standard",
-    "yetone/cumora",
-    "yjh051108/dsh-routing-suite",
-    "zouyuxuan122/Deepseek-Harness-EAC"
-   ]
-  },
-  {
    "date": "2026-08-22",
    "recorded_at": "2026-08-22T13:09:07Z",
    "identities": [
@@ -1043,6 +1007,42 @@
     "yynxxxxx/gpt_sub_analysis",
     "zhengkid/Dream-RSI",
     "zjwzcx/Awesome-Astra-Embodied-AI"
+   ]
+  },
+  {
+   "date": "2026-09-19",
+   "recorded_at": "2026-09-19T13:08:57Z",
+   "identities": [
+    "999sian/melee-pc",
+    "AetherLabsAI/RSIAgent",
+    "Continuum-AI-Corp/OrcaBonsai-27B-Uncensored",
+    "ERRRC/kaogongzhentizhengliu",
+    "FSECDEV/Threat-Intelligence-Hackers-Forums",
+    "Mak5er/AirCard",
+    "NandhaKishorM/laya",
+    "TheoLeeCJ/SemIf",
+    "TianyuCodings/NanoJev",
+    "anonymous-report-421/GPT-as-Policy",
+    "apple/xcode-project-format",
+    "arvindear/wp2shell-PoC",
+    "awlevin/typesafe-computer-use",
+    "browser-use/jev-ultrafast",
+    "ctdal/cve-2026-41940-PoC",
+    "jackwener/wx-cli-again",
+    "jaredpalmer/kev",
+    "jarrodwatts/jev-trader",
+    "korcarc/text-humanizer",
+    "letorig/video-generator-client",
+    "mcncarl/jianying-headless",
+    "nilbuild/page-mascot",
+    "robbietilton/Compositor",
+    "saragordic/window-sweaters",
+    "tamaratran/fast-jev-compaction",
+    "theoephraim/awesome-cloudflare-selfhosted",
+    "thruwire/foreman",
+    "vinnylarouge/jevlike",
+    "yynxxxxx/gpt_sub_analysis",
+    "zhengkid/Dream-RSI"
    ]
   }
  ]
