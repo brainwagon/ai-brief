@@ -1044,6 +1044,42 @@
     "wikimedia/wikipedia",
     "zgcagi/ZGCM-1-Data"
    ]
+  },
+  {
+   "date": "2026-09-20",
+   "recorded_at": "2026-09-20T13:06:22Z",
+   "identities": [
+    "Anthropic/hh-rlhf",
+    "DeepMostInnovations/saas-sales-conversations",
+    "FlyRank/internship-warehouse",
+    "HuggingFaceFW/fineweb",
+    "IFM/Code-Reasoning",
+    "IFM/TxT360-v2",
+    "ILSVRC/imagenet-1k",
+    "MoreThought/Fable-5.1-Max-Reasoning-Filtered-5000x",
+    "OpenDataArena/Spark-234K",
+    "Yootta/World-SimReady-Home",
+    "echel0nn1881/kimi-cyber-reasoning",
+    "gaia-benchmark/GAIA",
+    "ikala/tmmluplus",
+    "lmsys/lmsys-chat-1m",
+    "malcolmrey/various",
+    "markov-ai/cad-1000-hours",
+    "nvidia/OpenH-RF",
+    "nvidia/PhysicalAI-Autonomous-Vehicles",
+    "nyu-mll/glue",
+    "openai/gsm8k",
+    "openbmb/UltraData-Code",
+    "openbmb/UltraData-RL-2609",
+    "openbmb/UltraData-SFT-Agent-2609",
+    "rajpurkar/squad",
+    "saidutta69/fable-5-premium",
+    "secemp9/arxiv-complete",
+    "stanfordnlp/imdb",
+    "venvoo/china-a-share-l2-level2-limit-order-book-tick-data",
+    "wikimedia/wikipedia",
+    "zgcagi/ZGCM-1-Data"
+   ]
   }
  ]
 }
