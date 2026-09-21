@@ -44,6 +44,27 @@ class SnapshotStore:
             identities.update(snapshot.get("identities") or [])
         return identities
 
+    def drop(self, key, run_date):
+        """Remove one date's Snapshot, and say whether there was one.
+
+        The repair path (`--force`) needs this before the diff. Recording over
+        the date at the end is not enough, because `known` reads the whole
+        retained window — so without dropping first, a second Run on the same
+        date finds every Item already seen and writes an empty Edition.
+        """
+        path = self._path(key)
+        if not path.exists():
+            return False
+        data = self.load(key)
+        kept = [s for s in data["snapshots"] if s.get("date") != run_date]
+        if len(kept) == len(data["snapshots"]):
+            return False
+        data["snapshots"] = kept
+        path.write_text(
+            json.dumps(data, indent=1, sort_keys=False) + "\n", encoding="utf-8"
+        )
+        return True
+
     def record(self, key, run_date, identities):
         """Append this Run's Snapshot and prune. Called on success only.
 

@@ -84,6 +84,15 @@ def main(argv=None):
 
     # --- gather -----------------------------------------------------------
     store = SnapshotStore(args.state_dir)
+
+    # A repair rewrites a date that was already Generated, so the diff must be
+    # taken against the previous Edition again. That means the date's own
+    # Snapshots have to go first: otherwise every Item is already known and the
+    # "repair" writes an empty page over the one it meant to fix.
+    if args.force and existing.exists():
+        dropped = sum(store.drop(key, run_date) for key in keys)
+        log(f"Repair of {run_date}: dropped {dropped} Snapshot(s) before the diff")
+
     log("Gathering:")
     results = {}
     for key in keys:
