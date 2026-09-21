@@ -55,6 +55,12 @@ those answers and becomes the Score. The five levels are read straight out of
 them live in [`jev-questions.json`](jev-questions.json). Neither fact is written
 down twice, and tuning taste touches no code.
 
+Every answer Jev returns is kept, and every Item it was shown is published in
+the Edition's **Decisions** — a collapsed ledger at the foot of the page,
+Selected or not, best Score first. Each row carries the Item's adjusted Score
+beside the position and probabilities Jev gave, so the adjustment is visible.
+It is the one table on the site, and the one place a bar is drawn.
+
 **Stage B — the Synopsis, from a chat model.** After the cutoff and the ceiling
 have run, the twenty-five or so surviving Items are put to a hosted chat model
 for their Synopsis. Because the Score is already known, this Prompt is

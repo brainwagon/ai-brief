@@ -56,13 +56,16 @@ def _sort_key(item):
 def select(results):
     """Apply the cutoff and the ceiling per Source, then trim toward the target.
 
-    Mutates each SourceResult.items down to what the Edition carries, and
-    returns the Items that were dropped only as a count.
+    Mutates each SourceResult: `pool` keeps every Considered Item, and `items`
+    is narrowed to the Selected ones the Edition carries. The pool is kept
+    because the Edition's Decisions record the whole day, not only the queue.
     """
     for result in results.values():
         if result.unavailable:
             result.items = []
+            result.pool = []
             continue
+        result.pool = list(result.items)
         kept = [
             item
             for item in result.items
@@ -72,6 +75,10 @@ def select(results):
         result.items = kept[: config.CEILING]
 
     _trim(results)
+
+    for result in results.values():
+        for item in result.items:
+            item.selected = True
 
 
 def _trim(results):

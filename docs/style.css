@@ -308,6 +308,167 @@ a:focus { color: var(--link-hover); text-decoration: underline; }
   font-size: 0.94rem;
 }
 
+/* ------------------------------------------------------------ decisions --- */
+
+/* The day's Decisions: every Item Jev was shown, answered or not, Selected or
+   not. It is apparatus, not the reading queue, so it sits collapsed at the foot
+   and the Edition above it is unchanged. A table is the one shape a ledger
+   wants and the one place this stylesheet uses one: the aligned Score column
+   is what makes the cutoff a single visible line. */
+.decisions {
+  margin: 2.4rem 0 0;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--rule);
+}
+
+.decisions summary {
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--meta);
+}
+
+.decisions summary .decisions-count {
+  float: right;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+.decisions-note,
+.decisions-empty {
+  margin: 0.7rem 0 0;
+  color: var(--meta);
+  font-size: 0.9rem;
+}
+
+.decisions-empty { color: var(--hole-text); }
+
+.decisions-scroll {
+  margin-top: 0.7rem;
+  overflow-x: auto;
+}
+
+.decisions-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+}
+
+.decisions-table th {
+  text-align: left;
+  padding: 0 0.7rem 0.3rem 0;
+  border-bottom: 1px solid var(--rule);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--meta);
+}
+
+.decisions-table td {
+  padding: 0.45rem 0.7rem 0.45rem 0;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+
+.decision-score {
+  text-align: right;
+  white-space: nowrap;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+/* The first rejected Item: the cutoff, drawn as a heavier rule. */
+.decision--cutoff td { border-top: 2px solid var(--rule); }
+
+.decision--selected .decision-item { font-weight: 600; }
+
+.decision-item a { overflow-wrap: anywhere; }
+
+.decision-mark {
+  display: inline-block;
+  margin-left: 0.4rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--meta);
+}
+
+.decision-jev { color: var(--meta); }
+
+/* One answer per line: a label, a track, the number. Each of the three noul
+   tracks carries a tick at 0.5 — the threshold in jev-questions.json — and
+   fills ochre only when the rule actually fired, so the exception that moved
+   the Score is visible without reading the number. */
+.decision-jev .answer {
+  display: block;
+  margin: 0 0 0.2rem;
+  white-space: nowrap;
+}
+
+.decision-jev .answer:last-child { margin-bottom: 0; }
+
+.decision-jev .answer-key {
+  display: inline-block;
+  width: 5.2rem;
+  opacity: 0.7;
+}
+
+.answer-value { font-variant-numeric: tabular-nums; }
+
+.bar {
+  position: relative;
+  display: inline-block;
+  width: 3.6rem;
+  height: 0.5rem;
+  margin: 0 0.4rem;
+  background: var(--rule);
+  vertical-align: middle;
+}
+
+.bar-fill {
+  display: block;
+  height: 100%;
+  background: var(--meta);
+}
+
+/* A noul at or past the threshold: the exception applied. Emphasis, not the
+   hole colour — a rule firing is a judgement, not something missing. */
+.answer--fired .bar-fill { background: var(--text); }
+
+.answer--fired .answer-value { font-weight: 700; }
+
+.bar-tick {
+  position: absolute;
+  left: 50%;
+  top: -0.12rem;
+  bottom: -0.12rem;
+  width: 1px;
+  background: var(--hole-rule);
+  opacity: 0.55;
+}
+
+.decision-source {
+  white-space: nowrap;
+  color: var(--meta);
+}
+
+/* Ours, not Jev's: the adjustment rule that moved the Score. Neutral, so it
+   does not borrow the hole colour either. */
+.decision-rule {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.decision-rule::before { content: "→ "; }
+
+.no-answer { color: var(--hole-text); font-weight: 600; }
+
 /* --------------------------------------------------------------- index --- */
 
 .editions {
@@ -389,4 +550,8 @@ footer p { margin: 0.3rem 0; }
   body { font-size: 16px; padding: 1.4rem 0.9rem 3rem; }
   .edition-date, .index-title { font-size: 1.5rem; }
   .source h2 .source-count { float: none; display: block; }
+  .decisions summary .decisions-count { float: none; display: block; }
+  .decisions-table { font-size: 0.78rem; }
+  .decision-jev .answer-key { width: 4.2rem; }
+  .bar { width: 3rem; }
 }

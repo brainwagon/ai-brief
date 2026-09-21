@@ -44,7 +44,9 @@ _Avoid_: home, archive, landing page, TOC
 
 **Item**:
 One gathered thing — a paper, a story, a repository, a model, a dataset, an
-article. The unit an Edition is made of and the unit a Score applies to.
+article. The unit an Edition is made of and the unit a Score applies to. A Score
+applies to every gathered Item, not only the Selected ones; the Edition carries
+the rest as the day's Decisions.
 _Avoid_: entry, link, story, article, result, post
 
 **Source**:
@@ -72,10 +74,22 @@ Identity is absent from the previous Snapshot, which is how Sources that publish
 no timestamps are read at all.
 _Avoid_: state, cache, seen set, history
 
+**Considered** (of an Item):
+Put to Jev during a Run — the pool the day was chosen from. Every Considered
+Item has a Decision, whether or not the Edition Selected it; an Item that never
+reached Jev, because its Source was Unavailable or its Identity was already in
+the Snapshot, was not Considered.
+_Avoid_: pool, candidate, scored, gathered
+
 **Pick**:
 An Item chosen as one of the day's standouts, selected in a second pass over the
 high scorers rather than by Score alone.
 _Avoid_: highlight, lead, feature, top item
+
+**Selected** (of an Item):
+Carried by the Edition as part of the day's reading queue. Every Selected Item
+is Scored; most Scored Items are not Selected.
+_Avoid_: kept, surviving, included, published
 
 ### What the model produces
 
@@ -83,6 +97,13 @@ _Avoid_: highlight, lead, feature, top item
 An Item's interest, 1–5, judged against the Rubric. Assigned per Item and
 independently of every other Item.
 _Avoid_: rating, rank, grade, weight
+
+**Decision**:
+The record of one Item's Enrichment by Jev — the typed answers it returned, or
+none, and the adjustment arithmetic that turned them into a Score, if any. Every
+Item put to Jev has one, whether or not the Edition Selected it; the day's
+Decisions are carried on the Edition beside the reading queue.
+_Avoid_: result, verdict, output, response
 
 **Synopsis**:
 The line or two of prose the model writes about an Item, in place of whatever

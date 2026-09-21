@@ -173,9 +173,13 @@ def apply_adjustment(level, probabilities, stated_under_1b, policy):
     value, `add` raises it no further than a value, and `blocks_boost` stops the
     later size point from applying — the Rubric says that point does not apply
     to a quantised re-upload.
+
+    Returns the Score and a short note per rule that fired, so the Edition's
+    Decisions can say what moved the number without re-deriving the policy.
     """
     score = level
     blocked = False
+    notes = []
     for rule in policy.adjustment:
         when = rule["when"]
         if when == "sub_1b":
@@ -183,16 +187,19 @@ def apply_adjustment(level, probabilities, stated_under_1b, policy):
                 continue
             add = rule.get("add", 1)
             score = min(score + add, rule.get("cap", score + add))
+            notes.append(f"stated under 1B, +{add}")
             continue
         if (probabilities.get(when) or 0.0) < policy.threshold:
             continue
         if "set" in rule:
             score = rule["set"]
+            notes.append(f"{when}, set to {rule['set']}")
         if "cap" in rule:
             score = min(score, rule["cap"])
+            notes.append(f"{when}, capped at {rule['cap']}")
         if rule.get("blocks_boost"):
             blocked = True
-    return max(1, min(5, score))
+    return max(1, min(5, score)), notes
 
 
 def reachable(log, base=None):
@@ -380,6 +387,10 @@ def score_all(items, log, base=None, model=None):
         state = f"Title: {item.title}\nText: {item.text}".strip()
         answers = client.ask(state, item.identity)
         if answers is not None:
+            # The answers are kept whatever they contain, so an Item Jev
+            # answered uselessly still shows what it said in the Decisions.
+            item.answers = answers
+            item.threshold = policy.threshold
             level = _level(answers.get("score"))
             if level is not None:
                 probabilities = {
@@ -391,7 +402,9 @@ def score_all(items, log, base=None, model=None):
                 item.noul = probabilities
                 item.score_confidence = (answers.get("score") or {}).get("confidence")
                 item.sub_1b = stated_small
-                item.score = apply_adjustment(level, probabilities, stated_small, policy)
+                item.score, item.adjustment = apply_adjustment(
+                    level, probabilities, stated_small, policy
+                )
             else:
                 safe_log(f"  Jev Score unusable on {item.identity}")
         with lock:

@@ -66,8 +66,25 @@ def census(results, picks, model_down, synopsis_down=False):
     with_score = sum(
         1 for r in results.values() for item in r.items if item.score is not None
     )
+    # Every Item put to Jev, Selected or not. Named only when there were more
+    # than the Edition carried, so a day with nothing rejected reads as before.
+    considered = sum(len(result.pool) for result in results.values())
 
-    if total:
+    if considered > total and not model_down:
+        # More was considered than Selected, so the census names the pool —
+        # including the day where everything was considered and nothing
+        # Selected, which must not read as a day with no Items at all.
+        if total:
+            first = (
+                f"{total} Item{_s(total)} Selected from {considered} considered "
+                f"across {sources} Sources."
+            )
+        else:
+            first = (
+                f"No Items Selected from {considered} considered "
+                f"across {sources} Sources."
+            )
+    elif total:
         first = f"{total} Item{_s(total)} across {sources} Sources."
     else:
         first = f"No Items across {sources} Sources."
@@ -119,6 +136,7 @@ def census(results, picks, model_down, synopsis_down=False):
         "picks": len(picks),
         "unavailable": len(unavailable),
         "unenriched": unenriched,
+        "considered": considered,
     }
 
 
@@ -204,6 +222,9 @@ def edition(date_string, results, picks, model_down, previous_date, synopsis_dow
             continue
         out.append("")
         out.extend(_source_section(result))
+
+    out.append("")
+    out.extend(_decisions(results, model_down))
 
     out.append("")
     out.append("</main>")
@@ -354,6 +375,182 @@ def _item(item, source_label):
 
     lines.append('        <p class="item-meta">%s</p>' % "".join(meta))
     lines.append("      </li>")
+    return lines
+
+
+# --------------------------------------------------------------------------
+# the day's Decisions
+# --------------------------------------------------------------------------
+
+
+def _number(value):
+    """A probability as Jev gave it: 0.71, not 0.7100000000000001."""
+    try:
+        return f"{float(value):g}"
+    except (TypeError, ValueError):
+        return str(value)
+
+
+def _plain(key, value):
+    """An answer with no scale — the ladder position, a whole number."""
+    return (
+        '<span class="answer answer--plain">'
+        '<span class="answer-key">%s</span>'
+        '<span class="answer-value">%s</span></span>'
+        % (e(key), e(str(value)))
+    )
+
+
+def _bar(key, value, threshold=None, fired=False):
+    """One answer as a track and a number.
+
+    The track carries a tick at the threshold when the question is a noul, and
+    fills solid when the rule fired. The number is the text; the track is
+    decoration, hidden from assistive technology.
+    """
+    classes = ["answer"]
+    if threshold is not None:
+        classes.append("answer--noul")
+    if fired:
+        classes.append("answer--fired")
+    tick = '<span class="bar-tick"></span>' if threshold is not None else ""
+    return (
+        '<span class="%s">'
+        '<span class="answer-key">%s</span>'
+        '<span class="bar" aria-hidden="true">'
+        '<span class="bar-fill" style="width: %d%%"></span>%s</span>'
+        '<span class="answer-value">%s</span></span>'
+        % (" ".join(classes), e(key), round(float(value) * 100), tick,
+           e(_number(value)))
+    )
+
+
+def _decision(item):
+    """One row: the adjusted Score, the Item, and every answer Jev returned."""
+    classes = ["decision"]
+    if item.selected:
+        classes.append("decision--selected")
+    if item.score is None and not item.answers:
+        classes.append("decision--noanswer")
+
+    if item.selected:
+        title = '<a href="#%s">%s</a><span class="decision-mark">Selected</span>' % (
+            anchor(item), e(item.title)
+        )
+    else:
+        title = '<a href="%s">%s</a>' % (e(item.url), e(item.title))
+
+    if not item.answers:
+        jev = '<span class="no-answer">no answer</span>'
+    else:
+        bits = []
+        if item.raw_score is not None:
+            bits.append(_plain("position", item.raw_score))
+        if item.score_confidence is not None:
+            bits.append(_bar("confidence", item.score_confidence))
+        threshold = item.threshold if item.threshold is not None else 1.0
+        for name, probability in item.noul.items():
+            if probability is None:
+                continue
+            bits.append(
+                _bar(name, probability, threshold=item.threshold,
+                     fired=probability >= threshold)
+            )
+        for note in item.adjustment:
+            bits.append('<span class="decision-rule">%s</span>' % e(note))
+        jev = "".join(bits)
+
+    return [
+        '            <tr class="%s">' % " ".join(classes),
+        '              <td class="decision-score">%s</td>'
+        % e(str(item.score) if item.score is not None else "—"),
+        '              <td class="decision-item">%s</td>' % title,
+        '              <td class="decision-source">%s</td>'
+        % e(config.SOURCE_LABELS[item.source]),
+        '              <td class="decision-jev">%s</td>' % jev,
+        "            </tr>",
+    ]
+
+
+def _decisions(results, model_down):
+    """The day's Decisions: every Item Jev was shown, at the foot of the page.
+
+    Collapsed, so the Edition above it still reads as the day's queue. The
+    ledger is sorted by the adjusted Score, so the cutoff is the boundary
+    between the Selected rows and the rest. Two holes are stated here as they
+    are elsewhere: a per-Item `no answer` when Jev failed one, and a sentence
+    with no table when Jev was unreachable for the Run.
+    """
+    items = [item for result in results.values() for item in result.pool]
+    order = {key: index for index, key in enumerate(config.SOURCE_ORDER)}
+
+    def sort_key(item):
+        position = order.get(item.source, len(order))
+        if item.score is None:
+            return (1, 0, position, item.rank)
+        return (0, -item.score, position, item.rank)
+
+    items.sort(key=sort_key)
+
+    lines = [
+        '  <section class="decisions" aria-labelledby="decisions-heading">',
+        "    <details>",
+    ]
+
+    if model_down or not any(item.score is not None for item in items):
+        lines.append(
+            '      <summary id="decisions-heading">The day\'s Decisions</summary>'
+        )
+        if model_down:
+            note = ("No Decisions. Jev was not reachable during this Run, so "
+                    "nothing was scored.")
+        else:
+            note = ("No Decisions. Jev returned nothing usable for any Item "
+                    "this Run.")
+        lines.append('      <p class="decisions-empty">%s</p>' % note)
+    else:
+        lines.append(
+            '      <summary id="decisions-heading">The day\'s Decisions'
+            '        <span class="decisions-count">%d Item%s</span></summary>'
+            % (len(items), _s(len(items)))
+        )
+        lines.append(
+            '      <p class="decisions-note">Every Item Jev was shown, best '
+            "Score first. Selected Items are marked; the rest fell below the "
+            "cutoff or were trimmed. The Items Jev could not answer are "
+            "listed last.</p>"
+        )
+        lines.append('      <div class="decisions-scroll">')
+        lines.append('        <table class="decisions-table">')
+        lines.append("          <thead>")
+        lines.append("            <tr>")
+        lines.append(
+            '              <th scope="col" class="decision-score">Score</th>'
+        )
+        lines.append('              <th scope="col">Item</th>')
+        lines.append(
+            '              <th scope="col" class="decision-source">Source</th>'
+        )
+        lines.append('              <th scope="col">Jev\'s answers</th>')
+        lines.append("            </tr>")
+        lines.append("          </thead>")
+        lines.append("          <tbody>")
+        cutoff_drawn = False
+        for item in items:
+            row = _decision(item)
+            if (not cutoff_drawn and item.score is not None
+                    and item.score < config.CUTOFF):
+                row[0] = row[0].replace(
+                    'class="decision', 'class="decision decision--cutoff', 1
+                )
+                cutoff_drawn = True
+            lines.extend(row)
+        lines.append("          </tbody>")
+        lines.append("        </table>")
+        lines.append("      </div>")
+
+    lines.append("    </details>")
+    lines.append("  </section>")
     return lines
 
 
