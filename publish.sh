@@ -67,9 +67,19 @@ EDITION="$(git diff --cached --name-only -- docs \
            | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}' | sort -u | tail -1)"
 EDITION="${EDITION:-$(date -u +%Y-%m-%d)}"
 
+# An Edition is published once and revised only to repair a failed Run
+# (CONTEXT.md), and the commit says which it is. If the date was already
+# committed, this is a revision of it, and the subject says so rather than
+# reusing the bare `Edition <date>`. The generator reports *why* it revised on
+# stdout; the subject only carries the fact.
+SUBJECT="Edition ${EDITION}"
+if git cat-file -e "HEAD:docs/${EDITION}.html" 2>/dev/null; then
+    SUBJECT="Edition ${EDITION} (revised)"
+fi
+
 git -c user.name="ai-brief" \
     -c user.email="ai-brief@mvandewettering.com" \
-    commit -q -m "Edition ${EDITION}" || exit 2
+    commit -q -m "$SUBJECT" || exit 2
 
 # Pull first: the repo is edited by hand as well as by the timer, so a push
 # that has not rebased is the ordinary failure, not an exceptional one.
