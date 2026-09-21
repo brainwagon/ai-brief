@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-08-22",
-   "recorded_at": "2026-08-22T13:09:07Z",
-   "identities": [
-    "Ariescar/anyCreature",
-    "CopilotKit/OpenBot",
-    "DenisSergeevitch/desktop-fly",
-    "Leutenegger/claudish-to-english",
-    "Leutenegger/coldcard-airgap",
-    "Leutenegger/vanity-eth",
-    "Leutenegger/watermarks-remover",
-    "MengTo/sylva",
-    "MengTo/threeui",
-    "MeteorNOX/DeepSeek-Balance-Whale-Widget",
-    "PentagonConure42/youtube-downloader-zen",
-    "SigmanticAI/apex-inference-chip",
-    "Spielewoy/autoprompt-skill",
-    "Tiger3807861189/DeepSeek-V4-J-Space-Capability-Realization-Report",
-    "Yuzzyuk/marketing-os",
-    "almendili/skills",
-    "amirh00sain/SpiderPanel",
-    "b-nnett/codex-subscription-router",
-    "bawadou/ai-data-extractor",
-    "browser-use/macos-harness",
-    "cinderline/northcinder",
-    "flaqai/backlink_skills",
-    "iAmCorey/Wake",
-    "lanicer/cve-2026-41940-PoC",
-    "missuo/herdrm",
-    "s1dashu/ip-as-logo-skill",
-    "vvxw/deploy-vercel",
-    "wang2122/sprix-sage-router",
-    "xdreizein666/getcontact-cli",
-    "yetone/cumora"
-   ]
-  },
-  {
    "date": "2026-08-23",
    "recorded_at": "2026-08-23T17:56:41Z",
    "identities": [
@@ -1079,6 +1043,42 @@
     "vinnylarouge/jevlike",
     "yibie/awesome-jev",
     "yynxxxxx/gpt_sub_analysis"
+   ]
+  },
+  {
+   "date": "2026-09-21",
+   "recorded_at": "2026-09-21T13:10:16Z",
+   "identities": [
+    "Mak5er/AirCard",
+    "NandhaKishorM/laya",
+    "Sac-Y/Jev-cu",
+    "TheoLeeCJ/SemIf",
+    "TianyuCodings/NanoJev",
+    "arvindear/wp2shell-PoC",
+    "awlevin/typesafe-computer-use",
+    "bespokelabsai/nimble",
+    "browser-use/jev-ultrafast",
+    "dofastted/vm2api",
+    "githubnext/localjev",
+    "gylive/ccodex-sleep-state",
+    "incoai/splash",
+    "jaredpalmer/kev",
+    "jarrodwatts/jev-trader",
+    "korcarc/text-humanizer",
+    "mcncarl/jianying-headless",
+    "mizorewww/laya-coreml",
+    "mizorewww/laya-mlx",
+    "newliver666/apk-reverse",
+    "pallavi-shekhar/ai-engineering-interview-questions-company-wise",
+    "robbietilton/Compositor",
+    "saragordic/window-sweaters",
+    "tamaratran/fast-jev-compaction",
+    "theoephraim/awesome-cloudflare-selfhosted",
+    "v-modal/awesome-jev-tools",
+    "vinnylarouge/jevlike",
+    "yibie/awesome-jev",
+    "yynxxxxx/gpt_sub_analysis",
+    "zai-org/ZCode"
    ]
   }
  ]
