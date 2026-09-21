@@ -15,7 +15,7 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-from . import config, enrichment, pick, render, select, sources
+from . import config, jev, pick, render, select, sources, synopsis
 from .render import EDITION_RE
 from .snapshot import SnapshotStore
 
@@ -32,7 +32,12 @@ def main(argv=None):
     )
     parser.add_argument(
         "--openrouter-base", default=config.OPENROUTER_BASE,
-        help="override for exercising the Unenriched path against a dead endpoint",
+        help="override for the Synopsis and Pick calls",
+    )
+    parser.add_argument(
+        "--decisions-base", default=config.JEV_BASE,
+        help="override for the scoring call, to exercise the Unenriched path "
+             "against a dead endpoint",
     )
     parser.add_argument(
         "--only", default=None,
@@ -109,13 +114,17 @@ def main(argv=None):
     for result in results.values():
         result.considered = len(result.items)
 
-    # --- Enrichment -------------------------------------------------------
-    to_enrich = [item for result in results.values() for item in result.items]
-    log(f"Enrichment: {len(to_enrich)} Items")
-    model_up = enrichment.reachable(log, base=args.openrouter_base)
-    if model_up and to_enrich:
-        enrichment.enrich_all(to_enrich, log, base=args.openrouter_base)
-    elif not model_up:
+    # --- Stage A: scoring -------------------------------------------------
+    #
+    # Every gathered Item goes to Jev for a Score. It cannot write the Synopsis,
+    # so that is a separate stage after selection — no Synopsis is written for
+    # an Item that will be trimmed away.
+    to_score = [item for result in results.values() for item in result.items]
+    log(f"Scoring: {len(to_score)} Items")
+    scoring_up = jev.reachable(log, base=args.decisions_base) if to_score else False
+    if scoring_up:
+        jev.score_all(to_score, log, base=args.decisions_base)
+    elif to_score:
         log("  skipped — the Edition publishes with every Item Unenriched")
 
     # The Score distribution per Source is what rubric drift will be read from
@@ -127,24 +136,41 @@ def main(argv=None):
         counts = [
             sum(1 for i in result.items if i.score == score) for score in range(1, 6)
         ]
-        log("  %s: Scores 1-5 = %s, %d at or above the cutoff, %d Unenriched"
+        log("  %s: Scores 1-5 = %s, %d at or above the cutoff, %d with no Score"
             % (key, "/".join(str(c) for c in counts),
                sum(counts[config.CUTOFF - 1:]),
-               sum(1 for i in result.items if i.unenriched)))
+               sum(1 for i in result.items if i.score is None)))
 
     # --- selection --------------------------------------------------------
     select.select(results)
     chosen = [item for result in results.values() for item in result.items]
     log(f"Selected {len(chosen)} Items for the Edition")
 
+    # --- Stage B: the Synopsis --------------------------------------------
+    #
+    # Only the survivors get a Synopsis. When scoring was unreachable, nothing
+    # carries a Score, selection has run on rank alone, and the Edition is the
+    # Unenriched one the Brief has always published — so it is not written for.
+    synopsis_up = False
+    if chosen and scoring_up:
+        log(f"Synopses: {len(chosen)} Items")
+        synopsis_up = synopsis.reachable(log, base=args.openrouter_base)
+        if synopsis_up:
+            synopsis.synopsise_all(chosen, log, base=args.openrouter_base)
+        else:
+            log("  skipped — every Item keeps its Source's raw title")
+
     # --- Picks ------------------------------------------------------------
-    picks = pick.choose(chosen, log, base=args.openrouter_base) if model_up else []
+    picks = pick.choose(chosen, log, base=args.openrouter_base) if synopsis_up else []
 
     # --- Generate ---------------------------------------------------------
     args.docs_dir.mkdir(parents=True, exist_ok=True)
     previous = _previous_edition(args.docs_dir, run_date)
-    model_down = not model_up
-    page, counts = render.edition(run_date, results, picks, model_down, previous)
+    model_down = not scoring_up
+    synopsis_down = bool(chosen) and scoring_up and not synopsis_up
+    page, counts = render.edition(
+        run_date, results, picks, model_down, previous, synopsis_down
+    )
     edition_path = args.docs_dir / f"{run_date}.html"
     edition_path.write_text(page, encoding="utf-8")
     log(f"Wrote {edition_path}")

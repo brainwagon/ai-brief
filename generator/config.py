@@ -14,7 +14,12 @@ DOCS_DIR = REPO_ROOT / "docs"
 STATE_DIR = REPO_ROOT / "state"
 
 RUBRIC_FILE = REPO_ROOT / "rubric.md"
-PROMPT_FILE = REPO_ROOT / "prompt.md"
+# Stage A's typed questions — the noul definitions, the Score question's
+# phrasing, and the adjustment policy — one editable document (map standing
+# preference: never tunable text in code). The Score's five levels are NOT here:
+# they are read out of `rubric.md`, which is the single home of the taste.
+JEV_QUESTIONS_FILE = REPO_ROOT / "jev-questions.json"
+SYNOPSIS_PROMPT_FILE = REPO_ROOT / "synopsis-prompt.md"
 PICK_PROMPT_FILE = REPO_ROOT / "pick-prompt.md"
 
 # One string for the whole generator, so the Brief identifies itself honestly.
@@ -94,6 +99,29 @@ OPENROUTER_BACKOFF = 3.0    # seconds, multiplied by the attempt number
 # queue that way — 24 calls took 14.9s at four in flight and 9.7s at eight,
 # with no failures either way — so the ceiling moved with the model.
 OPENROUTER_CONCURRENCY = 8
+
+# --- Stage A: the Score, from Jev (System One) ------------------------------
+#
+# Stage A is a decision model, not a chat model. It answers typed questions and
+# returns calibrated probabilities; it does not generate text, which is why the
+# Synopsis is Stage B. The endpoint is the System One one, not chat/completions,
+# so `model.py` is not reused here — `jev.py` carries its own transport.
+#
+# Everything taste-shaped — the question set and the adjustment policy that
+# turns the answers into a Score — lives in `jev-questions.json`, not here.
+#
+# Cost, measured against the 188-Item calibration day on 2026-09-06: 8 seconds
+# and $0.007 for the whole pool, against DeepSeek's ~$0.03 and minutes for the
+# same Items with a Synopsis each.
+JEV_BASE = "https://openrouter.ai/api/v1/systemone"
+# Pinned, not `~typesafe/jev-latest`: the alias moves under the Brief, and a
+# Score that shifts because the model changed is not a Rubric change.
+JEV_MODEL = "typesafe/jev-1.13"
+JEV_ITEM_TIMEOUT = 30.0
+JEV_PREFLIGHT_TIMEOUT = 20.0
+JEV_ATTEMPTS = 3             # per call, transient faults only
+JEV_BACKOFF = 3.0            # seconds, multiplied by the attempt number
+JEV_CONCURRENCY = 8          # same reasoning as OPENROUTER_CONCURRENCY
 
 # --- Selection (#7) --------------------------------------------------------
 

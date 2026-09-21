@@ -3,8 +3,11 @@
 What a Score of 1 to 5 means for this Brief.
 
 This is one reader's taste, written down. It is meant to be edited — if the
-Scores start drifting from what actually gets read, change this file and nothing
-else. The Prompt in `prompt.md` wraps this text; it never restates it.
+Scores start drifting from what actually gets read, change this file. It is the
+single home of the taste: the five Score levels the model answers are compiled
+from the scale below at Run time, and the Pick pass reads the whole document.
+`jev-questions.json` holds only the named exceptions as typed questions and the
+arithmetic that applies them; it does not keep a second copy of these levels.
 
 Every line below was tuned against a real day of real Items — see
 `calibration/2026-08-17.md`, and `calibration/2026-09-06-retune/` for the
@@ -100,6 +103,11 @@ subject is that the word "AI" appears in it.
 
 ## Judging
 
+Three of the rules below — the size point, derivative artefacts, and benchmarks —
+are applied by the model as named exceptions, and the exact arithmetic for each
+lives in `jev-questions.json` rather than being repeated here. Each is stated
+below as the reasoning behind it.
+
 - **Judge the work, not the vocabulary.** Overlap of words with the interests
   above is not relevance. A textbook, a survey, or a course syllabus that
   mentions neural networks is not a research result and is not a 4 — it is a 2
@@ -109,14 +117,10 @@ subject is that the word "AI" appears in it.
   elsewhere.
 - **Scale is not merit.** A bigger model, a bigger cluster, a bigger training run
   is not by itself interesting here, and often the reverse. Cheaper, smaller, and
-  simpler is what earns a point. A stated parameter count under 1B is worth one
-  point on top of what the Item earned on its merits. The count has to be stated:
-  1.5B and up does not earn it, and neither does a name that merely says tiny or
-  nano. The point is for the original work, so it does not apply at all to a
-  quantised re-upload or to any other derivative artefact below — those stay at
-  2. It can carry an Item to 4; it cannot by itself make a 5, which is earned on
-  the merits or not at all. Give the count and the hardware in the Synopsis when
-  this applies.
+  simpler is what earns a point. A little model — one whose stated parameter count
+  is under 1B — is the clearest case, and the Rubric's exceptions give it a small
+  lift that never carries an Item to the top on its own. The point is for the
+  original work and does not apply to a derivative artefact.
 - **Score the Item alone.** Never compare it to other Items; there is no quota
   and no curve. The same Item gets the same Score on a busy day and a quiet one.
 - **Thin input is normal, and length is not quality.** Many Items are a title and
@@ -133,12 +137,11 @@ subject is that the word "AI" appears in it.
   about the industry is not.
 - **Fashion is not merit.** An area being crowded this month makes one more entry
   in it less novel, not more.
-- **Derivative artefacts score below the thing they derive from.** A quantised
-  re-upload, a GGUF conversion, a LoRA, a fork, a desktop wrapper, a web UI, a
-  plugin, a mirror, or a curated list of any of these is a 2. The interesting
-  object is the original, and it will be in the Brief on its own account. The
-  exception is when the *conversion itself* is the news — a new quantisation
-  method, a port to hardware that should not be able to run it.
+- **Derivative artefacts score below the thing they derive from.** A repackaging
+  of somebody else's work is not the interesting object; the original is, and it
+  will be in the Brief on its own account. The exception to that rule is when the
+  conversion itself is the news — a new method, or a port to hardware that should
+  not be able to run it.
 - **Most papers are a 2, including good ones.** A well-written abstract in a
   fashionable area is still a 2. A paper reaches 3 only when its *finding* would
   interest someone outside its own subfield, or it releases code or weights worth
@@ -146,9 +149,9 @@ subject is that the word "AI" appears in it.
   machinery than expected. Another architecture variant, another training or
   distillation recipe, another agent framework, another multimodal pipeline, and
   another point or two on a standard benchmark are 2 however competently done.
-- **A benchmark is not a result.** New benchmarks, evaluation suites,
-  leaderboards, and "a systematic evaluation of N systems" are 2 unless the
-  finding, not the harness, is what is interesting.
+- **A benchmark is not a result.** A new benchmark, evaluation suite, or
+  leaderboard is a harness, not a finding; it interests this reader only when the
+  finding, not the harness, is what is new.
 - **Popularity is not a Score.** Upvotes, stars, downloads, and reaction counts
   say what a crowd did, not whether this reader wants it. They are not evidence
   and they never move a Score in either direction.

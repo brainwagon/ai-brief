@@ -96,9 +96,10 @@ retuned.
 _Avoid_: criteria, scoring guide, taste file, weights, heuristics
 
 **Prompt**:
-The instructions wrapped around a Rubric to get an Enrichment out of the model.
-Separate from the Rubric so that taste can be tuned without touching
-model-wrangling.
+The model-facing instructions for producing one Enrichment result. The Score's
+Prompt is the typed question set in `jev-questions.json`; the Synopsis has its
+own `synopsis-prompt.md`. Kept separate from the Rubric so taste can be tuned
+without touching model-wrangling.
 _Avoid_: template, system message, instructions
 
 ### The acts
@@ -108,9 +109,11 @@ One execution of the generator. May produce an Edition, and may not.
 _Avoid_: job, build, cycle, invocation
 
 **Enrichment**:
-The act of putting an Item to the model, producing a Score and a Synopsis. Its
-two results are named separately because either can be absent while the other
-is not.
+The act of putting an Item to the models, producing a Score and a Synopsis. The
+two now happen in separate stages and different models — the Score from a
+decision model over every gathered Item, the Synopsis from a chat model over the
+survivors of selection — and are named separately because either can be absent
+while the other is not.
 _Avoid_: analysis, processing, summarisation
 
 **Generate**:
@@ -131,7 +134,7 @@ so on the page. A Source-level hole.
 _Avoid_: down, failed, errored, missing
 
 **Unenriched** (of an Item):
-Present in an Edition with no Score or no Synopsis, because the model could not
-be reached or did not answer usefully. Carries its Source's raw title instead.
-An Item-level hole.
+Present in an Edition with no Score or no Synopsis, because the model that
+produces that half could not be reached or did not answer usefully. Carries its
+Source's raw title instead. An Item-level hole.
 _Avoid_: raw, unprocessed, degraded, failed

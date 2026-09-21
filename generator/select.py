@@ -17,6 +17,13 @@ admitted in its Source's pre-Enrichment rank order, subject to the same ceiling
 of 8, and sorts below every scored Item for trimming. Without that, an outage at
 the model would put several hundred raw titles on the page instead of an
 Edition.
+
+The gate is the Score, and only the Score. Since the split of Enrichment into a
+scoring stage and a synopsis stage, selection runs before any Synopsis exists,
+so testing `unenriched` here — which is true when EITHER field is missing —
+would admit every Item and silently disable the cutoff. A Score-less Item is
+still admitted in rank order, which is the model-down path above and also the
+path for an Item Jev alone failed on.
 """
 
 from . import config
@@ -59,7 +66,7 @@ def select(results):
         kept = [
             item
             for item in result.items
-            if item.unenriched or item.score >= config.CUTOFF
+            if item.score is None or item.score >= config.CUTOFF
         ]
         kept.sort(key=_sort_key)
         result.items = kept[: config.CEILING]

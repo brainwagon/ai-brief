@@ -46,7 +46,7 @@ def anchor(item):
 # --------------------------------------------------------------------------
 
 
-def census(results, picks, model_down):
+def census(results, picks, model_down, synopsis_down=False):
     """The two lines at the top of every Edition, present on a flawless day too.
 
     Because the census is always there, a bad day is a different number in a
@@ -60,7 +60,12 @@ def census(results, picks, model_down):
     unenriched = sum(
         1 for r in results.values() for item in r.items if item.unenriched
     )
+    # Items carrying both halves; and, separately, Items carrying a Score —
+    # which differ once the two halves come from two models.
     scored = total - unenriched
+    with_score = sum(
+        1 for r in results.values() for item in r.items if item.score is not None
+    )
 
     if total:
         first = f"{total} Item{_s(total)} across {sources} Sources."
@@ -93,6 +98,14 @@ def census(results, picks, model_down):
             "the model was not reachable during this Run, so nothing today "
             "carries a Score or a Synopsis and nothing could be picked."
         )
+    elif unenriched == total and synopsis_down:
+        parts.append(
+            f"{with_score} Item{_s(with_score)} "
+            f"carr{'y' if with_score != 1 else 'ies'} a Score; "
+            f'<span class="hole">no Synopsis</span> — the model that writes '
+            "them was not reachable during this Run, so every Item carries the "
+            "title its Source gave it."
+        )
     else:
         parts.append(
             f"{scored} Item{_s(scored)} carr{'y' if scored != 1 else 'ies'} "
@@ -118,8 +131,8 @@ def _s(count):
 # --------------------------------------------------------------------------
 
 
-def edition(date_string, results, picks, model_down, previous_date):
-    first_line, second_line, counts = census(results, picks, model_down)
+def edition(date_string, results, picks, model_down, previous_date, synopsis_down=False):
+    first_line, second_line, counts = census(results, picks, model_down, synopsis_down)
 
     out = []
     out.append("<!DOCTYPE html>")
@@ -313,7 +326,10 @@ def _item(item, source_label):
         % (e(item.url), e(item.title)),
     ]
 
-    if not item.unenriched:
+    has_score = item.score is not None
+    has_synopsis = bool((item.synopsis or "").strip())
+
+    if has_synopsis:
         # The whole Synopsis is on the page: never truncated, never behind a
         # control. The Source's own title stays the link text, so an Enrichment
         # failure never changes where the reader lands.
@@ -322,15 +338,19 @@ def _item(item, source_label):
     meta = []
     if item.is_pick:
         meta.append('<span class="pick-mark">Pick</span>')
-    if item.unenriched:
-        meta.append('<span class="state">Unenriched</span>')
+    if has_score:
+        meta.append('<span class="score">Score %d</span>' % item.score)
+    else:
         meta.append("<span>no Score</span>")
+    # Score and Synopsis now come from two models and fail independently, so the
+    # page says which half is missing rather than assuming neither arrived.
+    if not (has_score and has_synopsis):
+        meta.append('<span class="state">Unenriched</span>')
+    if not has_synopsis:
         tail = item.meta + " · " if item.meta else ""
         meta.append("<span>%stitle as %s gave it</span>" % (e(tail), e(source_label)))
-    else:
-        meta.append('<span class="score">Score %d</span>' % item.score)
-        if item.meta:
-            meta.append("<span>%s</span>" % e(item.meta))
+    elif item.meta:
+        meta.append("<span>%s</span>" % e(item.meta))
 
     lines.append('        <p class="item-meta">%s</p>' % "".join(meta))
     lines.append("      </li>")

@@ -1,0 +1,25 @@
+{
+  "score": {
+    "type": "score",
+    "instructions": "How interested is this reader in this Item, judged on its own and against no other Item?",
+    "criteria": [
+      "1 - No. Business or money news, marketing, content-farm posts, spam, slop, or work with no connection to computing. Also anything whose only tie to the subject is that the word AI appears in it.",
+      "2 - Not for this reader, but not junk. The default. Real work with the wrong audience or nothing new: a domain-specific application paper; another benchmark, leaderboard, or evaluation suite; a routine fine-tune, quantisation, LoRA, mirror, or wrapper; an awesome list; a competently written article with no new idea; lecture notes, a survey, a tutorial, or a textbook.",
+      "3 - Worth thirty seconds. Real work, real content, and mildly interesting: research whose finding would carry outside its own subfield, a genuinely new model or dataset, or a well-argued article. This is the cutoff for appearing in the Brief; do not give it for being on-topic.",
+      "4 - Read today. Solidly in the reader's interests and substantial: a real technical result with evidence behind it, a tool that does something new, or a repository worth cloning. Name what is new in it in one clause, or it is a 3.",
+      "5 - Rare. Read it first, and probably act on it: something the reader could pull down and run tonight, or an idea that changes how he would build something; a genuinely small model or method that punches far above its size; a self-play or search result with a working engine."
+    ]
+  },
+  "derivative": {
+    "type": "noul",
+    "instructions": "This Item is a derivative artefact rather than original work. A derivative artefact is a re-upload, a quantisation or GGUF or AWQ or GPTQ or FP8 conversion, a LoRA, a fork, a desktop wrapper or web UI, a plugin, a mirror, or a curated list of such things. A new method, original research, a new tool, or a first-hand report of somebody running a model is NOT a derivative artefact."
+  },
+  "marketing": {
+    "type": "noul",
+    "instructions": "This Item is business or money news, marketing, a product launch or pricing change, a funding or acquisition story, a leaderboard presented as news, or content-farm slop, rather than technical work."
+  },
+  "benchmark": {
+    "type": "noul",
+    "instructions": "This Item is primarily a benchmark, an evaluation suite, a leaderboard, or a systematic evaluation of existing systems, rather than a new finding or a new capability."
+  }
+}

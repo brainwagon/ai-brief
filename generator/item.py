@@ -26,6 +26,15 @@ class Item:
     synopsis: Optional[str] = None
     is_pick: bool = False
 
+    # Set by Stage A (jev.py). `raw_score` is Jev's own ladder position before
+    # the adjustment policy moved it; `score` above is what the Edition uses.
+    # `noul` holds the probabilities behind that adjustment, kept for the record
+    # and for reading Rubric drift later. None of this is rendered.
+    raw_score: Optional[int] = None
+    score_confidence: Optional[float] = None
+    noul: dict = field(default_factory=dict)
+    sub_1b: bool = False
+
     @property
     def unenriched(self) -> bool:
         """An Item with no Score or no Synopsis is Unenriched (CONTEXT.md)."""

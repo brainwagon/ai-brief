@@ -1,0 +1,38 @@
+{
+  "threshold": 0.5,
+  "score_instructions": "How interested is this reader in this Item, judged on its own and against no other Item?",
+  "nouls": {
+    "derivative": {
+      "type": "noul",
+      "instructions": "This Item is a derivative artefact rather than original work. A derivative artefact is a re-upload, a quantisation or GGUF or AWQ or GPTQ or FP8 conversion, a LoRA, a fork, a desktop wrapper or web UI, a plugin, a mirror, or a curated list of such things. A new method, original research, a new tool, or a first-hand report of somebody running a model is NOT a derivative artefact."
+    },
+    "marketing": {
+      "type": "noul",
+      "instructions": "This Item is business or money news, marketing, a product launch or pricing change, a funding or acquisition story, a leaderboard presented as news, or content-farm slop, rather than technical work."
+    },
+    "benchmark": {
+      "type": "noul",
+      "instructions": "This Item is primarily a benchmark, an evaluation suite, a leaderboard, or a systematic evaluation of existing systems, rather than a new finding or a new capability."
+    }
+  },
+  "adjustment": [
+    {
+      "when": "marketing",
+      "set": 1
+    },
+    {
+      "when": "derivative",
+      "cap": 2,
+      "blocks_boost": true
+    },
+    {
+      "when": "benchmark",
+      "cap": 2
+    },
+    {
+      "when": "sub_1b",
+      "add": 1,
+      "cap": 4
+    }
+  ]
+}
