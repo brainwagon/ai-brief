@@ -2,42 +2,6 @@
  "source": "hf-models",
  "snapshots": [
   {
-   "date": "2026-08-23",
-   "recorded_at": "2026-08-23T17:56:41Z",
-   "identities": [
-    "0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF",
-    "DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF",
-    "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
-    "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF",
-    "LBH-123-AI/Minimax_h3_latent_Upscaler",
-    "Lightricks/LTX-2.5",
-    "MiniMaxAI/MiniMax-H3",
-    "MiniMaxAI/MiniMax-Music3",
-    "OBLITERATUS/Qwen3.8-27B-OBLITERATED",
-    "Qwen/Qwen3.8-27B",
-    "Qwen/Qwen3.8-27B-FP8",
-    "deepseek-ai/DeepSeek-V4-Flash-0731",
-    "deepseek-ai/DeepSeek-V4-Pro-0813",
-    "empero-ai/Qwen3.8-27B-Ridge-GGUF",
-    "froggeric/Qwen-Fixed-Chat-Templates",
-    "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
-    "huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF",
-    "incoai/Qwen3.8-27B-DFlash2",
-    "moonshotai/Kimi-K3",
-    "orcarouter/Qwen3.8-27B-Uncensored-FP8",
-    "orcarouter/Qwen3.8-27B-Uncensored-GGUF",
-    "orcarouter/Qwen3.8-27B-Uncensored-MLX",
-    "ornith-ai/Ornith-1.5-35B-A3B",
-    "ornith-ai/Ornith-1.5-35B-A3B-GGUF",
-    "ornith-ai/Ornith-1.5-9B",
-    "ornith-ai/Ornith-1.5-9B-GGUF",
-    "peculiar-ragdoll/Qwen-Sharp-Chat-Templates",
-    "superwhisper/s1-mini",
-    "unsloth/Qwen3.8-27B-GGUF",
-    "z-lab/Qwen3.8-27B-DFlash2"
-   ]
-  },
-  {
    "date": "2026-08-24",
    "recorded_at": "2026-08-24T13:10:52Z",
    "identities": [
@@ -1079,6 +1043,42 @@
     "ukisai/Swift-Qwen3.8-27b",
     "unsloth/Qwen3.8-27B-GGUF",
     "zai-org/GLM-5.3-Flash"
+   ]
+  },
+  {
+   "date": "2026-09-22",
+   "recorded_at": "2026-09-22T13:08:14Z",
+   "identities": [
+    "AlexWortega/openjev",
+    "Altworld/Hemmingway-1",
+    "Comfy-Org/Qwen-Image-2.1",
+    "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+    "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+    "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+    "Lightricks/LTX-2.5",
+    "MiniMaxAI/MiniMax-H3",
+    "Qwen/Qwen-Image-2.1",
+    "Qwen/Qwen3.8-27B",
+    "Qwen/Qwen3.8-Flash-Next",
+    "TokenRhythm/NeoHorse-1-9B",
+    "WarmBloodAban/Minimax-h3_Singularity",
+    "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "XiaomiMiMo/MiMo-V2.6-Flash-RL",
+    "XiaomiMiMo/MiMo-V2.6-Pro-RL",
+    "XingChen-AGI/Xing4.0-29B-A4B",
+    "abenzerps/Qwen-Image-2.1-GGUF",
+    "convaiinnovations/laya",
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "harshatheg/Qwen-2.5-1B-RLCD",
+    "m-a-p/YuE2-3B",
+    "netease-youdao/Confucius4-R2T2",
+    "openbmb/MiniCPM5-2B",
+    "prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+    "ukisai/Swift-Qwen3.8-27B-GGUF",
+    "ukisai/Swift-Qwen3.8-27b",
+    "unsloth/Qwen3.8-27B-GGUF",
+    "yandex/AliceAI-Foundation-80B-A3B-Base"
    ]
   }
  ]

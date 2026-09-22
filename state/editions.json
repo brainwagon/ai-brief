@@ -1,6 +1,16 @@
 [
  {
   "items": 25,
+  "sources": 10,
+  "picks": 4,
+  "unavailable": 0,
+  "unenriched": 0,
+  "considered": 150,
+  "date": "2026-09-22",
+  "teaser": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses"
+ },
+ {
+  "items": 25,
   "sources": 9,
   "picks": 2,
   "unavailable": 0,
