@@ -5,6 +5,16 @@
   "picks": 4,
   "unavailable": 0,
   "unenriched": 0,
+  "considered": 149,
+  "date": "2026-09-24",
+  "teaser": "JEV almost dead: CLM vs JEV"
+ },
+ {
+  "items": 25,
+  "sources": 10,
+  "picks": 4,
+  "unavailable": 0,
+  "unenriched": 0,
   "considered": 145,
   "date": "2026-09-23",
   "teaser": "GGUFs in transformers natively!"
