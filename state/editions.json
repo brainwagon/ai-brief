@@ -5,6 +5,16 @@
   "picks": 4,
   "unavailable": 0,
   "unenriched": 0,
+  "considered": 141,
+  "date": "2026-09-25",
+  "teaser": "Qwengram-0.8B: I transferred Qwen3.8 Flash-Next\u2019s n-gram memory into Qwen3.5-0.8B \u2014 5.05% lower validation perplexity"
+ },
+ {
+  "items": 25,
+  "sources": 10,
+  "picks": 4,
+  "unavailable": 0,
+  "unenriched": 0,
   "considered": 149,
   "date": "2026-09-24",
   "teaser": "JEV almost dead: CLM vs JEV"
