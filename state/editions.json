@@ -1,5 +1,15 @@
 [
  {
+  "items": 18,
+  "sources": 10,
+  "picks": 4,
+  "unavailable": 0,
+  "unenriched": 0,
+  "considered": 85,
+  "date": "2026-09-26",
+  "teaser": "Mica v0.1 4B got an iron pickaxe in real Minecraft without generating a single token"
+ },
+ {
   "items": 25,
   "sources": 10,
   "picks": 4,
