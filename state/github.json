@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-08-28",
-   "recorded_at": "2026-08-28T13:06:19Z",
-   "identities": [
-    "ApodexAI/FrontierAgent",
-    "Forsy-AI/biosecurity-agent",
-    "HEJustinSun/my-girlfriend-jingtian-latex",
-    "HanyuanWang/LiveStream-Agent-Studio",
-    "N4darae/anti-mage",
-    "POUND0423/AI-drama-pound",
-    "ShadowAqueduct/watermark-remover",
-    "Tencent/WeMM-Embedding",
-    "alchaincyf/huashu-excel",
-    "amosblomqvist/learn",
-    "b-nnett/grok-bot-0.18-reconstructed",
-    "bam-bam-2/solo-skills",
-    "breslee1707/VI-Translate",
-    "bryllim/workout-guide",
-    "duty1g/x64dbg-mcp-server",
-    "fzakaria/selfdb",
-    "gtlhuyidan-sketch/life-ipo",
-    "halofyai/halofy",
-    "kgoedecke/doop",
-    "localai-org/kimodo.cpp",
-    "lxf746/outlook-auto-register",
-    "nateherkai/scroll-craft",
-    "rome-os/rome",
-    "s0xDk/refactoring-ui-skill",
-    "sapientinc/PRAXIST",
-    "themartiano/try-omarchy",
-    "tobi/walgit",
-    "totec448-spec/chat-on-steroids",
-    "wide-trace/open-higgsfield",
-    "yding-git/personal-edge-proxy"
-   ]
-  },
-  {
    "date": "2026-08-29",
    "recorded_at": "2026-08-29T13:09:18Z",
    "identities": [
@@ -1079,6 +1043,42 @@
     "yetone/magpie",
     "yukitorido/short-video-generator-AI",
     "zai-org/ZCode"
+   ]
+  },
+  {
+   "date": "2026-09-27",
+   "recorded_at": "2026-09-27T13:01:04Z",
+   "identities": [
+    "852wa/JIZURA",
+    "Aureliengmz/clearwater",
+    "Contrastive-LM/CLM",
+    "JohnHeibel/PDoomVideo",
+    "Rizzo-AI-Academy/rizzo-flow",
+    "SpecterLouse/CapCut-Pro-macOS-Windows",
+    "alexgreensh/anidoodle",
+    "amitshekhariitbhu/ai-system-design",
+    "anishfn/shapeshift",
+    "asokurasu/text-humanizer",
+    "deepopen-com/deepopen",
+    "dgreenheck/tidewater",
+    "feitangyuan/onetake",
+    "freestylefly/WeChatBridge",
+    "jev-chat/jev-chat-jarvis",
+    "jev-chat/jev-chat-windows",
+    "kryvora-network/kryvora-node",
+    "kydlikebtc/awesome-jev",
+    "mexicat/pdoom-video",
+    "mikehasa/golive-skill",
+    "nokia-applied-research/AnyJev",
+    "ollaya-dev/ollaya",
+    "rgem227/knoweldge-base",
+    "riba2534/claude-opus-5-5-demo",
+    "samyost1/3dicon",
+    "supermemoryai/company-brain",
+    "tobi/disktree",
+    "unreallabsai/unreal-agent",
+    "yetone/magpie",
+    "yukitorido/short-video-generator-AI"
    ]
   }
  ]
