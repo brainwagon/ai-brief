@@ -1,5 +1,15 @@
 [
  {
+  "items": 19,
+  "sources": 10,
+  "picks": 4,
+  "unavailable": 1,
+  "unenriched": 0,
+  "considered": 172,
+  "date": "2026-09-29",
+  "teaser": "Qwen 3.8 27B Q4 with 100K context on a 16 GB RX 7800 XT guide"
+ },
+ {
   "items": 25,
   "sources": 10,
   "picks": 2,
