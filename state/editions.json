@@ -5,6 +5,16 @@
   "picks": 4,
   "unavailable": 0,
   "unenriched": 0,
+  "considered": 198,
+  "date": "2026-10-01",
+  "teaser": "Why am I like this? (Full Chat and Image generation on a 286 Tandy 1000 TL/3)"
+ },
+ {
+  "items": 25,
+  "sources": 10,
+  "picks": 4,
+  "unavailable": 0,
+  "unenriched": 0,
   "considered": 220,
   "date": "2026-09-30",
   "teaser": "O\u00eddo: speech recognition that beats Whisper-tiny, running on a $5 microcontroller (open source)"
