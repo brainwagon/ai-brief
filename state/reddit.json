@@ -2,37 +2,6 @@
  "source": "reddit",
  "snapshots": [
   {
-   "date": "2026-09-03",
-   "recorded_at": "2026-09-03T13:07:18Z",
-   "identities": [
-    "1vx7ei1",
-    "1w50ur8",
-    "1w53ti8",
-    "1w5akpy",
-    "1w5gk2b",
-    "1w5isz3",
-    "1w5l8bw",
-    "1w5ozl4",
-    "1w5qbpk",
-    "1w5sb4g",
-    "1w5trnb",
-    "1w5ttgb",
-    "1w5vjp6",
-    "1w5zdx4",
-    "1w609r6",
-    "1w60hiv",
-    "1w60jr5",
-    "1w62vjc",
-    "1w62w8e",
-    "1w64hsi",
-    "1w64y26",
-    "1w655he",
-    "1w65ise",
-    "1w65uhf",
-    "1w65xkj"
-   ]
-  },
-  {
    "date": "2026-09-04",
    "recorded_at": "2026-09-04T13:02:28Z",
    "identities": [
@@ -929,6 +898,37 @@
     "1wvs8va",
     "1wvt1m4",
     "1wvtc1j"
+   ]
+  },
+  {
+   "date": "2026-10-03",
+   "recorded_at": "2026-10-03T13:07:04Z",
+   "identities": [
+    "1wvpxg8",
+    "1wvv6im",
+    "1wvxl4n",
+    "1wvyxzg",
+    "1wvz1ex",
+    "1ww09ab",
+    "1ww40o2",
+    "1ww4hne",
+    "1ww86ny",
+    "1ww91uw",
+    "1wwbcdt",
+    "1wwc9qz",
+    "1wwcqas",
+    "1wwds6i",
+    "1wwdsce",
+    "1wwfw06",
+    "1wwfyv6",
+    "1wwggwt",
+    "1wwgns1",
+    "1wwgsas",
+    "1wwijvi",
+    "1wwk49n",
+    "1wwkudj",
+    "1wwl7y6",
+    "1wwl9jf"
    ]
   }
  ]

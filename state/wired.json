@@ -2,22 +2,6 @@
  "source": "wired",
  "snapshots": [
   {
-   "date": "2026-09-03",
-   "recorded_at": "2026-09-03T13:07:18Z",
-   "identities": [
-    "6a7dd5ceadfa954d38d64589",
-    "6a8726cd18568cdcce1a1065",
-    "6a8cb79d3e6cf87b84dc7a7d",
-    "6a906b97096f095c67a177d0",
-    "6a91b5991f4267c18de22d44",
-    "6a9582ab4bec28bfced5a370",
-    "6a9583dc88d28650c32558cc",
-    "6a95c50b1ed47ec1f88c0129",
-    "6a98445d5b3846267183e587",
-    "6a98b7478c9d6f1d2a0923d6"
-   ]
-  },
-  {
    "date": "2026-09-04",
    "recorded_at": "2026-09-04T13:02:28Z",
    "identities": [
@@ -479,6 +463,22 @@
     "6abd2716b729f64a710059c9",
     "6abd4bb5b55f4a85476c9ae6",
     "6abd69a2aa33d107855886da"
+   ]
+  },
+  {
+   "date": "2026-10-03",
+   "recorded_at": "2026-10-03T13:07:04Z",
+   "identities": [
+    "6abaa4adb463f7c4bd0df099",
+    "6abacb8bbc8ab97fed5aad6a",
+    "6abbf300990723ca87d10e08",
+    "6abbf44535e7c9025b8ff9e3",
+    "6abc2709de4260e1edbea50e",
+    "6abc27c619638e7270d13469",
+    "6abd2716b729f64a710059c9",
+    "6abd4bb5b55f4a85476c9ae6",
+    "6abd69a2aa33d107855886da",
+    "6abe88e538929764b2271968"
    ]
   }
  ]
