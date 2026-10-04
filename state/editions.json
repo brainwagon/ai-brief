@@ -1,5 +1,15 @@
 [
  {
+  "items": 13,
+  "sources": 10,
+  "picks": 4,
+  "unavailable": 0,
+  "unenriched": 0,
+  "considered": 78,
+  "date": "2026-10-04",
+  "teaser": "[Discussion] A 5KB pure x86-64 assembly engine for Gemma-2B (FP16, 4.6 tok/s on CPU)"
+ },
+ {
   "items": 23,
   "sources": 10,
   "picks": 4,

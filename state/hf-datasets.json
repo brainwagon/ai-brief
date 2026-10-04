@@ -2,42 +2,6 @@
  "source": "hf-datasets",
  "snapshots": [
   {
-   "date": "2026-09-04",
-   "recorded_at": "2026-09-04T13:02:28Z",
-   "identities": [
-    "ACERobotics/ACE-Data-0",
-    "Anthropic/claude-protein-binder-design",
-    "FlyRank/internship-warehouse",
-    "HuggingFaceFW/fineweb",
-    "IFM/TxT360-v2",
-    "LightwheelAI/EgoStandard",
-    "NousResearch/hermes-function-calling-v1",
-    "Qdrant/FineWeb-10B",
-    "SageBio/mva-hackathon-2026-data",
-    "TeichAI/Ox-Alpha-10k",
-    "TheAgenticDataCompany/open-yap-1k",
-    "Vyber07/cyber-security",
-    "datapointai/text-to-speech-human-preferences-315k",
-    "faunix/Qwen3.8-27B-Distillation-40K",
-    "gaia-benchmark/GAIA",
-    "hamzabagirsakci/turkish-court-decisions",
-    "junchaoh-cs/SolarWM-Data",
-    "kuben-developer/tiktok-videos-4b",
-    "llm-jp/AnswerCarefully",
-    "markov-ai/cad-1000-hours",
-    "nyu-mll/glue",
-    "openai/gsm8k",
-    "r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation",
-    "rajpurkar/squad",
-    "saidutta69/fable-5-premium",
-    "snapwre/amharic-speech",
-    "spatialverse/UniPhys-Bench",
-    "stanfordnlp/imdb",
-    "wikimedia/wikipedia",
-    "zouhar/last-translation-benchmark"
-   ]
-  },
-  {
    "date": "2026-09-05",
    "recorded_at": "2026-09-05T13:08:06Z",
    "identities": [
@@ -1079,6 +1043,42 @@
     "secemp9/arxiv-complete",
     "venvoo/china-a-share-l2-level2-limit-order-book-tick-data",
     "wikimedia/wikipedia"
+   ]
+  },
+  {
+   "date": "2026-10-04",
+   "recorded_at": "2026-10-04T13:03:05Z",
+   "identities": [
+    "Anthropic/hh-rlhf",
+    "AxiomicLabs/Tiny_Theory_of_Mind",
+    "Cirquar-Tech/wm_imagined",
+    "FineEnvs/SmolDataEnvs",
+    "Hcompany/trajectories",
+    "LightwheelAI/EgoDemo",
+    "LightwheelAI/EgoPro",
+    "LightwheelAI/EgoStandard",
+    "LocalLLaMA/typed-decisions",
+    "MaziyarPanahi/AgentToolDecisions-180K",
+    "MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x",
+    "OpenDataArena/Spark-234K",
+    "XiaomiMiMo/MiMo-V2.6-RL-oss",
+    "Zaevlad/audit-findings-dataset",
+    "ZefanCai/Open-Jev",
+    "aidigestorg/ai-village",
+    "ankitjh4/bharat-government-documents",
+    "cloud0day3/alania-synthetic-speech-tr",
+    "espnet/yodas3",
+    "genrobot2025/Gen-HumanEgo",
+    "ikala/tmmluplus",
+    "malcolmrey/various",
+    "nisten/opus5-5-doctor-patient-conversations-all-human-diseases",
+    "nvidia/PhysicalAI-Autonomous-Vehicles",
+    "openai/gsm8k",
+    "openbmb/UltraData-SFT-Agent-2609",
+    "secemp9/arxiv-complete",
+    "venvoo/china-a-share-l2-level2-limit-order-book-tick-data",
+    "wikimedia/wikipedia",
+    "witfoo/precinct6-cybersecurity"
    ]
   }
  ]
