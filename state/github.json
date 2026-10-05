@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-09-05",
-   "recorded_at": "2026-09-05T13:08:06Z",
-   "identities": [
-    "2akouwu/reverify",
-    "Albert-Weasker/niubigeo",
-    "GangTailorUpgrade/undress-service",
-    "Human-Agent-Society/reef",
-    "KJGX66F/usque-custom-pro",
-    "LunarXuan/image-prompt-reverse",
-    "MSNightmare/FalconFlank",
-    "Merserk/dlss5-visual-enhancer",
-    "OpenVDN/vdn-minimax-h3",
-    "PhiloLabs/fable51-worlds",
-    "ahujasid/camera-to-blender",
-    "anthropics/commerce-agents",
-    "anthropics/fermats-last-theorem",
-    "btsouth/omakade",
-    "codejunkie99/fable-orchestrator",
-    "danielblnc/DLSS-NR-on-AMD",
-    "dreamers-laboratory/image-to-3d-pipeline",
-    "faisalkindi/DLSS5oneclick",
-    "kydlikebtc/awesome-grokbot",
-    "lnkiai/m3e-canvas",
-    "mizorewww/course2md",
-    "nahrek/polyledger",
-    "op7418/guizang-yingzao-skill",
-    "shadcn-ui/cn",
-    "siknet/FreePEP",
-    "sonicloudco/recorder",
-    "subsy/skill-cabinet",
-    "thisisgm/flea",
-    "yczz/oc-english",
-    "yilujian/easy-writing"
-   ]
-  },
-  {
    "date": "2026-09-06",
    "recorded_at": "2026-09-06T13:04:21Z",
    "identities": [
@@ -1079,6 +1043,42 @@
     "sganggs/Stronghold-Protocol",
     "storytold/photocraft",
     "wy51ai/floorplan-3d"
+   ]
+  },
+  {
+   "date": "2026-10-05",
+   "recorded_at": "2026-10-05T13:08:30Z",
+   "identities": [
+    "BlueHeisenberg/SCSKiller",
+    "CAPCOM-TD-OSS/REDox",
+    "CopilotKit/OpenDots",
+    "Edwardxlai/easyread",
+    "OpSafari/hypoarena",
+    "QingYunA/answer-me-with-html",
+    "StayLameBro/backburner",
+    "ZacharyZhang-NY/Ely-GPUI-Components",
+    "amywork777/lipflow",
+    "chasmlol/SkyCraft",
+    "composio-community/open-dot",
+    "deadinside28/bloodborne_pc",
+    "deepseek-ai/DeepGEMM-Ascend",
+    "extend-hq/jevbox",
+    "facebookincubator/muse-gadget-sdk",
+    "feder-cr/dots",
+    "fsiaonma/elpis",
+    "kargulstudio/sales-crm",
+    "nanaism/yomiyasu",
+    "nykooi1/vibe-wise",
+    "oil-oil/oil-ui",
+    "omlahore/RemoveMacAI",
+    "openai/mcp-extensions",
+    "rehan-remade/universal-modder",
+    "sganggs/Stronghold-Protocol",
+    "storytold/filmcraft",
+    "storytold/photocraft",
+    "whirlchat/whirl",
+    "wy51ai/floorplan-3d",
+    "ythx-101/live-panel-skill"
    ]
   }
  ]
