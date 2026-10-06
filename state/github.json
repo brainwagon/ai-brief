@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-09-06",
-   "recorded_at": "2026-09-06T13:04:21Z",
-   "identities": [
-    "2akouwu/reverify",
-    "Albert-Weasker/niubigeo",
-    "GangTailorUpgrade/undress-service",
-    "Human-Agent-Society/reef",
-    "KJGX66F/usque-custom-pro",
-    "MSNightmare/FalconFlank",
-    "PhiloLabs/fable51-worlds",
-    "Rion-Wu-tech/wechat-intelligence-hub",
-    "ahujasid/camera-to-blender",
-    "anthropics/commerce-agents",
-    "anthropics/fermats-last-theorem",
-    "ashemag/human-atlas",
-    "burakgon/stop-stutter",
-    "byJoey/warp-masque-actions",
-    "codejunkie99/fable-orchestrator",
-    "danielblnc/DLSS-NR-on-AMD",
-    "faisalkindi/DLSS5oneclick",
-    "lnkiai/m3e-canvas",
-    "nahrek/polyledger",
-    "op7418/guizang-yingzao-skill",
-    "pierrenade/short-video-generator-AI",
-    "pipicat613/MuToolsProject",
-    "sebbbi/NoGraphicsAPI",
-    "shadcn-ui/cn",
-    "siknet/FreePEP",
-    "sonicloudco/recorder",
-    "subsy/skill-cabinet",
-    "vinzdg/codenotch",
-    "yczz/oc-english",
-    "yilujian/easy-writing"
-   ]
-  },
-  {
    "date": "2026-09-07",
    "recorded_at": "2026-09-07T13:02:53Z",
    "identities": [
@@ -1079,6 +1043,42 @@
     "whirlchat/whirl",
     "wy51ai/floorplan-3d",
     "ythx-101/live-panel-skill"
+   ]
+  },
+  {
+   "date": "2026-10-06",
+   "recorded_at": "2026-10-06T13:07:11Z",
+   "identities": [
+    "AgentMemoryRepo/agentmemoryrepo",
+    "CAPCOM-TD-OSS/REDox",
+    "Dingo-Shenanigans/ReSkate",
+    "Edwardxlai/easyread",
+    "Jakeschincariol/replica-skill",
+    "OpSafari/hypoarena",
+    "QingYunA/answer-me-with-html",
+    "StayLameBro/backburner",
+    "ZacharyZhang-NY/Ely-GPUI-Components",
+    "chasmlol/SkyCraft",
+    "deadinside28/bloodborne_pc",
+    "elstongun/leviathan",
+    "facebookincubator/muse-gadget-sdk",
+    "kargulstudio/sales-crm",
+    "lucasmarkes/hairline",
+    "mizorewww/x_gift_bot",
+    "nanaism/yomiyasu",
+    "oil-oil/oil-ui",
+    "rauchg/gdp-ts",
+    "rehan-remade/universal-modder",
+    "sganggs/Stronghold-Protocol",
+    "storytold/effectcraft",
+    "storytold/filmcraft",
+    "storytold/lightcraft",
+    "storytold/photocraft",
+    "storytold/printcraft",
+    "storytold/vectorcraft",
+    "whirlchat/whirl",
+    "ythx-101/live-panel-skill",
+    "zzzz7788990213-ops/EvoVLM"
    ]
   }
  ]

@@ -5,6 +5,16 @@
   "picks": 4,
   "unavailable": 0,
   "unenriched": 0,
+  "considered": 198,
+  "date": "2026-10-06",
+  "teaser": "S2PD: Serial-to-Parallel Diffusion for Physically and Logically Consistent Video Generation"
+ },
+ {
+  "items": 25,
+  "sources": 10,
+  "picks": 4,
+  "unavailable": 0,
+  "unenriched": 0,
   "considered": 150,
   "date": "2026-10-05",
   "teaser": "StayLameBro/backburner"
