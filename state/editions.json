@@ -2,6 +2,16 @@
  {
   "items": 25,
   "sources": 10,
+  "picks": 3,
+  "unavailable": 0,
+  "unenriched": 22,
+  "considered": 195,
+  "date": "2026-10-08",
+  "teaser": "Never Look Back: Understanding Persistence in 3D Object Memory from Egocentric Videos"
+ },
+ {
+  "items": 25,
+  "sources": 10,
   "picks": 4,
   "unavailable": 0,
   "unenriched": 0,
