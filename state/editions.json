@@ -4,6 +4,16 @@
   "sources": 10,
   "picks": 3,
   "unavailable": 0,
+  "unenriched": 0,
+  "considered": 181,
+  "date": "2026-10-09",
+  "teaser": "Dex-One2Many: Learning Dexterous Manipulation from a Single Human Demonstration"
+ },
+ {
+  "items": 25,
+  "sources": 10,
+  "picks": 3,
+  "unavailable": 0,
   "unenriched": 22,
   "considered": 195,
   "date": "2026-10-08",
