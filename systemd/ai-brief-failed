@@ -39,7 +39,7 @@ case "$STATUS" in
     ;;
 2)
     TITLE="ai-brief: Publish failed"
-    BODY="The Edition was Generated and is on disk uncommitted. Nothing is lost - the next Run picks it up."
+    BODY="The Edition was Generated but could not be pushed. Nothing is lost - the next Run picks it up."
     ;;
 *)
     # publish.sh only ever means 0, 1 or 2, so anything else is the wrapper
