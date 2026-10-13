@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-09-13",
-   "recorded_at": "2026-09-13T13:09:15Z",
-   "identities": [
-    "ArasTey/lunel",
-    "Colafornia/short-video-generator-AI",
-    "DefiLeoo/YOINK",
-    "Edge0-AI/Edge0",
-    "EverettFish/holo-card-studio",
-    "Faizpi/bank-sampah",
-    "LBEILC/RhineLabUI",
-    "Sophomoresty/turnstile-bypass",
-    "SpaceDudem/text-humanizer",
-    "Vincentwei1021/anything2explainer",
-    "achimala/dream-loop",
-    "angusdevgo/IDM_Pro_Tool",
-    "crwdla/tokentab",
-    "eternityspring/reelbench-skills",
-    "gazijarin/itsgiving",
-    "henryzawadzki6542/cloudflare-turnstile-bypass",
-    "jnz/INSLIB",
-    "kevinzakka/mjbatch",
-    "lfzk550/fanzha-ai-proxy",
-    "mizzlelover/gongwen-gbt9704-skill",
-    "nftechie/stonkfly",
-    "openai/NavierStokesAndEuler",
-    "rizqinrr/viserys-agent",
-    "sdli1995/dlssg_for_sm86",
-    "sitimas9/cdcrafthh",
-    "sumimakito/Mac-Duo",
-    "truanayangi-com/truanayangi",
-    "unstablebuild/rune",
-    "yappologistic/Spun",
-    "yifanzhang-pro/recurrent-looped-tranformer"
-   ]
-  },
-  {
    "date": "2026-09-14",
    "recorded_at": "2026-09-14T13:07:52Z",
    "identities": [
@@ -1079,6 +1043,42 @@
     "wesbos/photo-frame-dashboard",
     "wheresryan22/anatomy",
     "zhongerxin/iPhone-use"
+   ]
+  },
+  {
+   "date": "2026-10-13",
+   "recorded_at": "2026-10-13T13:03:59Z",
+   "identities": [
+    "ARahim3/DigUp",
+    "Fei2411/DeepSeek-Bot",
+    "HelixDB/helix-foundry",
+    "LoreanXavier/pt-pc",
+    "NVIDIA-Omniverse/usd-brep",
+    "alejandrobujan/tendedero",
+    "anthropics/oss-scanner",
+    "bas3line/ascii",
+    "bherbruck/solidcraft",
+    "jhaizhou-ops/d2r-mobile",
+    "liseami/CCBaga",
+    "marclou/mailcheap",
+    "mhtsec/ARTEX",
+    "noahdunnagan/fsearch",
+    "nullmoth/nvidia-macos-driver",
+    "onehumanbeing/esp32-iphone-agent",
+    "pingdotgg/ts-rust",
+    "rociiu/talorys",
+    "shadany7824/playgta5",
+    "shaongitbd/doory",
+    "storytold/cadcraft",
+    "storytold/craft-launcher",
+    "storytold/deckcraft",
+    "storytold/gridcraft",
+    "storytold/soundcraft",
+    "storytold/wordcraft",
+    "t4t5/omdrop-owl",
+    "trhhubsd/ARTEXX",
+    "wesbos/photo-frame-dashboard",
+    "wheresryan22/anatomy"
    ]
   }
  ]
