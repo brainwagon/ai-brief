@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-09-14",
-   "recorded_at": "2026-09-14T13:07:52Z",
-   "identities": [
-    "ArasTey/lunel",
-    "Chuloo/mural",
-    "Colafornia/short-video-generator-AI",
-    "DefiLeoo/YOINK",
-    "Edge0-AI/Edge0",
-    "Faizpi/bank-sampah",
-    "Foadsf/vintage-latex",
-    "Phyzicalorg/Phyzical_org",
-    "SpaceDudem/text-humanizer",
-    "Vincentwei1021/anything2explainer",
-    "angusdevgo/IDM_Pro_Tool",
-    "deepseek-ai/DeepSelect",
-    "deepseek-ai/deepseek-recipe",
-    "eternityspring/reelbench-skills",
-    "gazijarin/itsgiving",
-    "henryzawadzki6542/cloudflare-turnstile-bypass",
-    "jnz/INSLIB",
-    "kevinzakka/mjbatch",
-    "kruzovic7/ai-data-extractor",
-    "mizzlelover/gongwen-gbt9704-skill",
-    "nftechie/stonkfly",
-    "nhovongoc0-max/meme-radar",
-    "openai/NavierStokesAndEuler",
-    "rizqinrr/viserys-agent",
-    "sumimakito/Mac-Duo",
-    "truanayangi-com/truanayangi",
-    "unstablebuild/rune",
-    "yi1108/printfilm",
-    "yifanzhang-pro/recurrent-looped-tranformer",
-    "zjwzcx/Awesome-Astra-Embodied-AI"
-   ]
-  },
-  {
    "date": "2026-09-15",
    "recorded_at": "2026-09-15T13:05:12Z",
    "identities": [
@@ -1079,6 +1043,42 @@
     "trhhubsd/ARTEXX",
     "wesbos/photo-frame-dashboard",
     "wheresryan22/anatomy"
+   ]
+  },
+  {
+   "date": "2026-10-14",
+   "recorded_at": "2026-10-14T13:07:24Z",
+   "identities": [
+    "ARahim3/DigUp",
+    "Arekejoker/qwen21-nsfw-pose-skill",
+    "Hinln/ARTEX",
+    "NVIDIA-Omniverse/usd-brep",
+    "T-Auto/dsh-ops",
+    "ThariqS/ai-newtab",
+    "ToiCF/CF-Workers-TGProxy",
+    "YeonwooSung/my-claude-code-mods",
+    "anthropics/oss-scanner",
+    "franzenzenhofer/big-arrow-on-the-screen",
+    "h0m3us3r/w1700k-sdr",
+    "jhaizhou-ops/d2r-mobile",
+    "jwuthri-cloud/Tracely-ai",
+    "liseami/CCBaga",
+    "marclou/mailcheap",
+    "mhtsec/ARTEX",
+    "n1tr00-10/tiktok-web-signature",
+    "noahdunnagan/fsearch",
+    "onehumanbeing/esp32-iphone-agent",
+    "opengeos/RustGIS",
+    "rociiu/talorys",
+    "shaongitbd/doory",
+    "snuri00/ps2-web-recomp",
+    "storytold/craft-launcher",
+    "t4t5/omdrop-owl",
+    "tcchen2026/VibeOffice",
+    "trhhubsd/ARTEXX",
+    "wesbos/photo-frame-dashboard",
+    "wheresryan22/anatomy",
+    "zhuyansen/new-term-radar"
    ]
   }
  ]
