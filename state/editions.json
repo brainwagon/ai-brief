@@ -2,6 +2,16 @@
  {
   "items": 25,
   "sources": 10,
+  "picks": 4,
+  "unavailable": 0,
+  "unenriched": 0,
+  "considered": 200,
+  "date": "2026-10-16",
+  "teaser": "New paper from Stanford, Together AI, UIUC, and Meta introduces Hybrid Reasoning Agents. These AI models think mostly in a hidden internal way (faster and cheaper), and only use normal text when they need tools or give the final answer."
+ },
+ {
+  "items": 25,
+  "sources": 10,
   "picks": 3,
   "unavailable": 0,
   "unenriched": 0,
