@@ -1,5 +1,15 @@
 [
  {
+  "items": 25,
+  "sources": 10,
+  "picks": 3,
+  "unavailable": 0,
+  "unenriched": 0,
+  "considered": 185,
+  "date": "2026-10-19",
+  "teaser": "Noniv/web-ocean"
+ },
+ {
   "items": 20,
   "sources": 10,
   "picks": 4,
