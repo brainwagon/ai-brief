@@ -5,6 +5,16 @@
   "picks": 4,
   "unavailable": 0,
   "unenriched": 0,
+  "considered": 150,
+  "date": "2026-10-21",
+  "teaser": "Matrix-Game 4.0: Harnessing Video Models for Real-Time Playable Game Worlds"
+ },
+ {
+  "items": 25,
+  "sources": 10,
+  "picks": 4,
+  "unavailable": 0,
+  "unenriched": 0,
   "considered": 207,
   "date": "2026-10-20",
   "teaser": "WeAct: Dynamic Weight Switching as Agent Actions"
