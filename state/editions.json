@@ -1,5 +1,15 @@
 [
  {
+  "items": 24,
+  "sources": 10,
+  "picks": 3,
+  "unavailable": 1,
+  "unenriched": 0,
+  "considered": 146,
+  "date": "2026-10-22",
+  "teaser": "2-bit copy in VRAM + exact residual in system RAM as the verifier: speculative decoding for models that don't fit your GPU"
+ },
+ {
   "items": 25,
   "sources": 10,
   "picks": 4,
