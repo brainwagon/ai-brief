@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-09-23",
-   "recorded_at": "2026-09-23T13:03:51Z",
-   "identities": [
-    "Continuum-AI-Corp/OrcaBonsai-27B-Uncensored",
-    "Lumid-Off/AirCard-Windows",
-    "Mak5er/AirCard-iOS",
-    "NandhaKishorM/laya",
-    "Sac-Y/Jev-cu",
-    "TianyuCodings/NanoJev",
-    "arvindear/wp2shell-PoC",
-    "bespokelabsai/nimble",
-    "ethanplusai/astra-flash-orchestrator",
-    "githubnext/localjev",
-    "gylive/ccodex-sleep-state",
-    "heyjunpenn/awesome-jev",
-    "hydra-db/open-glean",
-    "incoai/splash",
-    "jaredpalmer/kev",
-    "jev-chat/jev-chat-jarvis",
-    "kerpopule/hermes-jev-skills",
-    "mizorewww/laya-coreml",
-    "mizorewww/laya-mlx",
-    "newliver666/apk-reverse",
-    "pallavi-shekhar/ai-engineering-interview-questions-company-wise",
-    "rmalde/minecraft-agent",
-    "tamaratran/fast-jev-compaction",
-    "unreallabsai/unreal-agent",
-    "v-modal/awesome-jev-tools",
-    "volotat/mini-AGI",
-    "wfzyx/von",
-    "yibie/awesome-jev",
-    "yynxxxxx/gpt_sub_analysis",
-    "zai-org/ZCode"
-   ]
-  },
-  {
    "date": "2026-09-24",
    "recorded_at": "2026-09-24T13:10:07Z",
    "identities": [
@@ -1043,6 +1007,42 @@
     "tek-sys-hub/Rubix-lang",
     "xiaoyang111222/cn-math-taxonomy",
     "xscreensaver-official/xscreensaver"
+   ]
+  },
+  {
+   "date": "2026-10-23",
+   "recorded_at": "2026-10-23T13:04:42Z",
+   "identities": [
+    "9bie/php2shell-bypass-aslr-exp",
+    "Ansub/tv-detox",
+    "ELY-Open-Source/ElyOffice",
+    "EthanArbuckle/fairplay-decrypt",
+    "Gathin23/cleanyourtv",
+    "Hugo-Dz/spritefusion-sprite-normals",
+    "Jakeschincariol/day-trader-skill",
+    "JoasASantos/REA-Prompts",
+    "NVIDIA/flare-local-inference",
+    "Snapintosh/Snapintosh",
+    "UniXNU/UniXNU",
+    "VictorTaelin/uniichat",
+    "aicodeking/leanrea",
+    "aicodeking/pandacode",
+    "alchaincyf/huashu-motion",
+    "colinhacks/reylo",
+    "dominikmartn/harp",
+    "eagle-hq/EAGLE-4",
+    "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+    "humblemuzzu/dumbtv",
+    "ikow/php2shell-poc",
+    "ly05010419/MacNativeGames",
+    "oosexgang/hackios-xnu-kernel",
+    "openai/php2shell-checker",
+    "pengchujin/aerial-tv",
+    "simbasjungles/free-my-tv",
+    "stackedlol/ascii-sharks",
+    "tek-sys-hub/Rubix-lang",
+    "wesbos/3d-model-anything",
+    "xiaoyang111222/cn-math-taxonomy"
    ]
   }
  ]
