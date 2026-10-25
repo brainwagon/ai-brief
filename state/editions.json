@@ -1,5 +1,15 @@
 [
  {
+  "items": 13,
+  "sources": 10,
+  "picks": 3,
+  "unavailable": 0,
+  "unenriched": 0,
+  "considered": 79,
+  "date": "2026-10-25",
+  "teaser": "CUDA: fuse FFN gate/up matmuls and GLU in MMQ with interleaved gate/up rows by anujj \u00b7 Pull Request #29948 \u00b7 ggml-org/llama.cpp"
+ },
+ {
   "items": 25,
   "sources": 10,
   "picks": 4,

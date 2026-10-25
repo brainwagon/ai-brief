@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-09-25",
-   "recorded_at": "2026-09-25T13:05:43Z",
-   "identities": [
-    "Contrastive-LM/CLM",
-    "Haleclipse/CometixCode",
-    "JohnHeibel/PDoomVideo",
-    "Mak5er/AirCard-iOS",
-    "anishfn/shapeshift",
-    "deepopen-com/deepopen",
-    "dgreenheck/tidewater",
-    "driceroland/Search",
-    "freestylefly/WeChatBridge",
-    "heyjunpenn/awesome-jev",
-    "jev-chat/jev-chat-jarvis",
-    "jev-chat/jev-chat-windows",
-    "kryvora-network/kryvora-node",
-    "mikehasa/golive-skill",
-    "mizorewww/laya-coreml",
-    "mizorewww/laya-mlx",
-    "newliver666/apk-reverse",
-    "nokia-applied-research/AnyJev",
-    "pallavi-shekhar/ai-engineering-interview-questions-company-wise",
-    "rgem227/knoweldge-base",
-    "riba2534/claude-opus-5-5-demo",
-    "rmalde/minecraft-agent",
-    "taeold/djev-run",
-    "tobi/disktree",
-    "unreallabsai/unreal-agent",
-    "v-modal/awesome-jev-tools",
-    "volotat/mini-AGI",
-    "wuyoscar/jev-skill",
-    "yetone/magpie",
-    "zai-org/ZCode"
-   ]
-  },
-  {
    "date": "2026-09-26",
    "recorded_at": "2026-09-26T13:07:59Z",
    "identities": [
@@ -1043,6 +1007,42 @@
     "wesbos/3d-model-anything",
     "xevrion/hatchzip",
     "xiaoyang111222/cn-math-taxonomy"
+   ]
+  },
+  {
+   "date": "2026-10-25",
+   "recorded_at": "2026-10-25T13:06:40Z",
+   "identities": [
+    "9bie/php2shell-bypass-aslr-exp",
+    "Alejandros17487/ai-jailbreaks",
+    "ELY-Open-Source/ElyOffice",
+    "EthanArbuckle/fairplay-decrypt",
+    "Hugo-Dz/spritefusion-sprite-normals",
+    "Jakeschincariol/day-trader-skill",
+    "JoasASantos/REA-Prompts",
+    "JustAResearcher/gpu-unlock-ada",
+    "NVIDIA/flare-local-inference",
+    "Snapintosh/Snapintosh",
+    "UniXNU/UniXNU",
+    "VictorTaelin/uniichat",
+    "assetnote/php2shell-scanner",
+    "colinhacks/reylo",
+    "dominikmartn/harp",
+    "eagle-hq/EAGLE-4",
+    "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+    "ikow/php2shell-poc",
+    "nthnclrk/CleanFrame",
+    "oosexgang/hackios-xnu-kernel",
+    "openai/php2shell-checker",
+    "pengchujin/aerial-tv",
+    "rossark0/rossark-motion-skill",
+    "simbasjungles/free-my-tv",
+    "stackedlol/ascii-sharks",
+    "timhengc/mai-shen-zai-ci",
+    "torrentplayer/torrentplayer",
+    "wesbos/3d-model-anything",
+    "xevrion/hatchzip",
+    "zita-ch/supermimic_vibed"
    ]
   }
  ]
