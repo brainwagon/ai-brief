@@ -1,5 +1,15 @@
 [
  {
+  "items": 25,
+  "sources": 10,
+  "picks": 3,
+  "unavailable": 0,
+  "unenriched": 0,
+  "considered": 144,
+  "date": "2026-10-26",
+  "teaser": "Have 8 GB of VRAM and 32 GB of RAM? You can run Qwen 3.8 Flash Next at up to 900 t/s PP and 30 t/s TG!"
+ },
+ {
   "items": 13,
   "sources": 10,
   "picks": 3,
