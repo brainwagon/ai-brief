@@ -2,42 +2,6 @@
  "source": "hf-datasets",
  "snapshots": [
   {
-   "date": "2026-09-28",
-   "recorded_at": "2026-09-28T13:06:36Z",
-   "identities": [
-    "Anthropic/hh-rlhf",
-    "AxiomicLabs/Tiny_Theory_of_Mind",
-    "DeepMostInnovations/saas-sales-conversations",
-    "FineEnvs/SmolDataEnvs",
-    "FlyRank/internship-warehouse",
-    "Harland/OmniVChat",
-    "LocalLLaMA/typed-decisions",
-    "MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x",
-    "OpenDataArena/Spark-234K",
-    "XiaomiMiMo/MiMo-V2.6-RL-oss",
-    "Yootta/World-SimReady-Home",
-    "ZefanCai/Open-Jev",
-    "echel0nn1881/kimi-cyber-reasoning",
-    "eidon-ai/tracker-pov",
-    "espnet/yodas3",
-    "genrobot2025/Gen-HumanEgo",
-    "ikala/tmmluplus",
-    "malcolmrey/various",
-    "markov-ai/cad-1000-hours",
-    "nisten/opus5-5-doctor-patient-conversations-all-human-diseases",
-    "nvidia/OpenH-RF",
-    "nvidia/PhysicalAI-Autonomous-Vehicles",
-    "nyu-mll/glue",
-    "openai/gsm8k",
-    "openbmb/UltraData-Code",
-    "openbmb/UltraData-SFT-Agent-2609",
-    "secemp9/arxiv-complete",
-    "venvoo/china-a-share-l2-level2-limit-order-book-tick-data",
-    "wikimedia/wikipedia",
-    "zgcagi/ZGCM-1-Data"
-   ]
-  },
-  {
    "date": "2026-09-29",
    "recorded_at": "2026-09-29T13:07:46Z",
    "identities": [
@@ -1043,6 +1007,42 @@
     "scenario-labs/3d-collection",
     "venvoo/china-a-share-l2-level2-limit-order-book-tick-data",
     "wikimedia/wikipedia"
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "recorded_at": "2026-10-28T13:02:02Z",
+   "identities": [
+    "CohereLabs/10-2026-qwen-investigation-traces",
+    "CohereLabsCommunity/CulturalRiddles",
+    "ILSVRC/imagenet-1k",
+    "LocalLLaMA/typed-decisions",
+    "Manusagents/GPT-5.5-Gemini-3.1-Pro-Grok-4-Claude-Fable-5-Mythos-5-Qwen-3.7-Max-and-more-Distillation-Dataset",
+    "MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x",
+    "NU-World-Model-Embodied-AI/phyground",
+    "Qwen/BlenderWorld",
+    "Rapidata/text-to-3d-with-llm-code",
+    "TheAgenticDataCompany/open-yap-1k",
+    "Vyber07/cyber-security",
+    "XiaomiMiMo/MiMo-V2.6-RL-oss",
+    "Zhanli-Li/DataWorld-Bench",
+    "Zhanli-Li/DataWorld-Train-2k-part1",
+    "Zhanli-Li/DataWorld-Train-2k-part2",
+    "bones-studio/seed",
+    "cais/hle",
+    "datasocial/tiktok-5.6B-videos",
+    "genrobot2025/Gen-HumanWholeBody",
+    "hongzhuyi/VDEBench",
+    "llamaindex/ParseBench",
+    "nvidia/Nemotron-Personas-Germany",
+    "nvidia/Nemotron-Personas-UK",
+    "nvidia/Nemotron-Personas-Vietnam",
+    "nvidia/PhysicalAI-Autonomous-Vehicles-Foundation4D",
+    "nvidia/simready-assets",
+    "nvidia/simready-central-library",
+    "roneneldan/TinyStories",
+    "scenario-labs/3d-collection",
+    "venvoo/china-a-share-l2-level2-limit-order-book-tick-data"
    ]
   }
  ]

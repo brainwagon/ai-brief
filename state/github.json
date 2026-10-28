@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-09-28",
-   "recorded_at": "2026-09-28T13:06:36Z",
-   "identities": [
-    "852wa/JIZURA",
-    "Aureliengmz/clearwater",
-    "Contrastive-LM/CLM",
-    "JohnHeibel/ClaudeAnimationBase",
-    "JohnHeibel/PDoomVideo",
-    "Niko1221/Strata",
-    "SpecterLouse/CapCut-Pro-macOS-Windows",
-    "alexgreensh/anidoodle",
-    "amitshekhariitbhu/ai-engineering-course",
-    "amitshekhariitbhu/ai-system-design",
-    "angusdevgo/Seep-Reverse-Lab",
-    "anishfn/shapeshift",
-    "asokurasu/text-humanizer",
-    "dgreenheck/tidewater",
-    "dzhng/jevgrep",
-    "feitangyuan/onetake",
-    "kryvora-network/kryvora-node",
-    "kydlikebtc/awesome-jev",
-    "lemomo-ai/lemo-opuscar",
-    "mexicat/pdoom-video",
-    "mikehasa/golive-skill",
-    "ollaya-dev/ollaya",
-    "rgem227/knoweldge-base",
-    "riba2534/claude-opus-5-5-demo",
-    "samyost1/3dicon",
-    "supermemoryai/company-brain",
-    "tobi/disktree",
-    "yetone/magpie",
-    "yihui-dev/awesome-opus5-5-videos",
-    "yukitorido/short-video-generator-AI"
-   ]
-  },
-  {
    "date": "2026-09-29",
    "recorded_at": "2026-09-29T13:07:46Z",
    "identities": [
@@ -1043,6 +1007,42 @@
     "xevrion/hatchzip",
     "yaojingang/GEOInflow",
     "zita-ch/supermimic_vibed"
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "recorded_at": "2026-10-28T13:02:02Z",
+   "identities": [
+    "DenisSergeevitch/ex-ussr-kinship-research",
+    "DrWhax/unfairplay",
+    "JustAResearcher/gpu-unlock-ada",
+    "KillaBoi/StealMyBitcoin-PoC",
+    "Marker284/yandex-station-extended",
+    "Motionsites-AI/claude-skill",
+    "Snapintosh/Snapintosh",
+    "ZiChuanLan/agent-purge",
+    "andyhuo520/digital-human-koubo",
+    "anhao/ai-pose-gallery-zh",
+    "assetnote/php2shell-scanner",
+    "blakeandersonw/ai-app-playbook",
+    "designfuchen/word-atlas",
+    "enesozturk/dimensional-drawing",
+    "interplains/Zero-Breach-Toolkit",
+    "kargulstudio/calender-app-design",
+    "mirkobrombin/raven",
+    "misshexa66/OunceCake",
+    "mizorewww/gdirect",
+    "morganlinton/BeautifulRust",
+    "oosexgang/hackios-xnu-kernel",
+    "rddmwmddr/android-ad-cleaner",
+    "rossark0/rossark-motion-skill",
+    "songjianyang/xss-audit",
+    "stormydayy/halo-overlay",
+    "surendrapandar/minilytics",
+    "t3dotgg/tstack",
+    "unclebob/ub-mode",
+    "wangrongding/tv-fresh",
+    "yaojingang/GEOInflow"
    ]
   }
  ]
