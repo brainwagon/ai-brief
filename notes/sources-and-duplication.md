@@ -1,51 +1,22 @@
-# Handoff — The Decoder added as a tenth Source
+# Candidate Sources and cross-source duplication
 
-Updated 2026-09-21. Nothing here is committed or published; it is all working
-tree. `git status` shows four modified files and three new ones.
+Carried over from the handoff that added The Decoder as the tenth Source
+(2026-09-21). The facts are as of that date.
 
-## Where things stand
+`generator/sources/arstechnica.py` and `marktechpost.py` are drafts and
+are **not registered**. Registering one means adding it to
+`config.SOURCE_ORDER`, `config.SOURCE_LABELS` and `sources.FETCHERS`
+(`./check.sh` confirms the three agree), plus the Source count in
+`README.md` and `CONTEXT.md`. MarkTechPost's listicles are a kind of
+Item the Rubric has never judged; it likely needs a line about roundups.
 
-The Decoder (`the-decoder.com`) is registered as the **tenth Source**. The
-generator is otherwise unchanged and no Edition has been Regenerated.
+## Added since: Schneier on Security (2026-10-28)
 
-The change, all on disk:
-
-| file | what |
-|---|---|
-| `generator/sources/the_decoder.py` | new Source module (registered) |
-| `generator/sources/arstechnica.py` | **draft, not registered** |
-| `generator/sources/marktechpost.py` | **draft, not registered** |
-| `generator/config.py` | `"the-decoder"` in `SOURCE_ORDER` (after `wired`) and `SOURCE_LABELS`; comment nine → ten |
-| `generator/sources/__init__.py` | import + `FETCHERS` entry; docstring nine → ten |
-| `CONTEXT.md` | **Source** now ten and names The Decoder; **Identity** now records the RSS `<guid>` form, and WIRED was added to that list too (it had been omitted) |
-| `README.md` | the three "nine Sources" mentions |
-
-The Decoder's Identity is its RSS `<guid>` (`https://the-decoder.com/?p=NNNNN`).
-Its window is 72 hours, like WIRED's, and the Snapshot diff carries novelty.
-
-**The first Run after this is committed will create `state/the-decoder.json`.**
-Until then there is no Snapshot for it, so that Run will treat all ~10 Items as
-new. That is correct, not a bug.
-
-## Run this first
-
-    .venv/bin/python - <<'PY'
-    from generator import config, sources
-    assert set(config.SOURCE_ORDER) == set(config.SOURCE_LABELS) == set(sources.FETCHERS)
-    print(len(config.SOURCE_ORDER), "Sources consistent")
-    PY
-
-Then a cost-free end-to-end Generate, with the scoring endpoint pointed at a
-dead port so no model is called:
-
-    mkdir -p /tmp/brief-smoke/docs /tmp/brief-smoke/state
-    cp docs/index.html docs/style.css /tmp/brief-smoke/docs/
-    .venv/bin/python -m generator.run --docs-dir /tmp/brief-smoke/docs \
-        --state-dir /tmp/brief-smoke/state --only the-decoder \
-        --decisions-base http://127.0.0.1:9/ --date 2026-09-21
-
-Expect: 10 gathered, 8 Selected (the `CEILING`), a `src-the-decoder` section,
-and `item-the-decoder-…` anchors.
+Registered as the eleventh Source at the reader's request — his choosing
+is the point. It reads the whole-blog feed, `schneier.com/feed/`, not
+`/tag/ai/feed/`: the tag missed an untagged post about Qwen3-Coder bias.
+The cost is off-topic posts (squid, PHP patches) for the Score to drop.
+About one post a weekday; ~3 clear the 72h window.
 
 ## Candidate sources that were checked
 
@@ -109,23 +80,3 @@ If the noise matters, the cheaper lever is **volume, not identity** — a
 press-group cap, or a lower `CEILING` for the new Sources — so four press
 Sources cannot crowd arXiv/HF out of a 25-Item `EDITION_MAX`. The Decoder alone
 contributes up to 8.
-
-## Jev availability, checked 2026-09-21
-
-Still live. `jev.reachable()` → True; `POST /api/v1/systemone` with
-`typesafe/jev-1.13` returned HTTP 200, and the response's `model` field was
-`typesafe/jev-1.13-20260917` — the dated build behind the pinned alias, which is
-what `config.JEV_MODEL` is for. It is **not** in OpenRouter's public `/models`
-list (446 entries, none named `jev`/`systemone`), which is expected: that list
-does not enumerate the Decisions endpoint.
-
-## Caveats for the next person
-
-- The three new modules duplicate `_text`/`_collapse`/`_parse_time`/`_clean`
-  from `wired.py`. That is the convention here (every Source module carries its
-  own), not an oversight — but it is four copies now.
-- `the_decoder.py`'s docstring says "the one beat none of the existing nine
-  covers." Still reads correctly as the nine it joins; it is the tenth.
-- MarkTechPost's titles are SEO-shaped and its listicles ("Best Voice Cloning
-  APIs in 2026") are a kind of Item the Rubric has never seen. If it is ever
-  registered, the Rubric likely needs a line about roundups.

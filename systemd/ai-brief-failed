@@ -35,7 +35,7 @@ case "$STATUS" in
     ;;
 1)
     TITLE="ai-brief: the Run failed"
-    BODY="Generate broke. There is no Edition and nothing was committed."
+    BODY="Generate broke, or the repo could not be synced first. There is no new Edition and nothing was committed."
     ;;
 2)
     TITLE="ai-brief: Publish failed"

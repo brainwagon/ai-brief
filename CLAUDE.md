@@ -1,0 +1,3 @@
+- Failed, stuck or rerun Edition: README, "When a Run fails".
+- Before committing code: `./check.sh` (the pre-commit hook runs it).
+- Vocabulary (Run, Edition, Snapshot, Source): `CONTEXT.md`.

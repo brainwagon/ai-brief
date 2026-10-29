@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#
+# Enabled by `git config core.hooksPath githooks` (see README).
+#
+# Every commit is refused if it stages a conflict marker. check.sh runs only
+# when the commit touches code: an Edition commit from publish.sh stages just
+# docs/ and state/, and a daily Run should not wait on a smoke Generate.
+
+set -eu
+
+git diff --cached --check
+
+if git diff --cached --name-only | grep -qvE '^(docs|state)/'; then
+    exec "$(git rev-parse --show-toplevel)/check.sh"
+fi

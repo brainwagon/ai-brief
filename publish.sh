@@ -13,7 +13,8 @@
 # arguments. Its exit status is the whole contract:
 #
 #     0   an Edition was Generated, and either Published or already current
-#     1   the Run failed; nothing was committed and nothing was pushed
+#     1   the Run failed, or the repo could not be synced before it; nothing
+#         was committed and nothing was pushed
 #     2   the Run succeeded but Publish failed; the Edition is on disk but was
 #         not published, and the next Run will pick it up
 #
@@ -48,8 +49,8 @@ fi
 
 # --- Retrying the network steps --------------------------------------------
 #
-# The two steps that talk to GitHub sit at the very end of a Run which, until
-# them, has touched only the local disk. When one fails for a reason that has
+# The steps that talk to GitHub sit either side of a Run which otherwise
+# touches only the local disk. When one fails for a reason that has
 # nothing to do with the Run — the server-side blip seen as `remote: fatal
 # error in commit_refs`, or an ordinary flaky connection — failing the whole
 # morning over it is the wrong response. Both steps are safe to repeat:
@@ -70,6 +71,48 @@ retry() {
         (( delay *= 3 ))
     done
 }
+
+# --- Keeping the repo out of a half-done merge -----------------------------
+#
+# On 2026-10-20 a conflicted `pull --rebase` was left stuck, and the next Run
+# saw the conflicted files as ordinary changes and committed them, conflict
+# markers and all. So a Run refuses to start inside a stuck merge, and a pull
+# that conflicts is aborted rather than left for the next Run to trip over.
+stuck() {
+    local gitdir
+    gitdir="$(git rev-parse --git-dir)"
+    [ -d "$gitdir/rebase-merge" ] || [ -d "$gitdir/rebase-apply" ] \
+        || [ -f "$gitdir/MERGE_HEAD" ] \
+        || [ -n "$(git diff --name-only --diff-filter=U)" ]
+}
+
+# shellcheck disable=SC2329  # called through retry
+sync_origin() {
+    git pull --rebase --autostash --quiet origin main && return 0
+    if stuck; then
+        echo "publish.sh: local commits conflict with origin/main;" \
+             "aborting the rebase - see README, 'When a Run fails'" >&2
+        git rebase --abort 2>/dev/null || git merge --abort 2>/dev/null
+    fi
+    return 1
+}
+
+if stuck; then
+    echo "publish.sh: a merge or rebase is in progress; resolve or abort it" \
+         "first - see README, 'When a Run fails'" >&2
+    exit 1
+fi
+
+# --- Sync ------------------------------------------------------------------
+#
+# Before Generate, not only after it. The Run diffs today's Items against the
+# Snapshots in state/, so it must start from the newest ones. Another machine
+# can publish too (it did on 2026-10-19), and a Run built on older Snapshots
+# both repeats yesterday's Items and conflicts with origin when it pushes.
+if ! retry sync_origin; then
+    echo "publish.sh: could not sync with origin/main; nothing generated" >&2
+    exit 1
+fi
 
 # --- Generate --------------------------------------------------------------
 # Everything the generator writes lands in docs/ and state/. It never runs git.
@@ -107,9 +150,19 @@ if [ -n "$(git status --porcelain -- docs state)" ]; then
         SUBJECT="Edition ${EDITION} (revised)"
     fi
 
+    # Belt and braces behind the stuck() preflight: git's own --check flags
+    # any leftover conflict marker in what is about to be committed.
+    if ! git diff --cached --check -- docs state; then
+        echo "publish.sh: conflict markers staged in docs/ or state/;" \
+             "not committing" >&2
+        git reset -q -- docs state
+        exit 2
+    fi
+
+    # Run-Host says which machine published, since more than one can.
     git -c user.name="ai-brief" \
         -c user.email="ai-brief@mvandewettering.com" \
-        commit -q -m "$SUBJECT" || exit 2
+        commit -q -m "$SUBJECT" -m "Run-Host: $(hostname)" || exit 2
 else
     EDITION=""
 fi
@@ -128,7 +181,7 @@ fi
 # — which has nothing to do with the Edition just committed. Without it, an
 # uncommitted edit anywhere in the repo silently stops Publish every morning
 # while Generate keeps succeeding, and the Editions pile up unpushed.
-retry git pull --rebase --autostash --quiet origin main || exit 2
+retry sync_origin || exit 2
 retry git push --quiet origin HEAD:main || exit 2
 
 if [ -n "$EDITION" ]; then

@@ -14,14 +14,48 @@ The vocabulary is in [`CONTEXT.md`](CONTEXT.md) and the route is charted on the
 
     ./publish.sh
 
-That is the whole thing, and it is what a systemd timer points at. It Generates,
-then Publishes:
+That is the whole thing, and it is what a systemd timer points at. It
+syncs with `origin/main`, Generates, then Publishes:
 
 | exit | meaning |
 |---|---|
 | 0 | an Edition was Generated, and either Published or already current |
-| 1 | the Run failed; nothing was committed and nothing was pushed |
+| 1 | the sync or the Run failed; nothing committed, nothing pushed |
 | 2 | the Run succeeded but Publish failed; the Edition is on disk, uncommitted |
+
+The sync comes first because the Run diffs against the Snapshots in
+`state/`, and another machine may have published since. Each Edition
+commit carries a `Run-Host:` line naming the machine that made it.
+
+## When a Run fails
+
+The log is `journalctl --user -u ai-brief -e`. The usual failure is a
+conflict with `origin/main`, almost always in `state/`.
+
+- Leave `state/` unmerged: the Snapshots are generated. An unpushed
+  Edition commit is disposable, because a Run rebuilds it.
+- The recovery for a conflict, or for a merge left in progress:
+
+      git rebase --abort      # or git merge --abort, if one is open
+      git log --oneline origin/main..main   # SHAs being dropped
+      git reset --hard origin/main
+      ./publish.sh
+
+- `git log --format='%h %s %b' -5` shows which machine published each
+  Edition; a stranger in `Run-Host:` means a second timer is running.
+
+## Checks
+
+    ./check.sh
+
+Lints the shell, compiles the generator, checks the Sources are
+registered consistently, and Generates a throwaway Edition with every
+model unreachable, so it costs nothing. `githooks/pre-commit` runs it on
+any commit touching code, and refuses any commit carrying a conflict
+marker. Enable the hook once per clone, and install the linter:
+
+    git config core.hooksPath githooks
+    .venv/bin/pip install -r requirements-dev.txt
 
 To Generate without Publishing — the generator never touches git:
 
@@ -92,6 +126,9 @@ Jev could not be reached, no Synopsis if the chat model could not.
 | `generator/synopsis.py` | Stage B: the Synopsis pass over the selected Items |
 | `generator/model.py` | the chat call to OpenRouter, used by Stage B and the Picks |
 | `publish.sh` | the wrapper that commits and pushes |
+| `check.sh` | the one check: lint, compile, a cost-free smoke Generate |
+| `githooks/pre-commit` | runs `check.sh`, refuses conflict markers |
+| `notes/` | design notes that are not served, e.g. candidate Sources |
 | `rubric.md` | the Rubric — what a Score of 1 to 5 means, and the single home of the taste |
 | `jev-questions.json` | the Score's named exceptions and the arithmetic that applies them |
 | `synopsis-prompt.md` | the Synopsis Prompt |
