@@ -136,7 +136,7 @@ HN_POINTS_FLOOR = 75    # noise gate; the Score does the choosing
 HN_ENRICH_LIMIT = 20    # what the Rubric was calibrated against
 DEVTO_ENRICH_LIMIT = 15  # ditto
 
-# --- The ten Sources, in the order they appear in an Edition ---------------
+# --- The eleven Sources, in the order they appear in an Edition ------------
 #
 # key            -> the Snapshot filename and the HTML id stem
 # label          -> the <h2> text, and the name used in "title as X gave it"
@@ -148,6 +148,7 @@ SOURCE_ORDER = [
     "reddit",
     "wired",
     "the-decoder",
+    "schneier",
     "hf-models",
     "hf-datasets",
     "hf-papers",
@@ -161,6 +162,7 @@ SOURCE_LABELS = {
     "reddit": "r/LocalLLaMA",
     "wired": "WIRED",
     "the-decoder": "The Decoder",
+    "schneier": "Schneier on Security",
     "hf-models": "Hugging Face models",
     "hf-datasets": "Hugging Face datasets",
     "hf-papers": "Hugging Face papers",

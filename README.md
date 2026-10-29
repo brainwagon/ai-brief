@@ -1,9 +1,10 @@
 # ai-brief
 
-A daily Brief of what is new in AI, gathered from ten Sources — arXiv, Hacker
-News, GitHub New Repos, dev.to, r/LocalLLaMA, WIRED, The Decoder, and Hugging
-Face's models, datasets and papers — scored by a decision model and summarised
-by a cheap hosted model, both on OpenRouter, and published to GitHub Pages at
+A daily Brief of what is new in AI, gathered from eleven Sources — arXiv,
+Hacker News, GitHub New Repos, dev.to, r/LocalLLaMA, WIRED, The Decoder,
+Schneier on Security, and Hugging Face's models, datasets and papers —
+scored by a decision model and summarised by a cheap hosted model, both on
+OpenRouter, and published to GitHub Pages at
 <https://mvandewettering.com/ai-brief/>.
 
 The vocabulary is in [`CONTEXT.md`](CONTEXT.md) and the route is charted on the
@@ -26,10 +27,10 @@ To Generate without Publishing — the generator never touches git:
 
     .venv/bin/python -m generator.run
 
-A Run gathers the ten Sources, diffs them against yesterday's Snapshots, scores
-every new Item with Jev, applies the cutoff and the per-Source ceiling, writes a
-Synopsis for the survivors, chooses the Picks, and writes the Edition and the
-Index.
+A Run gathers the eleven Sources, diffs them against yesterday's Snapshots,
+scores every new Item with Jev, applies the cutoff and the per-Source
+ceiling, writes a Synopsis for the survivors, chooses the Picks, and writes
+the Edition and the Index.
 
 Useful flags for exercising the degraded paths by hand: `--docs-dir` and
 `--state-dir` write somewhere other than the repo, `--only` gathers a subset of
@@ -86,7 +87,7 @@ Jev could not be reached, no Synopsis if the chat model could not.
 | path | what it is |
 |---|---|
 | `generator/` | the generator; writes files, never runs git |
-| `generator/sources/` | one module per upstream, ten Sources in all |
+| `generator/sources/` | one module per upstream, eleven Sources in all |
 | `generator/jev.py` | Stage A: the Jev call, and the Score's adjustment |
 | `generator/synopsis.py` | Stage B: the Synopsis pass over the selected Items |
 | `generator/model.py` | the chat call to OpenRouter, used by Stage B and the Picks |

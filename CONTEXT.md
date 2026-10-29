@@ -51,9 +51,10 @@ _Avoid_: entry, link, story, article, result, post
 
 **Source**:
 One upstream stream of Items, and the unit the per-source ceiling counts
-against. There are ten: arXiv, Hacker News, GitHub New Repos, dev.to,
-r/LocalLLaMA, WIRED, The Decoder, and Hugging Face's models, datasets, and
-papers separately — Hugging Face is one site but three Sources.
+against. There are eleven: arXiv, Hacker News, GitHub New Repos, dev.to,
+r/LocalLLaMA, WIRED, The Decoder, Schneier on Security, and Hugging Face's
+models, datasets, and papers separately — Hugging Face is one site but
+three Sources.
 _Avoid_: feed, provider, upstream, site, GitHub Trending (the name of a page
 this project no longer reads — the repositories now come from the search API)
 
@@ -64,8 +65,8 @@ Source: the arXiv id with the version stripped (`2508.01234`, never
 for GitHub New Repos; the repo id `owner/name` for Hugging Face models and
 datasets; the arXiv id again for Hugging Face papers; the article id for
 dev.to; the post id with Reddit's `t3_` kind prefix stripped (`1vzxdui`) for
-r/LocalLLaMA; the RSS `<guid>` for WIRED and The Decoder. Hugging Face papers
-and arXiv share a key form deliberately —
+r/LocalLLaMA; the RSS `<guid>` for WIRED, The Decoder and Schneier on
+Security. Hugging Face papers and arXiv share a key form deliberately —
 that is what makes their overlap a collision rather than a guess.
 _Avoid_: id, key, slug, fingerprint
 

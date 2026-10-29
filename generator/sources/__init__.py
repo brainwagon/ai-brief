@@ -1,4 +1,4 @@
-"""The ten Sources, and the one function that gathers them.
+"""The eleven Sources, and the one function that gathers them.
 
 Every Source is fail-soft: a fault becomes an Unavailable SourceResult with a
 reason the page can print, and never an exception out of a Run (map note 10).
@@ -6,7 +6,10 @@ reason the page can print, and never an exception out of a Run (map note 10).
 
 from ..fetch import Unavailable
 from ..item import SourceResult
-from . import arxiv, devto, github, hackernews, huggingface, reddit, the_decoder, wired
+from . import (
+    arxiv, devto, github, hackernews, huggingface, reddit, schneier, the_decoder,
+    wired,
+)
 
 # key -> the callable that issues that Source's request(s)
 FETCHERS = {
@@ -17,6 +20,7 @@ FETCHERS = {
     reddit.KEY: reddit.fetch,
     wired.KEY: wired.fetch,
     the_decoder.KEY: the_decoder.fetch,
+    schneier.KEY: schneier.fetch,
     huggingface.MODELS_KEY: huggingface.fetch_models,
     huggingface.DATASETS_KEY: huggingface.fetch_datasets,
     huggingface.PAPERS_KEY: huggingface.fetch_papers,
