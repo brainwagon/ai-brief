@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-09-30",
-   "recorded_at": "2026-09-30T13:03:29Z",
-   "identities": [
-    "AgentSystemLabs/agent-office",
-    "CaptureGrubEnchant/SolidWorks",
-    "JoasASantos/Offensive-Security-AI-Models",
-    "KKKKhazix/AIHOT",
-    "LuwuDynamics/xgoduck_hardware",
-    "Niko1221/Strata",
-    "OpSafari/hypoarena",
-    "Rieranthony/product-film-skill",
-    "SpecterLouse/CapCut-Pro-macOS-Windows",
-    "amitshekhariitbhu/ai-system-design",
-    "athemeroy/awesome-opus-5-5-videos",
-    "bjarneo/flux",
-    "chasmlol/2010-rust-rewrite-mashup",
-    "dzhng/jevgrep",
-    "feder-cr/dots",
-    "feitangyuan/onetake",
-    "firelex/jeff",
-    "glanderness/BeefTV",
-    "kaankiziltug/logo-design-skill",
-    "lemomo-ai/lemo-opuscar",
-    "mexicat/pdoom-video",
-    "openai/mcp-extensions",
-    "shihabal3amri/DiPlay",
-    "supermemoryai/company-brain",
-    "tobi/disktree",
-    "wangmingxuan666/Tiersense",
-    "wy51ai/floorplan-3d",
-    "xikhar/spiderbench",
-    "yihui-dev/awesome-opus5-5-videos",
-    "zouyuxuan122/dsh-our-free-model"
-   ]
-  },
-  {
    "date": "2026-10-01",
    "recorded_at": "2026-10-01T13:08:03Z",
    "identities": [
@@ -1043,6 +1007,42 @@
     "unclebob/ub-mode",
     "wangrongding/tv-fresh",
     "yaojingang/GEOInflow"
+   ]
+  },
+  {
+   "date": "2026-10-30",
+   "recorded_at": "2026-10-30T13:02:21Z",
+   "identities": [
+    "DenisSergeevitch/ex-ussr-kinship-research",
+    "DrWhax/unfairplay",
+    "KillaBoi/StealMyBitcoin-PoC",
+    "Motionsites-AI/claude-skill",
+    "OpenBMB/MiniCPM-OCR",
+    "ZiChuanLan/agent-purge",
+    "andyhuo520/digital-human-koubo",
+    "anhao/ai-pose-gallery-zh",
+    "anonnerdfrenzy/survival-llm",
+    "aschmelyun/print-my-profile-pic",
+    "blakeandersonw/ai-app-playbook",
+    "ccch1mneyyy/dsh-Go",
+    "daveebbelaar/bama",
+    "deepopen-com/deepopen-3d-webs",
+    "designfuchen/word-atlas",
+    "interplains/Zero-Breach-Toolkit",
+    "kargulstudio/calender-app-design",
+    "mirkobrombin/raven",
+    "misshexa66/OunceCake",
+    "mizorewww/gdirect",
+    "paipiange/nvzhuang",
+    "qybaihe/bla",
+    "rddmwmddr/android-ad-cleaner",
+    "smithjohn78390/tongjiang-lab",
+    "songjianyang/xss-audit",
+    "t3dotgg/tstack",
+    "unclebob/ub-mode",
+    "valentderah/totk-pc-recomp",
+    "yaojingang/GEOInflow",
+    "zeabur-oss/zeabur"
    ]
   }
  ]
