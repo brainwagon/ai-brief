@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-10-01",
-   "recorded_at": "2026-10-01T13:08:03Z",
-   "identities": [
-    "AgentSystemLabs/agent-office",
-    "Barty-Bart/motion-graphics",
-    "JoasASantos/Offensive-Security-AI-Models",
-    "KKKKhazix/AIHOT",
-    "Louis-CFM/coucou",
-    "OpSafari/hypoarena",
-    "PSRben/VisionHOPE",
-    "Rieranthony/product-film-skill",
-    "SpecterLouse/CapCut-Pro-macOS-Windows",
-    "amitshekhariitbhu/ai-system-design",
-    "athemeroy/awesome-opus-5-5-videos",
-    "bjarneo/flux",
-    "chasmlol/2010-rust-rewrite-mashup",
-    "deepseek-ai/DeepGEMM-Ascend",
-    "dzhng/jevgrep",
-    "echris6/motion-video-kit",
-    "edenfunf/reelmimic",
-    "feder-cr/dots",
-    "feitangyuan/onetake",
-    "firelex/jeff",
-    "fsiaonma/elpis",
-    "kaankiziltug/logo-design-skill",
-    "lemomo-ai/lemo-opuscar",
-    "nanaism/yomiyasu",
-    "openai/mcp-extensions",
-    "rehan-remade/universal-modder",
-    "supermemoryai/company-brain",
-    "wy51ai/floorplan-3d",
-    "xikhar/spiderbench",
-    "yihui-dev/awesome-opus5-5-videos"
-   ]
-  },
-  {
    "date": "2026-10-02",
    "recorded_at": "2026-10-02T13:09:11Z",
    "identities": [
@@ -1043,6 +1007,42 @@
     "valentderah/totk-pc-recomp",
     "yaojingang/GEOInflow",
     "zeabur-oss/zeabur"
+   ]
+  },
+  {
+   "date": "2026-10-31",
+   "recorded_at": "2026-10-31T13:10:15Z",
+   "identities": [
+    "BryceYuuu/RUN",
+    "D3voz/openjutsu",
+    "DenisSergeevitch/ex-ussr-kinship-research",
+    "Djihads80/Eglantine",
+    "DrWhax/unfairplay",
+    "HRuiCcc/RuiC-PoseAtlas",
+    "KillaBoi/StealMyBitcoin-PoC",
+    "Motionsites-AI/claude-skill",
+    "OpenBMB/MiniCPM-OCR",
+    "ZiChuanLan/agent-purge",
+    "andyhuo520/digital-human-koubo",
+    "anhao/ai-pose-gallery-zh",
+    "aschmelyun/print-my-profile-pic",
+    "ccch1mneyyy/dsh-Go",
+    "deepopen-com/deepopen-3d-webs",
+    "designfuchen/word-atlas",
+    "heydamir/unslop",
+    "interplains/Zero-Breach-Toolkit",
+    "kargulstudio/calender-app-design",
+    "kevinraymond/florilegium",
+    "lexifina/global-law",
+    "mizorewww/gdirect",
+    "paipiange/nvzhuang",
+    "patch-gg/pixelfx",
+    "qybaihe/bla",
+    "smithjohn78390/tongjiang-lab",
+    "unclebob/ub-mode",
+    "valentderah/totk-pc-recomp",
+    "wangzan101/Mika",
+    "yaojingang/GEOInflow"
    ]
   }
  ]
