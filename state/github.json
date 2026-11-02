@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-10-03",
-   "recorded_at": "2026-10-03T13:07:04Z",
-   "identities": [
-    "CAPCOM-TD-OSS/REDox",
-    "CopilotKit/OpenDots",
-    "ESPARGOS/esp-sdr",
-    "Edwardxlai/easyread",
-    "JoasASantos/Offensive-Security-AI-Models",
-    "KKKKhazix/AIHOT",
-    "Louis-CFM/coucou",
-    "OpSafari/hypoarena",
-    "PSRben/VisionHOPE",
-    "PostHog/jeeves",
-    "amywork777/lipflow",
-    "chasmlol/2010-rust-rewrite-mashup",
-    "chasmlol/SkyCraft",
-    "composio-community/open-dot",
-    "deepseek-ai/DeepGEMM-Ascend",
-    "echris6/motion-video-kit",
-    "edenfunf/reelmimic",
-    "elliotttate/Wind-Waker-Recomp",
-    "facebookincubator/muse-gadget-sdk",
-    "feder-cr/dots",
-    "firelex/jeff",
-    "fsiaonma/elpis",
-    "moguzbulbul/blueprint-animation",
-    "nanaism/yomiyasu",
-    "nykooi1/vibe-wise",
-    "openai/mcp-extensions",
-    "rehan-remade/universal-modder",
-    "wy51ai/floorplan-3d",
-    "xikhar/spiderbench",
-    "yihui-dev/awesome-opus5-5-videos"
-   ]
-  },
-  {
    "date": "2026-10-04",
    "recorded_at": "2026-10-04T13:03:05Z",
    "identities": [
@@ -1043,6 +1007,42 @@
     "valentderah/totk-pc-recomp",
     "wangzan101/Mika",
     "yaojingang/GEOInflow"
+   ]
+  },
+  {
+   "date": "2026-11-02",
+   "recorded_at": "2026-11-02T14:08:42Z",
+   "identities": [
+    "Arjun-Ingole/hop",
+    "BryceYuuu/RUN",
+    "Djihads80/Eglantine",
+    "HRuiCcc/RuiC-PoseAtlas",
+    "NiazMorshed2007/reanimate",
+    "OpenBMB/MiniCPM-OCR",
+    "Verlintas/NOIR",
+    "anhao/ai-pose-gallery-zh",
+    "aschmelyun/print-my-profile-pic",
+    "benderandrew069/deepseek-api-pricing-2026",
+    "caru-ini/stack-diagram",
+    "deepseek-ai/dsh-superagent-prototype",
+    "elvarofficial/teardown",
+    "haydenschmitty/floorplan",
+    "heydamir/unslop",
+    "hyz317/HairDeck",
+    "jacke-pp/open-yoki",
+    "jackwener/DSH-Android",
+    "joeblau/subvox",
+    "kevinraymond/florilegium",
+    "lexifina/global-law",
+    "modelflare-ai/AnyModelBot",
+    "paipiange/nvzhuang",
+    "patch-gg/pixelfx",
+    "ramenvr/autopilot",
+    "sleepy-zone/ai-ref-library-cn",
+    "smithjohn78390/tongjiang-lab",
+    "storytold/craft-anything",
+    "valentderah/totk-pc-recomp",
+    "wangzan101/Mika"
    ]
   }
  ]
