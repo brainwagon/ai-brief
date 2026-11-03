@@ -2,22 +2,6 @@
  "source": "the-decoder",
  "snapshots": [
   {
-   "date": "2026-10-04",
-   "recorded_at": "2026-10-04T13:03:05Z",
-   "identities": [
-    "https://the-decoder.com/?p=40782",
-    "https://the-decoder.com/?p=41012",
-    "https://the-decoder.com/?p=41027",
-    "https://the-decoder.com/?p=41035",
-    "https://the-decoder.com/?p=41041",
-    "https://the-decoder.com/?p=41046",
-    "https://the-decoder.com/?p=41053",
-    "https://the-decoder.com/?p=41059",
-    "https://the-decoder.com/?p=41067",
-    "https://the-decoder.com/?p=41078"
-   ]
-  },
-  {
    "date": "2026-10-05",
    "recorded_at": "2026-10-05T13:08:30Z",
    "identities": [
@@ -463,6 +447,22 @@
     "https://the-decoder.com/?p=42278",
     "https://the-decoder.com/?p=42293",
     "https://the-decoder.com/?p=42296"
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "recorded_at": "2026-11-03T14:05:26Z",
+   "identities": [
+    "https://the-decoder.com/?p=42009",
+    "https://the-decoder.com/?p=42299",
+    "https://the-decoder.com/?p=42305",
+    "https://the-decoder.com/?p=42313",
+    "https://the-decoder.com/?p=42323",
+    "https://the-decoder.com/?p=42327",
+    "https://the-decoder.com/?p=42331",
+    "https://the-decoder.com/?p=42335",
+    "https://the-decoder.com/?p=42338",
+    "https://the-decoder.com/?p=42340"
    ]
   }
  ]
