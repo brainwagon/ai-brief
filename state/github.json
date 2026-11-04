@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-10-05",
-   "recorded_at": "2026-10-05T13:08:30Z",
-   "identities": [
-    "BlueHeisenberg/SCSKiller",
-    "CAPCOM-TD-OSS/REDox",
-    "CopilotKit/OpenDots",
-    "Edwardxlai/easyread",
-    "OpSafari/hypoarena",
-    "QingYunA/answer-me-with-html",
-    "StayLameBro/backburner",
-    "ZacharyZhang-NY/Ely-GPUI-Components",
-    "amywork777/lipflow",
-    "chasmlol/SkyCraft",
-    "composio-community/open-dot",
-    "deadinside28/bloodborne_pc",
-    "deepseek-ai/DeepGEMM-Ascend",
-    "extend-hq/jevbox",
-    "facebookincubator/muse-gadget-sdk",
-    "feder-cr/dots",
-    "fsiaonma/elpis",
-    "kargulstudio/sales-crm",
-    "nanaism/yomiyasu",
-    "nykooi1/vibe-wise",
-    "oil-oil/oil-ui",
-    "omlahore/RemoveMacAI",
-    "openai/mcp-extensions",
-    "rehan-remade/universal-modder",
-    "sganggs/Stronghold-Protocol",
-    "storytold/filmcraft",
-    "storytold/photocraft",
-    "whirlchat/whirl",
-    "wy51ai/floorplan-3d",
-    "ythx-101/live-panel-skill"
-   ]
-  },
-  {
    "date": "2026-10-06",
    "recorded_at": "2026-10-06T13:07:11Z",
    "identities": [
@@ -1043,6 +1007,42 @@
     "storytold/craft-anything",
     "valentderah/totk-pc-recomp",
     "wangzan101/Mika"
+   ]
+  },
+  {
+   "date": "2026-11-04",
+   "recorded_at": "2026-11-04T14:05:31Z",
+   "identities": [
+    "Arjun-Ingole/hop",
+    "AssassinCreator/steam-stash-value-report-card",
+    "BryceYuuu/RUN",
+    "Djihads80/Eglantine",
+    "KKKKhazix/agent-autoloop",
+    "N1nEmAn/sapper-v2",
+    "NiazMorshed2007/reanimate",
+    "Pika-Labs/Pika-H3-Flex",
+    "RikiyaT/lm_understand-logs",
+    "Verlintas/NOIR",
+    "alchaincyf/huashu-bird-sticker",
+    "anthropics/FlashProve",
+    "caru-ini/stack-diagram",
+    "deepseek-ai/dsh-superagent-prototype",
+    "elvarofficial/teardown",
+    "govijr/terminal-mac",
+    "heydamir/unslop",
+    "hyz317/HairDeck",
+    "joeblau/subvox",
+    "kevinraymond/florilegium",
+    "mromidev/claude-animated-shorts",
+    "paipiange/nvzhuang",
+    "patch-gg/pixelfx",
+    "ramenvr/autopilot",
+    "sleepy-zone/ai-ref-library-cn",
+    "storytold/craft-anything",
+    "valentderah/totk-pc-recomp",
+    "wangzan101/Mika",
+    "wquguru/cicada",
+    "zortos293/Lichii"
    ]
   }
  ]

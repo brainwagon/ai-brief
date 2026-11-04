@@ -3,6 +3,16 @@
   "items": 25,
   "sources": 12,
   "picks": 4,
+  "unavailable": 1,
+  "unenriched": 0,
+  "considered": 135,
+  "date": "2026-11-04",
+  "teaser": "I tried MIT's \"weight-space programming\" on my own use case: Claude rewrote 8 neurons of Gemma 4 12B to change how it translates one Italian tense"
+ },
+ {
+  "items": 25,
+  "sources": 12,
+  "picks": 4,
   "unavailable": 0,
   "unenriched": 0,
   "considered": 175,
