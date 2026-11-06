@@ -5,6 +5,16 @@
   "picks": 4,
   "unavailable": 0,
   "unenriched": 0,
+  "considered": 160,
+  "date": "2026-11-06",
+  "teaser": "User Embeddings are Superpositions of Interpretable Behavioral Modes"
+ },
+ {
+  "items": 25,
+  "sources": 12,
+  "picks": 4,
+  "unavailable": 0,
+  "unenriched": 0,
   "considered": 179,
   "date": "2026-11-05",
   "teaser": "Ask, Don't Equip: Question-Driven Coding Agents for Deep Kernel Optimization"
