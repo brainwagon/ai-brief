@@ -1,5 +1,15 @@
 [
  {
+  "items": 21,
+  "sources": 12,
+  "picks": 4,
+  "unavailable": 0,
+  "unenriched": 0,
+  "considered": 104,
+  "date": "2026-11-07",
+  "teaser": "We are cooked. My QFN 3.8 NVFP4 just drew a dog freehand in MS Paint (using new Open WebUI 0.13.0 and Open Terminal 0.17.2)"
+ },
+ {
   "items": 25,
   "sources": 12,
   "picks": 4,

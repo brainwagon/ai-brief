@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-10-08",
-   "recorded_at": "2026-10-08T13:09:48Z",
-   "identities": [
-    "AgentMemoryRepo/agentmemoryrepo",
-    "BQ-Wang0511/TalkLikeYou-Streaming-RealTime-Demo",
-    "Dingo-Shenanigans/ReSkate",
-    "DozenTwelve/Papermorph",
-    "Jakeschincariol/replica-skill",
-    "LoreanXavier/pt-pc",
-    "QingYunA/answer-me-with-html",
-    "Vincentwei1021/mg-styles-15",
-    "alchaincyf/huashu-art-motion",
-    "alejandrobujan/tendedero",
-    "bas3line/ascii",
-    "blendi-remade/agentcraft",
-    "elstongun/leviathan",
-    "facebookincubator/muse-gadget-sdk",
-    "jiwoochris/artex-ko",
-    "kargulstudio/sales-crm",
-    "mizorewww/x_gift_bot",
-    "nullmoth/nvidia-macos-driver",
-    "openai/math",
-    "pingdotgg/ts-rust",
-    "rauchg/gdp-ts",
-    "saawant12/orbit-store-ps5",
-    "sganggs/Stronghold-Protocol",
-    "shinshin86/mesh-avatar-studio",
-    "storytold/cadcraft",
-    "storytold/wordcraft",
-    "szabadkai/c64-keyboard-font",
-    "whirlchat/whirl",
-    "ythx-101/live-panel-skill",
-    "zzzz7788990213-ops/EvoVLM"
-   ]
-  },
-  {
    "date": "2026-10-09",
    "recorded_at": "2026-10-09T13:10:49Z",
    "identities": [
@@ -1043,6 +1007,42 @@
     "wquguru/cicada",
     "zhanghao123vip/ai-manju-skills",
     "zortos293/Lichii"
+   ]
+  },
+  {
+   "date": "2026-11-07",
+   "recorded_at": "2026-11-07T14:09:44Z",
+   "identities": [
+    "AssassinCreator/steam-stash-value-report-card",
+    "CzJam/gjgjxweb",
+    "Gezine/CivSwitch",
+    "JenkinWoo/sheeridVerify",
+    "KKKKhazix/agent-autoloop",
+    "Leviidev/Henge",
+    "Minglink/dsh-jailbreak-workflow",
+    "Minireel/HGhub",
+    "NotRexed/Hookshot",
+    "Sandflow-ai/sand3d",
+    "WoYun520/gif-factory",
+    "caru-ini/stack-diagram",
+    "chadyi/StudyOnTV",
+    "drakolordx7/switch2-recomp",
+    "egoist/mygo-music",
+    "govijr/terminal-mac",
+    "kevintngo/looseleaf",
+    "libracoder/kiri",
+    "livliv-dev/player",
+    "majorminorlabs/hermes-voice",
+    "mhfed/vn-law-check",
+    "mmdoctor/google-pro-helper",
+    "mromidev/claude-animated-shorts",
+    "s1dashu/quiet-md",
+    "sarpstar/cinecode",
+    "sostenesfreitas/ocarina-recomp",
+    "voyager-so/vork",
+    "worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto",
+    "wquguru/cicada",
+    "zeekk0/OpenAmika"
    ]
   }
  ]
