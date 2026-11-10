@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-10-11",
-   "recorded_at": "2026-10-11T13:05:38Z",
-   "identities": [
-    "FeiZhuLulu/DeepSeek-Bot",
-    "HelixDB/helix-foundry",
-    "Hinln/ARTEX",
-    "LoreanXavier/pt-pc",
-    "LosaLosSantos/aurelio-finance",
-    "ThariqS/ai-newtab",
-    "ToiCF/CF-Workers-TGProxy",
-    "alchaincyf/huashu-art-motion",
-    "alejandrobujan/tendedero",
-    "anthropics/oss-scanner",
-    "bas3line/ascii",
-    "elstongun/leviathan",
-    "marclou/mailcheap",
-    "mhtsec/ARTEX",
-    "n1tr00-10/tiktok-web-signature",
-    "noahdunnagan/fsearch",
-    "nullmoth/nvidia-macos-driver",
-    "openai/math",
-    "pingdotgg/ts-rust",
-    "rociiu/talorys",
-    "shadany7824/playgta5",
-    "storytold/cadcraft",
-    "storytold/craft-launcher",
-    "storytold/deckcraft",
-    "storytold/gridcraft",
-    "storytold/soundcraft",
-    "storytold/wordcraft",
-    "t4t5/omdrop-owl",
-    "wheresryan22/anatomy",
-    "zhongerxin/iPhone-use"
-   ]
-  },
-  {
    "date": "2026-10-12",
    "recorded_at": "2026-10-12T13:04:50Z",
    "identities": [
@@ -1043,6 +1007,42 @@
     "tangerineturtle1/NX2navi",
     "voyager-so/vork",
     "zeekk0/OpenAmika"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "recorded_at": "2026-11-10T14:08:42Z",
+   "identities": [
+    "AbhramJohn/instagram-engagement-bot",
+    "AtomIllusionistDwell/watson-username-footprint-finder",
+    "CityPulso/PulsoIcon",
+    "DIYgod/pinky",
+    "IainKay/ram-altman",
+    "JenkinWoo/sheeridVerify",
+    "JosssphZhou/poki",
+    "Kianuni/Erosion-CN",
+    "NotRexed/Hookshot",
+    "Th0rgal/satmux",
+    "WoYun520/gif-factory",
+    "dabingfy-dot/solo-to-team-skills",
+    "devvmhq/devvm",
+    "egoist/mygo-music",
+    "huamidev/GestaltX",
+    "jamesondh/chimera-vocal-synth",
+    "jhaizhou-ops/S2Arm",
+    "livliv-dev/player",
+    "lxe/phoneuse",
+    "mahmoudtawfik1998/secure-pdf-document-processor",
+    "majorminorlabs/hermes-voice",
+    "mmdoctor/google-pro-helper",
+    "riyadhHDA/wichforks",
+    "sassiestrhihno/boxshelf-beta",
+    "shammahcharumbira/universal-neural-injector-center",
+    "sostenesfreitas/ocarina-recomp",
+    "tangerineturtle1/NX2navi",
+    "thiagoaureliomartins-programador/chief-architect-premier",
+    "voyager-so/vork",
+    "yappologistic/CUI"
    ]
   }
  ]
