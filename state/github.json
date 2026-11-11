@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-10-12",
-   "recorded_at": "2026-10-12T13:04:50Z",
-   "identities": [
-    "ARahim3/DigUp",
-    "Fei2411/DeepSeek-Bot",
-    "HelixDB/helix-foundry",
-    "LoreanXavier/pt-pc",
-    "LosaLosSantos/aurelio-finance",
-    "ThariqS/ai-newtab",
-    "alchaincyf/huashu-art-motion",
-    "alejandrobujan/tendedero",
-    "anthropics/oss-scanner",
-    "bas3line/ascii",
-    "bherbruck/solidcraft",
-    "liseami/CCBaga",
-    "marclou/mailcheap",
-    "mhtsec/ARTEX",
-    "noahdunnagan/fsearch",
-    "nullmoth/nvidia-macos-driver",
-    "openai/math",
-    "pingdotgg/ts-rust",
-    "rociiu/talorys",
-    "shadany7824/playgta5",
-    "storytold/cadcraft",
-    "storytold/craft-launcher",
-    "storytold/deckcraft",
-    "storytold/gridcraft",
-    "storytold/soundcraft",
-    "storytold/wordcraft",
-    "t4t5/omdrop-owl",
-    "wesbos/photo-frame-dashboard",
-    "wheresryan22/anatomy",
-    "zhongerxin/iPhone-use"
-   ]
-  },
-  {
    "date": "2026-10-13",
    "recorded_at": "2026-10-13T13:03:59Z",
    "identities": [
@@ -1043,6 +1007,42 @@
     "thiagoaureliomartins-programador/chief-architect-premier",
     "voyager-so/vork",
     "yappologistic/CUI"
+   ]
+  },
+  {
+   "date": "2026-11-11",
+   "recorded_at": "2026-11-11T14:03:03Z",
+   "identities": [
+    "AleRibeiro44/archicad-desktop-setup",
+    "CodeSouvik/clion-standalone-enhancement",
+    "DIYgod/pinky",
+    "Elegantic/designcenter-nx-desktop",
+    "IainKay/ram-altman",
+    "IsaiaR09/daemon-pro-desktop",
+    "JasonCharb/directory-opus",
+    "JenkinWoo/sheeridVerify",
+    "Kianuni/Erosion-CN",
+    "Mistercat12/dvd-creator-setup",
+    "NotRexed/Hookshot",
+    "PHISHER420/autodesk-inventor-desktop-config",
+    "Pereira001/delta-force-enhancement",
+    "Somenicehispanic/ashampoo-winoptimizer-desktop",
+    "Vesuvio1/display-fusion",
+    "WoYun520/gif-factory",
+    "abdulmannanmalik13-wq/adobe-substance-3d-studio",
+    "amarisdzy/acronis-desktop-installer",
+    "hembramneeraj3-create/aida-64-extreme",
+    "huamidev/GestaltX",
+    "jamesondh/chimera-vocal-synth",
+    "jhaizhou-ops/S2Arm",
+    "kcgeekedup-hash/delta-force-trainer-tool",
+    "mahmoudtawfik1998/secure-pdf-document-processor",
+    "mmdoctor/google-pro-helper",
+    "sajawal-12/cubase-studio-desktop",
+    "sostenesfreitas/ocarina-recomp",
+    "tangerineturtle1/NX2navi",
+    "tss878/delta-executor-toolkit",
+    "voyager-so/vork"
    ]
   }
  ]
