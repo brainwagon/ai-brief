@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-10-13",
-   "recorded_at": "2026-10-13T13:03:59Z",
-   "identities": [
-    "ARahim3/DigUp",
-    "Fei2411/DeepSeek-Bot",
-    "HelixDB/helix-foundry",
-    "LoreanXavier/pt-pc",
-    "NVIDIA-Omniverse/usd-brep",
-    "alejandrobujan/tendedero",
-    "anthropics/oss-scanner",
-    "bas3line/ascii",
-    "bherbruck/solidcraft",
-    "jhaizhou-ops/d2r-mobile",
-    "liseami/CCBaga",
-    "marclou/mailcheap",
-    "mhtsec/ARTEX",
-    "noahdunnagan/fsearch",
-    "nullmoth/nvidia-macos-driver",
-    "onehumanbeing/esp32-iphone-agent",
-    "pingdotgg/ts-rust",
-    "rociiu/talorys",
-    "shadany7824/playgta5",
-    "shaongitbd/doory",
-    "storytold/cadcraft",
-    "storytold/craft-launcher",
-    "storytold/deckcraft",
-    "storytold/gridcraft",
-    "storytold/soundcraft",
-    "storytold/wordcraft",
-    "t4t5/omdrop-owl",
-    "trhhubsd/ARTEXX",
-    "wesbos/photo-frame-dashboard",
-    "wheresryan22/anatomy"
-   ]
-  },
-  {
    "date": "2026-10-14",
    "recorded_at": "2026-10-14T13:07:24Z",
    "identities": [
@@ -1043,6 +1007,42 @@
     "tangerineturtle1/NX2navi",
     "tss878/delta-executor-toolkit",
     "voyager-so/vork"
+   ]
+  },
+  {
+   "date": "2026-11-12",
+   "recorded_at": "2026-11-12T14:01:49Z",
+   "identities": [
+    "AleRibeiro44/archicad-desktop-setup",
+    "Arda313131882/aion-2-trainer-tool",
+    "CodeSouvik/clion-standalone-enhancement",
+    "DIYgod/pinky",
+    "Elegantic/designcenter-nx-desktop",
+    "HybridRobotics/supermimic",
+    "IsaiaR09/daemon-pro-desktop",
+    "JasonCharb/directory-opus",
+    "JenkinWoo/sheeridVerify",
+    "Kianuni/Erosion-CN",
+    "Luk177Master/easy-worship-desktop",
+    "PHISHER420/autodesk-inventor-desktop-config",
+    "RolandoV3/metatrader-5-bot",
+    "RyoTheOne/dxo-photolab-10-config",
+    "Sanidhya0510/dvd-creator-game-enhancement",
+    "Vesuvio1/display-fusion",
+    "abdulmannanmalik13-wq/adobe-substance-3d-studio",
+    "dikshantghimire321-droid/kontakt-8-config",
+    "ebtsamalhakmy-sketch/desktop-backup-suite",
+    "flgomes/dxo-photolab-10-desktop",
+    "hembramneeraj3-create/aida-64-extreme",
+    "huamidev/GestaltX",
+    "janitoff0/ninjatrader-bot",
+    "jhaizhou-ops/S2Arm",
+    "kcgeekedup-hash/delta-force-trainer-tool",
+    "mahmoudtawfik1998/secure-pdf-document-processor",
+    "sajawal-12/cubase-studio-desktop",
+    "sostenesfreitas/ocarina-recomp",
+    "tangerineturtle1/NX2navi",
+    "tss878/delta-executor-toolkit"
    ]
   }
  ]
