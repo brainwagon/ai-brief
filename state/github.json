@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-10-14",
-   "recorded_at": "2026-10-14T13:07:24Z",
-   "identities": [
-    "ARahim3/DigUp",
-    "Arekejoker/qwen21-nsfw-pose-skill",
-    "Hinln/ARTEX",
-    "NVIDIA-Omniverse/usd-brep",
-    "T-Auto/dsh-ops",
-    "ThariqS/ai-newtab",
-    "ToiCF/CF-Workers-TGProxy",
-    "YeonwooSung/my-claude-code-mods",
-    "anthropics/oss-scanner",
-    "franzenzenhofer/big-arrow-on-the-screen",
-    "h0m3us3r/w1700k-sdr",
-    "jhaizhou-ops/d2r-mobile",
-    "jwuthri-cloud/Tracely-ai",
-    "liseami/CCBaga",
-    "marclou/mailcheap",
-    "mhtsec/ARTEX",
-    "n1tr00-10/tiktok-web-signature",
-    "noahdunnagan/fsearch",
-    "onehumanbeing/esp32-iphone-agent",
-    "opengeos/RustGIS",
-    "rociiu/talorys",
-    "shaongitbd/doory",
-    "snuri00/ps2-web-recomp",
-    "storytold/craft-launcher",
-    "t4t5/omdrop-owl",
-    "tcchen2026/VibeOffice",
-    "trhhubsd/ARTEXX",
-    "wesbos/photo-frame-dashboard",
-    "wheresryan22/anatomy",
-    "zhuyansen/new-term-radar"
-   ]
-  },
-  {
    "date": "2026-10-15",
    "recorded_at": "2026-10-15T15:01:06Z",
    "identities": [
@@ -1043,6 +1007,42 @@
     "sostenesfreitas/ocarina-recomp",
     "tangerineturtle1/NX2navi",
     "tss878/delta-executor-toolkit"
+   ]
+  },
+  {
+   "date": "2026-11-13",
+   "recorded_at": "2026-11-13T14:08:02Z",
+   "identities": [
+    "21stware/bowel",
+    "AIRzZ90/study-materials-fork",
+    "Dodaios/ste80-humanizer",
+    "FrigadeHQ/yogurt",
+    "Goblinmine/homelab-diagram",
+    "Goldoire/fefw-recomp",
+    "HolyArrs/HolyArrs",
+    "HybridRobotics/supermimic",
+    "JDhruv14/line-art-animation",
+    "Kianuni/Erosion-CN",
+    "LNPANDY/HGhub-MacOS-iOS-Version",
+    "Robbyant/lingbot-touch",
+    "Th0rgal/satmux",
+    "TooonyChen/finallyshell",
+    "adriadam10/mkw-recomp",
+    "agentes-chat/agentes-chat",
+    "alexeyw/lot-map",
+    "apex-compute/ANR",
+    "dabingfy-dot/solo-to-team-skills",
+    "forcequitOS/worse_query",
+    "huamidev/GestaltX",
+    "imxieyi/Kernarium",
+    "jhaizhou-ops/S2Arm",
+    "kolbicz/WQFiles",
+    "luobinger/PerkRadar",
+    "lxe/phoneuse",
+    "paulirish/chrome-capture",
+    "serveroshq/panel",
+    "tangerineturtle1/NX2navi",
+    "yetone/rewind-for-x"
    ]
   }
  ]

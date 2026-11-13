@@ -1,5 +1,15 @@
 [
  {
+  "items": 21,
+  "sources": 12,
+  "picks": 4,
+  "unavailable": 1,
+  "unenriched": 0,
+  "considered": 132,
+  "date": "2026-11-13",
+  "teaser": "A Multilingual, Code Switching Tiny Model"
+ },
+ {
   "items": 22,
   "sources": 12,
   "picks": 4,
