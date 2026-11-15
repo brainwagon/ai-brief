@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-10-16",
-   "recorded_at": "2026-10-16T13:06:17Z",
-   "identities": [
-    "0xProbabillity/house-control",
-    "AjncSystem/ShadowOfTheColossus-PC",
-    "Arekejoker/qwen21-nsfw-pose-skill",
-    "Caho1/open-claude-ui",
-    "CoolkHz/gptibo",
-    "HeyPuter/everything",
-    "Supermedo/uncharted_pc",
-    "Zfinix/eleven",
-    "ahwootech/BRUTAL",
-    "c22dev/muguet",
-    "chenglou/handwired",
-    "chenwei810/Semiconductor_Manufacturing_Introduction",
-    "deeplethe/solid-glass",
-    "feder-cr/open_scion",
-    "fyzugx/DEsk",
-    "h0m3us3r/w1700k-sdr",
-    "jhaizhou-ops/d2r-mobile",
-    "jwuthri-cloud/Tracely-ai",
-    "liseami/CCBaga",
-    "marclou/mailcheap",
-    "nateherkai/roast-room",
-    "npwitk/Macintosh-Skeletal-Filled",
-    "onehumanbeing/esp32-iphone-agent",
-    "opengeos/RustGIS",
-    "outcrawlai/scout",
-    "overdriveps5/overdrive-releases",
-    "rociiu/talorys",
-    "shaongitbd/doory",
-    "threerocks/sweety-handdraw-video",
-    "zhuyansen/new-term-radar"
-   ]
-  },
-  {
    "date": "2026-10-17",
    "recorded_at": "2026-10-17T13:02:11Z",
    "identities": [
@@ -1043,6 +1007,42 @@
     "rivet-dev/open-orange",
     "serveroshq/panel",
     "yetone/rewind-for-x"
+   ]
+  },
+  {
+   "date": "2026-11-15",
+   "recorded_at": "2026-11-15T18:02:04Z",
+   "identities": [
+    "AIRzZ90/study-materials-fork",
+    "DevedevT/FFmpeg-GUI-Editor-Windows",
+    "Dodaios/ste80-humanizer",
+    "Eynnzerr/TelemetryCleaner",
+    "FrigadeHQ/yogurt",
+    "HolyArrs/HolyArrs",
+    "HybridRobotics/supermimic",
+    "JDhruv14/line-art-animation",
+    "Kianuni/Erosion-CN",
+    "Noniv/abyssal-garden",
+    "Robbyant/lingbot-touch",
+    "TrapAccountant/GitHub-Copilot-app",
+    "WarriorRemember/IPTV_Player_2.0",
+    "ZiChuanLan/freebie-radar",
+    "adriadam10/mkw-recomp",
+    "agentes-chat/agentes-chat",
+    "alexeyw/lot-map",
+    "apex-compute/ANR",
+    "deepseek-ai/chat-demo",
+    "duwqijlk/muse-protocol",
+    "failsafe-security/artex",
+    "huamidev/GestaltX",
+    "kolbicz/WQFiles",
+    "linknimiball1974/ai-texture-forge",
+    "opencoredev/islandcn",
+    "rivet-dev/open-orange",
+    "serveroshq/panel",
+    "topconstableinlet67/GitHub-Copilot-app",
+    "toppatronweave/GitHub-Copilot-app",
+    "trackboatwrightplan/GitHub-Copilot-app"
    ]
   }
  ]
