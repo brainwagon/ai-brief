@@ -1044,6 +1044,42 @@
     "unsloth/Qwen3.8-Flash-Next-GGUF",
     "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic"
    ]
+  },
+  {
+   "date": "2026-11-17",
+   "recorded_at": "2026-11-17T14:04:54Z",
+   "identities": [
+    "Abiray/MiniMax-H3-Image-GGUF",
+    "Cactus-Compute/mirage",
+    "Comfy-Org/MiniMax-H3-Image",
+    "DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF",
+    "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+    "Edge0/Edge0-145B-NVFP4",
+    "IFM/PAN2",
+    "Lightricks/LTX-2.5",
+    "MiniMaxAI/MiniMax-H3-Image",
+    "NousResearch/Arete-27B",
+    "OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM",
+    "Qwen/Qwen3.8-27B",
+    "Zyphra/ZONOS3-Mini",
+    "black-forest-labs/flux-3-image-klein-comfy",
+    "chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
+    "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "facebook/sam3",
+    "higurashi-ai/Haru-4B",
+    "huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF",
+    "internlm/Sage-S2.1-Flash",
+    "maxwell-model/Maxwell-V1-Flash",
+    "meituan-longcat/LongCat-Video-Avatar-1.6",
+    "moonshotai/Kimi-K3.1-Pro",
+    "n4ze3m/tiny-voca",
+    "pyannote/speaker-diarization-3.1",
+    "speridlabs/idol",
+    "thinkingmachines/Inkling-2-Small",
+    "unsloth/Qwen3.8-27B-GGUF",
+    "xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic",
+    "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic"
+   ]
   }
  ]
 }

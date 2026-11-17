@@ -1044,6 +1044,42 @@
     "tencent/TailorRig",
     "venvoo/china-a-share-l2-level2-limit-order-book-tick-data"
    ]
+  },
+  {
+   "date": "2026-11-17",
+   "recorded_at": "2026-11-17T14:04:54Z",
+   "identities": [
+    "Angais/pixel-art-atlas-1.4m",
+    "HubLabs/HubEgo-100K",
+    "HuggingFaceFW/fineweb",
+    "ILSVRC/imagenet-1k",
+    "KORMo-VL/EVIDENT",
+    "KORMo-VL/Ko-Online-Mind2Web",
+    "KORMo-VL/Ko-Screenspot",
+    "MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x",
+    "NousResearch/arete-data-pairs",
+    "PentesterFlow/OffsecCyber",
+    "Vyber07/cyber-security",
+    "arc4g/arc-art",
+    "bones-studio/seed",
+    "ccore/ThreeJS-3D-GLB-Assets",
+    "ccore/ThreeJS-3D-Scenes",
+    "codepawl/abo-glb",
+    "codepawl/pixel-atlas-glb",
+    "google/multimodal-knowledge-agent",
+    "google/physical-engineerings-last-exam",
+    "laion/laion-audio-xl",
+    "llamaindex/ParseBench-2",
+    "nvidia/PhysicalAI-Autonomous-Vehicles",
+    "nvidia/PhysicalAI-Human-1M-100K",
+    "nvidia/USDCraft-10K",
+    "nvidia/simready-assets",
+    "open-index/hacker-news",
+    "openai/gsm8k",
+    "ropedia-ai/Ropedia-Xperience-2",
+    "tencent/TailorRig",
+    "venvoo/china-a-share-l2-level2-limit-order-book-tick-data"
+   ]
   }
  ]
 }
