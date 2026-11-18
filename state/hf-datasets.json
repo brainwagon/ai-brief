@@ -2,42 +2,6 @@
  "source": "hf-datasets",
  "snapshots": [
   {
-   "date": "2026-10-19",
-   "recorded_at": "2026-10-19T15:28:30Z",
-   "identities": [
-    "Anthropic/hh-rlhf",
-    "DeepLethe/FDE-Gym",
-    "FineEnvs/openai-math",
-    "HelenPeng/ExeWorldBench",
-    "HuggingFaceFW/fineweb",
-    "HuggingFaceFW/fineweb-edu",
-    "Lichess/standard-chess-games",
-    "LightwheelAI/EgoDemo",
-    "LightwheelAI/EgoPro",
-    "LightwheelAI/EgoStandard",
-    "LocalLLaMA/typed-decisions",
-    "MaziyarPanahi/Jev-RAG-Claim-Verification-130K",
-    "MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x",
-    "Qwen/BlenderWorld",
-    "TIGER-Lab/MMLU-Pro",
-    "Vyber07/cyber-security",
-    "XiaomiMiMo/MiMo-V2.6-RL-oss",
-    "bakrianoo/jabarti-llm-dataset",
-    "basis-ai/basis-global-emotions",
-    "code-video-model/CodeVideoBench",
-    "datasocial/tiktok-5.6B-videos",
-    "harvardMadsys/freeinference_agentic_trace",
-    "markov-ai/cad-1000-hours",
-    "nisten/opus5-5-doctor-patient-conversations-all-human-diseases",
-    "nvidia/Nemotron-Personas-Vietnam",
-    "openbmb/UltraData-SFT-Agent-2609",
-    "openbmb/UltraData-Stack-v3-L2",
-    "secemp9/arxiv-complete",
-    "venvoo/china-a-share-l2-level2-limit-order-book-tick-data",
-    "wikimedia/wikipedia"
-   ]
-  },
-  {
    "date": "2026-10-20",
    "recorded_at": "2026-10-20T22:04:53Z",
    "identities": [
@@ -1079,6 +1043,42 @@
     "ropedia-ai/Ropedia-Xperience-2",
     "tencent/TailorRig",
     "venvoo/china-a-share-l2-level2-limit-order-book-tick-data"
+   ]
+  },
+  {
+   "date": "2026-11-18",
+   "recorded_at": "2026-11-18T14:06:08Z",
+   "identities": [
+    "AJ-Gonzalez/qwen4-max-reasoning-250x",
+    "Angais/pixel-art-atlas-1.4m",
+    "HubLabs/HubEgo-100K",
+    "HuggingFaceFW/fineweb",
+    "HuggingFaceFW/fineweb-edu",
+    "ILSVRC/imagenet-1k",
+    "Idavidrein/gpqa",
+    "KORMo-VL/EVIDENT",
+    "KORMo-VL/Ko-MultimodalMind2Web",
+    "KORMo-VL/Ko-Online-Mind2Web",
+    "KORMo-VL/Ko-Screenspot",
+    "LiquidAI/structured-extraction",
+    "PentesterFlow/OffsecCyber",
+    "TheAgenticDataCompany/open-yap-1k",
+    "Trelis/duplex-pre-training-yodas3-mimi",
+    "Vyber07/cyber-security",
+    "WNT3D/Ultimate-Offensive-Red-Team",
+    "bones-studio/seed",
+    "ccore/ThreeJS-3D-Scenes",
+    "codepawl/abo-glb",
+    "google/multimodal-knowledge-agent",
+    "google/physical-engineerings-last-exam",
+    "laion/laion-audio-xl",
+    "llamaindex/ParseBench-2",
+    "nvidia/PhysicalAI-Human-1M-100K",
+    "nvidia/USDCraft-10K",
+    "nvidia/simready-assets",
+    "scenario-labs/3d-collection",
+    "tencent/TailorRig",
+    "wikimedia/wikipedia"
    ]
   }
  ]

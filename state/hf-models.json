@@ -2,42 +2,6 @@
  "source": "hf-models",
  "snapshots": [
   {
-   "date": "2026-10-19",
-   "recorded_at": "2026-10-19T15:28:30Z",
-   "identities": [
-    "Comfy-Org/MOSS-Image",
-    "ConwayResearch/Underdog-Saluki-27B-1.0",
-    "Lightricks/LTX-2.5",
-    "LiquidAI/LFM2.5-24B-A2B",
-    "LiquidAI/LFM2.5-24B-A2B-GGUF",
-    "OpenMOSS-Team/MOSS-Image-Base",
-    "OpenMOSS-Team/MOSS-Image-SFT",
-    "Qwen/Qwen-Image-2.1-Turbo",
-    "Qwen/Qwen3.8-27B",
-    "Qwen/Qwen3.8-Flash-Next",
-    "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
-    "baidu/Unlimited-OCR",
-    "black-forest-labs/flux-3-image-klein",
-    "black-forest-labs/flux-3-image-klein-comfy",
-    "datalab-to/indra-ocr",
-    "deepseek-ai/DeepSeek-V4.1-Flash",
-    "deepseek-ai/DeepSeek-V4.1-Flash-1017",
-    "facebook/sam3",
-    "fishaudio/drama-3",
-    "google/embeddinggemma-2",
-    "jialinyyzz/humanizer",
-    "meta-models/Muse-Spark-Open-816B-A42B",
-    "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4",
-    "nvidia/Qwen3.8-Flash-Next-FP4-Local",
-    "openbmb/MiniCPM-V-4.7-1B",
-    "openbmb/MiniCPM-V-4.7-35B-A3B",
-    "openbmb/MiniCPM-V-4.7-35B-A3B-gguf",
-    "pablodawson/MiniMax-H3-360-Orbit-LoRA",
-    "tencent/Hy-Memory-30B-A3B",
-    "vllm-sr/d3"
-   ]
-  },
-  {
    "date": "2026-10-20",
    "recorded_at": "2026-10-20T22:04:53Z",
    "identities": [
@@ -1079,6 +1043,42 @@
     "unsloth/Qwen3.8-27B-GGUF",
     "xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic",
     "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic"
+   ]
+  },
+  {
+   "date": "2026-11-18",
+   "recorded_at": "2026-11-18T14:06:08Z",
+   "identities": [
+    "Abiray/MiniMax-H3-Image-GGUF",
+    "Cactus-Compute/mirage",
+    "Comfy-Org/MiniMax-H3-Image",
+    "DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF",
+    "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+    "Edge0/Edge0-145B-NVFP4",
+    "KORMo-VL/KORMo-Web-11B",
+    "Lightricks/LTX-2.5",
+    "MiniMaxAI/MiniMax-H3-Image",
+    "NousResearch/Arete-27B",
+    "Qwen/Qwen3.8-27B",
+    "Zyphra/ZONOS3-Mini",
+    "apple/FastFrames-L",
+    "black-forest-labs/flux-3-image-klein-comfy",
+    "chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
+    "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "facebook/sam3",
+    "harness-hub/Qwen3.8-27B-pi-adapted",
+    "higurashi-ai/Haru-4B",
+    "internlm/Sage-S2.1-Flash",
+    "maxwell-model/Maxwell-V1-Flash",
+    "meituan-longcat/LongCat-Video-Avatar-1.6",
+    "moonshotai/Kimi-K3.1-Pro",
+    "n4ze3m/tiny-voca",
+    "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
+    "sensenova/SenseNova-Loop-9B",
+    "speridlabs/idol",
+    "tencent/Hy4-flash",
+    "thinkingmachines/Inkling-2-Small",
+    "unsloth/Qwen3.8-27B-GGUF"
    ]
   }
  ]

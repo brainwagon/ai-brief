@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-10-19",
-   "recorded_at": "2026-10-19T15:28:30Z",
-   "identities": [
-    "0xProbabillity/house-control",
-    "Arekejoker/qwen21-nsfw-pose-skill",
-    "Caho1/open-claude-ui",
-    "CoolkHz/gptibo",
-    "Gathin23/cleanyourtv",
-    "HayatoG/iss_pc",
-    "HeyPuter/everything",
-    "Leonxlnx/earshot",
-    "LiCinCan/blender-ai-mcp-addon",
-    "MaryCache/imozuru",
-    "MyLuxy/overdrive",
-    "Noniv/web-ocean",
-    "OpenMOSS/MOSS-Image",
-    "Supermedo/uncharted_pc",
-    "Tencent-Hunyuan/Hy-Memory",
-    "Zfinix/eleven",
-    "ahwootech/BRUTAL",
-    "aicodeking/leanrea",
-    "alchaincyf/huashu-motion",
-    "chenglou/handwired",
-    "cranebeaker/coop-anything",
-    "datalab-to/indra",
-    "feder-cr/git-ai",
-    "i12bp8/decomp.wtf",
-    "ly05010419/MacNativeGames",
-    "outcrawlai/scout",
-    "seedds/nxnative",
-    "solana-classic/solana-classic",
-    "xiaoyang111222/cn-math-taxonomy",
-    "xscreensaver-official/xscreensaver"
-   ]
-  },
-  {
    "date": "2026-10-20",
    "recorded_at": "2026-10-20T22:04:53Z",
    "identities": [
@@ -1079,6 +1043,42 @@
     "tiobeharxi1987/blender-ai-copilot-flow",
     "yetanotherbrowser/yab",
     "zovulrira1974/blender-ai-copilot-assets"
+   ]
+  },
+  {
+   "date": "2026-11-18",
+   "recorded_at": "2026-11-18T14:06:08Z",
+   "identities": [
+    "AIRzZ90/study-materials-fork",
+    "BigPizzaV3/ClaudeMom",
+    "CzzzzzzJ/mdldm-maitian",
+    "Hut-hzf/ung220z-tool",
+    "Illson/RustText",
+    "Immortal-Protocols/lastbook",
+    "Noniv/abyssal-garden",
+    "ZiChuanLan/freebie-radar",
+    "berkantay/gpucanvas",
+    "boringmarketer/boring-marketing-skills",
+    "chuanqisun/spaceship",
+    "credoksopho1984/blender-ai-copilot-studio",
+    "deepseek-ai/chat-demo",
+    "duwqijlk/muse-protocol",
+    "erkamyaman/rust-anything",
+    "faizfahmi77/ScanDot",
+    "haziqahmedqasmi/PeakCut",
+    "higurashi-ai/Haru",
+    "huggingface/pybot",
+    "joshpuckett/allo",
+    "krisgfx9/Wireless-Device-Battery-Monitor",
+    "mit-han-lab/pear",
+    "n4ze3m/tiny-voca",
+    "opencoredev/islandcn",
+    "racdeufindurch198812/Blender-AI-MCP-Studio",
+    "rivet-dev/open-orange",
+    "sybil-solutions/inference-optimisation-skill",
+    "tiobeharxi1987/blender-ai-copilot-flow",
+    "yetanotherbrowser/yab",
+    "zephyr4123/snug"
    ]
   }
  ]
