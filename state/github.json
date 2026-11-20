@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-10-21",
-   "recorded_at": "2026-10-21T13:01:13Z",
-   "identities": [
-    "Ansub/tv-detox",
-    "ELY-Open-Source/ElyOffice",
-    "Gathin23/cleanyourtv",
-    "JoasASantos/REA-Prompts",
-    "Leonxlnx/earshot",
-    "LiCinCan/blender-ai-mcp-addon",
-    "Noniv/web-ocean",
-    "OpenMOSS/MOSS-Image",
-    "Supermedo/uncharted_pc",
-    "Tencent-Hunyuan/Hy-Memory",
-    "VITASID57/bluntcore-intimacy-lab",
-    "aicodeking/leanrea",
-    "alchaincyf/huashu-motion",
-    "chenglou/handwired",
-    "cranebeaker/coop-anything",
-    "ctresb/leis",
-    "deepseek-ai/DeepInfer",
-    "eagle-hq/EAGLE-4",
-    "feder-cr/git-ai",
-    "gichirimaku/wp2shell-PoC",
-    "humblemuzzu/dumbtv",
-    "ly05010419/MacNativeGames",
-    "mistralai/timestral",
-    "pengchujin/aerial-tv",
-    "reason-machines/reason-network",
-    "simbasjungles/free-my-tv",
-    "stackedlol/ascii-sharks",
-    "xiaoyang111222/cn-math-taxonomy",
-    "xscreensaver-official/xscreensaver",
-    "zcbacxc/mcd-party-planner"
-   ]
-  },
-  {
    "date": "2026-10-22",
    "recorded_at": "2026-10-22T13:05:49Z",
    "identities": [
@@ -1079,6 +1043,42 @@
     "ybblab/Jiumi",
     "yetanotherbrowser/yab",
     "zephyr4123/snug"
+   ]
+  },
+  {
+   "date": "2026-11-20",
+   "recorded_at": "2026-11-20T14:09:04Z",
+   "identities": [
+    "0marContreras/gta6recomp",
+    "0xkaka/homeport",
+    "CzzzzzzJ/mdldm-maitian",
+    "Hut-hzf/ung220z-tool",
+    "Lemxy/WinRust",
+    "MSNightmare/FastUnlock",
+    "TurtleReside/Gemini-Config-Checker-",
+    "WerewolfEmuHub/Gemini-Config-Checker-",
+    "WindGatorRise37/Gemini-Config-Checker-",
+    "WindowStaffGate11/Gemini-Config-Checker-",
+    "WyrmClimberManacle/Gemini-Config-Checker-",
+    "YellowLaborerMarket/Gemini-Config-Checker-",
+    "bookwjitchieni1986/blender-ai-mcp-addon",
+    "boringmarketer/boring-marketing-skills",
+    "chuanqisun/spaceship",
+    "duwqijlk/muse-protocol",
+    "erkamyaman/rust-anything",
+    "gylive/google-ultra",
+    "haziqahmedqasmi/PeakCut",
+    "iamajmeena/neonclipping",
+    "joshpuckett/allo",
+    "krisgfx9/Wireless-Device-Battery-Monitor",
+    "mankidev/antialgorithm",
+    "n4ze3m/tiny-voca",
+    "nilbuild/stick-scene",
+    "siliconjungle/shapeshift-labs-ink-studio",
+    "sybil-solutions/inference-optimisation-skill",
+    "weightcashiercupola/Gemini-Config-Checker-",
+    "weldbladesmithwharf/Gemini-Config-Checker-",
+    "yetanotherbrowser/yab"
    ]
   }
  ]
