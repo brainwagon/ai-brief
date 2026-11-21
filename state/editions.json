@@ -1,5 +1,15 @@
 [
  {
+  "items": 18,
+  "sources": 12,
+  "picks": 3,
+  "unavailable": 2,
+  "unenriched": 0,
+  "considered": 86,
+  "date": "2026-11-21",
+  "teaser": "Language Models Can Rewrite Their Own Weights"
+ },
+ {
   "items": 17,
   "sources": 12,
   "picks": 3,

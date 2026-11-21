@@ -2,42 +2,6 @@
  "source": "hf-datasets",
  "snapshots": [
   {
-   "date": "2026-10-22",
-   "recorded_at": "2026-10-22T13:05:49Z",
-   "identities": [
-    "Anthropic/hh-rlhf",
-    "Anthropic/scorpion-toxin-binder-design",
-    "DeepLethe/FDE-Gym",
-    "Enderfga/SolarRenderer-Data",
-    "FineEnvs/openai-math",
-    "HuggingFaceFW/fineweb",
-    "LightwheelAI/EgoDemo",
-    "LightwheelAI/EgoPro",
-    "LightwheelAI/EgoStandard",
-    "LocalLLaMA/typed-decisions",
-    "MaziyarPanahi/Jev-RAG-Claim-Verification-130K",
-    "MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x",
-    "Qwen/BlenderWorld",
-    "Sharpa-Robotics/SharpaDex-v1.0",
-    "TheAgenticDataCompany/open-yap-1k",
-    "Vyber07/cyber-security",
-    "XiaomiMiMo/MiMo-V2.6-RL-oss",
-    "bones-studio/seed",
-    "cais/hle",
-    "daimonrobotics/Daimon-Infinity",
-    "datasocial/tiktok-5.6B-videos",
-    "hongzhuyi/VDEBench",
-    "ilabai/3dcodeverse",
-    "markov-ai/cad-1000-hours",
-    "nvidia/Nemotron-Personas-Germany",
-    "nvidia/Nemotron-Personas-UK",
-    "nvidia/Nemotron-Personas-Vietnam",
-    "secemp9/arxiv-complete",
-    "venvoo/china-a-share-l2-level2-limit-order-book-tick-data",
-    "wikimedia/wikipedia"
-   ]
-  },
-  {
    "date": "2026-10-23",
    "recorded_at": "2026-10-23T13:04:42Z",
    "identities": [
@@ -1079,6 +1043,42 @@
     "openai/gsm8k",
     "ropedia-ai/Ropedia-Xperience-2",
     "tencent/TailorRig"
+   ]
+  },
+  {
+   "date": "2026-11-21",
+   "recorded_at": "2026-11-21T14:07:42Z",
+   "identities": [
+    "AJ-Gonzalez/qwen4-max-reasoning-250x",
+    "Angais/pixel-art-atlas-1.4m",
+    "Digitaluz/uzbek-language-corpus",
+    "HubLabs/HubEgo-100K",
+    "HuggingFaceFW/fineweb",
+    "HuggingFaceFW/fineweb-edu",
+    "ILSVRC/imagenet-1k",
+    "JaimeMaLangue/JML-fon-speech-v1",
+    "KORMo-VL/EVIDENT",
+    "KORMo-VL/Ko-MultimodalMind2Web",
+    "KORMo-VL/Ko-Online-Mind2Web",
+    "KORMo-VL/Ko-Screenspot",
+    "MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x",
+    "RodrigoFlorencio/brazilian-portuguese-medicine-corpus",
+    "TheAgenticDataCompany/open-yap-1k",
+    "Trelis/duplex-pre-training-yodas3-mimi",
+    "Vyber07/cyber-security",
+    "alphaXiv/AgentAlphaXiv",
+    "azyg0s/pixelart-172k",
+    "bones-studio/seed",
+    "ccore/ThreeJS-3D-Scenes",
+    "ccore/ThreeJS-3D-Scenes-v2",
+    "codepawl/cmu-mocap-glb",
+    "google/multimodal-knowledge-agent",
+    "google/physical-engineerings-last-exam",
+    "n4ze3m/tiny-voca",
+    "nvidia/PhysicalAI-Human-1M-100K",
+    "nvidia/USDCraft-10K",
+    "nvidia/simready-assets",
+    "openai/gsm8k"
    ]
   }
  ]
