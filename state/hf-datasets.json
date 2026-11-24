@@ -2,42 +2,6 @@
  "source": "hf-datasets",
  "snapshots": [
   {
-   "date": "2026-10-25",
-   "recorded_at": "2026-10-25T13:06:40Z",
-   "identities": [
-    "Anthropic/hh-rlhf",
-    "Anthropic/scorpion-toxin-binder-design",
-    "CohereLabsCommunity/CulturalRiddles",
-    "DeepLethe/FDE-Gym",
-    "FineEnvs/openai-math",
-    "HuggingFaceFW/fineweb-edu",
-    "ILSVRC/imagenet-1k",
-    "LocalLLaMA/typed-decisions",
-    "MaziyarPanahi/Jev-RAG-Claim-Verification-130K",
-    "MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x",
-    "Qwen/BlenderWorld",
-    "Rapidata/text-to-3d-with-llm-code",
-    "Sharpa-Robotics/SharpaDex-v1.0",
-    "TheAgenticDataCompany/open-yap-1k",
-    "Vyber07/cyber-security",
-    "XiaomiMiMo/MiMo-V2.6-RL-oss",
-    "bones-studio/seed",
-    "cais/hle",
-    "datasocial/tiktok-5.6B-videos",
-    "hongzhuyi/VDEBench",
-    "ilabai/3dcodeverse",
-    "markov-ai/cad-1000-hours",
-    "nvidia/Nemotron-Personas-Germany",
-    "nvidia/Nemotron-Personas-UK",
-    "nvidia/Nemotron-Personas-Vietnam",
-    "nvidia/Nemotron-SFT-Agentic-Finance-v1",
-    "nvidia/simready-assets",
-    "scenario-labs/3d-collection",
-    "venvoo/china-a-share-l2-level2-limit-order-book-tick-data",
-    "wikimedia/wikipedia"
-   ]
-  },
-  {
    "date": "2026-10-26",
    "recorded_at": "2026-10-26T13:05:45Z",
    "identities": [
@@ -1079,6 +1043,42 @@
     "nvidia/PhysicalAI-Human-1M-100K",
     "nvidia/USDCraft-10K",
     "nvidia/simready-assets"
+   ]
+  },
+  {
+   "date": "2026-11-24",
+   "recorded_at": "2026-11-24T14:08:20Z",
+   "identities": [
+    "AJ-Gonzalez/qwen4-max-reasoning-250x",
+    "Angais/pixel-art-atlas-1.4m",
+    "Digitaluz/uzbek-language-corpus",
+    "HubLabs/HubEgo-100K",
+    "HuggingFaceFW/fineweb",
+    "HuggingFaceFW/fineweb-edu",
+    "ILSVRC/imagenet-1k",
+    "Jackrong/DeepSeek-V4.1-Flash-Nemotron-Competitive-Coding-Distill",
+    "JaimeMaLangue/JML-fon-speech-v1",
+    "MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x",
+    "RodrigoFlorencio/brazilian-portuguese-medicine-corpus",
+    "TheAgenticDataCompany/open-yap-1k",
+    "Vyber07/cyber-security",
+    "WNT3D/Ultimate-Offensive-Red-Team",
+    "WhitzardAgent/CyberSecurity-1M",
+    "X-LANCE/SynthDCB",
+    "alphaXiv/AgentAlphaXiv",
+    "bones-studio/seed",
+    "cais/hle",
+    "ccore/ThreeJS-3D-Scenes-v2",
+    "cfahlgren1/tesla-fsd-drive-5min",
+    "codepawl/cmu-mocap-glb",
+    "facebook/sam-3d-body-dataset",
+    "google/physical-engineerings-last-exam",
+    "laion/laion-audio-xl",
+    "nvidia/PhysicalAI-Human-1M-100K",
+    "nvidia/USDCraft-10K",
+    "nvidia/simready-assets",
+    "saidutta69/CyberSec-Reasoning-Premium",
+    "xlangai/RoboWild"
    ]
   }
  ]

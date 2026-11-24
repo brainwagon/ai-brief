@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-10-25",
-   "recorded_at": "2026-10-25T13:06:40Z",
-   "identities": [
-    "9bie/php2shell-bypass-aslr-exp",
-    "Alejandros17487/ai-jailbreaks",
-    "ELY-Open-Source/ElyOffice",
-    "EthanArbuckle/fairplay-decrypt",
-    "Hugo-Dz/spritefusion-sprite-normals",
-    "Jakeschincariol/day-trader-skill",
-    "JoasASantos/REA-Prompts",
-    "JustAResearcher/gpu-unlock-ada",
-    "NVIDIA/flare-local-inference",
-    "Snapintosh/Snapintosh",
-    "UniXNU/UniXNU",
-    "VictorTaelin/uniichat",
-    "assetnote/php2shell-scanner",
-    "colinhacks/reylo",
-    "dominikmartn/harp",
-    "eagle-hq/EAGLE-4",
-    "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-    "ikow/php2shell-poc",
-    "nthnclrk/CleanFrame",
-    "oosexgang/hackios-xnu-kernel",
-    "openai/php2shell-checker",
-    "pengchujin/aerial-tv",
-    "rossark0/rossark-motion-skill",
-    "simbasjungles/free-my-tv",
-    "stackedlol/ascii-sharks",
-    "timhengc/mai-shen-zai-ci",
-    "torrentplayer/torrentplayer",
-    "wesbos/3d-model-anything",
-    "xevrion/hatchzip",
-    "zita-ch/supermimic_vibed"
-   ]
-  },
-  {
    "date": "2026-10-26",
    "recorded_at": "2026-10-26T13:05:45Z",
    "identities": [
@@ -1079,6 +1043,42 @@
     "sybil-solutions/skill-distill",
     "tristanbuckmaster/navier-stokes",
     "w01fb0ss/PiBot"
+   ]
+  },
+  {
+   "date": "2026-11-24",
+   "recorded_at": "2026-11-24T14:08:20Z",
+   "identities": [
+    "4lwayz/portwatch-vi",
+    "AFK-surf/xnulinux",
+    "Ahmet-Dedeler/awesome-gta6-reverse-engineering",
+    "Avaneesh-Inamdar/Stream-Tube-Desktop",
+    "CocoSgt/riemann-hypothesis-lean",
+    "EL4CTEO/fast-anything",
+    "INK-Q/agy-fast",
+    "ItsNotRexed/Hookshot",
+    "MSNightmare/FastUnlock",
+    "Marvisak/VIctory",
+    "R0Y00/Xbox2Windows",
+    "ThreatDefence/agentic-attack-detections",
+    "danielwh2/sprite-stacking",
+    "deterministic-machines/deslop-please",
+    "duwqijlk/google-trial-tool",
+    "erkamyaman/safe-anything",
+    "hoangsvit/google-ai",
+    "iamajmeena/neonclipping",
+    "ivall/xcl",
+    "leanprover-community/riemann-hypothesis",
+    "nataphong-lab/Open-Source-Face-Recognition-Ultimate",
+    "omonkeyz/xbox-emulator",
+    "os6/nospeaker",
+    "qianyiai/kurocat",
+    "sshkeda/minecraft-server-on-orange-cloud",
+    "sybil-solutions/skill-distill",
+    "tristanbuckmaster/navier-stokes",
+    "ubiquitarianism/leonida",
+    "w01fb0ss/PiBot",
+    "xikhar/papercraft"
    ]
   }
  ]
