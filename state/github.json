@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-10-26",
-   "recorded_at": "2026-10-26T13:05:45Z",
-   "identities": [
-    "9bie/php2shell-bypass-aslr-exp",
-    "DenisSergeevitch/ex-ussr-kinship-research",
-    "Jakeschincariol/day-trader-skill",
-    "JustAResearcher/gpu-unlock-ada",
-    "KillaBoi/StealMyBitcoin-PoC",
-    "NVIDIA/flare-local-inference",
-    "Snapintosh/Snapintosh",
-    "assetnote/php2shell-scanner",
-    "colinhacks/reylo",
-    "designfuchen/word-atlas",
-    "dominikmartn/harp",
-    "eagle-hq/EAGLE-4",
-    "enesozturk/dimensional-drawing",
-    "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-    "ikow/php2shell-poc",
-    "impacifist/Windows-GPU-UNLOCK",
-    "lyramakesmusic/neuron-explorer",
-    "mizorewww/gdirect",
-    "morganlinton/BeautifulRust",
-    "nthnclrk/CleanFrame",
-    "oosexgang/hackios-xnu-kernel",
-    "openai/php2shell-checker",
-    "pengchujin/aerial-tv",
-    "rddmwmddr/android-ad-cleaner",
-    "t3dotgg/tstack",
-    "torrentplayer/torrentplayer",
-    "udhaykumarbala/cleanyourtv-app",
-    "wesbos/3d-model-anything",
-    "xevrion/hatchzip",
-    "zita-ch/supermimic_vibed"
-   ]
-  },
-  {
    "date": "2026-10-27",
    "recorded_at": "2026-10-27T13:02:44Z",
    "identities": [
@@ -1079,6 +1043,42 @@
     "ubiquitarianism/leonida",
     "w01fb0ss/PiBot",
     "xikhar/papercraft"
+   ]
+  },
+  {
+   "date": "2026-11-25",
+   "recorded_at": "2026-11-25T14:07:43Z",
+   "identities": [
+    "4lwayz/portwatch-vi",
+    "AFK-surf/xnulinux",
+    "Avaneesh-Inamdar/Stream-Tube-Desktop",
+    "Belobug/VIctory-Belobug-AMD",
+    "EL4CTEO/fast-anything",
+    "INK-Q/agy-fast",
+    "Indigo-0167/universal-game-mod-manager",
+    "MSNightmare/FastUnlock",
+    "Marvisak/VIctory",
+    "R0Y00/Xbox2Windows",
+    "Umbra9179/clipboard-history-manager-windows",
+    "Zettrox/ztrx",
+    "crhywun/g1-acq",
+    "danielwh2/sprite-stacking",
+    "deterministic-machines/deslop-please",
+    "fxceless/victory-fork",
+    "iamajmeena/neonclipping",
+    "kai415-debug/ffmpeg-video-audio-converter",
+    "leanprover-community/riemann-hypothesis",
+    "nataphong-lab/Open-Source-Face-Recognition-Ultimate",
+    "omonkeyz/xbox-emulator",
+    "os6/nospeaker",
+    "qianyiai/kurocat",
+    "rowanbyte3329/stardew-valley-mod-manager",
+    "solv4626/steam-achievement-manager-windows",
+    "sous-labs/songe",
+    "sybil-solutions/skill-distill",
+    "ubiquitarianism/leonida",
+    "xcl-dev/xcl",
+    "zero5122/offline-file-converter-windows"
    ]
   }
  ]
