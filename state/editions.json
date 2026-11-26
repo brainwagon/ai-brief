@@ -2,6 +2,16 @@
  {
   "items": 25,
   "sources": 12,
+  "picks": 4,
+  "unavailable": 1,
+  "unenriched": 0,
+  "considered": 150,
+  "date": "2026-11-26",
+  "teaser": "alesha-pro/llm.asm"
+ },
+ {
+  "items": 25,
+  "sources": 12,
   "picks": 3,
   "unavailable": 2,
   "unenriched": 0,

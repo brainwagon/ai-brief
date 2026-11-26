@@ -2,42 +2,6 @@
  "source": "hf-datasets",
  "snapshots": [
   {
-   "date": "2026-10-27",
-   "recorded_at": "2026-10-27T13:02:44Z",
-   "identities": [
-    "Anthropic/scorpion-toxin-binder-design",
-    "CohereLabs/10-2026-qwen-investigation-traces",
-    "CohereLabsCommunity/CulturalRiddles",
-    "FineEnvs/openai-math",
-    "ILSVRC/imagenet-1k",
-    "Idavidrein/gpqa",
-    "LocalLLaMA/typed-decisions",
-    "Manusagents/GPT-5.5-Gemini-3.1-Pro-Grok-4-Claude-Fable-5-Mythos-5-Qwen-3.7-Max-and-more-Distillation-Dataset",
-    "MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x",
-    "Qwen/BlenderWorld",
-    "Rapidata/text-to-3d-with-llm-code",
-    "Sharpa-Robotics/SharpaDex-v1.0",
-    "TheAgenticDataCompany/open-yap-1k",
-    "Vyber07/cyber-security",
-    "XiaomiMiMo/MiMo-V2.6-RL-oss",
-    "bakrianoo/jabarti-llm-dataset",
-    "bones-studio/seed",
-    "cais/hle",
-    "datasocial/tiktok-5.6B-videos",
-    "hongzhuyi/VDEBench",
-    "ilabai/3dcodeverse",
-    "nvidia/Nemotron-Personas-Germany",
-    "nvidia/Nemotron-Personas-UK",
-    "nvidia/Nemotron-Personas-Vietnam",
-    "nvidia/Nemotron-SFT-Agentic-Finance-v1",
-    "nvidia/simready-assets",
-    "nvidia/simready-central-library",
-    "scenario-labs/3d-collection",
-    "venvoo/china-a-share-l2-level2-limit-order-book-tick-data",
-    "wikimedia/wikipedia"
-   ]
-  },
-  {
    "date": "2026-10-28",
    "recorded_at": "2026-10-28T13:02:02Z",
    "identities": [
@@ -1079,6 +1043,42 @@
     "nvidia/USDCraft-10K",
     "nvidia/simready-assets",
     "xlangai/RoboWild"
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "recorded_at": "2026-11-26T14:10:22Z",
+   "identities": [
+    "3DCodeFactory/3DCodeFactory",
+    "Angais/pixel-art-atlas-1.4m",
+    "Digitaluz/uzbek-language-corpus",
+    "HubLabs/HubEgo-100K",
+    "HuggingFaceFW/fineweb",
+    "ILSVRC/imagenet-1k",
+    "Jackrong/DeepSeek-V4.1-Flash-Nemotron-Competitive-Coding-Distill",
+    "JaimeMaLangue/JML-fon-speech-v1",
+    "MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x",
+    "RodrigoFlorencio/brazilian-portuguese-medicine-corpus",
+    "TheAgenticDataCompany/open-yap-1k",
+    "Vyber07/cyber-security",
+    "X-LANCE/SynthDCB",
+    "XiaomiMiMo/MiMo-V2.6-RL-oss",
+    "alphaXiv/AgentAlphaXiv",
+    "bones-studio/seed",
+    "ccore/ThreeJS-3D-Scenes-v2",
+    "cfahlgren1/tesla-fsd-drive-5min",
+    "codepawl/cmu-mocap-glb",
+    "datapointai/multilingual-tts-ad-human-preferences-270k",
+    "facebook/sam-3d-body-dataset",
+    "fka/prompts.chat",
+    "google/physical-engineerings-last-exam",
+    "inclusionAI/LingSante-MedGuard",
+    "nvidia/PhysicalAI-Human-1M-100K",
+    "nvidia/USDCraft-10K",
+    "nvidia/simready-assets",
+    "roneneldan/TinyStories",
+    "xlangai/RoboWild",
+    "yurun-chen/EgoUseBench"
    ]
   }
  ]
