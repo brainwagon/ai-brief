@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-10-28",
-   "recorded_at": "2026-10-28T13:02:02Z",
-   "identities": [
-    "DenisSergeevitch/ex-ussr-kinship-research",
-    "DrWhax/unfairplay",
-    "JustAResearcher/gpu-unlock-ada",
-    "KillaBoi/StealMyBitcoin-PoC",
-    "Marker284/yandex-station-extended",
-    "Motionsites-AI/claude-skill",
-    "Snapintosh/Snapintosh",
-    "ZiChuanLan/agent-purge",
-    "andyhuo520/digital-human-koubo",
-    "anhao/ai-pose-gallery-zh",
-    "assetnote/php2shell-scanner",
-    "blakeandersonw/ai-app-playbook",
-    "designfuchen/word-atlas",
-    "enesozturk/dimensional-drawing",
-    "interplains/Zero-Breach-Toolkit",
-    "kargulstudio/calender-app-design",
-    "mirkobrombin/raven",
-    "misshexa66/OunceCake",
-    "mizorewww/gdirect",
-    "morganlinton/BeautifulRust",
-    "oosexgang/hackios-xnu-kernel",
-    "rddmwmddr/android-ad-cleaner",
-    "rossark0/rossark-motion-skill",
-    "songjianyang/xss-audit",
-    "stormydayy/halo-overlay",
-    "surendrapandar/minilytics",
-    "t3dotgg/tstack",
-    "unclebob/ub-mode",
-    "wangrongding/tv-fresh",
-    "yaojingang/GEOInflow"
-   ]
-  },
-  {
    "date": "2026-10-29",
    "recorded_at": "2026-10-29T15:00:55Z",
    "identities": [
@@ -1079,6 +1043,42 @@
     "xcl-dev/xcl",
     "xikhar/papercraft",
     "zero5122/offline-file-converter-windows"
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "recorded_at": "2026-11-27T14:09:32Z",
+   "identities": [
+    "4lwayz/portwatch-vi",
+    "Ahmet-Dedeler/awesome-gta6-reverse-engineering",
+    "Avaneesh-Inamdar/Stream-Tube-Desktop",
+    "Belobug/VIctory-Belobug-AMD",
+    "DoubleGhosty/cool_fox",
+    "EL4CTEO/fast-anything",
+    "Indigo-0167/universal-game-mod-manager",
+    "Marvisak/VIctory",
+    "Pixel679-cmyk/windows-titlebar-blur-customizer",
+    "Reukix/Reloc",
+    "Umbra9179/clipboard-history-manager-windows",
+    "ZigZagBoi1/ScarlettPort",
+    "alesha-pro/llm.asm",
+    "avatarmanz/VIctory-7900XTX",
+    "chanke17/KuroCat",
+    "crhywun/g1-acq",
+    "deterministic-machines/deslop-please",
+    "erkamyaman/safe-anything",
+    "fxceless/victory-fork",
+    "kai415-debug/ffmpeg-video-audio-converter",
+    "lsernau/grh-lean",
+    "nexu-io/opengame",
+    "omonkeyz/xbox-emulator",
+    "os6/nospeaker",
+    "qianyiai/KuroCat",
+    "solv4626/steam-achievement-manager-windows",
+    "sybil-solutions/skill-distill",
+    "ubiquitarianism/leonida",
+    "xikhar/papercraft",
+    "zortos293/XSEmu"
    ]
   }
  ]

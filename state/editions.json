@@ -1,5 +1,15 @@
 [
  {
+  "items": 19,
+  "sources": 12,
+  "picks": 1,
+  "unavailable": 2,
+  "unenriched": 0,
+  "considered": 84,
+  "date": "2026-11-27",
+  "teaser": "Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability"
+ },
+ {
   "items": 25,
   "sources": 12,
   "picks": 4,
