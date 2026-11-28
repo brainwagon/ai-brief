@@ -2,42 +2,6 @@
  "source": "github",
  "snapshots": [
   {
-   "date": "2026-10-29",
-   "recorded_at": "2026-10-29T15:00:55Z",
-   "identities": [
-    "DenisSergeevitch/ex-ussr-kinship-research",
-    "DrWhax/unfairplay",
-    "JustAResearcher/gpu-unlock-ada",
-    "KillaBoi/StealMyBitcoin-PoC",
-    "Marker284/yandex-station-extended",
-    "Motionsites-AI/claude-skill",
-    "ZiChuanLan/agent-purge",
-    "andyhuo520/digital-human-koubo",
-    "anhao/ai-pose-gallery-zh",
-    "anonnerdfrenzy/survival-llm",
-    "blakeandersonw/ai-app-playbook",
-    "daveebbelaar/bama",
-    "deepopen-com/deepopen-3d-webs",
-    "designfuchen/word-atlas",
-    "enesozturk/dimensional-drawing",
-    "interplains/Zero-Breach-Toolkit",
-    "kargulstudio/calender-app-design",
-    "konlu/story-studio",
-    "mirkobrombin/raven",
-    "misshexa66/OunceCake",
-    "mizorewww/gdirect",
-    "morganlinton/BeautifulRust",
-    "rddmwmddr/android-ad-cleaner",
-    "smithjohn78390/tongjiang-lab",
-    "songjianyang/xss-audit",
-    "surendrapandar/minilytics",
-    "t3dotgg/tstack",
-    "unclebob/ub-mode",
-    "wangrongding/tv-fresh",
-    "yaojingang/GEOInflow"
-   ]
-  },
-  {
    "date": "2026-10-30",
    "recorded_at": "2026-10-30T13:02:21Z",
    "identities": [
@@ -1079,6 +1043,42 @@
     "ubiquitarianism/leonida",
     "xikhar/papercraft",
     "zortos293/XSEmu"
+   ]
+  },
+  {
+   "date": "2026-11-28",
+   "recorded_at": "2026-11-28T14:05:16Z",
+   "identities": [
+    "Avaneesh-Inamdar/Stream-Tube-Desktop",
+    "Codelab781/windows-clipboard-sync-manager",
+    "DeadInternetStudios/100x-engineer-skill",
+    "Indigo-0167/universal-game-mod-manager",
+    "Leaf82770/windows-mica-backdrop-customizer",
+    "Loris-593/notebook-fan-control-windows",
+    "Marvisak/VIctory",
+    "Pixel679-cmyk/windows-titlebar-blur-customizer",
+    "ProjectLeonida/mandy",
+    "Quill400/windows-image-viewer",
+    "Reukix/Reloc",
+    "Riven-639/windows-dwm-blur-glass-customizer",
+    "Umbra9179/clipboard-history-manager-windows",
+    "ZigZagBoi1/ScarlettPort",
+    "alesha-pro/llm.asm",
+    "crhywun/g1-acq",
+    "deterministic-machines/deslop-please",
+    "flint63-code/gitdesk-windows",
+    "fxceless/victory-fork",
+    "hollow-445/windows-keyboard-manager",
+    "mist-8659/windows-mouse-keyboard-sharing-kvm",
+    "nexu-io/opengame",
+    "nocta1554/windows-video-downloader-gui",
+    "os6/nospeaker",
+    "peak85-sketch/stardew-valley-mod-manager",
+    "quartzdev666/windows-pdf-editor",
+    "riveran0226/windows-explorer-blur-mica",
+    "solv4626/steam-achievement-manager-windows",
+    "trustno1-coder/VIctory-NVIDIA",
+    "umbradev315/ffmpeg-video-audio-converter"
    ]
   }
  ]

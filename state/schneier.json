@@ -2,22 +2,6 @@
  "source": "schneier",
  "snapshots": [
   {
-   "date": "2026-10-29",
-   "recorded_at": "2026-10-29T15:00:55Z",
-   "identities": [
-    "https://www.schneier.com/?p=72715",
-    "https://www.schneier.com/?p=72718",
-    "https://www.schneier.com/?p=72792",
-    "https://www.schneier.com/?p=72803",
-    "https://www.schneier.com/?p=72809",
-    "https://www.schneier.com/?p=72830",
-    "https://www.schneier.com/?p=72835",
-    "https://www.schneier.com/?p=72840",
-    "https://www.schneier.com/?p=72849",
-    "https://www.schneier.com/?p=72866"
-   ]
-  },
-  {
    "date": "2026-10-30",
    "recorded_at": "2026-10-30T13:02:21Z",
    "identities": [
@@ -460,6 +444,22 @@
     "https://www.schneier.com/?p=72961",
     "https://www.schneier.com/?p=72967",
     "https://www.schneier.com/?p=72970",
+    "https://www.schneier.com/?p=72991",
+    "https://www.schneier.com/?p=73000",
+    "https://www.schneier.com/?p=73011"
+   ]
+  },
+  {
+   "date": "2026-11-28",
+   "recorded_at": "2026-11-28T14:05:16Z",
+   "identities": [
+    "https://www.schneier.com/?p=72944",
+    "https://www.schneier.com/?p=72949",
+    "https://www.schneier.com/?p=72954",
+    "https://www.schneier.com/?p=72961",
+    "https://www.schneier.com/?p=72967",
+    "https://www.schneier.com/?p=72970",
+    "https://www.schneier.com/?p=72975",
     "https://www.schneier.com/?p=72991",
     "https://www.schneier.com/?p=73000",
     "https://www.schneier.com/?p=73011"
